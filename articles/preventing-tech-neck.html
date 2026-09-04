@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | Preventing Tech Neck</title>
+    <meta
+      name="description"
+      content="Learn how screen height, viewing distance, device habits, movement breaks, and massage can help reduce repeated neck and shoulder strain."
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="theme-color" content="#1677c8" />
+    <style>
+      .tech-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+      .tech-opening > * {
+        padding: 30px;
+        border-radius: 18px;
+      }
+      .tech-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+      .tech-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+      .tech-opening h2,
+      .tech-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .tech-patterns,
+      .tech-reset,
+      .tech-habits,
+      .massage-tech {
+        margin: 42px 0;
+      }
+      .tech-patterns > h2,
+      .tech-patterns > p,
+      .tech-reset > h2,
+      .tech-reset > p,
+      .tech-habits > h2,
+      .tech-habits > p,
+      .massage-tech > h2,
+      .massage-tech > p {
+        text-align: center;
+      }
+      .tech-patterns > p,
+      .tech-reset > p,
+      .tech-habits > p,
+      .massage-tech > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pattern-grid,
+      .habit-grid,
+      .massage-tech-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .pattern-card,
+      .habit-card,
+      .massage-tech-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .pattern-card h3,
+      .habit-card h3,
+      .massage-tech-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .tech-reset {
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .reset-list {
+        display: grid;
+        gap: 16px;
+        max-width: 840px;
+        margin: 28px auto 0;
+      }
+      .reset-item {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #fff;
+      }
+      .reset-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+        text-align: center;
+      }
+      .reset-copy {
+        padding: 22px 24px;
+      }
+      .reset-copy h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+      .reset-copy p {
+        margin: 0;
+      }
+      .screen-distance {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+      .screen-distance h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .screen-distance li {
+        margin-bottom: 10px;
+      }
+      .tech-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .tech-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .related-card p {
+        flex: 1;
+      }
+      .related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+      .article-sources h2 {
+        color: #1677c8;
+      }
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+      .article-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .article-cta h2 {
+        color: #1677c8;
+      }
+      .article-cta p {
+        max-width: 680px;
+        margin: 0 auto 24px;
+      }
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      @media (max-width: 840px) {
+        .tech-opening,
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 700px) {
+        .pattern-grid,
+        .habit-grid,
+        .massage-tech-grid,
+        .reset-item {
+          grid-template-columns: 1fr;
+        }
+        .reset-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+      }
+    </style>
+  </head>
+  <body data-article-id="preventing-tech-neck">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/workplace-wellness.html"
+          >← Back to Workplace Wellness FlowNotes</a
+        >
+      </div>
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Workplace Wellness</div>
+          <h1>Preventing Tech Neck</h1>
+          <p class="article-subtitle">
+            How screen height, viewing distance, device habits, movement breaks,
+            and therapeutic massage can support neck and shoulder comfort.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span>•</span> August 2026
+            <span>•</span> 8-minute read
+          </div>
+        </header>
+        <div class="article-intro">
+          <p>
+            “Tech neck” is a popular name for neck, shoulder, and upper-back
+            discomfort associated with prolonged screen use.
+          </p>
+          <p>
+            The device is only part of the picture. Viewing distance, vision
+            needs, workstation setup, repetition, stress, fatigue, and time
+            spent in one position can all contribute.
+          </p>
+          <p>
+            The goal is not to hold your head perfectly. The goal is to reduce
+            unnecessary strain and create more movement variety.
+          </p>
+        </div>
+        <section class="tech-opening">
+          <div class="tech-opening-main">
+            <h2>Your Head Does Not Need to Stay Frozen</h2>
+            <p>
+              The neck is designed to bend, rotate, and look in different
+              directions. Temporary forward-head positions are normal.
+            </p>
+            <p>
+              Discomfort is more likely when the same position is repeated or
+              sustained for long periods without enough support or recovery.
+            </p>
+          </div>
+          <aside class="tech-opening-side">
+            <h3>Look at the Task, Not Just the Posture</h3>
+            <p>
+              If text is too small, the screen is too far away, glare is
+              present, or the device sits too low, you may repeatedly lean
+              forward to see clearly.
+            </p>
+          </aside>
+        </section>
+        <section class="tech-patterns">
+          <h2>Common Tech-Neck Patterns</h2>
+          <p>
+            These patterns are common responses to work demands—not proof that
+            your body is damaged.
+          </p>
+          <div class="pattern-grid">
+            <article class="pattern-card">
+              <h3>Leaning Toward the Screen</h3>
+              <p>
+                Small text, glare, visual fatigue, or a distant monitor may pull
+                the head and trunk forward.
+              </p>
+            </article>
+            <article class="pattern-card">
+              <h3>Looking Down at a Phone</h3>
+              <p>
+                Long messaging, scrolling, or reading sessions can keep the neck
+                bent for extended periods.
+              </p>
+            </article>
+            <article class="pattern-card">
+              <h3>Elevated Shoulders</h3>
+              <p>
+                A high keyboard, reaching for the mouse, cold temperatures,
+                stress, or concentration may increase shoulder effort.
+              </p>
+            </article>
+            <article class="pattern-card">
+              <h3>Limited Position Changes</h3>
+              <p>
+                Even a well-supported posture may become uncomfortable when held
+                for too long.
+              </p>
+            </article>
+            <article class="pattern-card">
+              <h3>Jaw Clenching and Breath-Holding</h3>
+              <p>
+                Stress and focused work may add effort through the jaw, neck,
+                chest, and shoulders.
+              </p>
+            </article>
+            <article class="pattern-card">
+              <h3>Laptop Compromise</h3>
+              <p>
+                A laptop connects the screen and keyboard, making it difficult
+                to optimize both at the same time during long sessions.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="screen-distance">
+          <h2>Start With the Screen</h2>
+          <ul>
+            <li>
+              Place the monitor where text is easy to read without leaning
+              forward.
+            </li>
+            <li>
+              Increase text size before moving your face closer to the screen.
+            </li>
+            <li>
+              Reduce glare and adjust lighting when you squint or crane to see.
+            </li>
+            <li>
+              Use a laptop stand with an external keyboard and mouse for
+              extended laptop work.
+            </li>
+            <li>
+              Bring the phone closer to eye level for longer reading or
+              messaging sessions.
+            </li>
+            <li>
+              Schedule an eye examination when vision changes or eyestrain
+              persists.
+            </li>
+          </ul>
+        </section>
+        <section class="tech-reset">
+          <h2>A Five-Minute Tech-Neck Reset</h2>
+          <p>
+            Use gentle movement. None of these steps should cause sharp pain,
+            dizziness, or worsening symptoms.
+          </p>
+          <div class="reset-list">
+            <article class="reset-item">
+              <div class="reset-label">Minute 1</div>
+              <div class="reset-copy">
+                <h3>Look Away and Walk</h3>
+                <p>
+                  Leave the screen, stand, and walk through the room or hallway.
+                </p>
+              </div>
+            </article>
+            <article class="reset-item">
+              <div class="reset-label">Minute 2</div>
+              <div class="reset-copy">
+                <h3>Comfortable Head Turns</h3>
+                <p>
+                  Turn the head left and right through an easy range three to
+                  five times per side.
+                </p>
+              </div>
+            </article>
+            <article class="reset-item">
+              <div class="reset-label">Minute 3</div>
+              <div class="reset-copy">
+                <h3>Shoulder and Arm Movement</h3>
+                <p>
+                  Roll the shoulders, open and close the hands, and reach
+                  forward or overhead comfortably.
+                </p>
+              </div>
+            </article>
+            <article class="reset-item">
+              <div class="reset-label">Minute 4</div>
+              <div class="reset-copy">
+                <h3>Upper-Back Movement</h3>
+                <p>
+                  Gently round and extend the upper back or complete a few
+                  supported trunk turns.
+                </p>
+              </div>
+            </article>
+            <article class="reset-item">
+              <div class="reset-label">Minute 5</div>
+              <div class="reset-copy">
+                <h3>Reset the Workstation</h3>
+                <p>
+                  Bring the screen, keyboard, mouse, and frequently used items
+                  into easier reach.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="tech-habits">
+          <h2>Habits That Reduce Repeated Neck Strain</h2>
+          <p>
+            Small changes repeated throughout the day matter more than one
+            perfect stretch.
+          </p>
+          <div class="habit-grid">
+            <article class="habit-card">
+              <h3>Use Microbreaks</h3>
+              <p>
+                Short, frequent recovery pauses give the eyes, muscles, and
+                tendons a chance to change demand.
+              </p>
+            </article>
+            <article class="habit-card">
+              <h3>Support the Forearms</h3>
+              <p>
+                Keeping the keyboard and mouse close may reduce shoulder
+                elevation and reaching.
+              </p>
+            </article>
+            <article class="habit-card">
+              <h3>Change Tasks</h3>
+              <p>
+                Alternate computer work with calls, walking, filing, meetings,
+                or other activities when possible.
+              </p>
+            </article>
+            <article class="habit-card">
+              <h3>Relax Unnecessary Effort</h3>
+              <p>
+                Notice jaw clenching, gripping, breath-holding, or shoulders
+                creeping toward the ears.
+              </p>
+            </article>
+            <article class="habit-card">
+              <h3>Strengthen and Move Regularly</h3>
+              <p>
+                Exercise can support the neck, shoulders, trunk, and general
+                tolerance for daily work.
+              </p>
+            </article>
+            <article class="habit-card">
+              <h3>Respond Early</h3>
+              <p>
+                Change position when stiffness begins rather than waiting until
+                discomfort becomes intense.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="massage-tech">
+          <h2>How Massage Can Help With Tech-Related Tension</h2>
+          <p>
+            Therapeutic massage can be a valuable part of a broader workplace
+            wellness plan, particularly when screen use leaves the neck,
+            shoulders, jaw, chest, upper back, or forearms feeling overworked.
+          </p>
+          <div class="massage-tech-grid">
+            <article class="massage-tech-card">
+              <h3>Reduce Muscular Guarding</h3>
+              <p>
+                Massage may help tense neck and shoulder muscles feel less
+                guarded and easier to move.
+              </p>
+            </article>
+            <article class="massage-tech-card">
+              <h3>Address More Than the Neck</h3>
+              <p>
+                Sessions can include the upper back, chest, shoulders, jaw,
+                forearms, and hands when those areas contribute to the pattern.
+              </p>
+            </article>
+            <article class="massage-tech-card">
+              <h3>Support Movement Comfort</h3>
+              <p>
+                When tension decreases, comfortable head turns, shoulder
+                movement, walking, and exercise may feel easier.
+              </p>
+            </article>
+            <article class="massage-tech-card">
+              <h3>Encourage Recovery and Awareness</h3>
+              <p>
+                Massage creates time away from the screen and may help you
+                notice where you habitually brace or overwork.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h2>What Massage and Ergonomics Cannot Do Alone</h2>
+          <p>
+            Massage cannot correct vision problems, diagnose nerve symptoms,
+            repair an injury, or replace appropriate exercise, medical care, or
+            workstation changes.
+          </p>
+          <p>
+            Ergonomics also cannot eliminate every discomfort when workload,
+            stress, sleep, health conditions, or limited recovery are
+            contributing.
+          </p>
+        </section>
+        <section class="tech-warning">
+          <h2>When to Seek Medical Care</h2>
+          <p>
+            Seek professional evaluation for persistent or worsening pain, new
+            weakness or numbness, loss of hand coordination, severe headaches,
+            dizziness, symptoms after an injury, pain with fever, or discomfort
+            that interferes with sleep, work, or normal daily activity.
+          </p>
+        </section>
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>
+            Your neck is not fragile, and ordinary screen use does not require
+            fear.
+          </p>
+          <p>
+            Comfort improves when the screen supports your vision, the
+            workstation supports the task, and the day includes enough movement
+            and recovery.
+          </p>
+          <p>
+            Massage can help reduce tension and make those healthier habits
+            easier to continue.
+          </p>
+        </section>
+        <hr class="article-divider" />
+        <section>
+          <h2 style="text-align: center; color: #1677c8">Continue Reading</h2>
+          <div class="related-grid">
+            <a
+              href="why-desk-work-can-cause-neck-and-shoulder-tension.html"
+              class="related-card"
+              ><h3>Why Desk Work Can Cause Neck and Shoulder Tension</h3>
+              <p>
+                Learn how prolonged sitting, screen use, and repetitive tasks
+                affect the upper body.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a
+              href="five-minute-movement-breaks-for-busy-workdays.html"
+              class="related-card"
+              ><h3>Five-Minute Movement Breaks for Busy Workdays</h3>
+              <p>
+                Use short movement breaks to reduce stiffness during the
+                workday.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a href="standing-desks-helpful-or-hype.html" class="related-card"
+              ><h3>Standing Desks: Helpful or Hype?</h3>
+              <p>
+                Learn why position variety matters more than standing all day.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+          </div>
+        </section>
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She helps
+            people move better, feel better, and live better through
+            evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Computer Workstations eTool</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/components/monitors"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Monitor Placement and Viewing Distance</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/work-process"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Work Process and Microbreaks</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cdc.gov/niosh/office-environment/about/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NIOSH: Office Environments and Worker Comfort</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCIH: Massage Therapy</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="article-cta">
+          <h2>Help Your Neck and Shoulders Recover</h2>
+          <p>
+            Schedule a FlowTherapy session centered around your neck, shoulders,
+            upper back, jaw, forearms, hands, work demands, and comfort goals.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Workplace Wellness
+            articles.
+          </p>
+          <ul>
+            <li>Building a Better Workstation</li>
+            <li>How Often Should You Get Up From Your Desk?</li>
+            <li>Massage for Office Workers</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

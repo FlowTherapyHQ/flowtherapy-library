@@ -1,0 +1,1822 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowTherapy Library | Massage, Movement & Wellness Education</title>
+
+    <meta
+      name="description"
+      content="Explore the FlowTherapy Library — practical education about therapeutic massage, movement, mobility, recovery, stress and everyday wellness."
+    />
+
+    <meta name="theme-color" content="#061d35" />
+
+    <style>
+      /* =========================================================
+       FLOWTHERAPY LIBRARY
+       Public wellness education
+       ========================================================= */
+
+      :root {
+        --navy-950: #031426;
+        --navy-900: #061d35;
+        --navy-850: #082743;
+        --navy-800: #0a3559;
+
+        --blue-700: #0866ad;
+        --blue-600: #087bd2;
+        --blue-500: #1094ef;
+        --blue-400: #34b1ff;
+        --blue-300: #78d1ff;
+
+        --ice-50: #f9fcff;
+        --ice-100: #f0f8fd;
+        --ice-150: #e9f4fb;
+        --ice-200: #d9ebf6;
+
+        --ink: #102a40;
+        --muted: #5c7488;
+        --line: #d4e5f1;
+
+        --white: #ffffff;
+
+        --content: 1180px;
+
+        --shadow-sm: 0 8px 28px rgba(5, 52, 87, 0.06);
+
+        --shadow-md: 0 18px 50px rgba(5, 52, 87, 0.11);
+
+        --radius-sm: 14px;
+        --radius-md: 20px;
+        --radius-lg: 30px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+
+        font-family:
+          Inter,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+
+        color: var(--ink);
+
+        background: linear-gradient(
+          180deg,
+          #f8fcff 0%,
+          #edf7fd 48%,
+          #ffffff 100%
+        );
+
+        line-height: 1.65;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      button,
+      input {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      /* =========================================================
+       HEADER
+       ========================================================= */
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+
+        background: linear-gradient(
+          110deg,
+          rgba(3, 20, 38, 0.98),
+          rgba(8, 55, 92, 0.98)
+        );
+
+        border-bottom: 1px solid rgba(111, 204, 255, 0.14);
+
+        box-shadow: 0 8px 32px rgba(0, 20, 36, 0.14);
+      }
+
+      .nav-shell {
+        width: min(var(--content), calc(100% - 40px));
+
+        min-height: 76px;
+
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 30px;
+      }
+
+      .brand {
+        color: white;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .brand-name {
+        font-size: 1.43rem;
+        line-height: 1;
+
+        font-weight: 850;
+        letter-spacing: -0.035em;
+      }
+
+      .brand-name span {
+        color: var(--blue-400);
+      }
+
+      .brand-tagline {
+        margin-top: 7px;
+
+        color: #7fd4ff;
+
+        font-size: 0.65rem;
+        font-weight: 850;
+
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+
+        gap: 25px;
+      }
+
+      .nav-links a {
+        color: #d6ebf8;
+
+        text-decoration: none;
+
+        font-size: 0.87rem;
+        font-weight: 750;
+
+        transition: 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: white;
+      }
+
+      .nav-button {
+        padding: 10px 17px;
+
+        border-radius: 999px;
+
+        color: white !important;
+
+        background: linear-gradient(135deg, var(--blue-500), var(--blue-600));
+
+        box-shadow: 0 8px 24px rgba(12, 139, 227, 0.24);
+      }
+
+      /* =========================================================
+       HERO
+       ========================================================= */
+
+      .hero {
+        position: relative;
+
+        overflow: hidden;
+
+        color: white;
+
+        background:
+          radial-gradient(
+            circle at 77% 4%,
+            rgba(49, 166, 255, 0.42),
+            transparent 26%
+          ),
+          radial-gradient(
+            circle at 13% 80%,
+            rgba(4, 111, 198, 0.25),
+            transparent 34%
+          ),
+          linear-gradient(120deg, var(--navy-950), var(--navy-850) 47%, #07578e);
+      }
+
+      .hero::before {
+        content: "";
+
+        position: absolute;
+
+        width: 125%;
+        height: 180px;
+
+        left: -12%;
+        bottom: -100px;
+
+        border-radius: 50%;
+
+        border-top: 2px solid rgba(73, 188, 255, 0.7);
+
+        background: linear-gradient(
+          180deg,
+          rgba(26, 153, 238, 0.14),
+          transparent
+        );
+
+        transform: rotate(-2deg);
+      }
+
+      .hero::after {
+        content: "";
+
+        position: absolute;
+
+        width: 110%;
+        height: 150px;
+
+        left: 2%;
+        bottom: -110px;
+
+        border-radius: 50%;
+
+        border-top: 1px solid rgba(117, 210, 255, 0.35);
+
+        transform: rotate(3deg);
+      }
+
+      .hero-shell {
+        position: relative;
+        z-index: 2;
+
+        width: min(930px, calc(100% - 40px));
+
+        margin: auto;
+
+        padding: 72px 0 105px;
+
+        text-align: center;
+      }
+
+      .hero-kicker {
+        display: inline-block;
+
+        margin-bottom: 20px;
+
+        padding: 7px 14px;
+
+        border: 1px solid rgba(120, 210, 255, 0.25);
+
+        border-radius: 999px;
+
+        background: rgba(17, 89, 140, 0.28);
+
+        color: #9ee1ff;
+
+        font-size: 0.7rem;
+        font-weight: 850;
+
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        max-width: 880px;
+
+        margin: 0 auto;
+
+        font-size: clamp(2.8rem, 6vw, 5.2rem);
+
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+        font-weight: 850;
+      }
+
+      .hero h1 span {
+        display: block;
+
+        margin-top: 8px;
+
+        color: var(--blue-300);
+      }
+
+      .rhythm-copy {
+        max-width: 720px;
+
+        margin: 24px auto 0;
+
+        color: #d2ecfb;
+
+        font-size: clamp(1rem, 2vw, 1.15rem);
+      }
+
+      .rhythm-copy strong {
+        color: white;
+      }
+
+      .hero-description {
+        max-width: 680px;
+
+        margin: 13px auto 0;
+
+        color: #accbdf;
+
+        font-size: 0.93rem;
+      }
+
+      /* =========================================================
+       SEARCH
+       ========================================================= */
+
+      .search-panel {
+        position: relative;
+        z-index: 10;
+
+        width: min(820px, calc(100% - 40px));
+
+        margin: -38px auto 0;
+
+        padding: 16px;
+
+        border-radius: 23px;
+
+        background: rgba(255, 255, 255, 0.96);
+
+        border: 1px solid #cee4f2;
+
+        box-shadow: 0 20px 60px rgba(4, 46, 77, 0.14);
+      }
+
+      .search-inner {
+        position: relative;
+      }
+
+      #articleSearch {
+        width: 100%;
+
+        padding: 17px 100px 17px 50px;
+
+        border: 1px solid var(--line);
+
+        border-radius: 14px;
+
+        background: #f9fcff;
+
+        color: var(--ink);
+
+        outline: none;
+
+        transition: 0.2s ease;
+      }
+
+      #articleSearch:focus {
+        background: white;
+
+        border-color: var(--blue-400);
+
+        box-shadow: 0 0 0 4px rgba(52, 177, 255, 0.1);
+      }
+
+      .search-icon {
+        position: absolute;
+
+        left: 19px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        color: var(--blue-600);
+      }
+
+      .search-count {
+        position: absolute;
+
+        right: 18px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        color: #7f96a7;
+
+        font-size: 0.74rem;
+        font-weight: 800;
+      }
+
+      /* =========================================================
+       MAIN
+       ========================================================= */
+
+      main {
+        width: min(var(--content), calc(100% - 40px));
+
+        margin: auto;
+
+        padding: 75px 0 100px;
+      }
+
+      .section-kicker {
+        color: var(--blue-600);
+
+        font-size: 0.7rem;
+        font-weight: 850;
+
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+
+      /* =========================================================
+       LIBRARY INTRO
+       ========================================================= */
+
+      .library-intro {
+        max-width: 780px;
+
+        margin: 0 auto 55px;
+
+        text-align: center;
+      }
+
+      .library-intro h2 {
+        margin: 8px 0 0;
+
+        color: var(--navy-900);
+
+        font-size: clamp(2rem, 4vw, 2.9rem);
+
+        line-height: 1.08;
+
+        letter-spacing: -0.045em;
+      }
+
+      .library-intro p {
+        margin: 15px auto 0;
+
+        color: var(--muted);
+      }
+
+      /* =========================================================
+       CATEGORY SELECTOR
+       ========================================================= */
+
+      .topic-navigation {
+        margin-bottom: 70px;
+      }
+
+      .topic-tabs {
+        max-width: 930px;
+
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 14px;
+      }
+
+      .topic-tab {
+        appearance: none;
+
+        display: flex;
+        align-items: center;
+
+        gap: 15px;
+
+        padding: 18px 20px;
+
+        text-align: left;
+
+        color: var(--ink);
+
+        border: 1px solid var(--line);
+
+        border-radius: 18px;
+
+        background: rgba(255, 255, 255, 0.94);
+
+        box-shadow: var(--shadow-sm);
+
+        transition:
+          transform 0.2s ease,
+          border-color 0.2s ease,
+          box-shadow 0.2s ease,
+          background 0.2s ease;
+      }
+
+      .topic-tab:hover {
+        transform: translateY(-2px);
+
+        border-color: #9cd7f9;
+
+        box-shadow: var(--shadow-md);
+      }
+
+      .topic-tab.active {
+        color: white;
+
+        border-color: transparent;
+
+        background: linear-gradient(135deg, var(--navy-850), var(--blue-700));
+
+        box-shadow: 0 15px 42px rgba(4, 84, 140, 0.18);
+      }
+
+      .topic-symbol {
+        flex: 0 0 42px;
+
+        width: 42px;
+        height: 42px;
+
+        display: grid;
+        place-items: center;
+
+        border-radius: 12px;
+
+        background: #e5f4ff;
+
+        color: var(--blue-600);
+
+        font-size: 1.15rem;
+        font-weight: 850;
+      }
+
+      .topic-tab.active .topic-symbol {
+        color: #9de1ff;
+
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .topic-tab strong {
+        display: block;
+
+        font-size: 0.96rem;
+      }
+
+      .topic-tab small {
+        display: block;
+
+        margin-top: 2px;
+
+        color: var(--muted);
+
+        font-size: 0.73rem;
+      }
+
+      .topic-tab.active small {
+        color: #c8e6f6;
+      }
+
+      .view-all-tab {
+        grid-column: 1 / -1;
+
+        justify-content: center;
+
+        padding: 12px 20px;
+
+        text-align: center;
+
+        color: var(--blue-700);
+
+        background: #edf8ff;
+
+        font-weight: 850;
+      }
+
+      /* =========================================================
+       ARTICLES
+       ========================================================= */
+
+      .library-section {
+        scroll-margin-top: 105px;
+      }
+
+      .section-heading {
+        margin-bottom: 28px;
+
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        gap: 25px;
+      }
+
+      .section-heading h2 {
+        margin: 6px 0 0;
+
+        color: var(--navy-900);
+
+        font-size: clamp(2rem, 4vw, 2.75rem);
+
+        letter-spacing: -0.045em;
+      }
+
+      .section-heading p {
+        max-width: 690px;
+
+        margin: 8px 0 0;
+
+        color: var(--muted);
+      }
+
+      .filter-status {
+        flex: 0 0 auto;
+
+        padding: 8px 13px;
+
+        border-radius: 999px;
+
+        color: var(--blue-700);
+
+        background: #e8f5ff;
+
+        border: 1px solid #c8e8fa;
+
+        font-size: 0.75rem;
+        font-weight: 800;
+      }
+
+      .article-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+      }
+
+      .article-card {
+        min-height: 235px;
+
+        padding: 26px;
+
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid var(--line);
+
+        border-radius: var(--radius-md);
+
+        background: linear-gradient(160deg, #ffffff, #fbfdff);
+
+        box-shadow: var(--shadow-sm);
+
+        text-decoration: none;
+
+        transition:
+          transform 0.2s ease,
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .article-card:hover {
+        transform: translateY(-4px);
+
+        border-color: rgba(33, 162, 241, 0.42);
+
+        box-shadow: var(--shadow-md);
+      }
+
+      .article-category {
+        display: inline-block;
+
+        width: fit-content;
+
+        margin-bottom: 14px;
+
+        padding: 6px 10px;
+
+        border-radius: 999px;
+
+        background: #e7f5ff;
+
+        color: var(--blue-700);
+
+        font-size: 0.65rem;
+        font-weight: 850;
+
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .article-card h3 {
+        margin: 0 0 12px;
+
+        color: var(--navy-900);
+
+        font-size: 1.17rem;
+        line-height: 1.32;
+
+        letter-spacing: -0.025em;
+      }
+
+      .article-card p {
+        margin: 0 0 23px;
+
+        color: var(--muted);
+
+        font-size: 0.9rem;
+      }
+
+      .article-read {
+        margin-top: auto;
+
+        color: var(--blue-600);
+
+        font-size: 0.84rem;
+        font-weight: 850;
+      }
+
+      .article-read span {
+        display: inline-block;
+
+        transition: 0.2s ease;
+      }
+
+      .article-card:hover .article-read span {
+        transform: translateX(4px);
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      .no-results {
+        display: none;
+
+        padding: 55px 25px;
+
+        text-align: center;
+
+        color: var(--muted);
+
+        border: 1px solid var(--line);
+
+        border-radius: var(--radius-md);
+
+        background: white;
+      }
+
+      /* =========================================================
+       AUTHOR
+       ========================================================= */
+
+      .author-panel {
+        position: relative;
+
+        overflow: hidden;
+
+        margin-top: 90px;
+
+        padding: 42px;
+
+        border-radius: var(--radius-lg);
+
+        color: white;
+
+        background:
+          radial-gradient(
+            circle at 88% 8%,
+            rgba(48, 168, 255, 0.32),
+            transparent 27%
+          ),
+          linear-gradient(120deg, var(--navy-950), var(--navy-800));
+
+        box-shadow: 0 24px 70px rgba(3, 34, 57, 0.18);
+      }
+
+      .author-panel::after {
+        content: "";
+
+        position: absolute;
+
+        width: 650px;
+        height: 180px;
+
+        right: -230px;
+        bottom: -130px;
+
+        border-radius: 50%;
+
+        border-top: 1px solid rgba(73, 192, 255, 0.48);
+      }
+
+      .author-layout {
+        position: relative;
+        z-index: 2;
+
+        display: grid;
+
+        grid-template-columns: 165px minmax(0, 1fr) auto;
+
+        gap: 32px;
+
+        align-items: center;
+      }
+
+      .author-photo img {
+        width: 165px;
+        height: 205px;
+
+        object-fit: cover;
+        object-position: center 20%;
+
+        border-radius: 22px;
+
+        border: 1px solid rgba(110, 211, 255, 0.35);
+
+        box-shadow:
+          0 18px 42px rgba(0, 0, 0, 0.2),
+          0 0 0 5px rgba(81, 191, 255, 0.05);
+      }
+
+      .author-label {
+        color: var(--blue-300);
+
+        font-size: 0.69rem;
+        font-weight: 850;
+
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+
+      .author-content h2 {
+        margin: 7px 0 13px;
+
+        font-size: clamp(1.8rem, 4vw, 2.65rem);
+
+        line-height: 1.05;
+
+        letter-spacing: -0.045em;
+      }
+
+      .author-content p {
+        max-width: 690px;
+
+        margin: 0;
+
+        color: #c8dfed;
+      }
+
+      .author-content strong {
+        color: white;
+      }
+
+      .author-actions {
+        display: flex;
+        flex-direction: column;
+
+        gap: 11px;
+
+        min-width: 176px;
+      }
+
+      .author-button {
+        padding: 11px 17px;
+
+        border-radius: 999px;
+
+        text-align: center;
+
+        text-decoration: none;
+
+        font-size: 0.82rem;
+        font-weight: 850;
+      }
+
+      .author-button.primary {
+        color: white;
+
+        background: linear-gradient(135deg, var(--blue-400), var(--blue-600));
+
+        box-shadow: 0 10px 28px rgba(16, 148, 239, 0.22);
+      }
+
+      .author-button.secondary {
+        color: #d7effc;
+
+        border: 1px solid rgba(134, 215, 255, 0.25);
+
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      /* =========================================================
+       EDUCATION NOTE
+       ========================================================= */
+
+      .education-note {
+        max-width: 900px;
+
+        margin: 46px auto 0;
+
+        padding: 20px 24px;
+
+        text-align: center;
+
+        color: #647b8c;
+
+        font-size: 0.81rem;
+
+        background: #f8fbfd;
+
+        border: 1px solid #dce9f2;
+
+        border-radius: var(--radius-sm);
+      }
+
+      /* =========================================================
+       FOOTER
+       ========================================================= */
+
+      .site-footer {
+        padding: 40px 20px;
+
+        text-align: center;
+
+        color: #698196;
+
+        font-size: 0.82rem;
+
+        border-top: 1px solid var(--line);
+      }
+
+      .site-footer a {
+        color: var(--blue-600);
+
+        text-decoration: none;
+
+        font-weight: 800;
+      }
+
+      .footer-line {
+        margin-top: 6px;
+
+        color: #8ba0b1;
+
+        font-size: 0.74rem;
+
+        letter-spacing: 0.04em;
+      }
+
+      /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+      @media (max-width: 980px) {
+        .article-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .author-layout {
+          grid-template-columns: 135px 1fr;
+        }
+
+        .author-photo img {
+          width: 135px;
+          height: 170px;
+        }
+
+        .author-actions {
+          grid-column: 1 / -1;
+
+          padding-left: 167px;
+
+          flex-direction: row;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .nav-links a:not(.nav-button) {
+          display: none;
+        }
+
+        .hero-shell {
+          padding: 60px 0 100px;
+        }
+
+        .topic-tabs {
+          grid-template-columns: 1fr;
+        }
+
+        .view-all-tab {
+          grid-column: auto;
+        }
+
+        .section-heading {
+          display: block;
+        }
+
+        .filter-status {
+          display: inline-block;
+
+          margin-top: 13px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .brand-name {
+          font-size: 1.15rem;
+        }
+
+        .brand-tagline {
+          font-size: 0.55rem;
+        }
+
+        .nav-button {
+          padding: 8px 12px;
+
+          font-size: 0.76rem !important;
+        }
+
+        .article-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .article-card {
+          min-height: 210px;
+        }
+
+        .author-panel {
+          padding: 32px 25px;
+        }
+
+        .author-layout {
+          grid-template-columns: 1fr;
+
+          text-align: center;
+        }
+
+        .author-photo {
+          display: flex;
+          justify-content: center;
+        }
+
+        .author-photo img {
+          width: 145px;
+          height: 178px;
+        }
+
+        .author-content p {
+          margin-inline: auto;
+        }
+
+        .author-actions {
+          grid-column: auto;
+
+          padding-left: 0;
+
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =======================================================
+       HEADER
+       ======================================================= -->
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="./index.html">
+          <span class="brand-name"> FlowTherapy <span>Library</span> </span>
+
+          <span class="brand-tagline">
+            Prepare • Recover • Learn • Continue
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#library"> FlowNotes </a>
+
+          <a href="#about"> About </a>
+
+          <a class="nav-button" href="https://linktr.ee/flow.therapy">
+            FlowTherapy →
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =======================================================
+     HERO
+     ======================================================= -->
+
+    <section class="hero">
+      <div class="hero-shell">
+        <div class="hero-kicker">Wellness Education by FlowTherapy</div>
+
+        <h1>
+          Discover the Rhythm
+          <span>of Relaxation.</span>
+        </h1>
+
+        <p class="rhythm-copy">
+          <strong>Move Better. Feel Better. Live Better.</strong>
+        </p>
+
+        <p class="hero-description">
+          Practical education about therapeutic massage, assisted stretching,
+          movement, recovery and everyday wellness.
+        </p>
+      </div>
+    </section>
+
+    <!-- =======================================================
+     SEARCH
+     ======================================================= -->
+
+    <div class="search-panel">
+      <div class="search-inner">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+
+        <input
+          id="articleSearch"
+          type="search"
+          placeholder="Search the FlowTherapy Library..."
+          aria-label="Search FlowTherapy Library"
+        />
+
+        <span class="search-count" id="searchCount">31 articles</span>
+      </div>
+    </div>
+
+    <!-- =======================================================
+       MAIN
+       ======================================================= -->
+
+    <main>
+      <!-- LIBRARY INTRO -->
+
+      <section class="library-intro">
+        <div class="section-kicker">Have a Bodywork Question?</div>
+
+        <h2>What would you like to understand better?</h2>
+
+        <p>Choose a topic or search the entire FlowTherapy Library.</p>
+      </section>
+
+      <!-- =====================================================
+         CATEGORIES
+         ===================================================== -->
+
+      <section class="topic-navigation" aria-label="Browse FlowNotes by topic">
+        <div class="topic-tabs">
+          <button
+            class="topic-tab active"
+            type="button"
+            data-filter="Massage & Bodywork"
+          >
+            <span class="topic-symbol"> ◌ </span>
+
+            <span>
+              <strong> Massage & Bodywork </strong>
+
+              <small> Pressure • Sessions • Bodywork </small>
+            </span>
+          </button>
+
+          <button
+            class="topic-tab"
+            type="button"
+            data-filter="Movement & Mobility"
+          >
+            <span class="topic-symbol"> ↗ </span>
+
+            <span>
+              <strong> Movement & Mobility </strong>
+
+              <small> Stretching • Mobility • Posture </small>
+            </span>
+          </button>
+
+          <button class="topic-tab" type="button" data-filter="Pain & Recovery">
+            <span class="topic-symbol"> + </span>
+
+            <span>
+              <strong> Pain & Recovery </strong>
+
+              <small> Soreness • Recovery • Activity </small>
+            </span>
+          </button>
+
+          <button
+            class="topic-tab"
+            type="button"
+            data-filter="Stress & Wellness"
+          >
+            <span class="topic-symbol"> ≈ </span>
+
+            <span>
+              <strong> Stress & Wellness </strong>
+
+              <small> Stress • Sleep • Relaxation </small>
+            </span>
+          </button>
+
+          <button
+            class="topic-tab view-all-tab"
+            type="button"
+            data-filter="All"
+          >
+            View All FlowNotes
+          </button>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         FLOWNOTES
+         Cards are generated below with JavaScript.
+         ===================================================== -->
+
+      <section class="library-section" id="library">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Explore</div>
+
+            <h2>FlowNotes</h2>
+
+            <p>
+              Practical wellness education written to help you better understand
+              your body and your care.
+            </p>
+          </div>
+
+          <span class="filter-status" id="filterStatus">
+            Massage & Bodywork
+          </span>
+        </div>
+
+        <div class="article-grid" id="articleGrid"></div>
+
+        <div class="no-results" id="noResults">
+          <strong> No FlowNotes matched your search. </strong>
+
+          <br />
+
+          Try another word such as massage, sleep, hip, stress, mobility or
+          recovery.
+        </div>
+      </section>
+
+      <!-- =====================================================
+         AUTHOR
+         ===================================================== -->
+
+      <section class="author-panel" id="about">
+        <div class="author-layout">
+          <div class="author-photo">
+            <img
+              src="assets/brandy-flowtherapist.png"
+              alt="Brandy Hennigan, LMT"
+            />
+          </div>
+
+          <div class="author-content">
+            <span class="author-label"> The Therapist Behind the Library </span>
+
+            <h2>Brandy Hennigan, LMT</h2>
+
+            <p>
+              Brandy is a licensed massage therapist and founder of
+              <strong>FlowTherapy Massage Co.</strong>
+
+              The FlowTherapy Library was created to make information about
+              massage, movement, recovery and everyday body mechanics easier to
+              understand and more practical to use.
+            </p>
+          </div>
+
+          <div class="author-actions">
+            <a
+              class="author-button primary"
+              href="https://linktr.ee/flow.therapy"
+            >
+              Return to FlowTherapy
+            </a>
+
+            <a class="author-button secondary" href="#library">
+              Explore FlowNotes
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION DISCLAIMER -->
+
+      <div class="education-note">
+        FlowTherapy Library content is intended for general wellness education
+        and should not replace individualized medical advice, diagnosis,
+        treatment or emergency care.
+      </div>
+    </main>
+
+    <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+
+    <footer class="site-footer">
+      © 2026 FlowTherapy Massage Co. &nbsp;•&nbsp;
+
+      <a href="https://linktr.ee/flow.therapy"> Return to FlowTherapy </a>
+
+      <div class="footer-line">Personalized. Therapeutic. Restorative.</div>
+    </footer>
+
+    <!-- =======================================================
+       ARTICLE DATA + SEARCH / FILTERING
+       ======================================================= -->
+
+    <script>
+      /* =======================================================
+       FLOWNOTE LIBRARY
+
+       To add an article later:
+       copy one object and change:
+       title
+       category
+       description
+       href
+       ======================================================= */
+
+      const articles = [
+        /* =====================================================
+         MASSAGE & BODYWORK
+         ===================================================== */
+
+        {
+          title: "Deep Pressure vs. Deep Tissue",
+          category: "Massage & Bodywork",
+          description:
+            "Two commonly used massage terms that do not necessarily mean the same thing.",
+          href: "articles/deep-pressure-vs-deep-tissue.html",
+        },
+
+        {
+          title: "The Truth About Muscle Knots",
+          category: "Massage & Bodywork",
+          description:
+            "A practical look at what people often mean when they describe muscles as tight, tender or knotted.",
+          href: "articles/the-truth-about-muscle-knots.html",
+        },
+
+        {
+          title: "Massage Soreness: What's Normal?",
+          category: "Massage & Bodywork",
+          description:
+            "Understand common post-massage soreness and when symptoms deserve additional attention.",
+          href: "articles/massage-soreness-what-is-normal.html",
+        },
+
+        {
+          title: "How to Communicate With Your Massage Therapist",
+          category: "Massage & Bodywork",
+          description:
+            "Pressure, comfort, goals and boundaries are all appropriate parts of a massage session.",
+          href: "articles/how-to-communicate-with-your-massage-therapist.html",
+        },
+
+        {
+          title: "How Often Should You Get a Massage?",
+          category: "Massage & Bodywork",
+          description:
+            "Frequency depends on your goals, activity, comfort, budget and how your body responds.",
+          href: "articles/how-often-should-you-get-a-massage.html",
+        },
+
+        {
+          title: "What to Expect During Your First Massage",
+          category: "Massage & Bodywork",
+          description:
+            "A straightforward guide to communication, comfort, draping and what happens during a session.",
+          href: "articles/what-to-expect-during-your-first-massage.html",
+        },
+
+        {
+          title: "Why More Pressure Isn't Always Better",
+          category: "Massage & Bodywork",
+          description:
+            "Effective therapeutic massage is not simply a contest to see how much pressure you can tolerate.",
+          href: "articles/why-more-pressure-isnt-always-better.html",
+        },
+
+        {
+          title: "Can Massage Help Posture?",
+          category: "Massage & Bodywork",
+          description:
+            "Explore what massage may and may not contribute to posture, comfort and movement.",
+          href: "articles/can-massage-help-posture.html",
+        },
+
+        /* =====================================================
+         MOVEMENT & MOBILITY
+         ===================================================== */
+
+        {
+          title: "Flexibility vs. Mobility",
+          category: "Movement & Mobility",
+          description:
+            "Understand the difference between available range of motion and being able to control it.",
+          href: "articles/flexibility-vs-mobility.html",
+        },
+
+        {
+          title: "Morning Mobility Routine",
+          category: "Movement & Mobility",
+          description:
+            "Simple movements for starting your day with less stiffness and more comfortable motion.",
+          href: "articles/morning-mobility-routine.html",
+        },
+
+        {
+          title: "Everyday Mobility Exercises",
+          category: "Movement & Mobility",
+          description:
+            "Add useful movement into ordinary routines without turning everything into a workout.",
+          href: "articles/everyday-mobility-exercises.html",
+        },
+
+        {
+          title: "Stretching Before or After Exercise?",
+          category: "Movement & Mobility",
+          description:
+            "Timing matters, but so does the type of stretching and what you are preparing your body to do.",
+          href: "articles/stretching-before-or-after-exercise.html",
+        },
+
+        {
+          title: "Common Stretching Mistakes",
+          category: "Movement & Mobility",
+          description:
+            "Stretching harder is not necessarily stretching better. Learn what often gets overlooked.",
+          href: "articles/common-stretching-mistakes.html",
+        },
+
+        {
+          title: "Why Sitting All Day Feels So Bad",
+          category: "Movement & Mobility",
+          description:
+            "Prolonged sitting can leave the body feeling stiff, tired and uncomfortable even without injury.",
+          href: "articles/why-sitting-all-day-feels-so-bad.html",
+        },
+
+        {
+          title: "Why Walking Is Underrated",
+          category: "Movement & Mobility",
+          description:
+            "One of the simplest forms of movement is also one of the easiest to overlook.",
+          href: "articles/why-walking-is-underrated.html",
+        },
+
+        {
+          title: "Improving Hip Mobility",
+          category: "Movement & Mobility",
+          description:
+            "Explore practical ways to support comfortable hip movement without forcing range.",
+          href: "articles/improving-hip-mobility.html",
+        },
+
+        {
+          title: "Why Your Hips Affect Your Back",
+          category: "Movement & Mobility",
+          description:
+            "Learn how hip movement and everyday mechanics may influence how your lower back feels.",
+          href: "articles/why-your-hips-affect-your-back.html",
+        },
+
+        {
+          title: "Why Desk Work Can Cause Neck and Shoulder Tension",
+          category: "Movement & Mobility",
+          description:
+            "Explore why long periods of desk work can leave the neck and shoulders feeling tired and tense.",
+          href: "articles/why-desk-work-can-cause-neck-and-shoulder-tension.html",
+        },
+
+        /* =====================================================
+         PAIN & RECOVERY
+         ===================================================== */
+
+        {
+          title: "Active Recovery vs. Rest Days",
+          category: "Pain & Recovery",
+          description:
+            "Understand when gentle movement may make sense and when actual rest deserves priority.",
+          href: "articles/active-recovery-vs-rest-days.html",
+        },
+
+        {
+          title: "Heat or Ice: Which Should You Use?",
+          category: "Pain & Recovery",
+          description:
+            "A practical introduction to choosing between heat and cold for common everyday discomfort.",
+          href: "articles/heat-or-ice-which-should-you-use.html",
+        },
+
+        {
+          title: "Recovery After Travel",
+          category: "Pain & Recovery",
+          description:
+            "Help your body transition after long periods of driving, flying or sitting.",
+          href: "articles/recovery-after-travel.html",
+        },
+
+        {
+          title: "Understanding Delayed-Onset Muscle Soreness",
+          category: "Pain & Recovery",
+          description:
+            "Why soreness sometimes appears after activity rather than immediately afterward.",
+          href: "articles/understanding-delayed-onset-muscle-soreness.html",
+        },
+
+        {
+          title: "Massage for Runners",
+          category: "Pain & Recovery",
+          description:
+            "Where massage may fit into a broader recovery routine for recreational and regular runners.",
+          href: "articles/massage-for-runners.html",
+        },
+
+        {
+          title: "Foam Rolling 101",
+          category: "Pain & Recovery",
+          description:
+            "A simple introduction to foam rolling, pressure, pacing and reasonable expectations.",
+          href: "articles/foam-rolling-101.html",
+        },
+
+        {
+          title: "Foam Rolling: Helpful or Harmful?",
+          category: "Pain & Recovery",
+          description:
+            "More pressure is not automatically better. Learn how to approach foam rolling more sensibly.",
+          href: "articles/foam-rolling-helpful-or-harmful.html",
+        },
+
+        {
+          title: "Joint Health and Healthy Movement",
+          category: "Pain & Recovery",
+          description:
+            "A practical introduction to movement habits that support comfortable everyday joint function.",
+          href: "articles/joint-health-and-healthy-movement.html",
+        },
+
+        /* =====================================================
+         STRESS & WELLNESS
+         ===================================================== */
+
+        {
+          title: "Can Massage Improve Sleep?",
+          category: "Stress & Wellness",
+          description:
+            "Explore how relaxation, physical comfort, stress and evening habits may support more restful sleep.",
+          href: "articles/can-massage-improve-sleep.html",
+        },
+
+        {
+          title: "The Science of Relaxation",
+          category: "Stress & Wellness",
+          description:
+            "A simple look at what may change when the body shifts away from constant demand and toward recovery.",
+          href: "articles/the-science-of-relaxation.html",
+        },
+
+        {
+          title: "Why Stress Causes Muscle Tension",
+          category: "Stress & Wellness",
+          description:
+            "Learn how stress can influence breathing, movement and the way the body carries tension.",
+          href: "articles/why-stress-causes-muscle-tension.html",
+        },
+
+        {
+          title: "Breathing and Muscle Tension",
+          category: "Stress & Wellness",
+          description:
+            "Explore how breathing patterns, stress and muscular tension can interact.",
+          href: "articles/breathing-and-muscle-tension.html",
+        },
+
+        {
+          title: "Sleep and Muscle Recovery",
+          category: "Stress & Wellness",
+          description:
+            "Sleep supports more than energy. It also plays an important role in recovery and physical readiness.",
+          href: "articles/sleep-and-muscle-recovery.html",
+        },
+
+        {
+          title: "Creating a Personal Wellness Routine",
+          category: "Stress & Wellness",
+          description:
+            "Build routines around what is realistic, useful and sustainable rather than perfect.",
+          href: "articles/creating-a-personal-wellness-routine.html",
+        },
+
+        {
+          title: "Self-Care Without the Guilt",
+          category: "Stress & Wellness",
+          description:
+            "Caring for yourself does not require turning wellness into another obligation to perform perfectly.",
+          href: "articles/self-care-without-the-guilt.html",
+        },
+
+        {
+          title: "Why You Hold Stress in Your Jaw",
+          category: "Stress & Wellness",
+          description:
+            "Stress can show up in places we do not consciously realize we are holding tension.",
+          href: "articles/why-you-hold-stress-in-your-jaw.html",
+        },
+
+        {
+          title: "When Stress Shows Up as Physical Pain",
+          category: "Stress & Wellness",
+          description:
+            "Emotional and physical experiences are not always as separate as they may appear.",
+          href: "articles/when-stress-shows-up-as-physical-pain.html",
+        },
+
+        {
+          title: "Hydration and Muscle Health",
+          category: "Stress & Wellness",
+          description:
+            "A practical look at hydration, everyday wellness and what water can and cannot do for muscle comfort.",
+          href: "articles/hydration-and-muscle-health.html",
+        },
+      ];
+
+      /* =======================================================
+       PAGE ELEMENTS
+       ======================================================= */
+
+      const articleGrid = document.getElementById("articleGrid");
+
+      const searchInput = document.getElementById("articleSearch");
+
+      const topicTabs = Array.from(document.querySelectorAll(".topic-tab"));
+
+      const filterStatus = document.getElementById("filterStatus");
+
+      const searchCount = document.getElementById("searchCount");
+
+      const noResults = document.getElementById("noResults");
+
+      let activeCategory = "Massage & Bodywork";
+
+      /* =======================================================
+       CREATE ARTICLE CARD
+       ======================================================= */
+
+      function createArticleCard(article) {
+        const card = document.createElement("a");
+
+        card.className = "article-card";
+
+        card.href = article.href;
+
+        card.dataset.category = article.category;
+
+        card.innerHTML = `
+
+        <span class="article-category">
+          ${article.category}
+        </span>
+
+        <h3>
+          ${article.title}
+        </h3>
+
+        <p>
+          ${article.description}
+        </p>
+
+        <span class="article-read">
+          Read FlowNote <span>→</span>
+        </span>
+
+      `;
+
+        return card;
+      }
+
+      /* =======================================================
+   FILTER + RENDER
+   ======================================================= */
+
+      function renderArticles() {
+        const query = searchInput.value.toLowerCase().trim();
+
+        const isSearching = query.length > 0;
+
+        let visibleArticles;
+
+        if (isSearching) {
+          visibleArticles = articles.filter((article) => {
+            const searchable = `${article.title}
+         ${article.category}
+         ${article.description}`.toLowerCase();
+
+            return searchable.includes(query);
+          });
+        } else if (activeCategory === "All") {
+          visibleArticles = articles;
+        } else {
+          visibleArticles = articles.filter(
+            (article) => article.category === activeCategory,
+          );
+        }
+
+        articleGrid.innerHTML = "";
+
+        visibleArticles.forEach((article) => {
+          articleGrid.appendChild(createArticleCard(article));
+        });
+
+        noResults.style.display =
+          visibleArticles.length === 0 ? "block" : "none";
+
+        /* SEARCH BAR COUNTER
+     Always shows the total number of FlowNotes
+     unless the visitor is actively searching.
+  */
+
+        if (isSearching) {
+          searchCount.textContent = `${visibleArticles.length} found`;
+
+          filterStatus.textContent = `Search Results · ${visibleArticles.length} FlowNotes`;
+        } else {
+          searchCount.textContent = `${articles.length} FlowNotes`;
+
+          /* RESULTS BADGE
+       Shows which category is open + how many FlowNotes it contains.
+    */
+
+          if (activeCategory === "All") {
+            filterStatus.textContent = `All FlowNotes · ${visibleArticles.length}`;
+          } else {
+            filterStatus.textContent = `${activeCategory} · ${visibleArticles.length} FlowNotes`;
+          }
+        }
+      }
+      /* =======================================================
+       SEARCH
+       Searches across ALL categories automatically
+       ======================================================= */
+
+      searchInput.addEventListener("input", renderArticles);
+
+      /* =======================================================
+       CATEGORY TABS
+       ======================================================= */
+
+      topicTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          activeCategory = this.dataset.filter;
+
+          searchInput.value = "";
+
+          topicTabs.forEach((item) => {
+            item.classList.toggle("active", item === this);
+          });
+
+          renderArticles();
+
+          document.getElementById("library").scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      });
+
+      /* =======================================================
+       INITIAL LOAD
+       ======================================================= */
+
+      renderArticles();
+    </script>
+  </body>
+</html>

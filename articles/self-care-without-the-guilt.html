@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Self-Care Without the Guilt</title>
+
+    <meta
+      name="description"
+      content="Learn how to approach self-care without guilt, perfectionism, or pressure—and how to build realistic support around rest, healthcare, movement, boundaries, and everyday needs."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .care-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+        gap: 22px;
+        margin: 36px 0 42px;
+      }
+
+      .care-opening-main,
+      .care-opening-side {
+        padding: 30px;
+        border-radius: 18px;
+      }
+
+      .care-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+
+      .care-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .care-opening h2,
+      .care-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .care-opening p:last-child {
+        margin-bottom: 0;
+      }
+
+      .guilt-loop {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .guilt-loop > h2,
+      .guilt-loop > p {
+        text-align: center;
+      }
+
+      .guilt-loop > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .guilt-loop > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .guilt-loop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        max-width: 760px;
+        margin: 30px auto 0;
+      }
+
+      .guilt-loop-step {
+        min-height: auto;
+        padding: 28px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+
+      .guilt-loop-step:not(:last-child)::after {
+        display: none;
+      }
+
+      .guilt-loop-step span {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .guilt-loop-step h3 {
+        margin: 0 0 10px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .guilt-loop-step p {
+        margin: 0;
+      }
+
+      .care-spectrum {
+        margin: 42px 0;
+      }
+
+      .care-spectrum > h2,
+      .care-spectrum > p {
+        text-align: center;
+      }
+
+      .care-spectrum > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .care-spectrum-bar {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        overflow: hidden;
+        margin-top: 26px;
+        border: 1px solid #cfe2f5;
+        border-radius: 16px;
+      }
+
+      .care-spectrum-column {
+        padding: 26px;
+        background: #ffffff;
+      }
+
+      .care-spectrum-column:nth-child(2) {
+        border-right: 1px solid #cfe2f5;
+        border-left: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+
+      .care-spectrum-column h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .care-spectrum-column ul {
+        margin-bottom: 0;
+        padding-left: 1.2rem;
+      }
+
+      .care-spectrum-column li {
+        margin-bottom: 10px;
+      }
+
+      .permission-section {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+        color: #2f4054;
+      }
+
+      .permission-section h2 {
+        margin-top: 0;
+        color: #1677c8;
+        text-align: center;
+      }
+      .permission-section > p {
+        text-align: center;
+      }
+
+      .permission-section h2 {
+        margin-top: 0;
+        color: #ffffff;
+      }
+
+      .permission-section > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+        color: #4f6275;
+        text-align: center;
+      }
+
+      .permission-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 30px;
+      }
+
+      .permission-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+        box-shadow: 0 6px 18px rgba(20, 55, 85, 0.05);
+      }
+
+      .permission-card h3 {
+        margin: 0 0 7px;
+        color: #1677c8;
+      }
+
+      .permission-card p {
+        margin: 0;
+        color: #2f4054;
+      }
+
+      .care-menu {
+        margin: 42px 0;
+      }
+
+      .care-menu > h2,
+      .care-menu > p {
+        text-align: center;
+      }
+
+      .care-menu > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .care-menu-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .care-menu-row {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .care-menu-label {
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .care-menu-copy {
+        padding: 22px 24px;
+      }
+
+      .care-menu-copy p {
+        margin: 0;
+      }
+
+      .tiny-care {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .tiny-care > h2,
+      .tiny-care > p {
+        text-align: center;
+      }
+
+      .tiny-care > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .tiny-care > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .tiny-care-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 26px;
+      }
+
+      .tiny-care-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .tiny-care-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .tiny-care-card p {
+        margin-bottom: 0;
+      }
+
+      .care-boundaries {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .care-boundaries h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .care-boundaries p:last-child {
+        margin-bottom: 0;
+      }
+
+      .care-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .care-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .care-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .care-related {
+        margin: 38px 0;
+      }
+
+      .care-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .care-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .care-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .care-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .care-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .care-related-card p {
+        flex: 1;
+      }
+
+      .care-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .care-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .care-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .care-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 900px) {
+        .guilt-loop-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .guilt-loop-step::after {
+          display: none;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .care-opening,
+        .care-related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .care-spectrum-bar,
+        .permission-grid,
+        .tiny-care-grid,
+        .care-menu-row,
+        .guilt-loop-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .care-spectrum-column:nth-child(2) {
+          border: 0;
+          border-top: 1px solid #cfe2f5;
+          border-bottom: 1px solid #cfe2f5;
+        }
+
+        .care-menu-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+
+        .care-opening-main,
+        .care-opening-side,
+        .guilt-loop,
+        .permission-section,
+        .tiny-care,
+        .care-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+<body data-article-id="self-care-without-the-guilt">
+    <!-- Shared header generated by site-layout.js -->
+<div id="site-header"></div>
+
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/stress-wellness.html">
+          ← Back to Stress &amp; Wellness FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Stress &amp; Wellness</div>
+
+          <h1>Self-Care Without the Guilt</h1>
+
+          <p class="article-subtitle">
+            How to care for yourself without turning rest, boundaries, health,
+            or recovery into another standard you have to perform perfectly.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Self-care is often described as something simple: take a break,
+            exercise, meditate, drink water, or schedule time for yourself.
+          </p>
+
+          <p>
+            The advice may be reasonable, but it can feel impossible when you
+            are working, caregiving, managing pain, living with limited energy,
+            or trying to keep up financially.
+          </p>
+
+          <p>
+            When self-care becomes another obligation, guilt can replace the
+            relief it was supposed to provide.
+          </p>
+        </div>
+
+        <section class="care-opening">
+          <div class="care-opening-main">
+            <h2>Self-Care Is Support, Not a Reward</h2>
+
+            <p>
+              You do not have to finish every task, meet every need, or reach
+              complete exhaustion before you are allowed to rest.
+            </p>
+
+            <p>
+              Care can be preventive. It can happen before the crisis, before
+              the pain becomes severe, and before your body forces you to stop.
+            </p>
+          </div>
+
+          <aside class="care-opening-side">
+            <h3>A More Useful Question</h3>
+
+            <p>
+              Instead of asking, “Have I earned this?” ask, “What support would
+              make the next part of my day more manageable?”
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Why Does Self-Care Create Guilt?</h2>
+
+          <p>
+            Guilt may appear when rest conflicts with personal expectations,
+            family roles, work demands, cultural messages, financial pressure,
+            or the belief that productivity determines worth.
+          </p>
+
+          <p>
+            Caregivers may feel guilty for focusing on themselves. Workers may
+            feel guilty for using time off. People living with chronic illness
+            may feel guilty for needing more rest than others expect.
+          </p>
+
+          <p>
+            These reactions are understandable. They do not mean the care is
+            unnecessary.
+          </p>
+        </section>
+
+        <section class="guilt-loop">
+          <h2>The Self-Care Guilt Loop</h2>
+
+          <p>
+            Guilt can create a cycle in which support is delayed until the need
+            becomes much harder to ignore.
+          </p>
+
+          <div class="guilt-loop-grid">
+            <article class="guilt-loop-step">
+              <span>Stage One</span>
+              <h3>A Need Appears</h3>
+              <p>
+                You feel tired, overwhelmed, tense, hungry, emotionally drained,
+                or physically uncomfortable.
+              </p>
+            </article>
+
+            <article class="guilt-loop-step">
+              <span>Stage Two</span>
+              <h3>The Need Is Minimized</h3>
+              <p>
+                You tell yourself that other people have it worse or that you
+                should be able to keep going.
+              </p>
+            </article>
+
+            <article class="guilt-loop-step">
+              <span>Stage Three</span>
+              <h3>Care Is Delayed</h3>
+              <p>
+                Rest, food, healthcare, movement, help, or boundaries are pushed
+                further down the list.
+              </p>
+            </article>
+
+            <article class="guilt-loop-step">
+              <span>Stage Four</span>
+              <h3>The Need Becomes Urgent</h3>
+              <p>
+                Exhaustion, resentment, pain, illness, or emotional distress may
+                become more difficult to manage.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="care-spectrum">
+          <h2>Self-Care Exists on a Spectrum</h2>
+
+          <p>
+            Self-care is not limited to spa services, expensive purchases, or
+            long periods of free time.
+          </p>
+
+          <div class="care-spectrum-bar">
+            <article class="care-spectrum-column">
+              <h3>Essential Care</h3>
+              <ul>
+                <li>Food and hydration</li>
+                <li>Medication and healthcare</li>
+                <li>Sleep and physical safety</li>
+                <li>Basic hygiene</li>
+                <li>Asking for urgent help</li>
+              </ul>
+            </article>
+
+            <article class="care-spectrum-column">
+              <h3>Maintenance Care</h3>
+              <ul>
+                <li>Regular movement</li>
+                <li>Preventive appointments</li>
+                <li>Stress-management practices</li>
+                <li>Boundaries and planning</li>
+                <li>Massage or rehabilitative care</li>
+              </ul>
+            </article>
+
+            <article class="care-spectrum-column">
+              <h3>Restorative Care</h3>
+              <ul>
+                <li>Hobbies and creativity</li>
+                <li>Time outdoors</li>
+                <li>Supportive relationships</li>
+                <li>Quiet or enjoyable experiences</li>
+                <li>Intentional rest</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="permission-section">
+          <h2>Permission You Do Not Have to Earn</h2>
+
+          <p>
+            These statements are not rules. They are reminders that care can be
+            practical, flexible, and human.
+          </p>
+
+          <div class="permission-grid">
+            <article class="permission-card">
+              <h3>You May Rest Before Everything Is Finished</h3>
+              <p>
+                Most task lists will refill. Your body still needs recovery.
+              </p>
+            </article>
+
+            <article class="permission-card">
+              <h3>You May Choose the Easier Version</h3>
+              <p>
+                A simple meal, short walk, or smaller goal may be the most
+                useful choice today.
+              </p>
+            </article>
+
+            <article class="permission-card">
+              <h3>You May Ask for Help</h3>
+              <p>
+                Support does not make you incapable. It can make the workload
+                more sustainable.
+              </p>
+            </article>
+
+            <article class="permission-card">
+              <h3>You May Change Your Mind</h3>
+              <p>
+                A plan that no longer fits can be adjusted without becoming a
+                failure.
+              </p>
+            </article>
+
+            <article class="permission-card">
+              <h3>You May Protect Your Time</h3>
+              <p>
+                Boundaries can preserve energy for health, family, work, and
+                responsibilities that matter most.
+              </p>
+            </article>
+
+            <article class="permission-card">
+              <h3>You May Enjoy Care Without Justifying It</h3>
+              <p>
+                Pleasure, comfort, connection, and rest can be worthwhile on
+                their own.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="care-menu">
+          <h2>Choose Care Based on the Need</h2>
+
+          <p>
+            Different needs require different kinds of support. A relaxing
+            activity cannot replace food, sleep, healthcare, or a necessary
+            boundary.
+          </p>
+
+          <div class="care-menu-list">
+            <article class="care-menu-row">
+              <div class="care-menu-label">When You Are Tired</div>
+              <div class="care-menu-copy">
+                <p>
+                  Consider sleep, a shorter task list, reduced stimulation,
+                  practical help, or a lighter version of planned activity.
+                </p>
+              </div>
+            </article>
+
+            <article class="care-menu-row">
+              <div class="care-menu-label">When You Are Overwhelmed</div>
+              <div class="care-menu-copy">
+                <p>
+                  Choose one next step, write down what can wait, reduce
+                  multitasking, or ask someone to share the load.
+                </p>
+              </div>
+            </article>
+
+            <article class="care-menu-row">
+              <div class="care-menu-label">When You Feel Disconnected</div>
+              <div class="care-menu-copy">
+                <p>
+                  Reach out to a trusted person, spend time in community, or
+                  schedule support with a counselor or healthcare provider.
+                </p>
+              </div>
+            </article>
+
+            <article class="care-menu-row">
+              <div class="care-menu-label">When Your Body Feels Tense</div>
+              <div class="care-menu-copy">
+                <p>
+                  Change positions, move comfortably, use heat when appropriate,
+                  rest, or consider massage or rehabilitative care.
+                </p>
+              </div>
+            </article>
+
+            <article class="care-menu-row">
+              <div class="care-menu-label">When Symptoms Persist</div>
+              <div class="care-menu-copy">
+                <p>
+                  Seek appropriate medical, dental, mental-health, or
+                  rehabilitative care instead of relying only on self-care.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="tiny-care">
+          <h2>Small Care Still Counts</h2>
+
+          <p>
+            On difficult days, reduce the size of the action without dismissing
+            the need.
+          </p>
+
+          <div class="tiny-care-grid">
+            <article class="tiny-care-card">
+              <h3>One-Minute Care</h3>
+              <p>
+                Unclench the jaw, drink water, step outside, adjust your chair,
+                or send one important message.
+              </p>
+            </article>
+
+            <article class="tiny-care-card">
+              <h3>Five-Minute Care</h3>
+              <p>
+                Walk, stretch comfortably, prepare a snack, sit quietly, or make
+                an appointment.
+              </p>
+            </article>
+
+            <article class="tiny-care-card">
+              <h3>Fifteen-Minute Care</h3>
+              <p>
+                Take a short shower, prepare a simple meal, call someone, lie
+                down, or complete a brief movement session.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="care-boundaries">
+          <h2>Boundaries Are a Form of Self-Care</h2>
+
+          <p>
+            Self-care is not only what you add. It may also involve what you
+            reduce, postpone, delegate, decline, or stop doing.
+          </p>
+
+          <p>
+            A boundary can be as simple as silencing notifications, declining an
+            optional commitment, ending a conversation, taking a lunch break, or
+            asking for clearer expectations at work.
+          </p>
+
+          <p>
+            Boundaries cannot solve every structural problem, but they may help
+            protect limited time and energy.
+          </p>
+        </section>
+
+        <section>
+          <h2>Where Does Massage Fit?</h2>
+
+          <p>
+            Massage can be one part of self-care when it supports comfort,
+            recovery, body awareness, stress management, or consistent
+            therapeutic goals.
+          </p>
+
+          <p>
+            It should not become another obligation or financial pressure. The
+            frequency and type of care should fit your needs, budget, schedule,
+            and response to treatment.
+          </p>
+
+          <p>
+            Massage also does not replace medical care, sleep, food, movement,
+            boundaries, mental-health support, or changes to an unsafe or
+            unsustainable situation.
+          </p>
+        </section>
+
+        <section class="care-warning">
+          <h2>Important Note</h2>
+
+          <p>
+            Self-care is not a substitute for medical or mental-health
+            treatment. Seek professional support when stress, anxiety,
+            depression, trauma symptoms, substance use, sleep problems, pain, or
+            other symptoms are persistent, severe, worsening, or interfering
+            with daily life. If you are in immediate danger or may harm yourself
+            or someone else, contact emergency services or an appropriate crisis
+            resource in your area.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>Self-care should not become another performance.</p>
+
+          <p>
+            The goal is not to complete the perfect routine. The goal is to
+            notice what you need, respond earlier when possible, and choose
+            support that fits your real life.
+          </p>
+
+          <p>Care can be quiet, practical, imperfect, and still meaningful.</p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="care-related">
+          <h2>Continue Reading</h2>
+
+          <div class="care-related-grid">
+            <a
+              href="creating-a-personal-wellness-routine.html"
+              class="care-related-card"
+            >
+              <h3>Creating a Personal Wellness Routine</h3>
+              <p>
+                Learn how to build realistic support around sleep, movement,
+                stress, recovery, healthcare, and everyday habits.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="the-science-of-relaxation.html" class="care-related-card">
+              <h3>The Science of Relaxation</h3>
+              <p>
+                Explore how the body shifts out of high alert and why relaxation
+                takes practice rather than perfection.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="when-stress-shows-up-as-physical-pain.html"
+              class="care-related-card"
+            >
+              <h3>When Stress Shows Up as Physical Pain</h3>
+              <p>
+                Understand how stress can influence muscle tension, sleep,
+                headaches, movement, and pain.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institute of Mental Health: Caring for Your Mental
+                Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/mental-health/living-with/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Managing Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/howtoimprovementalhealth.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: How to Improve Mental Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/stress.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Stress
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="care-cta">
+          <h2>Care Can Be Practical, Personal, and Sustainable</h2>
+
+          <p>
+            Looking for personalized therapeutic care? Schedule a FlowTherapy
+            session centered around your comfort, boundaries, goals, schedule,
+            and current wellness needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Stress &amp; Wellness
+            articles.
+          </p>
+
+          <ul>
+            <li>Burnout vs. Normal Stress</li>
+            <li>Why Stress Affects Digestion</li>
+            <li>How to Recover From an Overwhelming Week</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+<!-- Shared footer generated by site-layout.js -->
+<div id="site-footer"></div>
+
+<script src="/assets/js/site-layout.js"></script>
+<script src="/assets/js/content-registry.js"></script>
+<script src="/assets/js/related-articles.js"></script>
+<script src="/assets/js/article-utils.js"></script>
+
+</body>
+</html>
+

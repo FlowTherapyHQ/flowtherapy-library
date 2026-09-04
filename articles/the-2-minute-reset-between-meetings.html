@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | The 2-Minute Reset Between Meetings</title>
+    <meta
+      name="description"
+      content="Use a simple two-minute reset between meetings to reduce stiffness, release unnecessary tension, restore focus, and support workplace recovery."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .meeting-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.12fr) minmax(250px, 0.88fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+      .meeting-opening > * {
+        padding: 30px;
+        border-radius: 18px;
+      }
+      .meeting-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+      .meeting-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+      .meeting-opening h2,
+      .meeting-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .meeting-patterns,
+      .reset-routine,
+      .meeting-habits,
+      .meeting-massage {
+        margin: 42px 0;
+      }
+      .meeting-patterns > h2,
+      .meeting-patterns > p,
+      .reset-routine > h2,
+      .reset-routine > p,
+      .meeting-habits > h2,
+      .meeting-habits > p,
+      .meeting-massage > h2,
+      .meeting-massage > p {
+        text-align: center;
+      }
+      .meeting-patterns > p,
+      .reset-routine > p,
+      .meeting-habits > p,
+      .meeting-massage > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .meeting-pattern-grid,
+      .meeting-habit-grid,
+      .meeting-massage-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .meeting-card,
+      .meeting-habit,
+      .meeting-massage-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .meeting-card h3,
+      .meeting-habit h3,
+      .meeting-massage-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .meeting-card p,
+      .meeting-habit p,
+      .meeting-massage-card p {
+        margin-bottom: 0;
+      }
+      .reset-routine {
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .reset-timer {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .reset-block {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .reset-block span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .reset-block h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+      .reset-block p {
+        margin: 0;
+      }
+      .calendar-boundary {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+      .calendar-boundary h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .calendar-boundary li {
+        margin-bottom: 10px;
+      }
+      .important-note {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .important-note h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .related-card p {
+        flex: 1;
+      }
+      .related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+      .article-sources h2 {
+        color: #1677c8;
+      }
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+      .article-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .article-cta h2 {
+        color: #1677c8;
+      }
+      .article-cta p {
+        max-width: 680px;
+        margin: 0 auto 24px;
+      }
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      @media (max-width: 900px) {
+        .reset-timer {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 840px) {
+        .meeting-opening,
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 700px) {
+        .meeting-pattern-grid,
+        .meeting-habit-grid,
+        .meeting-massage-grid,
+        .reset-timer {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body data-article-id="the-2-minute-reset-between-meetings">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/workplace-wellness.html"
+          >← Back to Workplace Wellness FlowNotes</a
+        >
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Workplace Wellness</div>
+          <h1>The 2-Minute Reset Between Meetings</h1>
+          <p class="article-subtitle">
+            A practical transition that helps the eyes, neck, shoulders, back,
+            hips, and nervous system recover before the next demand begins.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span aria-hidden="true">•</span> August
+            2026 <span aria-hidden="true">•</span> 7-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Back-to-back meetings can turn an entire workday into one long
+            period of sitting, screen use, concentration, and muscular bracing.
+          </p>
+          <p>
+            When one meeting ends and the next begins immediately, the body
+            receives no clear transition between tasks.
+          </p>
+          <p>
+            Two minutes will not replace a full break—but it can interrupt
+            stiffness, release unnecessary effort, and help you begin the next
+            meeting with more awareness.
+          </p>
+        </div>
+
+        <section class="meeting-opening">
+          <div class="meeting-opening-main">
+            <h2>Transitions Are Part of Recovery</h2>
+            <p>
+              Workplace recovery does not only happen after work. Brief pauses
+              during the day can give the muscles, eyes, attention, and nervous
+              system a chance to change demand.
+            </p>
+            <p>
+              OSHA encourages frequent short recovery pauses during computer
+              work, including looking away, stretching, standing, or walking.
+            </p>
+          </div>
+
+          <aside class="meeting-opening-side">
+            <h3>Two Minutes Is Better Than Zero</h3>
+            <p>
+              A small pause that fits your schedule is more useful than waiting
+              for the perfect break that never arrives.
+            </p>
+          </aside>
+        </section>
+
+        <section class="meeting-patterns">
+          <h2>What Back-to-Back Meetings Ask of the Body</h2>
+          <p>Meeting fatigue is both mental and physical.</p>
+
+          <div class="meeting-pattern-grid">
+            <article class="meeting-card">
+              <h3>Fixed Screen Attention</h3>
+              <p>
+                The head and eyes may remain directed toward one screen or
+                camera for extended periods.
+              </p>
+            </article>
+
+            <article class="meeting-card">
+              <h3>Limited Position Changes</h3>
+              <p>
+                Conversation, note-taking, and camera expectations may reduce
+                normal shifting and movement.
+              </p>
+            </article>
+
+            <article class="meeting-card">
+              <h3>Shoulder and Jaw Tension</h3>
+              <p>
+                Concentration, stress, speaking, and time pressure may increase
+                bracing through the jaw, neck, and shoulders.
+              </p>
+            </article>
+
+            <article class="meeting-card">
+              <h3>Reduced Breathing Variety</h3>
+              <p>
+                Speaking, listening closely, or feeling anxious may change
+                breathing rhythm and increase upper-body effort.
+              </p>
+            </article>
+
+            <article class="meeting-card">
+              <h3>Emotional Carryover</h3>
+              <p>
+                A difficult conversation may remain in the body even after the
+                meeting window closes.
+              </p>
+            </article>
+
+            <article class="meeting-card">
+              <h3>No Time to Reset the Workspace</h3>
+              <p>
+                Notes, devices, posture, and clutter may carry directly into the
+                next task without adjustment.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="reset-routine">
+          <h2>Your Two-Minute Meeting Reset</h2>
+          <p>
+            Use all four parts, or choose the parts that fit your space and
+            mobility needs.
+          </p>
+
+          <div class="reset-timer">
+            <article class="reset-block">
+              <span>0–30 Seconds</span>
+              <h3>Look Away</h3>
+              <p>
+                Take your eyes off the screen. Look across the room or toward a
+                distant object and blink naturally.
+              </p>
+            </article>
+
+            <article class="reset-block">
+              <span>30–60 Seconds</span>
+              <h3>Stand or Shift</h3>
+              <p>
+                Stand, walk a few steps, or change your seated position if
+                standing is not comfortable or practical.
+              </p>
+            </article>
+
+            <article class="reset-block">
+              <span>60–90 Seconds</span>
+              <h3>Move the Upper Body</h3>
+              <p>
+                Roll the shoulders, turn the head comfortably, open and close
+                the hands, and let the arms move.
+              </p>
+            </article>
+
+            <article class="reset-block">
+              <span>90–120 Seconds</span>
+              <h3>Exhale and Reorganize</h3>
+              <p>
+                Allow one or two slow exhalations, release the jaw, reset the
+                screen and notes, and identify the next task.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="meeting-habits">
+          <h2>Adapt the Reset to the Meeting You Just Had</h2>
+          <p>Different meetings create different kinds of fatigue.</p>
+
+          <div class="meeting-habit-grid">
+            <article class="meeting-habit">
+              <h3>After a Long Presentation</h3>
+              <p>
+                Prioritize walking, changing visual distance, and moving the
+                neck, shoulders, and spine.
+              </p>
+            </article>
+
+            <article class="meeting-habit">
+              <h3>After a Difficult Conversation</h3>
+              <p>
+                Focus on unclenching the jaw, lowering the shoulders, breathing
+                comfortably, and naming the next practical step.
+              </p>
+            </article>
+
+            <article class="meeting-habit">
+              <h3>After Heavy Note-Taking</h3>
+              <p>
+                Release the pen or keyboard, open the hands, move the wrists,
+                and let the forearms rest.
+              </p>
+            </article>
+
+            <article class="meeting-habit">
+              <h3>After a Camera-On Meeting</h3>
+              <p>
+                Move out of the camera-facing position and allow natural
+                shifting, stretching, and facial relaxation.
+              </p>
+            </article>
+
+            <article class="meeting-habit">
+              <h3>Before a High-Stakes Meeting</h3>
+              <p>
+                Use the reset to check the chair, screen, notes, water,
+                breathing, and physical comfort before beginning.
+              </p>
+            </article>
+
+            <article class="meeting-habit">
+              <h3>When You Cannot Leave the Desk</h3>
+              <p>
+                Change seated position, move the ankles and shoulders, look
+                away, and release unnecessary gripping.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="calendar-boundary">
+          <h2>Create Space Before the Calendar Fills It</h2>
+          <ul>
+            <li>
+              Schedule 25- or 50-minute meetings when you control the
+              invitation.
+            </li>
+            <li>Block brief transition time after demanding conversations.</li>
+            <li>Avoid using every break to check another screen.</li>
+            <li>
+              Stand or walk during meetings that do not require detailed
+              computer work.
+            </li>
+            <li>
+              Keep water, notes, and frequently used materials within easy
+              reach.
+            </li>
+            <li>
+              Use longer movement and meal breaks in addition to microbreaks.
+            </li>
+          </ul>
+        </section>
+
+        <section class="meeting-massage">
+          <h2>How Massage Supports Meeting-Heavy Workdays</h2>
+          <p>
+            When repeated meetings leave the neck, shoulders, jaw, back, hips,
+            forearms, or hands feeling overworked, massage can support comfort
+            and recovery.
+          </p>
+
+          <div class="meeting-massage-grid">
+            <article class="meeting-massage-card">
+              <h3>Release Accumulated Tension</h3>
+              <p>
+                Massage may help reduce muscular guarding that builds through
+                hours of concentration and screen use.
+              </p>
+            </article>
+
+            <article class="meeting-massage-card">
+              <h3>Include the Jaw and Scalp</h3>
+              <p>
+                When appropriate and requested, focused work may support clients
+                who notice clenching or head and neck tension during stressful
+                workdays.
+              </p>
+            </article>
+
+            <article class="meeting-massage-card">
+              <h3>Support Back and Hip Comfort</h3>
+              <p>
+                Therapeutic massage can address areas that feel stiff or
+                fatigued after prolonged sitting.
+              </p>
+            </article>
+
+            <article class="meeting-massage-card">
+              <h3>Address Forearms and Hands</h3>
+              <p>
+                Sessions can include areas affected by note-taking, typing,
+                mouse use, and repetitive device handling.
+              </p>
+            </article>
+
+            <article class="meeting-massage-card">
+              <h3>Restore Body Awareness</h3>
+              <p>
+                A massage session may help you notice patterns of bracing,
+                breath-holding, leaning, or shoulder elevation.
+              </p>
+            </article>
+
+            <article class="meeting-massage-card">
+              <h3>Create a Real Recovery Window</h3>
+              <p>
+                Massage provides dedicated time away from meetings and screens
+                while supporting relaxation and physical comfort.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>A Two-Minute Reset Is Not the Entire Recovery Plan</h2>
+          <p>
+            Brief pauses cannot replace meal breaks, regular physical activity,
+            sleep, workload changes, supportive management, medical care, or
+            meaningful time away from work.
+          </p>
+          <p>
+            They are useful because they interrupt an otherwise continuous
+            demand and create a small opportunity to respond earlier.
+          </p>
+        </section>
+
+        <section class="important-note">
+          <h2>When to Seek Medical Care</h2>
+          <p>
+            Persistent or worsening pain, weakness, numbness, severe headaches,
+            dizziness, chest pain, shortness of breath, symptoms after an
+            injury, or discomfort that interferes with normal work and daily
+            activity should be evaluated by a qualified healthcare professional.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>
+            Your body should not have to wait until the end of the workday for
+            every form of recovery.
+          </p>
+          <p>
+            Small transitions can reduce the buildup of stiffness and help you
+            notice tension before it becomes overwhelming.
+          </p>
+          <p>
+            Massage can complement those daily resets by providing deeper,
+            dedicated support for comfort and recovery.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section>
+          <h2 style="text-align: center; color: #1677c8">Continue Reading</h2>
+
+          <div class="related-grid">
+            <a
+              href="five-minute-movement-breaks-for-busy-workdays.html"
+              class="related-card"
+            >
+              <h3>Five-Minute Movement Breaks for Busy Workdays</h3>
+              <p>
+                Use practical movement breaks to reduce stiffness and restore
+                energy during the workday.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="preventing-tech-neck.html" class="related-card">
+              <h3>Preventing Tech Neck</h3>
+              <p>
+                Build screen and movement habits that support neck and shoulder
+                comfort.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="how-often-should-you-get-up-from-your-desk.html"
+              class="related-card"
+            >
+              <h3>How Often Should You Get Up From Your Desk?</h3>
+              <p>
+                Learn how to use practical cues and short breaks instead of
+                chasing one rigid schedule.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She helps
+            people move better, feel better, and live better through
+            evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/work-process"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Computer Workstation Work Process and Microbreaks</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/checklists/evaluation"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Workstation Evaluation Checklist</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cdc.gov/pcd/issues/2014/13_0318.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CDC: Prompts to Disrupt Sitting Time at Work</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CDC: Adult Physical Activity Guidelines</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCIH: Massage Therapy</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Create a Real Recovery Window</h2>
+          <p>
+            Schedule a FlowTherapy session centered around your neck, shoulders,
+            jaw, back, hips, forearms, hands, work demands, and recovery needs.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Workplace Wellness
+            articles.
+          </p>
+          <ul>
+            <li>Massage for Office Workers</li>
+            <li>Why You Clench Your Jaw at Work</li>
+            <li>Office Recovery After a Long Day</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | The Science of Relaxation</title>
+
+    <meta
+      name="description"
+      content="Learn what relaxation is, how it differs from distraction, how the stress and relaxation responses affect the body, and practical ways to support recovery."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .relaxation-highlight {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f4f9fe;
+        text-align: center;
+      }
+
+      .relaxation-highlight h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .relaxation-highlight p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .response-grid,
+      .relaxation-methods-grid,
+      .relaxation-signs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 24px 0 38px;
+      }
+
+      .response-card,
+      .relaxation-method-card,
+      .relaxation-sign-card {
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .response-card h3,
+      .relaxation-method-card h3,
+      .relaxation-sign-card h3 {
+        margin-top: 0;
+        margin-bottom: 9px;
+        color: #1677c8;
+      }
+
+      .response-card p,
+      .relaxation-method-card p,
+      .relaxation-sign-card p {
+        margin-bottom: 0;
+      }
+
+      .response-comparison {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .response-comparison > h2,
+      .response-comparison > p {
+        text-align: center;
+      }
+
+      .response-comparison > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .response-comparison > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .comparison-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .comparison-row {
+        display: grid;
+        grid-template-columns: 150px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .comparison-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 18px;
+        border-right: 1px solid #d6e7f7;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .comparison-label.stress-label {
+        background: #f7f3f0;
+        color: #7b6249;
+      }
+
+      .comparison-label.relax-label {
+        background: #eaf4fe;
+        color: #1677c8;
+      }
+
+      .comparison-content {
+        padding: 26px 28px;
+      }
+
+      .comparison-content strong {
+        display: block;
+        margin-bottom: 10px;
+        color: #1677c8;
+        font-size: 1.03rem;
+      }
+
+      .comparison-content p {
+        margin: 0;
+      }
+
+      .relaxation-practice {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .relaxation-practice > h2,
+      .relaxation-practice > p {
+        text-align: center;
+      }
+
+      .relaxation-practice > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .relaxation-practice > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .practice-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 26px;
+      }
+
+      .practice-step {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .practice-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .practice-step h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+      }
+
+      .practice-step p {
+        margin: 0;
+      }
+
+      .relaxation-note {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .relaxation-note h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .relaxation-note p:last-child {
+        margin-bottom: 0;
+      }
+
+      .relaxation-myths {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .relaxation-myths > h2,
+      .relaxation-myths > p {
+        text-align: center;
+      }
+
+      .relaxation-myths > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .relaxation-myth-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .relaxation-myth-row {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .relaxation-myth-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 16px;
+        border-right: 1px solid #d6e7f7;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .relaxation-myth-label.myth-label {
+        background: #f7f3f0;
+        color: #7b6249;
+      }
+
+      .relaxation-myth-label.fact-label {
+        background: #eaf4fe;
+        color: #1677c8;
+      }
+
+      .relaxation-myth-content {
+        padding: 26px 28px;
+      }
+
+      .relaxation-myth-content strong {
+        display: block;
+        margin-bottom: 10px;
+        color: #1677c8;
+        font-size: 1.03rem;
+      }
+
+      .relaxation-myth-content p {
+        margin: 0;
+      }
+
+      .relaxation-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .relaxation-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .relaxation-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .relaxation-related {
+        margin: 38px 0;
+      }
+
+      .relaxation-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .relaxation-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .relaxation-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .relaxation-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .relaxation-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .relaxation-related-card p {
+        flex: 1;
+      }
+
+      .relaxation-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .relaxation-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .relaxation-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .relaxation-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 820px) {
+        .relaxation-related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .response-grid,
+        .relaxation-methods-grid,
+        .relaxation-signs-grid,
+        .comparison-row,
+        .relaxation-myth-row {
+          grid-template-columns: 1fr;
+        }
+
+        .comparison-label,
+        .relaxation-myth-label {
+          justify-content: flex-start;
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+          padding: 14px 20px;
+        }
+
+        .relaxation-highlight,
+        .response-comparison,
+        .relaxation-practice,
+        .relaxation-myths,
+        .relaxation-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="the-science-of-relaxation">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/stress-wellness.html">
+          ← Back to Stress &amp; Wellness FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Stress &amp; Wellness</div>
+
+          <h1>The Science of Relaxation</h1>
+
+          <p class="article-subtitle">
+            What relaxation actually is, how the body shifts out of high alert,
+            and why rest takes practice rather than perfection.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Relaxation is often treated like a switch: either you are relaxed or
+            you are not.
+          </p>
+
+          <p>
+            In reality, relaxation is a shifting body state. Breathing, heart
+            rate, muscle activity, attention, environment, safety, and emotion
+            can all influence how easily the body settles.
+          </p>
+
+          <p>
+            Relaxation is not the absence of responsibility, thought, or
+            movement. It is a reduction in unnecessary effort and threat
+            response.
+          </p>
+        </div>
+
+        <section class="relaxation-highlight">
+          <h2>The Relaxation Response Is a Real Physiological Shift</h2>
+
+          <p>
+            Relaxation techniques are intended to support the body’s natural
+            relaxation response. This state is commonly associated with slower
+            breathing, a reduced heart rate, lower blood pressure, and a greater
+            sense of calm.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Happens During Stress?</h2>
+
+          <p>
+            Stress is the body’s response to a demand, challenge, or perceived
+            threat. The nervous system may increase alertness, redirect
+            attention, change breathing, and increase muscular readiness.
+          </p>
+
+          <p>
+            This response is useful when action is needed. The problem is not
+            that the body responds. The problem is when high demand continues
+            without enough opportunity to recover.
+          </p>
+
+          <div class="response-grid">
+            <article class="response-card">
+              <h3>Breathing May Speed Up</h3>
+              <p>
+                Breathing can become faster, shallower, or more irregular during
+                periods of stress or urgency.
+              </p>
+            </article>
+
+            <article class="response-card">
+              <h3>Muscles May Become More Active</h3>
+              <p>
+                The jaw, shoulders, hands, abdomen, and back may hold more
+                effort than the task actually requires.
+              </p>
+            </article>
+
+            <article class="response-card">
+              <h3>Attention May Narrow</h3>
+              <p>
+                The brain may focus more strongly on problems, discomfort,
+                uncertainty, or possible threats.
+              </p>
+            </article>
+
+            <article class="response-card">
+              <h3>Recovery May Be Delayed</h3>
+              <p>
+                Sleep, digestion, concentration, and movement habits may be
+                affected when stress remains high.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="response-comparison">
+          <h2>Stress Response vs. Relaxation Response</h2>
+
+          <p>
+            These states are not absolute opposites. The body moves along a
+            range depending on context, health, safety, activity, and emotion.
+          </p>
+
+          <div class="comparison-list">
+            <article class="comparison-row">
+              <div class="comparison-label stress-label">Stress Response</div>
+              <div class="comparison-content">
+                <strong>Prepared for action</strong>
+                <p>
+                  Alertness, muscular readiness, faster breathing, and increased
+                  attention may help the body respond to immediate demands.
+                </p>
+              </div>
+            </article>
+
+            <article class="comparison-row">
+              <div class="comparison-label relax-label">
+                Relaxation Response
+              </div>
+              <div class="comparison-content">
+                <strong>Reduced unnecessary effort</strong>
+                <p>
+                  Breathing may slow, heart rate may decrease, and muscle
+                  tension may feel easier to release.
+                </p>
+              </div>
+            </article>
+
+            <article class="comparison-row">
+              <div class="comparison-label stress-label">Stress Response</div>
+              <div class="comparison-content">
+                <strong>Attention narrows</strong>
+                <p>
+                  The mind may focus strongly on deadlines, pain, conflict, or
+                  uncertainty.
+                </p>
+              </div>
+            </article>
+
+            <article class="comparison-row">
+              <div class="comparison-label relax-label">
+                Relaxation Response
+              </div>
+              <div class="comparison-content">
+                <strong>Attention becomes more flexible</strong>
+                <p>
+                  The person may notice breathing, body support, surroundings,
+                  and choices more clearly.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Relaxation Is Not the Same as Distraction</h2>
+
+          <p>
+            Watching television, scrolling, gaming, shopping, or staying busy
+            may temporarily redirect attention. That can be enjoyable, but it
+            does not always reduce physical arousal.
+          </p>
+
+          <p>
+            A person can be distracted while still clenching the jaw, holding
+            the breath, or feeling mentally overstimulated.
+          </p>
+
+          <p>
+            True relaxation usually involves some reduction in demand, effort,
+            vigilance, or sensory load.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Can Help the Body Settle?</h2>
+
+          <div class="relaxation-methods-grid">
+            <article class="relaxation-method-card">
+              <h3>Comfortable Breathing</h3>
+              <p>
+                Slower or more regulated breathing may help some people reduce
+                physical arousal, but it should never be forced.
+              </p>
+            </article>
+
+            <article class="relaxation-method-card">
+              <h3>Progressive Muscle Relaxation</h3>
+              <p>
+                Alternating gentle muscle tension with release may improve
+                awareness of the difference between effort and rest.
+              </p>
+            </article>
+
+            <article class="relaxation-method-card">
+              <h3>Guided Imagery</h3>
+              <p>
+                Directing attention toward calming mental images may help reduce
+                worry or sensory overload.
+              </p>
+            </article>
+
+            <article class="relaxation-method-card">
+              <h3>Gentle Movement</h3>
+              <p>
+                Walking, mobility work, tai chi, or yoga may help some people
+                settle more effectively than sitting still.
+              </p>
+            </article>
+
+            <article class="relaxation-method-card">
+              <h3>Reduced Stimulation</h3>
+              <p>
+                Lower light, quieter sound, fewer screens, and less multitasking
+                may decrease the amount of information the brain must process.
+              </p>
+            </article>
+
+            <article class="relaxation-method-card">
+              <h3>Supportive Touch</h3>
+              <p>
+                Massage may create structured time for physical comfort, reduced
+                effort, and calm when touch feels safe and welcome.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="relaxation-practice">
+          <h2>A Five-Minute Relaxation Practice</h2>
+
+          <p>
+            This is not a performance test. Stop or modify any step that feels
+            uncomfortable.
+          </p>
+
+          <div class="practice-list">
+            <article class="practice-step">
+              <div class="practice-number">1</div>
+              <div>
+                <h3>Choose Support</h3>
+                <p>
+                  Sit, stand, or lie in a position that does not require more
+                  effort than necessary.
+                </p>
+              </div>
+            </article>
+
+            <article class="practice-step">
+              <div class="practice-number">2</div>
+              <div>
+                <h3>Notice Contact</h3>
+                <p>
+                  Pay attention to the chair, floor, pillows, or other surfaces
+                  supporting your body.
+                </p>
+              </div>
+            </article>
+
+            <article class="practice-step">
+              <div class="practice-number">3</div>
+              <div>
+                <h3>Reduce One Unnecessary Effort</h3>
+                <p>
+                  Let the jaw separate, soften the hands, or allow the shoulders
+                  to move without forcing them down.
+                </p>
+              </div>
+            </article>
+
+            <article class="practice-step">
+              <div class="practice-number">4</div>
+              <div>
+                <h3>Allow Comfortable Breathing</h3>
+                <p>
+                  Let the breath become quieter or slower only if that feels
+                  natural. Avoid taking unusually large breaths.
+                </p>
+              </div>
+            </article>
+
+            <article class="practice-step">
+              <div class="practice-number">5</div>
+              <div>
+                <h3>Return Gradually</h3>
+                <p>
+                  Move your hands or feet, look around the room, and transition
+                  back to activity without rushing.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="relaxation-note">
+          <h2>Relaxation Does Not Always Feel Pleasant at First</h2>
+
+          <p>
+            Quiet, stillness, closed eyes, or body awareness may feel
+            uncomfortable for some people, especially when stress, trauma, pain,
+            dizziness, panic, or sensory sensitivity is present.
+          </p>
+
+          <p>
+            Relaxation practices can be adapted. Keeping the eyes open, moving
+            gently, using music, shortening the practice, or choosing a more
+            active form of recovery may feel safer and more useful.
+          </p>
+        </section>
+
+        <section>
+          <h2>How Can You Tell When Relaxation Is Happening?</h2>
+
+          <div class="relaxation-signs-grid">
+            <article class="relaxation-sign-card">
+              <h3>Breathing Feels Easier</h3>
+              <p>
+                The breath may become quieter, more regular, or less effortful.
+              </p>
+            </article>
+
+            <article class="relaxation-sign-card">
+              <h3>Muscles Use Less Effort</h3>
+              <p>
+                The jaw, hands, shoulders, or abdomen may feel less guarded.
+              </p>
+            </article>
+
+            <article class="relaxation-sign-card">
+              <h3>Attention Broadens</h3>
+              <p>
+                You may notice more of the room, your body support, or available
+                choices.
+              </p>
+            </article>
+
+            <article class="relaxation-sign-card">
+              <h3>Movement Feels Less Rushed</h3>
+              <p>
+                You may transition between activities with more control and less
+                urgency.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="relaxation-myths">
+          <h2>Common Relaxation Myths</h2>
+
+          <p>Relaxation is a skill and a body state—not a moral achievement.</p>
+
+          <div class="relaxation-myth-list">
+            <article class="relaxation-myth-row">
+              <div class="relaxation-myth-label myth-label">Myth</div>
+              <div class="relaxation-myth-content">
+                <strong>Relaxation means doing nothing.</strong>
+                <p>
+                  Walking, stretching, creative activity, music, massage, or
+                  gentle exercise may be more regulating than complete
+                  stillness.
+                </p>
+              </div>
+            </article>
+
+            <article class="relaxation-myth-row">
+              <div class="relaxation-myth-label fact-label">Fact</div>
+              <div class="relaxation-myth-content">
+                <strong>Different people relax in different ways.</strong>
+                <p>
+                  The most useful approach depends on health, history,
+                  environment, preference, and current stress level.
+                </p>
+              </div>
+            </article>
+
+            <article class="relaxation-myth-row">
+              <div class="relaxation-myth-label myth-label">Myth</div>
+              <div class="relaxation-myth-content">
+                <strong>You should be able to relax immediately.</strong>
+                <p>
+                  The body may need repeated experiences of safety, support, and
+                  reduced demand before settling becomes easier.
+                </p>
+              </div>
+            </article>
+
+            <article class="relaxation-myth-row">
+              <div class="relaxation-myth-label fact-label">Fact</div>
+              <div class="relaxation-myth-content">
+                <strong>Relaxation techniques are supportive tools.</strong>
+                <p>
+                  They may help manage stress symptoms, but they do not replace
+                  medical care, psychotherapy, crisis support, or changes to an
+                  unsafe environment.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Support Relaxation?</h2>
+
+          <p>
+            Massage may help some people experience reduced muscle tension,
+            slower breathing, greater body awareness, or a temporary sense of
+            calm.
+          </p>
+
+          <p>
+            The quality of the experience matters. Pressure, pacing,
+            communication, draping, positioning, temperature, sound, and the
+            ability to say no can all influence whether the body feels supported
+            or guarded.
+          </p>
+
+          <p>
+            Massage should not be described as “resetting” the nervous system or
+            permanently switching the body into a relaxed state. It is one
+            supportive experience within a larger wellness routine.
+          </p>
+        </section>
+
+        <section class="relaxation-warning">
+          <h2>Important Note</h2>
+
+          <p>
+            Relaxation practices are not a substitute for medical or mental
+            health care. Seek appropriate help when stress, panic, trauma
+            symptoms, depression, sleep problems, substance use, pain, or other
+            symptoms are persistent, severe, worsening, or interfering with
+            daily life. Stop a breathing or relaxation exercise if it causes
+            dizziness, panic, numbness, worsening shortness of breath, or other
+            concerning symptoms.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>Relaxation is not something your body owes you on command.</p>
+
+          <p>
+            It often develops through repeated experiences of support, choice,
+            comfort, movement, sleep, boundaries, and reduced demand.
+          </p>
+
+          <p>
+            Massage can create one of those experiences. The goal is not to
+            force stillness, but to make room for the body to use less effort
+            when it is ready.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="relaxation-related">
+          <h2>Continue Reading</h2>
+
+          <div class="relaxation-related-grid">
+            <a
+              href="why-stress-causes-muscle-tension.html"
+              class="relaxation-related-card"
+            >
+              <h3>Why Stress Causes Muscle Tension</h3>
+              <p>
+                Learn how stress can affect breathing, movement, sleep, and the
+                way the body holds tension.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="can-massage-improve-sleep.html"
+              class="relaxation-related-card"
+            >
+              <h3>Can Massage Improve Sleep?</h3>
+              <p>
+                Explore how relaxation, physical comfort, and evening habits may
+                support more restful sleep.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-you-hold-stress-in-your-jaw.html"
+              class="relaxation-related-card"
+            >
+              <h3>Why You Hold Stress in Your Jaw</h3>
+              <p>
+                Understand how stress, concentration, clenching, and everyday
+                habits may contribute to jaw tension.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health:
+                Relaxation Techniques
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/tips/things-to-know-about-relaxation-techniques-for-stress"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NCCIH: Five Things to Know About Relaxation Techniques
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/patientinstructions/000874.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Relaxation Techniques for Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/article/001942.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Learn to Manage Stress
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="relaxation-cta">
+          <h2>Create Space for Recovery</h2>
+
+          <p>
+            Looking for personalized therapeutic care? Schedule a FlowTherapy
+            session centered around your comfort, boundaries, goals, and current
+            wellness needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Stress &amp; Wellness
+            articles.
+          </p>
+
+          <ul>
+            <li>When Stress Shows Up as Physical Pain</li>
+            <li>Creating a Personal Wellness Routine</li>
+            <li>Breathing and Muscle Tension</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

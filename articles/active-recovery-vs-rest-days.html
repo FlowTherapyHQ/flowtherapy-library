@@ -1,0 +1,1364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Active Recovery vs. Rest Days</title>
+
+    <meta
+      name="description"
+      content="Learn the difference between active recovery and a true rest day, how to recognize what your body may need, and how to build recovery into a balanced exercise routine."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .recovery-choice {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(232, 246, 255, 0.98),
+          rgba(249, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .recovery-choice h2 {
+        margin-top: 0;
+      }
+
+      .recovery-choice p {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .recovery-comparison {
+        margin: 40px 0;
+      }
+
+      .recovery-comparison > h2,
+      .recovery-comparison > p {
+        text-align: center;
+      }
+
+      .recovery-comparison > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .recovery-comparison-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .recovery-option {
+        display: flex;
+        flex-direction: column;
+        padding: 28px;
+        border: 1px solid #d6e7f7;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .recovery-option-label {
+        align-self: flex-start;
+        margin-bottom: 14px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .recovery-option h3 {
+        margin: 0 0 10px;
+        color: #1677c8;
+        font-size: 1.35rem;
+      }
+
+      .recovery-option > p {
+        margin-top: 0;
+        line-height: 1.7;
+      }
+
+      .recovery-option ul {
+        margin: 10px 0 0;
+        padding-left: 20px;
+      }
+
+      .recovery-option li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .recovery-option li:last-child {
+        margin-bottom: 0;
+      }
+
+      .recovery-spectrum {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .recovery-spectrum h2,
+      .recovery-spectrum > p {
+        text-align: center;
+      }
+
+      .recovery-spectrum h2 {
+        margin-top: 0;
+      }
+
+      .recovery-spectrum > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .spectrum-track {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .spectrum-stage {
+        padding: 22px 18px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+        text-align: center;
+      }
+
+      .spectrum-stage strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #1677c8;
+        font-size: 1.03rem;
+      }
+
+      .spectrum-stage p {
+        margin: 0;
+        line-height: 1.55;
+      }
+
+      .decision-section {
+        margin: 40px 0;
+      }
+
+      .decision-section > h2,
+      .decision-section > p {
+        text-align: center;
+      }
+
+      .decision-section > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .decision-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .decision-card {
+        padding: 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #f8fbff;
+      }
+
+      .decision-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .decision-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .recovery-check-in {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .recovery-check-in h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .recovery-check-in-intro {
+        max-width: 720px;
+        margin: 0 auto 26px;
+        text-align: center;
+      }
+
+      .check-in-list {
+        display: grid;
+        gap: 14px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .check-in-item {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 19px;
+        border: 1px solid #d6e7f7;
+        border-radius: 13px;
+        background: #ffffff;
+      }
+
+      .check-in-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .check-in-item h3 {
+        margin: 0 0 5px;
+        color: #1677c8;
+        font-size: 1.06rem;
+      }
+
+      .check-in-item p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .active-recovery-menu {
+        margin: 40px 0;
+      }
+
+      .active-recovery-menu > h2,
+      .active-recovery-menu > p {
+        text-align: center;
+      }
+
+      .active-recovery-menu > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .recovery-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .recovery-menu-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .recovery-menu-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .recovery-menu-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .rest-day-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .rest-day-panel h2 {
+        margin-top: 0;
+      }
+
+      .rest-day-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .warning-signs {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .warning-signs h2,
+      .warning-signs > p {
+        text-align: center;
+      }
+
+      .warning-signs h2 {
+        margin-top: 0;
+      }
+
+      .warning-signs > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .warning-sign-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .warning-sign {
+        padding: 18px;
+        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid #d6e7f7;
+      }
+
+      .warning-sign strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .warning-sign p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .week-example {
+        margin: 40px 0;
+      }
+
+      .week-example > h2,
+      .week-example > p {
+        text-align: center;
+      }
+
+      .week-example > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .week-grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 9px;
+      }
+
+      .week-day {
+        min-height: 144px;
+        padding: 15px 12px;
+        border: 1px solid #d6e7f7;
+        border-radius: 12px;
+        background: #ffffff;
+        text-align: center;
+      }
+
+      .week-day-name {
+        display: block;
+        margin-bottom: 10px;
+        color: #1677c8;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .week-day strong {
+        display: block;
+        margin-bottom: 7px;
+        line-height: 1.35;
+      }
+
+      .week-day p {
+        margin: 0;
+        color: #526779;
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
+
+      .recovery-reminder {
+        margin: 38px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .recovery-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .recovery-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 940px) {
+        .week-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 850px) {
+        .spectrum-track,
+        .recovery-menu-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 720px) {
+        .recovery-comparison-grid,
+        .decision-grid,
+        .warning-sign-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .week-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .spectrum-track,
+        .recovery-menu-grid,
+        .week-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .check-in-item {
+          grid-template-columns: 40px 1fr;
+        }
+
+        .week-day {
+          min-height: auto;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="active-recovery-vs-rest-days">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/recovery.html"> ← Back to Recovery FlowNotes </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Recovery</div>
+
+          <h1>Active Recovery vs. Rest Days</h1>
+
+          <p class="article-subtitle">
+            How to recognize when gentle movement may feel helpful—and when your
+            body may benefit more from stepping back completely.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Recovery advice often sounds contradictory. One person tells you to
+            take a complete rest day. Another recommends walking, stretching,
+            yoga, or light cycling to keep your body moving.
+          </p>
+
+          <p>
+            Both approaches can be appropriate. The better choice depends on
+            what you are recovering from, how your body feels, how demanding
+            your recent activity has been, and whether movement improves or
+            worsens your symptoms.
+          </p>
+
+          <p>
+            Recovery is not about proving how much activity you can tolerate. It
+            is about choosing the level of demand that supports your ability to
+            return to normal activity safely and comfortably.
+          </p>
+        </div>
+
+        <section class="recovery-choice">
+          <h2>Recovery Is Not One-Size-Fits-All</h2>
+
+          <p>
+            Active recovery and complete rest are not competing philosophies.
+            They are different tools. Some days, light movement may reduce
+            stiffness and help you feel refreshed. Other days, adding even a
+            gentle workout may be one demand too many.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is Active Recovery?</h2>
+
+          <p>
+            Active recovery is low-intensity movement performed during a
+            recovery period. It should feel noticeably easier than your usual
+            workout and should not create significant fatigue.
+          </p>
+
+          <p>
+            The goal is not to sneak in another hard training session. The goal
+            is to move comfortably without adding substantial physical stress.
+          </p>
+
+          <p>Examples may include:</p>
+
+          <ul class="article-list-check">
+            <li>A relaxed walk.</li>
+            <li>Easy cycling or swimming.</li>
+            <li>Gentle mobility exercises.</li>
+            <li>Comfortable stretching.</li>
+            <li>Light yoga or balance work.</li>
+            <li>Reduced-load strength exercises.</li>
+            <li>Ordinary lifestyle movement performed at an easy pace.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What Is a True Rest Day?</h2>
+
+          <p>
+            A true rest day removes structured exercise and gives your body a
+            break from planned training demands.
+          </p>
+
+          <p>
+            Rest does not always mean remaining completely still. You can
+            perform ordinary daily activities, prepare meals, take care of your
+            home, or enjoy a casual walk if those activities feel comfortable.
+          </p>
+
+          <p>
+            The defining feature is that you are not treating the day as another
+            workout or trying to reach a training goal.
+          </p>
+        </section>
+
+        <section class="recovery-comparison">
+          <h2>Active Recovery and Rest at a Glance</h2>
+
+          <p>
+            Neither option is automatically more disciplined, productive, or
+            effective. Each serves a different purpose.
+          </p>
+
+          <div class="recovery-comparison-grid">
+            <article class="recovery-option">
+              <span class="recovery-option-label">Active Recovery</span>
+
+              <h3>Gentle, Intentional Movement</h3>
+
+              <p>
+                Active recovery keeps the body moving at an easy intensity
+                without repeating the demands of a hard training session.
+              </p>
+
+              <ul>
+                <li>May temporarily reduce feelings of stiffness.</li>
+                <li>Can support comfortable circulation and movement.</li>
+                <li>May help maintain a familiar activity routine.</li>
+                <li>Should leave you feeling the same or better afterward.</li>
+                <li>Should not significantly increase soreness or fatigue.</li>
+              </ul>
+            </article>
+
+            <article class="recovery-option">
+              <span class="recovery-option-label">Rest Day</span>
+
+              <h3>Reduced Physical Demand</h3>
+
+              <p>
+                A rest day provides space away from structured training and can
+                support both physical and mental recovery.
+              </p>
+
+              <ul>
+                <li>May be appropriate after demanding training periods.</li>
+                <li>
+                  Allows time for sleep, meals, relaxation, and routine care.
+                </li>
+                <li>Can help when motivation or energy is unusually low.</li>
+                <li>Removes pressure to complete another planned workout.</li>
+                <li>
+                  May be the safer choice during illness or significant pain.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          The purpose of a recovery day is not to do as much as possible at a
+          lower intensity. It is to reduce the total demand placed on your body.
+        </blockquote>
+
+        <section class="recovery-spectrum">
+          <h2>Recovery Exists on a Spectrum</h2>
+
+          <p>
+            Your options are not limited to a hard workout or lying completely
+            still. Recovery can include several levels of activity.
+          </p>
+
+          <div class="spectrum-track">
+            <article class="spectrum-stage">
+              <strong>Complete Rest</strong>
+
+              <p>No structured exercise and minimal optional activity.</p>
+            </article>
+
+            <article class="spectrum-stage">
+              <strong>Lifestyle Movement</strong>
+
+              <p>Normal daily movement without an exercise goal.</p>
+            </article>
+
+            <article class="spectrum-stage">
+              <strong>Active Recovery</strong>
+
+              <p>Planned, low-intensity movement that feels easy.</p>
+            </article>
+
+            <article class="spectrum-stage">
+              <strong>Reduced Training</strong>
+
+              <p>A shorter or lighter version of a regular workout.</p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>When Active Recovery May Feel Helpful</h2>
+
+          <p>
+            Gentle movement may be worth considering when you have mild
+            exercise-related stiffness or soreness but can still move safely and
+            comfortably.
+          </p>
+
+          <p>Active recovery may be reasonable when:</p>
+
+          <ul class="article-list-check">
+            <li>Your soreness is mild and follows a familiar pattern.</li>
+            <li>You feel stiff after sitting or resting.</li>
+            <li>Movement gradually makes your body feel more comfortable.</li>
+            <li>You can maintain normal balance, coordination, and form.</li>
+            <li>You are not experiencing an acute illness or injury.</li>
+            <li>You can keep the effort genuinely easy.</li>
+          </ul>
+
+          <p>
+            If the activity begins feeling like another workout, it has likely
+            moved beyond active recovery.
+          </p>
+        </section>
+
+        <section class="active-recovery-menu">
+          <h2>Create an Active Recovery Menu</h2>
+
+          <p>
+            Choose activities based on what feels restorative—not what burns the
+            most calories or produces the most impressive statistics.
+          </p>
+
+          <div class="recovery-menu-grid">
+            <article class="recovery-menu-card">
+              <h3>Relaxed Walking</h3>
+
+              <p>Walk at a pace that allows easy breathing and conversation.</p>
+            </article>
+
+            <article class="recovery-menu-card">
+              <h3>Gentle Mobility</h3>
+
+              <p>
+                Move joints through comfortable ranges without forcing depth.
+              </p>
+            </article>
+
+            <article class="recovery-menu-card">
+              <h3>Easy Cycling</h3>
+
+              <p>
+                Use low resistance and avoid turning the session into cardio
+                training.
+              </p>
+            </article>
+
+            <article class="recovery-menu-card">
+              <h3>Comfortable Swimming</h3>
+
+              <p>
+                Keep the pace easy and avoid demanding intervals or long sets.
+              </p>
+            </article>
+
+            <article class="recovery-menu-card">
+              <h3>Light Stretching</h3>
+
+              <p>
+                Stretch gently without trying to overcome soreness through
+                intensity.
+              </p>
+            </article>
+
+            <article class="recovery-menu-card">
+              <h3>Balance or Breathing Practice</h3>
+
+              <p>
+                Choose low-demand activities that support calm focus and body
+                awareness.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="rest-day-panel">
+          <h2>When a True Rest Day May Be Better</h2>
+
+          <p>
+            Complete rest from structured exercise may be more appropriate when
+            your body is showing signs that it is not responding well to
+            continued training.
+          </p>
+
+          <p>
+            Consider reducing or stopping exercise when you have significant
+            fatigue, an acute illness, severe soreness, an injury, worsening
+            pain, reduced coordination, or an inability to perform movements
+            safely.
+          </p>
+
+          <p>
+            Rest can also be useful when your training has started to affect
+            your sleep, motivation, mood, performance, or ability to recover
+            between sessions.
+          </p>
+        </section>
+
+        <section class="decision-section">
+          <h2>Which One Does Your Body Need Today?</h2>
+
+          <p>
+            Consider the entire picture instead of making the decision based on
+            one sore muscle.
+          </p>
+
+          <div class="decision-grid">
+            <article class="decision-card">
+              <h3>Choose Active Recovery When</h3>
+
+              <p>
+                Symptoms are mild, movement feels comfortable, your energy is
+                reasonably steady, and easy activity leaves you feeling
+                refreshed rather than depleted.
+              </p>
+            </article>
+
+            <article class="decision-card">
+              <h3>Choose Rest When</h3>
+
+              <p>
+                Fatigue is significant, pain is sharp or worsening, you are ill,
+                movement changes your coordination, or your body is clearly
+                asking for less demand.
+              </p>
+            </article>
+
+            <article class="decision-card">
+              <h3>Reduce Training When</h3>
+
+              <p>
+                You feel capable of movement but not ready for your usual
+                intensity, duration, resistance, or complexity.
+              </p>
+            </article>
+
+            <article class="decision-card">
+              <h3>Seek Guidance When</h3>
+
+              <p>
+                Symptoms are persistent, unusual, related to an injury, or
+                difficult to interpret based on your normal recovery patterns.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="recovery-check-in">
+          <h2>A Five-Part Recovery Check-In</h2>
+
+          <p class="recovery-check-in-intro">
+            Before deciding what to do, take a moment to assess more than your
+            motivation.
+          </p>
+
+          <div class="check-in-list">
+            <article class="check-in-item">
+              <div class="check-in-number">1</div>
+
+              <div>
+                <h3>Check your pain</h3>
+
+                <p>
+                  Is the sensation a familiar dull soreness, or is it sharp,
+                  sudden, highly localized, or worsening?
+                </p>
+              </div>
+            </article>
+
+            <article class="check-in-item">
+              <div class="check-in-number">2</div>
+
+              <div>
+                <h3>Check your energy</h3>
+
+                <p>
+                  Do you feel mildly tired, or are you unusually exhausted,
+                  weak, dizzy, or unable to focus?
+                </p>
+              </div>
+            </article>
+
+            <article class="check-in-item">
+              <div class="check-in-number">3</div>
+
+              <div>
+                <h3>Check your movement</h3>
+
+                <p>
+                  Can you move with normal control, balance, coordination, and
+                  comfortable range of motion?
+                </p>
+              </div>
+            </article>
+
+            <article class="check-in-item">
+              <div class="check-in-number">4</div>
+
+              <div>
+                <h3>Check your recent workload</h3>
+
+                <p>
+                  Have you recently increased training, lost sleep, traveled,
+                  worked longer hours, or managed unusual emotional stress?
+                </p>
+              </div>
+            </article>
+
+            <article class="check-in-item">
+              <div class="check-in-number">5</div>
+
+              <div>
+                <h3>Check your response</h3>
+
+                <p>
+                  Does gentle movement make you feel more comfortable, or do
+                  symptoms become more noticeable as you continue?
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>How Easy Should Active Recovery Be?</h2>
+
+          <p>
+            Active recovery should feel easy enough that you could continue a
+            conversation and finish without needing another recovery period from
+            the recovery session.
+          </p>
+
+          <p>
+            A useful approach is to keep the activity shorter, slower, lighter,
+            and less technically demanding than your regular training.
+          </p>
+
+          <p>
+            Stop or reduce the activity if your pain increases, your form
+            changes, your fatigue builds, or the session begins feeling
+            competitive.
+          </p>
+        </section>
+
+        <section class="warning-signs">
+          <h2>Signs You May Need More Recovery</h2>
+
+          <p>
+            One difficult day is not always a problem. A continuing pattern,
+            however, deserves attention.
+          </p>
+
+          <div class="warning-sign-grid">
+            <article class="warning-sign">
+              <strong>Declining performance</strong>
+
+              <p>
+                Activities that were previously manageable consistently feel
+                harder or less coordinated.
+              </p>
+            </article>
+
+            <article class="warning-sign">
+              <strong>Persistent fatigue</strong>
+
+              <p>
+                Tiredness continues despite ordinary sleep and routine recovery
+                efforts.
+              </p>
+            </article>
+
+            <article class="warning-sign">
+              <strong>Heavy or sore muscles</strong>
+
+              <p>
+                Your body feels repeatedly worn down rather than temporarily
+                challenged.
+              </p>
+            </article>
+
+            <article class="warning-sign">
+              <strong>Reduced motivation</strong>
+
+              <p>
+                Training begins feeling emotionally draining or unusually
+                difficult to start.
+              </p>
+            </article>
+
+            <article class="warning-sign">
+              <strong>Sleep disruption</strong>
+
+              <p>
+                You have difficulty sleeping even though you feel physically
+                exhausted.
+              </p>
+            </article>
+
+            <article class="warning-sign">
+              <strong>Recurring injuries or illness</strong>
+
+              <p>
+                Frequent setbacks may suggest that your total workload exceeds
+                your ability to recover.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Recovery Includes More Than Exercise Decisions</h2>
+
+          <p>
+            Choosing between a walk and a rest day is only one part of recovery.
+          </p>
+
+          <p>
+            Your capacity is influenced by the combined demands of exercise,
+            work, caregiving, travel, emotional stress, illness, nutrition, and
+            sleep.
+          </p>
+
+          <p>
+            Someone with a physically demanding job may need a different
+            recovery plan from someone whose workday is mostly sedentary.
+            Lifestyle movement still counts as physical demand even when it is
+            not recorded as a workout.
+          </p>
+        </section>
+
+        <section class="week-example">
+          <h2>Example of a Balanced Week</h2>
+
+          <p>
+            This is only an illustration—not a universal prescription. Your
+            schedule should reflect your goals, experience, health, and total
+            workload.
+          </p>
+
+          <div class="week-grid">
+            <article class="week-day">
+              <span class="week-day-name">Monday</span>
+              <strong>Strength Training</strong>
+              <p>Moderate full-body session</p>
+            </article>
+
+            <article class="week-day">
+              <span class="week-day-name">Tuesday</span>
+              <strong>Active Recovery</strong>
+              <p>Easy walk and mobility</p>
+            </article>
+
+            <article class="week-day">
+              <span class="week-day-name">Wednesday</span>
+              <strong>Cardio</strong>
+              <p>Comfortable-to-moderate effort</p>
+            </article>
+
+            <article class="week-day">
+              <span class="week-day-name">Thursday</span>
+              <strong>Rest Day</strong>
+              <p>No structured training</p>
+            </article>
+
+            <article class="week-day">
+              <span class="week-day-name">Friday</span>
+              <strong>Strength Training</strong>
+              <p>Second resistance session</p>
+            </article>
+
+            <article class="week-day">
+              <span class="week-day-name">Saturday</span>
+              <strong>Enjoyable Movement</strong>
+              <p>Hike, bike ride, or recreation</p>
+            </article>
+
+            <article class="week-day">
+              <span class="week-day-name">Sunday</span>
+              <strong>Flexible Recovery</strong>
+              <p>Rest or gentle movement</p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Be Part of a Recovery Day?</h2>
+
+          <p>
+            Massage may be included in a recovery routine when it feels
+            comfortable and appropriate for your current condition.
+          </p>
+
+          <p>
+            Recovery-focused massage does not need to be extremely deep or
+            intense. When muscles are already fatigued or sore, gentler work may
+            feel more supportive than aggressive pressure.
+          </p>
+
+          <p>
+            Tell your massage therapist about recent training, soreness,
+            injuries, illness, and how your body has been recovering. A massage
+            session should be adjusted rather than treated as another physical
+            challenge.
+          </p>
+        </section>
+
+        <div class="recovery-reminder">
+          <strong>Rest is not lost progress.</strong>
+
+          <p>
+            Recovery days help make continued activity possible. Choosing less
+            today may support better movement, stronger training, and greater
+            consistency tomorrow.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Many people approach recovery with the same mindset they bring to
+            training: more effort must be better.
+          </p>
+
+          <p>
+            But recovery is not another performance category. You do not need to
+            win your rest day, reach a calorie target, or turn gentle movement
+            into a hidden workout.
+          </p>
+
+          <p>
+            Sometimes movement helps. Sometimes complete rest helps. The most
+            useful choice is the one that respects your current condition and
+            supports your ability to return to activity without creating another
+            setback.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Seek evaluation for severe or worsening pain, significant swelling
+            or bruising, visible deformity, sudden weakness, numbness, loss of
+            function, chest pain, difficulty breathing, fainting, signs of heat
+            illness, dark urine after strenuous exercise, or symptoms following
+            a significant injury. Do not use active recovery to work through
+            symptoms that may require medical attention.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            A recovery day does not have to be scheduled only after soreness
+            appears. Planned lighter days and rest days can help balance your
+            training before fatigue becomes excessive.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="understanding-delayed-onset-muscle-soreness.html"
+              class="related-article-card"
+            >
+              <h3>Understanding Delayed Onset Muscle Soreness</h3>
+
+              <p>
+                Learn why soreness may develop after unfamiliar exercise and how
+                to distinguish DOMS from a possible injury.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="sleep-and-muscle-recovery.html"
+              class="related-article-card"
+            >
+              <h3>Sleep and Muscle Recovery</h3>
+
+              <p>
+                Explore how consistent sleep supports energy, physical
+                readiness, and your broader recovery routine.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="hydration-and-muscle-health.html"
+              class="related-article-card"
+            >
+              <h3>Hydration and Muscle Health</h3>
+
+              <p>
+                Understand how fluid balance supports movement, temperature
+                regulation, activity, and recovery.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, rehabilitation, or an
+            individualized exercise plan. Recovery needs vary based on health,
+            age, training experience, injury history, medications, sleep,
+            occupation, and other factors. Consult an appropriate healthcare or
+            fitness professional when you are unsure what level of activity is
+            safe for you.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://acsm.org/recovery-active-older-adults/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                American College of Sports Medicine: Recovery That Keeps You in
+                the Game
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/patientinstructions/000807.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Are You Getting Too Much Exercise?
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8883945/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: Recovery Strategies in Endurance
+                Athletes
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5932411/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: Evidence-Based Approaches to
+                Post-Exercise Recovery
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                for Adults
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Continue Your Wellness Journey</h2>
+
+          <p>
+            Looking for recovery-focused care? Schedule a FlowTherapy session
+            and experience therapeutic massage tailored to your comfort,
+            activity level, goals, and individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

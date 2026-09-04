@@ -1,0 +1,1542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | How Often Should You Get a Massage?</title>
+
+    <meta
+      name="description"
+      content="Learn how your goals, symptoms, schedule, budget, and response to care can help determine how often you may benefit from therapeutic massage."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .frequency-answer {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(232, 246, 255, 0.98),
+          rgba(249, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .frequency-answer h2 {
+        margin-top: 0;
+      }
+
+      .frequency-answer p {
+        max-width: 730px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .frequency-paths {
+        margin: 40px 0;
+      }
+
+      .frequency-paths > h2,
+      .frequency-paths > p {
+        text-align: center;
+      }
+
+      .frequency-paths > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .frequency-path-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .frequency-path-card {
+        padding: 26px;
+        border: 1px solid #d6e7f7;
+        border-radius: 17px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .frequency-path-card span {
+        display: inline-block;
+        margin-bottom: 13px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .frequency-path-card h3 {
+        margin: 0 0 9px;
+        color: #1677c8;
+        font-size: 1.2rem;
+      }
+
+      .frequency-path-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .schedule-spectrum {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .schedule-spectrum h2,
+      .schedule-spectrum > p {
+        text-align: center;
+      }
+
+      .schedule-spectrum h2 {
+        margin-top: 0;
+      }
+
+      .schedule-spectrum > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .schedule-spectrum-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        max-width: 820px;
+        margin: 0 auto;
+      }
+
+      .schedule-option {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .schedule-option-label {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .schedule-option h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.12rem;
+      }
+
+      .schedule-option p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .frequency-factors {
+        margin: 40px 0;
+      }
+
+      .frequency-factors > h2,
+      .frequency-factors > p {
+        text-align: center;
+      }
+
+      .frequency-factors > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .factor-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .factor-card {
+        padding: 21px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #f8fbff;
+      }
+
+      .factor-card h3 {
+        margin: 0 0 7px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .factor-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .care-phases {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .care-phases h2,
+      .care-phases > p {
+        text-align: center;
+      }
+
+      .care-phases h2 {
+        margin-top: 0;
+      }
+
+      .care-phases > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .care-phase-list {
+        display: grid;
+        gap: 15px;
+        max-width: 820px;
+        margin: 0 auto;
+      }
+
+      .care-phase {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        gap: 17px;
+        align-items: start;
+        padding: 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .care-phase-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .care-phase h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .care-phase p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .response-check {
+        margin: 40px 0;
+      }
+
+      .response-check > h2,
+      .response-check > p {
+        text-align: center;
+      }
+
+      .response-check > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .response-check-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .response-column {
+        padding: 26px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+
+      .response-column h3 {
+        margin: 0 0 14px;
+        color: #1677c8;
+        font-size: 1.18rem;
+      }
+
+      .response-column ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .response-column li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .response-column li:last-child {
+        margin-bottom: 0;
+      }
+
+      .planning-questions {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .planning-questions h2,
+      .planning-questions > p {
+        text-align: center;
+      }
+
+      .planning-questions h2 {
+        margin-top: 0;
+      }
+
+      .planning-questions > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .question-list {
+        display: grid;
+        gap: 13px;
+        max-width: 810px;
+        margin: 0 auto;
+      }
+
+      .question-card {
+        padding: 19px 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 13px;
+        background: #ffffff;
+      }
+
+      .question-card strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #1677c8;
+      }
+
+      .question-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .budget-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .budget-panel h2 {
+        margin-top: 0;
+      }
+
+      .budget-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .frequency-myths {
+        margin: 40px 0;
+      }
+
+      .frequency-myths > h2 {
+        text-align: center;
+      }
+
+      .frequency-myth-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 25px;
+      }
+
+      .frequency-myth-row {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        gap: 20px;
+        padding: 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .frequency-myth-label {
+        color: #1677c8;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .frequency-myth-row p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .reassess-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .reassess-panel h2,
+      .reassess-panel > p {
+        text-align: center;
+      }
+
+      .reassess-panel h2 {
+        margin-top: 0;
+      }
+
+      .reassess-panel > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .reassess-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .reassess-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .reassess-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .reassess-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .frequency-reminder {
+        margin: 38px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .frequency-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .frequency-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 850px) {
+        .reassess-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .frequency-path-grid,
+        .schedule-spectrum-grid,
+        .factor-grid,
+        .response-check-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .frequency-myth-row {
+          grid-template-columns: 1fr;
+          gap: 7px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .care-phase {
+          grid-template-columns: 42px 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="how-often-should-you-get-a-massage">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/massage-education.html">
+          ← Back to Massage Education FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Massage Education</div>
+
+          <h1>How Often Should You Get a Massage?</h1>
+
+          <p class="article-subtitle">
+            How your goals, symptoms, schedule, budget, and response to care can
+            help you build a massage routine that makes sense for you.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            “How often should I get a massage?” sounds like a question with one
+            simple answer.
+          </p>
+
+          <p>It is not.</p>
+
+          <p>
+            One person may schedule massage occasionally for relaxation. Another
+            may temporarily receive sessions more frequently while addressing a
+            specific concern. Someone else may prefer a consistent monthly
+            routine because it fits their lifestyle and budget.
+          </p>
+
+          <p>
+            The most appropriate schedule is not determined by a universal rule.
+            It depends on why you are seeking massage, how your body responds,
+            what else is happening in your care, and whether the schedule
+            remains useful and sustainable.
+          </p>
+        </div>
+
+        <section class="frequency-answer">
+          <h2>The Practical Answer</h2>
+
+          <p>
+            Schedule massage often enough to support a clearly defined goal, but
+            not so often that the appointments become financially, physically,
+            or logistically difficult to maintain. Begin with a reasonable plan,
+            observe your response, and adjust the frequency based on results
+            rather than habit or pressure.
+          </p>
+        </section>
+
+        <section>
+          <h2>Start With Your Reason for Booking</h2>
+
+          <p>Massage frequency should begin with the purpose of the session.</p>
+
+          <p>
+            Are you scheduling because you want time to relax? Are you dealing
+            with tension related to work or exercise? Are you recovering from
+            travel? Are you receiving massage as part of a broader healthcare
+            plan?
+          </p>
+
+          <p>
+            Different goals may call for different schedules. A plan designed
+            for short-term focused care may not look the same as a long-term
+            wellness routine.
+          </p>
+        </section>
+
+        <section class="frequency-paths">
+          <h2>Different Goals, Different Rhythms</h2>
+
+          <p>
+            These examples are starting points for discussion—not medical
+            prescriptions or requirements.
+          </p>
+
+          <div class="frequency-path-grid">
+            <article class="frequency-path-card">
+              <span>Relaxation</span>
+
+              <h3>Occasional or Routine Care</h3>
+
+              <p>
+                Some clients schedule when they feel the need for restorative
+                time. Others prefer a predictable monthly or seasonal
+                appointment as part of their self-care routine.
+              </p>
+            </article>
+
+            <article class="frequency-path-card">
+              <span>Recurring Tension</span>
+
+              <h3>Observe the Pattern</h3>
+
+              <p>
+                A client may begin with appointments closer together, then
+                increase the time between sessions as symptoms become easier to
+                manage.
+              </p>
+            </article>
+
+            <article class="frequency-path-card">
+              <span>Active Lifestyle</span>
+
+              <h3>Match Training and Recovery</h3>
+
+              <p>
+                Massage may be scheduled around demanding training periods,
+                events, travel, or recovery needs rather than at the same
+                frequency year-round.
+              </p>
+            </article>
+
+            <article class="frequency-path-card">
+              <span>Maintenance</span>
+
+              <h3>Choose a Sustainable Routine</h3>
+
+              <p>
+                Some people find that regular appointments help them notice
+                tension earlier and maintain a consistent wellness routine.
+              </p>
+            </article>
+
+            <article class="frequency-path-card">
+              <span>Focused Concern</span>
+
+              <h3>Use a Defined Trial Period</h3>
+
+              <p>
+                A short series may be considered when there is a specific goal,
+                followed by reassessment rather than indefinite frequent care.
+              </p>
+            </article>
+
+            <article class="frequency-path-card">
+              <span>Special Circumstances</span>
+
+              <h3>Coordinate With Your Care Team</h3>
+
+              <p>
+                Pregnancy, surgery, injury, chronic illness, cancer treatment,
+                medications, and rehabilitation may require medical guidance and
+                modifications.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          The right massage schedule is not the most frequent schedule. It is
+          the one that remains useful, responsive, and sustainable.
+        </blockquote>
+
+        <section class="schedule-spectrum">
+          <h2>A Massage Schedule Exists on a Spectrum</h2>
+
+          <p>
+            The following timeframes describe common ways people organize care.
+            They do not guarantee a particular outcome.
+          </p>
+
+          <div class="schedule-spectrum-grid">
+            <article class="schedule-option">
+              <span class="schedule-option-label">As Needed</span>
+
+              <h3>Flexible Appointments</h3>
+
+              <p>
+                Appropriate for clients who want occasional relaxation,
+                post-travel care, or support during unusually demanding periods.
+              </p>
+            </article>
+
+            <article class="schedule-option">
+              <span class="schedule-option-label">Every 6–8 Weeks</span>
+
+              <h3>Periodic Maintenance</h3>
+
+              <p>
+                May suit clients whose symptoms remain manageable for longer
+                periods or who prefer a lower-frequency wellness routine.
+              </p>
+            </article>
+
+            <article class="schedule-option">
+              <span class="schedule-option-label">Monthly</span>
+
+              <h3>Consistent Wellness Routine</h3>
+
+              <p>
+                A common option for clients who value predictable care,
+                relaxation, and regular attention to recurring tension.
+              </p>
+            </article>
+
+            <article class="schedule-option">
+              <span class="schedule-option-label">Every 2–3 Weeks</span>
+
+              <h3>More Frequent Support</h3>
+
+              <p>
+                May be considered during demanding work, training, or life
+                periods when the benefits of a session do not last a full month.
+              </p>
+            </article>
+
+            <article class="schedule-option">
+              <span class="schedule-option-label">Weekly</span>
+
+              <h3>Short-Term Focused Plan</h3>
+
+              <p>
+                Sometimes used for a limited period with a clear goal,
+                appropriate tolerance, and regular reassessment.
+              </p>
+            </article>
+
+            <article class="schedule-option">
+              <span class="schedule-option-label">More Than Weekly</span>
+
+              <h3>Specific and Closely Monitored</h3>
+
+              <p>
+                Usually connected to a specialized setting, research protocol,
+                athletic schedule, or coordinated healthcare plan—not routine
+                care for every client.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why Is There No Universal Recommendation?</h2>
+
+          <p>
+            Massage research does not use one standard frequency for every
+            condition, technique, or outcome.
+          </p>
+
+          <p>
+            Studies may use different session lengths, methods, treatment
+            schedules, participant populations, and comparison groups. Benefits
+            found in one research protocol cannot automatically be transferred
+            to every person or massage practice.
+          </p>
+
+          <p>
+            Some research suggests that massage may offer temporary relief for
+            certain types of discomfort. Temporary benefit can still be
+            meaningful, but it also means the schedule should be evaluated
+            honestly rather than treated as a guaranteed cure.
+          </p>
+        </section>
+
+        <section class="frequency-factors">
+          <h2>What Should Influence Your Schedule?</h2>
+
+          <p>
+            Your massage routine should reflect the whole person—not only one
+            tight area.
+          </p>
+
+          <div class="factor-grid">
+            <article class="factor-card">
+              <h3>Your Goal</h3>
+
+              <p>
+                Relaxation, maintenance, focused therapeutic care, exercise
+                recovery, and event preparation may each require a different
+                approach.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Your Response</h3>
+
+              <p>
+                Consider how you feel during the session, afterward, and in the
+                days that follow.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Duration of Benefit</h3>
+
+              <p>
+                Notice how long improvements in comfort, movement, or relaxation
+                appear to last.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Your Daily Demands</h3>
+
+              <p>
+                Work, exercise, caregiving, travel, sleep, stress, and prolonged
+                positioning can influence how quickly tension returns.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Your Health</h3>
+
+              <p>
+                Medical conditions, recent procedures, pregnancy, medications,
+                injury, and changes in symptoms may require modifications or
+                medical clearance.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Your Other Care</h3>
+
+              <p>
+                Massage may be one part of a broader plan that includes medical
+                treatment, physical therapy, exercise, counseling, or other
+                services.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Your Schedule</h3>
+
+              <p>
+                Care is less helpful when appointments create stress,
+                exhaustion, transportation problems, or conflict with other
+                priorities.
+              </p>
+            </article>
+
+            <article class="factor-card">
+              <h3>Your Budget</h3>
+
+              <p>
+                A sustainable plan should not depend on spending beyond what is
+                comfortable or neglecting essential healthcare needs.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="care-phases">
+          <h2>A Three-Phase Approach to Massage Frequency</h2>
+
+          <p>
+            Instead of committing immediately to an indefinite schedule,
+            consider a plan with built-in reassessment.
+          </p>
+
+          <div class="care-phase-list">
+            <article class="care-phase">
+              <div class="care-phase-number">1</div>
+
+              <div>
+                <h3>Begin With a Clear Goal</h3>
+
+                <p>
+                  Identify what you hope will change. Examples include moving
+                  your neck more comfortably, reducing work-related tension, or
+                  creating consistent restorative time.
+                </p>
+              </div>
+            </article>
+
+            <article class="care-phase">
+              <div class="care-phase-number">2</div>
+
+              <div>
+                <h3>Try a Defined Schedule</h3>
+
+                <p>
+                  Choose a reasonable frequency for a limited period rather than
+                  assuming the same schedule should continue forever.
+                </p>
+              </div>
+            </article>
+
+            <article class="care-phase">
+              <div class="care-phase-number">3</div>
+
+              <div>
+                <h3>Reassess and Adjust</h3>
+
+                <p>
+                  Continue, reduce, increase, or pause sessions based on your
+                  progress, comfort, needs, finances, and other care.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>How Do You Know Whether Your Schedule Is Working?</h2>
+
+          <p>
+            A massage plan should be evaluated by more than whether you enjoyed
+            the appointment.
+          </p>
+
+          <p>
+            Enjoyment and relaxation matter, but focused therapeutic care should
+            also connect to a goal you can observe.
+          </p>
+        </section>
+
+        <section class="response-check">
+          <h2>Signs to Continue—or Reconsider—the Plan</h2>
+
+          <p>
+            No single sign tells the whole story. Look for patterns over time.
+          </p>
+
+          <div class="response-check-grid">
+            <article class="response-column">
+              <h3>The Current Plan May Be Useful When</h3>
+
+              <ul>
+                <li>You leave sessions feeling comfortable and supported.</li>
+                <li>The benefit lasts long enough to feel meaningful.</li>
+                <li>Movement or daily activity becomes easier.</li>
+                <li>You recover well without excessive soreness.</li>
+                <li>The appointments support—not disrupt—your other care.</li>
+                <li>The financial and time commitment remains manageable.</li>
+              </ul>
+            </article>
+
+            <article class="response-column">
+              <h3>The Plan May Need Adjustment When</h3>
+
+              <ul>
+                <li>The benefit is consistently absent or extremely brief.</li>
+                <li>
+                  You regularly experience excessive soreness or bruising.
+                </li>
+                <li>Symptoms worsen between or after sessions.</li>
+                <li>You feel pressured to book more often than you prefer.</li>
+                <li>Massage is replacing needed medical evaluation.</li>
+                <li>The cost or schedule creates significant stress.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Does More Frequent Massage Always Work Better?</h2>
+
+          <p>No.</p>
+
+          <p>
+            Some research protocols use frequent sessions and may report better
+            short-term outcomes than less frequent care. That does not mean
+            everyone needs multiple appointments each week.
+          </p>
+
+          <p>
+            More frequent care also means greater cost, time commitment, and
+            tissue exposure. A client who becomes sore after every session may
+            need less pressure, different techniques, a shorter appointment, or
+            more recovery time—not simply another massage.
+          </p>
+
+          <p>Frequency and intensity should be adjusted together.</p>
+        </section>
+
+        <section class="planning-questions">
+          <h2>Questions to Discuss With Your Massage Therapist</h2>
+
+          <p>A professional recommendation should be explained—not imposed.</p>
+
+          <div class="question-list">
+            <article class="question-card">
+              <strong>What goal are we working toward?</strong>
+
+              <p>
+                The schedule should connect to something more specific than “you
+                are tight.”
+              </p>
+            </article>
+
+            <article class="question-card">
+              <strong>Why are you recommending this frequency?</strong>
+
+              <p>
+                Your therapist should be able to explain the reasoning in clear,
+                understandable language.
+              </p>
+            </article>
+
+            <article class="question-card">
+              <strong>How will we know whether it is helping?</strong>
+
+              <p>
+                Agree on signs of progress such as comfort, movement, activity,
+                or reduced interference with daily life.
+              </p>
+            </article>
+
+            <article class="question-card">
+              <strong>When will we reassess?</strong>
+
+              <p>
+                A short-term plan should include a point when the schedule is
+                reviewed.
+              </p>
+            </article>
+
+            <article class="question-card">
+              <strong>What can I do between sessions?</strong>
+
+              <p>
+                Massage should not be the only strategy when movement, sleep,
+                ergonomics, rehabilitation, stress management, or medical care
+                may also matter.
+              </p>
+            </article>
+
+            <article class="question-card">
+              <strong>What would make you refer me elsewhere?</strong>
+
+              <p>
+                A responsible therapist should recognize symptoms or situations
+                that require another professional.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="budget-panel">
+          <h2>Your Budget Is a Valid Part of the Decision</h2>
+
+          <p>
+            Massage frequency should never be discussed as though finances do
+            not matter.
+          </p>
+
+          <p>
+            A recommendation is not useful when it is unaffordable,
+            unsustainable, or causes you to delay essential medical treatment,
+            medication, housing, food, transportation, or other priorities.
+          </p>
+
+          <p>
+            Options may include shorter focused sessions, longer intervals,
+            packages, memberships, alternating appointment lengths, or combining
+            professional care with appropriate self-care.
+          </p>
+
+          <p>You are allowed to ask for a plan that fits your real life.</p>
+        </section>
+
+        <section>
+          <h2>What About Monthly Massage?</h2>
+
+          <p>
+            Monthly massage is popular because it is predictable, easy to
+            remember, and often fits naturally into a wellness routine.
+          </p>
+
+          <p>
+            It may work well for clients whose benefits last several weeks and
+            who want consistent care without more frequent appointments.
+          </p>
+
+          <p>
+            Monthly is not automatically the ideal frequency for every goal.
+            Some clients may prefer longer intervals, while others may benefit
+            from temporarily closer appointments followed by a maintenance
+            schedule.
+          </p>
+        </section>
+
+        <section>
+          <h2>What About Massage Only When Something Hurts?</h2>
+
+          <p>
+            Seeking massage only during a flare-up is a valid choice, but it can
+            make it harder to distinguish ordinary recurring tension from a
+            problem that needs evaluation.
+          </p>
+
+          <p>
+            Some clients prefer periodic care before discomfort becomes
+            disruptive. Others find that massage is most valuable only during
+            demanding periods.
+          </p>
+
+          <p>
+            Neither approach is morally better. The question is whether the
+            pattern supports your goals.
+          </p>
+        </section>
+
+        <section class="frequency-myths">
+          <h2>Common Massage-Frequency Myths</h2>
+
+          <div class="frequency-myth-list">
+            <article class="frequency-myth-row">
+              <div class="frequency-myth-label">
+                Myth: Everyone needs weekly massage.
+              </div>
+
+              <p>
+                Weekly care may be appropriate for a defined goal or short-term
+                plan, but it is not a universal requirement.
+              </p>
+            </article>
+
+            <article class="frequency-myth-row">
+              <div class="frequency-myth-label">
+                Myth: Monthly massage is always maintenance.
+              </div>
+
+              <p>
+                “Maintenance” should describe a useful plan—not simply a
+                recurring billing schedule.
+              </p>
+            </article>
+
+            <article class="frequency-myth-row">
+              <div class="frequency-myth-label">
+                Myth: If symptoms return, you need more massage.
+              </div>
+
+              <p>
+                Returning symptoms may reflect workload, sleep, stress,
+                ergonomics, exercise, injury, or a health condition that
+                requires another approach.
+              </p>
+            </article>
+
+            <article class="frequency-myth-row">
+              <div class="frequency-myth-label">
+                Myth: Missing an appointment erases your progress.
+              </div>
+
+              <p>
+                Your wellness does not depend on perfect attendance. Massage is
+                one supportive tool among many.
+              </p>
+            </article>
+
+            <article class="frequency-myth-row">
+              <div class="frequency-myth-label">
+                Myth: A therapist always knows the exact schedule you need.
+              </div>
+
+              <p>
+                A therapist can make recommendations, but the plan should remain
+                collaborative and responsive to your experience.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="reassess-panel">
+          <h2>When Should You Reassess Your Frequency?</h2>
+
+          <p>
+            A schedule that worked six months ago may not match your current
+            life.
+          </p>
+
+          <div class="reassess-grid">
+            <article class="reassess-card">
+              <h3>Your Goals Change</h3>
+
+              <p>
+                You may shift from focused care to maintenance—or decide that
+                massage is no longer needed for the original concern.
+              </p>
+            </article>
+
+            <article class="reassess-card">
+              <h3>Your Health Changes</h3>
+
+              <p>
+                New diagnoses, medications, surgery, pregnancy, injury, or
+                unexplained symptoms may require modifications or clearance.
+              </p>
+            </article>
+
+            <article class="reassess-card">
+              <h3>Your Life Changes</h3>
+
+              <p>
+                Work, caregiving, travel, exercise, finances, and stress may all
+                affect what schedule remains realistic.
+              </p>
+            </article>
+
+            <article class="reassess-card">
+              <h3>Your Response Changes</h3>
+
+              <p>
+                Sessions that once felt useful may become less necessary—or may
+                need to be adjusted in technique, duration, or pressure.
+              </p>
+            </article>
+
+            <article class="reassess-card">
+              <h3>Your Other Care Changes</h3>
+
+              <p>
+                Physical therapy, medical treatment, exercise, or counseling may
+                change the role massage plays in your wellness plan.
+              </p>
+            </article>
+
+            <article class="reassess-card">
+              <h3>You Simply Want Something Different</h3>
+
+              <p>
+                Personal preference is enough reason to increase, reduce, pause,
+                or stop routine massage.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Become Too Frequent?</h2>
+
+          <p>
+            Massage is generally considered low risk when performed by a
+            properly trained practitioner, but more is not automatically
+            harmless or beneficial.
+          </p>
+
+          <p>
+            Sessions may be too frequent or too intense when tissues remain
+            sore, bruised, irritated, or unable to recover between appointments.
+          </p>
+
+          <p>
+            Forceful work also requires additional caution for clients with
+            bleeding disorders, reduced sensation, fragile bones, wounds,
+            certain medications, recent procedures, and other health concerns.
+          </p>
+
+          <p>
+            Your therapist should adjust the schedule and techniques rather than
+            treating tolerance as something you must build through pain.
+          </p>
+        </section>
+
+        <div class="frequency-reminder">
+          <strong>A recommendation should never feel like pressure.</strong>
+
+          <p>
+            You remain in control of whether, when, and how often you receive
+            massage. A professional plan should support informed choice—not
+            fear, guilt, or dependence.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            At FlowTherapy, massage frequency is not determined by a sales
+            target.
+          </p>
+
+          <p>
+            Some clients benefit from a short period of more consistent care.
+            Others prefer monthly appointments, longer intervals, or occasional
+            sessions when life becomes especially demanding.
+          </p>
+
+          <p>
+            The goal is not to keep you on the table as often as possible. The
+            goal is to provide thoughtful care at a frequency that supports your
+            comfort, goals, autonomy, and real-life circumstances.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Massage frequency should not be used to manage severe, unexplained,
+            worsening, or persistent symptoms without appropriate evaluation.
+            Seek medical care for sudden weakness, numbness, significant
+            swelling, fever, unexplained weight loss, loss of function, severe
+            pain, symptoms following a major injury, chest pain, difficulty
+            breathing, or other concerning changes.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Massage research may use weekly or even more frequent sessions
+            during a study. That schedule helps researchers test a specific
+            protocol; it does not automatically become the correct long-term
+            schedule for every massage client.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="deep-pressure-vs-deep-tissue.html"
+              class="related-article-card"
+            >
+              <h3>Deep Pressure vs. Deep Tissue Massage</h3>
+
+              <p>
+                Learn why pressure level and massage technique are related—but
+                not interchangeable.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-more-pressure-isnt-always-better.html"
+              class="related-article-card"
+            >
+              <h3>Why More Pressure Isn’t Always Better</h3>
+
+              <p>
+                Understand why effective massage is about working with your body
+                rather than testing your pain tolerance.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="what-to-expect-during-your-first-massage.html"
+              class="related-article-card"
+            >
+              <h3>What to Expect During Your First Massage</h3>
+
+              <p>
+                Learn about communication, consent, comfort, draping, and how
+                your first session may be planned.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, treatment, rehabilitation, or an
+            individualized healthcare plan. Massage frequency and safety may be
+            affected by medical conditions, pregnancy, medications, recent
+            surgery, injury, cancer treatment, bleeding risk, bone health, and
+            other factors. Consult an appropriate healthcare provider when
+            needed.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health:
+                Massage Therapy—What You Need to Know
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/tips/things-to-know-about-massage-therapy-for-health-purposes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NCCIH: Things to Know About Massage Therapy for Health Purposes
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.mayoclinic.org/tests-procedures/massage-therapy/about/pac-20384595"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mayo Clinic: Massage Therapy
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://health.clevelandclinic.org/benefits-of-massage"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cleveland Clinic: Benefits of Massage Therapy
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/research/research-results/massage-may-provide-shortterm-improvement-of-knee-osteoarthritis-symptoms"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NCCIH: Massage and Short-Term Improvement in Knee Osteoarthritis
+                Symptoms
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.amtamassage.org/find-massage-therapist/what-to-expect-at-massage-session/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                American Massage Therapy Association: What to Expect at Your
+                Massage Session
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Find a Rhythm That Supports You</h2>
+
+          <p>
+            Not sure what schedule fits your goals? Begin with one personalized
+            FlowTherapy session, discuss your response, and build a care plan
+            that remains flexible, realistic, and centered around your needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Why Sitting All Day Feels So Bad</title>
+
+    <meta
+      name="description"
+      content="Learn why prolonged sitting can contribute to stiffness, fatigue, neck and back tension, reduced movement variety, and lower energy—and how massage can support comfort and recovery."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .sitting-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+
+      .sitting-opening-main,
+      .sitting-opening-side {
+        padding: 30px;
+        border-radius: 18px;
+      }
+
+      .sitting-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+
+      .sitting-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .sitting-opening h2,
+      .sitting-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .sitting-opening p:last-child {
+        margin-bottom: 0;
+      }
+
+      .sitting-effects {
+        margin: 42px 0;
+      }
+
+      .sitting-effects > h2,
+      .sitting-effects > p {
+        text-align: center;
+      }
+
+      .sitting-effects > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .sitting-effects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .sitting-effect-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .sitting-effect-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .sitting-effect-card p {
+        margin-bottom: 0;
+      }
+
+      .workday-map {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .workday-map > h2,
+      .workday-map > p {
+        text-align: center;
+      }
+
+      .workday-map > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .workday-map > p {
+        max-width: 740px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .workday-list {
+        display: grid;
+        gap: 16px;
+        max-width: 860px;
+        margin: 28px auto 0;
+      }
+
+      .workday-row {
+        display: grid;
+        grid-template-columns: 180px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .workday-label {
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .workday-copy {
+        padding: 22px 24px;
+      }
+
+      .workday-copy p {
+        margin: 0;
+      }
+
+      .position-variety {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .position-variety h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .position-variety p:last-child {
+        margin-bottom: 0;
+      }
+
+      .break-strategies {
+        margin: 42px 0;
+      }
+
+      .break-strategies > h2,
+      .break-strategies > p {
+        text-align: center;
+      }
+
+      .break-strategies > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .break-strategies-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .break-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .break-card span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .break-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .break-card p {
+        margin-bottom: 0;
+      }
+
+      .desk-reset {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .desk-reset > h2,
+      .desk-reset > p {
+        text-align: center;
+      }
+
+      .desk-reset > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .desk-reset > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .desk-reset-list {
+        display: grid;
+        gap: 14px;
+        max-width: 820px;
+        margin: 28px auto 0;
+      }
+
+      .desk-reset-item {
+        padding: 20px 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .desk-reset-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .desk-reset-item p {
+        margin: 0;
+      }
+
+      .massage-support {
+        margin: 42px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 10px 26px rgba(20, 55, 85, 0.06);
+      }
+
+      .massage-support h2,
+      .massage-support > p {
+        text-align: center;
+      }
+
+      .massage-support h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .massage-support > p {
+        max-width: 740px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .massage-support-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .massage-support-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #f7fbff;
+      }
+
+      .massage-support-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .massage-support-card p {
+        margin-bottom: 0;
+      }
+
+      .workstation-check {
+        margin: 42px 0;
+      }
+
+      .workstation-check > h2,
+      .workstation-check > p {
+        text-align: center;
+      }
+
+      .workstation-check > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .workstation-check-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .workstation-check-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .workstation-check-card strong {
+        display: block;
+        margin-bottom: 7px;
+        color: #1677c8;
+      }
+
+      .workstation-check-card p {
+        margin: 0;
+      }
+
+      .sitting-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .sitting-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .sitting-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .sitting-related {
+        margin: 38px 0;
+      }
+
+      .sitting-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .sitting-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .sitting-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .sitting-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .sitting-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .sitting-related-card p {
+        flex: 1;
+      }
+
+      .sitting-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      .sitting-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .sitting-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .sitting-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        color: #1677c8;
+        text-align: center;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 860px) {
+        .sitting-opening,
+        .sitting-related-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .break-strategies-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .sitting-effects-grid,
+        .massage-support-grid,
+        .workstation-check-grid,
+        .workday-row {
+          grid-template-columns: 1fr;
+        }
+
+        .workday-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+
+        .sitting-opening-main,
+        .sitting-opening-side,
+        .workday-map,
+        .desk-reset,
+        .massage-support,
+        .sitting-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="why-sitting-all-day-feels-so-bad">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/movement-mobility.html">
+          ← Back to Movement &amp; Mobility FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Movement &amp; Mobility</div>
+
+          <h1>Why Sitting All Day Feels So Bad</h1>
+
+          <p class="article-subtitle">
+            How prolonged sitting can contribute to stiffness, fatigue, neck and
+            back tension, lower energy, and reduced movement variety—and where
+            massage may help.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Sitting is not harmful simply because it is sitting. It is a normal
+            position used for work, travel, meals, rest, learning, and
+            recreation.
+          </p>
+
+          <p>
+            The problem is often duration, repetition, limited movement variety,
+            and a setup that requires more muscular effort than necessary.
+          </p>
+
+          <p>
+            After several hours, the neck, shoulders, back, hips, legs, and eyes
+            may all feel the effect—even when the chair initially felt
+            comfortable.
+          </p>
+        </div>
+
+        <section class="sitting-opening">
+          <div class="sitting-opening-main">
+            <h2>Your Body Is Built to Change Positions</h2>
+
+            <p>
+              No single position is comfortable forever. Muscles fatigue,
+              pressure builds, joints remain in the same range, and attention
+              narrows when a task continues without enough variation.
+            </p>
+
+            <p>
+              The most useful strategy is usually not perfect posture. It is a
+              workstation that supports you and enough opportunities to move.
+            </p>
+          </div>
+
+          <aside class="sitting-opening-side">
+            <h3>Sitting and Inactivity Are Related—but Not Identical</h3>
+
+            <p>
+              Someone can exercise regularly and still spend long periods
+              sitting. Both total physical activity and how sedentary time is
+              accumulated can matter.
+            </p>
+          </aside>
+        </section>
+
+        <section class="sitting-effects">
+          <h2>Why Prolonged Sitting Feels Uncomfortable</h2>
+
+          <p>Several ordinary processes may contribute at the same time.</p>
+
+          <div class="sitting-effects-grid">
+            <article class="sitting-effect-card">
+              <h3>Muscle Fatigue</h3>
+              <p>
+                The neck, shoulders, back, hips, and trunk may work continuously
+                to hold the head, arms, and body in position.
+              </p>
+            </article>
+
+            <article class="sitting-effect-card">
+              <h3>Reduced Movement Variety</h3>
+              <p>
+                Joints and tissues spend less time moving through other ranges,
+                which can contribute to a sense of stiffness.
+              </p>
+            </article>
+
+            <article class="sitting-effect-card">
+              <h3>Sustained Pressure</h3>
+              <p>
+                The feet, thighs, hips, and back remain in contact with the
+                chair or floor, which may become uncomfortable over time.
+              </p>
+            </article>
+
+            <article class="sitting-effect-card">
+              <h3>Repetitive Arm and Hand Use</h3>
+              <p>
+                Keyboard, mouse, phone, and tool use may create repeated demand
+                through the hands, forearms, shoulders, and upper back.
+              </p>
+            </article>
+
+            <article class="sitting-effect-card">
+              <h3>Visual Demand</h3>
+              <p>
+                Leaning toward a screen, squinting, or keeping the head fixed
+                may increase effort through the neck and shoulders.
+              </p>
+            </article>
+
+            <article class="sitting-effect-card">
+              <h3>Lower Overall Activity</h3>
+              <p>
+                Long sedentary periods may reduce total daily movement and are
+                associated with long-term health risks when they become a
+                regular pattern.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workday-map">
+          <h2>How a Typical Sitting Day Can Build Tension</h2>
+
+          <p>
+            The discomfort is often cumulative rather than caused by one
+            obviously “bad” posture.
+          </p>
+
+          <div class="workday-list">
+            <article class="workday-row">
+              <div class="workday-label">Early in the Day</div>
+              <div class="workday-copy">
+                <p>
+                  The body feels rested enough to tolerate the position, and
+                  small setup problems may not yet be noticeable.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-row">
+              <div class="workday-label">After an Hour or Two</div>
+              <div class="workday-copy">
+                <p>
+                  The shoulders may rise, the head may drift toward the screen,
+                  and the hips or low back may begin to feel stiff.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-row">
+              <div class="workday-label">By Midday</div>
+              <div class="workday-copy">
+                <p>
+                  Fatigue may increase gripping, slumping, breath-holding, or
+                  frequent shifting in the chair.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-row">
+              <div class="workday-label">Late in the Day</div>
+              <div class="workday-copy">
+                <p>
+                  Neck, shoulder, back, hip, or leg tension may feel more
+                  noticeable, and concentration may become harder to maintain.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-row">
+              <div class="workday-label">After Work</div>
+              <div class="workday-copy">
+                <p>
+                  The body may feel too tired to move even though comfortable
+                  movement is often what helps reduce the stiffness.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="position-variety">
+          <h2>The Best Posture Is Often the Next Posture</h2>
+
+          <p>
+            A well-supported position can reduce unnecessary strain, but it
+            cannot remove the need for movement.
+          </p>
+
+          <p>
+            Alternating between sitting, standing, walking, reaching, and other
+            tasks gives muscles and joints opportunities to change demand.
+          </p>
+
+          <p>
+            Standing all day is not automatically better. Prolonged standing can
+            also become uncomfortable. Variety is the goal.
+          </p>
+        </section>
+
+        <section class="break-strategies">
+          <h2>Movement Breaks That Fit a Real Workday</h2>
+
+          <p>A useful break does not need to become a workout.</p>
+
+          <div class="break-strategies-grid">
+            <article class="break-card">
+              <span>30 Seconds</span>
+              <h3>Change Position</h3>
+              <p>
+                Place both feet differently, sit back into the chair, relax the
+                hands, look away from the screen, or stand briefly.
+              </p>
+            </article>
+
+            <article class="break-card">
+              <span>Two Minutes</span>
+              <h3>Walk and Reach</h3>
+              <p>
+                Walk to another room, refill water, reach overhead comfortably,
+                or move the shoulders and ankles.
+              </p>
+            </article>
+
+            <article class="break-card">
+              <span>Five Minutes</span>
+              <h3>Leave the Workstation</h3>
+              <p>
+                OSHA recommends short microbreaks during computer work,
+                including looking away, stretching, standing, or walking.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="desk-reset">
+          <h2>A Five-Minute Desk Reset</h2>
+
+          <p>Use comfortable movement rather than forcing any position.</p>
+
+          <div class="desk-reset-list">
+            <article class="desk-reset-item">
+              <strong>Minute One: Walk</strong>
+              <p>Stand and walk through the room, hallway, or workspace.</p>
+            </article>
+
+            <article class="desk-reset-item">
+              <strong>Minute Two: Shoulders and Arms</strong>
+              <p>
+                Roll the shoulders, open and close the hands, and reach forward
+                or overhead within a comfortable range.
+              </p>
+            </article>
+
+            <article class="desk-reset-item">
+              <strong>Minute Three: Spine and Hips</strong>
+              <p>
+                Complete a few gentle trunk turns, side reaches, or supported
+                sit-to-stands.
+              </p>
+            </article>
+
+            <article class="desk-reset-item">
+              <strong>Minute Four: Ankles and Legs</strong>
+              <p>
+                March in place, complete ankle pumps, or rise onto the toes
+                while holding support.
+              </p>
+            </article>
+
+            <article class="desk-reset-item">
+              <strong>Minute Five: Reset the Workstation</strong>
+              <p>
+                Bring the screen, keyboard, mouse, and frequently used items
+                into a more comfortable reach.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="massage-support">
+          <h2>How Massage Can Help After Long Hours of Sitting</h2>
+
+          <p>
+            Massage can be an important part of a workday recovery plan,
+            especially when the neck, shoulders, back, hips, and forearms feel
+            consistently overworked.
+          </p>
+
+          <div class="massage-support-grid">
+            <article class="massage-support-card">
+              <h3>Ease Neck and Shoulder Tension</h3>
+              <p>
+                Therapeutic massage may help reduce the sense of tightness that
+                develops with screen use, concentration, and sustained arm
+                positioning.
+              </p>
+            </article>
+
+            <article class="massage-support-card">
+              <h3>Address Back and Hip Discomfort</h3>
+              <p>
+                Focused work through the back, glutes, hips, and thighs may help
+                the body feel more comfortable after long periods in one
+                position.
+              </p>
+            </article>
+
+            <article class="massage-support-card">
+              <h3>Support Forearm and Hand Recovery</h3>
+              <p>
+                Massage can include the forearms and hands when typing, mouse
+                use, gripping, or repetitive tasks create tension.
+              </p>
+            </article>
+
+            <article class="massage-support-card">
+              <h3>Make Movement Feel More Available</h3>
+              <p>
+                When muscular guarding decreases, walking, stretching, exercise,
+                and everyday movement may feel easier to begin.
+              </p>
+            </article>
+
+            <article class="massage-support-card">
+              <h3>Encourage a Full-Body Reset</h3>
+              <p>
+                Massage creates time away from the workstation and may support
+                relaxation, body awareness, and recovery.
+              </p>
+            </article>
+
+            <article class="massage-support-card">
+              <h3>Build Consistent Maintenance</h3>
+              <p>
+                Regular massage can support a proactive wellness routine rather
+                than waiting until discomfort becomes severe.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workstation-check">
+          <h2>Make the Workstation Support You</h2>
+
+          <p>
+            There is no single setup that fits everyone, but these adjustments
+            can reduce unnecessary effort.
+          </p>
+
+          <div class="workstation-check-grid">
+            <article class="workstation-check-card">
+              <strong>Monitor</strong>
+              <p>
+                Position the screen so you can see it without repeatedly leaning
+                forward, looking sharply downward, or twisting.
+              </p>
+            </article>
+
+            <article class="workstation-check-card">
+              <strong>Keyboard and Mouse</strong>
+              <p>
+                Keep them close enough that the elbows and shoulders do not need
+                to reach continuously.
+              </p>
+            </article>
+
+            <article class="workstation-check-card">
+              <strong>Chair and Feet</strong>
+              <p>
+                Use back support and allow the feet to rest comfortably on the
+                floor or a stable foot support.
+              </p>
+            </article>
+
+            <article class="workstation-check-card">
+              <strong>Work Materials</strong>
+              <p>
+                Place frequently used items within easy reach and change the
+                arrangement when the task changes.
+              </p>
+            </article>
+
+            <article class="workstation-check-card">
+              <strong>Lighting and Vision</strong>
+              <p>
+                Reduce glare and adjust text size or lighting so you do not need
+                to crane toward the screen.
+              </p>
+            </article>
+
+            <article class="workstation-check-card">
+              <strong>Task Variety</strong>
+              <p>
+                Alternate computer work with standing, walking, phone calls,
+                filing, meetings, or other tasks when possible.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Massage Cannot Replace</h2>
+
+          <p>
+            Massage cannot undo an entire week of inactivity, replace regular
+            physical activity, correct every workstation problem, or diagnose
+            the cause of persistent pain.
+          </p>
+
+          <p>
+            Its value is still significant. Massage can support comfort,
+            recovery, relaxation, and readiness to move—especially when combined
+            with breaks, workstation adjustments, sleep, exercise, and
+            appropriate healthcare.
+          </p>
+        </section>
+
+        <section class="sitting-warning">
+          <h2>When to Seek Medical Care</h2>
+
+          <p>
+            Seek prompt evaluation for chest pain, shortness of breath, sudden
+            weakness or numbness, severe swelling in one leg, loss of bladder or
+            bowel control, new difficulty walking, severe pain after injury, or
+            rapidly worsening symptoms. Persistent neck, back, hip, arm, or hand
+            symptoms that interfere with sleep, work, strength, or daily
+            activity also deserve professional assessment.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Sitting is not the enemy. Staying in one position too long is often
+            the bigger problem.
+          </p>
+
+          <p>
+            A supportive workstation, frequent movement, regular physical
+            activity, and therapeutic massage can work together to reduce
+            tension and improve everyday comfort.
+          </p>
+
+          <p>
+            The goal is not perfect posture. The goal is a workday that gives
+            your body more options and enough recovery to keep moving well.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="sitting-related">
+          <h2>Continue Reading</h2>
+
+          <div class="sitting-related-grid">
+            <a
+              href="five-minute-movement-breaks-for-busy-workdays.html"
+              class="sitting-related-card"
+            >
+              <h3>Five-Minute Movement Breaks for Busy Workdays</h3>
+              <p>
+                Discover short movement breaks that can reduce stiffness and
+                make activity easier to include during the workday.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-desk-work-can-cause-neck-and-shoulder-tension.html"
+              class="sitting-related-card"
+            >
+              <h3>Why Desk Work Can Cause Neck and Shoulder Tension</h3>
+              <p>
+                Learn how screen use, repetitive tasks, and sustained positions
+                can contribute to upper-body discomfort.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="morning-mobility-routine.html"
+              class="sitting-related-card"
+            >
+              <h3>Morning Mobility Routine</h3>
+              <p>
+                Use a gentle head-to-toe routine to prepare the neck, shoulders,
+                spine, hips, and ankles for the day.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://medlineplus.gov/healthrisksofaninactivelifestyle.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Health Risks of an Inactive Lifestyle
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ergonomics.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Ergonomics
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Occupational Safety and Health Administration: Computer
+                Workstations eTool
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/work-process"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OSHA: Computer Workstation Work Process and Microbreaks
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health:
+                Massage Therapy
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sitting-cta">
+          <h2>Help Your Body Recover From the Workday</h2>
+
+          <p>
+            Looking for therapeutic care for the neck, shoulders, back, hips,
+            forearms, or hands? Schedule a FlowTherapy session centered around
+            your work demands, comfort, boundaries, and movement goals.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Movement &amp; Mobility
+            articles.
+          </p>
+
+          <ul>
+            <li>Why Walking Is Underrated</li>
+            <li>Mobility After 40</li>
+            <li>How Often Should You Stretch?</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

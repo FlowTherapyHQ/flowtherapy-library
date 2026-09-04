@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Hydration and Muscle Health</title>
+
+    <meta
+      name="description"
+      content="Learn how hydration supports movement, temperature regulation, exercise, and recovery—plus practical ways to recognize and respond to changing fluid needs."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .hydration-highlight {
+        margin: 34px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(232, 246, 255, 0.98),
+          rgba(248, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .hydration-highlight h2 {
+        margin-top: 0;
+      }
+
+      .hydration-highlight p {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .hydration-functions {
+        margin: 38px 0;
+      }
+
+      .hydration-functions > h2,
+      .hydration-functions > p {
+        text-align: center;
+      }
+
+      .hydration-functions > p {
+        max-width: 700px;
+        margin: 0 auto 26px;
+      }
+
+      .hydration-function-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .hydration-function-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .hydration-function-card h3 {
+        margin: 0 0 9px;
+        color: #1677c8;
+        font-size: 1.15rem;
+      }
+
+      .hydration-function-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .moving-target {
+        margin: 38px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .moving-target h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .moving-target-intro {
+        max-width: 720px;
+        margin: 0 auto 25px;
+        text-align: center;
+      }
+
+      .fluid-factor-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .fluid-factor {
+        padding: 18px;
+        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid #d6e7f7;
+      }
+
+      .fluid-factor strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .fluid-factor p {
+        margin: 0;
+        line-height: 1.55;
+      }
+
+      .hydration-signs {
+        margin: 38px 0;
+      }
+
+      .hydration-signs > h2,
+      .hydration-signs > p {
+        text-align: center;
+      }
+
+      .hydration-signs > p {
+        max-width: 700px;
+        margin: 0 auto 24px;
+      }
+
+      .hydration-sign-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .hydration-sign {
+        padding: 18px;
+        border-left: 4px solid #1677c8;
+        border-radius: 10px;
+        background: #f8fbff;
+      }
+
+      .hydration-sign strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #1677c8;
+      }
+
+      .hydration-sign p {
+        margin: 0;
+        line-height: 1.55;
+      }
+
+      .hydration-habits {
+        margin: 38px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .hydration-habits h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .hydration-habits-intro {
+        max-width: 700px;
+        margin: 0 auto 26px;
+        text-align: center;
+      }
+
+      .hydration-habit-list {
+        display: grid;
+        gap: 14px;
+        max-width: 780px;
+        margin: 0 auto;
+      }
+
+      .hydration-habit {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 15px;
+        align-items: start;
+        padding: 18px;
+        border: 1px solid #d6e7f7;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .hydration-habit-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #e5f1ff;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .hydration-habit h3 {
+        margin: 0 0 5px;
+        color: #1677c8;
+        font-size: 1.05rem;
+      }
+
+      .hydration-habit p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .electrolyte-panel {
+        margin: 38px 0;
+        padding: 28px;
+        border-left: 5px solid #1677c8;
+        border-radius: 12px;
+        background: #f6faff;
+      }
+
+      .electrolyte-panel h2 {
+        margin-top: 0;
+      }
+
+      .electrolyte-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .hydration-myth {
+        margin: 36px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .hydration-myth strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.2rem;
+      }
+
+      .hydration-myth p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 820px) {
+        .fluid-factor-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .hydration-function-grid,
+        .hydration-sign-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hydration-habit {
+          grid-template-columns: 40px 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="hydration-and-muscle-health">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/recovery.html"> ← Back to Recovery FlowNotes </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Recovery</div>
+
+          <h1>Hydration and Muscle Health</h1>
+
+          <p class="article-subtitle">
+            How fluid balance supports movement, exercise, recovery, and your
+            body’s ability to respond to everyday demands.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            July 2026
+            <span aria-hidden="true">•</span>
+            7-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Hydration is often treated like a simple checklist item: drink more
+            water and everything will work better.
+          </p>
+
+          <p>
+            In reality, fluid balance is more personal and more dynamic. Your
+            needs change with activity, temperature, illness, medications, diet,
+            body size, and how much fluid you lose throughout the day.
+          </p>
+
+          <p>
+            Water is not a cure for every ache, and drinking excessive amounts
+            will not make muscle tension disappear. Still, adequate hydration
+            supports normal body function and belongs alongside sleep,
+            nutrition, movement, and rest as part of a complete recovery
+            routine.
+          </p>
+        </div>
+
+        <section class="hydration-highlight">
+          <h2>Hydration Supports the Whole System</h2>
+
+          <p>
+            Muscles do not work in isolation. Comfortable movement depends on
+            the nervous system, circulation, temperature regulation, energy
+            availability, joints, connective tissues, and many other systems
+            functioning together. Maintaining appropriate fluid balance helps
+            support those normal processes.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Does Hydration Mean?</h2>
+
+          <p>
+            Hydration refers to maintaining enough water and fluid in the body
+            for normal function. Dehydration occurs when the body loses more
+            fluid than it takes in.
+          </p>
+
+          <p>
+            Fluid is continually lost through breathing, urine, bowel movements,
+            and perspiration. Activity, heat, fever, vomiting, diarrhea, and
+            heavy sweating can increase those losses.
+          </p>
+
+          <p>
+            Staying hydrated is not about drinking as much water as possible. It
+            is about replacing fluid at a rate that reasonably matches your
+            individual needs and losses.
+          </p>
+        </section>
+
+        <section class="hydration-functions">
+          <h2>How Fluid Balance Supports Movement and Recovery</h2>
+
+          <p>
+            Hydration is one part of several normal processes that influence how
+            you feel and perform.
+          </p>
+
+          <div class="hydration-function-grid">
+            <article class="hydration-function-card">
+              <h3>Temperature Regulation</h3>
+
+              <p>
+                Perspiration helps the body release heat during activity and in
+                warm environments. Fluid losses can increase when you sweat more
+                heavily.
+              </p>
+            </article>
+
+            <article class="hydration-function-card">
+              <h3>Circulation</h3>
+
+              <p>
+                Water is an important component of blood and other body fluids
+                that transport oxygen, nutrients, hormones, and waste products.
+              </p>
+            </article>
+
+            <article class="hydration-function-card">
+              <h3>Physical Performance</h3>
+
+              <p>
+                Significant fluid loss may contribute to fatigue and make
+                endurance, strength, power, or repeated effort feel more
+                difficult.
+              </p>
+            </article>
+
+            <article class="hydration-function-card">
+              <h3>Everyday Function</h3>
+
+              <p>
+                Dehydration may affect concentration, mood, energy, digestion,
+                and the body’s ability to regulate temperature.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Hydration is not a single number you achieve once. It is an ongoing
+          balance between what your body takes in and what it loses.
+        </blockquote>
+
+        <section class="moving-target">
+          <h2>Hydration Is a Moving Target</h2>
+
+          <p class="moving-target-intro">
+            There is no single amount of water that is ideal for every person in
+            every situation.
+          </p>
+
+          <div class="fluid-factor-grid">
+            <article class="fluid-factor">
+              <strong>Activity</strong>
+
+              <p>
+                Exercise and physically demanding work may increase fluid loss
+                through perspiration.
+              </p>
+            </article>
+
+            <article class="fluid-factor">
+              <strong>Environment</strong>
+
+              <p>
+                Hot, humid, or high-altitude environments can change how much
+                fluid your body needs.
+              </p>
+            </article>
+
+            <article class="fluid-factor">
+              <strong>Health</strong>
+
+              <p>
+                Fever, vomiting, diarrhea, pregnancy, breastfeeding, and some
+                medical conditions may affect fluid requirements.
+              </p>
+            </article>
+
+            <article class="fluid-factor">
+              <strong>Medications</strong>
+
+              <p>
+                Certain medications can influence fluid loss, thirst, kidney
+                function, or electrolyte balance.
+              </p>
+            </article>
+
+            <article class="fluid-factor">
+              <strong>Food and Beverages</strong>
+
+              <p>
+                Water comes from both drinks and foods. Other beverages can
+                contribute to total fluid intake as well.
+              </p>
+            </article>
+
+            <article class="fluid-factor">
+              <strong>Individual Differences</strong>
+
+              <p>
+                Body size, sweat rate, age, health history, and daily routines
+                all influence personal needs.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Does Dehydration Cause Muscle Cramps?</h2>
+
+          <p>
+            Muscle cramps can have many possible contributors, including
+            fatigue, unfamiliar activity, prolonged positioning, heat,
+            neuromuscular factors, fluid loss, and electrolyte changes.
+          </p>
+
+          <p>
+            Dehydration may contribute in some situations, particularly during
+            prolonged activity or heavy sweating, but drinking water is not a
+            guaranteed solution for every cramp.
+          </p>
+
+          <p>
+            Frequent, severe, unexplained, or persistent cramping should not be
+            automatically blamed on hydration. It may deserve evaluation by an
+            appropriate healthcare provider.
+          </p>
+        </section>
+
+        <section class="hydration-signs">
+          <h2>Possible Signs That You Need More Fluid</h2>
+
+          <p>
+            No single sign provides a perfect hydration measurement, but several
+            changes together may suggest that your fluid intake has not kept
+            pace with your losses.
+          </p>
+
+          <div class="hydration-sign-grid">
+            <article class="hydration-sign">
+              <strong>Thirst or dry mouth</strong>
+
+              <p>
+                Thirst is one of the body’s normal signals that fluid may be
+                needed.
+              </p>
+            </article>
+
+            <article class="hydration-sign">
+              <strong>Darker or less frequent urine</strong>
+
+              <p>
+                Urine may become more concentrated when the body is conserving
+                water, although medications and foods can also change its color.
+              </p>
+            </article>
+
+            <article class="hydration-sign">
+              <strong>Fatigue or weakness</strong>
+
+              <p>
+                Inadequate fluid intake may contribute to feeling unusually
+                tired, especially during activity or heat exposure.
+              </p>
+            </article>
+
+            <article class="hydration-sign">
+              <strong>Headache or dizziness</strong>
+
+              <p>
+                These symptoms can have many causes, but they may accompany
+                dehydration in some situations.
+              </p>
+            </article>
+
+            <article class="hydration-sign">
+              <strong>Reduced exercise tolerance</strong>
+
+              <p>
+                Activity may feel more difficult when fluid losses are not
+                adequately replaced.
+              </p>
+            </article>
+
+            <article class="hydration-sign">
+              <strong>Feeling overheated</strong>
+
+              <p>
+                Fluid loss can make temperature regulation more difficult,
+                particularly in hot conditions.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Should Your Urine Always Be Completely Clear?</h2>
+
+          <p>
+            Not necessarily. Urine color naturally varies throughout the day,
+            and completely clear urine is not required at all times.
+          </p>
+
+          <p>
+            Pale yellow urine is often used as a general sign that fluid intake
+            may be adequate, while consistently dark urine may suggest that more
+            fluid is needed. However, supplements, foods, medications, medical
+            conditions, and the first urine of the morning can all affect color.
+          </p>
+
+          <p>
+            Urine color is a practical observation—not a diagnosis or a perfect
+            test.
+          </p>
+        </section>
+
+        <section class="hydration-habits">
+          <h2>Build a Practical Hydration Routine</h2>
+
+          <p class="hydration-habits-intro">
+            Consistency is usually more useful than trying to “catch up” by
+            drinking a large amount all at once.
+          </p>
+
+          <div class="hydration-habit-list">
+            <article class="hydration-habit">
+              <div class="hydration-habit-number">1</div>
+
+              <div>
+                <h3>Drink regularly throughout the day</h3>
+
+                <p>
+                  Spread fluid intake across your normal routine instead of
+                  waiting until late in the day.
+                </p>
+              </div>
+            </article>
+
+            <article class="hydration-habit">
+              <div class="hydration-habit-number">2</div>
+
+              <div>
+                <h3>Keep water accessible</h3>
+
+                <p>
+                  A bottle or cup within reach can make regular drinking easier
+                  during work, travel, and exercise.
+                </p>
+              </div>
+            </article>
+
+            <article class="hydration-habit">
+              <div class="hydration-habit-number">3</div>
+
+              <div>
+                <h3>Plan for activity and heat</h3>
+
+                <p>
+                  Anticipate increased fluid needs when exercising, working
+                  outdoors, traveling, or spending time in hot environments.
+                </p>
+              </div>
+            </article>
+
+            <article class="hydration-habit">
+              <div class="hydration-habit-number">4</div>
+
+              <div>
+                <h3>Use meals as reminders</h3>
+
+                <p>
+                  Drinking with meals can create a simple routine while foods
+                  such as fruit, vegetables, soups, and yogurt also contribute
+                  fluid.
+                </p>
+              </div>
+            </article>
+
+            <article class="hydration-habit">
+              <div class="hydration-habit-number">5</div>
+
+              <div>
+                <h3>Respond to changing conditions</h3>
+
+                <p>
+                  Your usual intake may not be enough during illness, heavy
+                  sweating, extended activity, or unusually hot weather.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="electrolyte-panel">
+          <h2>Do You Always Need Electrolyte Drinks?</h2>
+
+          <p>
+            Most routine hydration needs can often be met through water, regular
+            meals, and other ordinary foods and beverages.
+          </p>
+
+          <p>
+            Electrolyte-containing drinks may be useful during prolonged
+            strenuous activity, heavy sweating, extended heat exposure, or
+            certain illnesses. They are not automatically necessary after every
+            workout or massage.
+          </p>
+
+          <p>
+            Many sports drinks contain added sugar and sodium. People with
+            kidney disease, heart conditions, blood-pressure concerns, fluid
+            restrictions, or other medical needs should follow guidance from
+            their healthcare team rather than using electrolyte products
+            casually.
+          </p>
+        </section>
+
+        <section>
+          <h2>Should You Drink Extra Water After Massage?</h2>
+
+          <p>
+            It is reasonable to return to your normal hydration routine after a
+            massage, particularly if you are thirsty or have not had much to
+            drink that day.
+          </p>
+
+          <p>
+            Massage does not “flush toxins” from the muscles, and you do not
+            need to force an excessive amount of water afterward. Drinking
+            beyond your body’s needs will not guarantee less soreness or better
+            massage results.
+          </p>
+
+          <p>
+            A balanced approach is simple: drink regularly, pay attention to
+            thirst, and consider whether activity, heat, illness, or other
+            factors have increased your fluid losses.
+          </p>
+        </section>
+
+        <div class="hydration-myth">
+          <strong>More is not always better.</strong>
+
+          <p>
+            Excessive water intake can disrupt the body’s fluid and electrolyte
+            balance. Hydration should support your needs—not become a contest to
+            consume the largest possible amount.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Hydration is important, but it should not become the automatic
+            explanation for every sore muscle, headache, cramp, or difficult
+            recovery day.
+          </p>
+
+          <p>
+            Your body responds to the combined effects of sleep, nutrition,
+            activity, stress, health conditions, workload, medications,
+            temperature, and fluid balance.
+          </p>
+
+          <p>
+            Instead of searching for a single perfect water target, build steady
+            habits and adjust them when your circumstances change. Recovery is
+            usually supported best by several consistent behaviors working
+            together.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Seek prompt medical help for confusion, fainting, severe weakness,
+            inability to keep fluids down, very little or no urination, rapid
+            breathing, rapid heartbeat, severe dizziness, signs of heat illness,
+            or suspected severe dehydration. Persistent thirst, frequent
+            urination, recurring dehydration, or unexplained symptoms should
+            also be discussed with a healthcare provider.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Your total fluid intake includes more than plain water. Milk, tea,
+            coffee, soups, fruits, vegetables, and other foods and beverages can
+            all contribute fluid to your daily intake.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="sleep-and-muscle-recovery.html"
+              class="related-article-card"
+            >
+              <h3>Sleep and Muscle Recovery</h3>
+
+              <p>
+                Learn why consistent sleep supports physical readiness,
+                exercise, energy, and recovery.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="heat-or-ice-which-should-you-use.html"
+              class="related-article-card"
+            >
+              <h3>Heat or Ice? Which Should You Use?</h3>
+
+              <p>
+                Compare two common comfort tools for soreness, stiffness,
+                swelling, and minor injuries.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="massage-soreness-what-is-normal.html"
+              class="related-article-card"
+            >
+              <h3>Massage Soreness: What Is Normal?</h3>
+
+              <p>
+                Understand mild post-massage soreness and when discomfort may
+                deserve additional attention.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, or treatment. Fluid needs vary,
+            and some medical conditions require specific fluid or electrolyte
+            instructions. Follow guidance from your healthcare provider if you
+            have kidney disease, heart disease, blood-pressure concerns, a fluid
+            restriction, an electrolyte disorder, or another condition affecting
+            hydration.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: About Water and
+                Healthier Drinks
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/dehydration.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Dehydration
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/fluidandelectrolytebalance.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Fluid and Electrolyte Balance
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://newsinhealth.nih.gov/2023/05/hydrating-health"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institutes of Health: Hydrating for Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8336541/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: Hydration to Maximize Performance
+                and Recovery
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Continue Your Wellness Journey</h2>
+
+          <p>
+            Looking for personalized care? Schedule a FlowTherapy session and
+            experience therapeutic massage tailored to your comfort, goals, and
+            individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

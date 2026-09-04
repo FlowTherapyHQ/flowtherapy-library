@@ -1,0 +1,1333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Recovery After Travel</title>
+
+    <meta
+      name="description"
+      content="Learn how prolonged sitting, disrupted sleep, travel stress, and changing time zones can affect your body—and discover practical ways to recover after a trip."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .travel-overview {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(232, 246, 255, 0.98),
+          rgba(249, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .travel-overview h2 {
+        margin-top: 0;
+      }
+
+      .travel-overview p {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .travel-demand-section {
+        margin: 40px 0;
+      }
+
+      .travel-demand-section > h2,
+      .travel-demand-section > p {
+        text-align: center;
+      }
+
+      .travel-demand-section > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .travel-demand-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .travel-demand-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .travel-demand-card h3 {
+        margin: 0 0 9px;
+        color: #1677c8;
+        font-size: 1.15rem;
+      }
+
+      .travel-demand-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .travel-timeline {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .travel-timeline h2,
+      .travel-timeline > p {
+        text-align: center;
+      }
+
+      .travel-timeline h2 {
+        margin-top: 0;
+      }
+
+      .travel-timeline > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .travel-timeline-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        max-width: 780px;
+        margin: 0 auto;
+      }
+
+      .travel-timeline-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .travel-timeline-label {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .travel-timeline-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .travel-timeline-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .during-travel-section {
+        margin: 40px 0;
+      }
+
+      .during-travel-section > h2,
+      .during-travel-section > p {
+        text-align: center;
+      }
+
+      .during-travel-section > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .travel-habit-list {
+        display: grid;
+        gap: 14px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .travel-habit {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #f8fbff;
+      }
+
+      .travel-habit-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .travel-habit h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .travel-habit p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .seat-movement-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .seat-movement-panel h2,
+      .seat-movement-panel > p {
+        text-align: center;
+      }
+
+      .seat-movement-panel h2 {
+        margin-top: 0;
+      }
+
+      .seat-movement-panel > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .seat-movement-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .seat-movement-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .seat-movement-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .seat-movement-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .arrival-reset {
+        margin: 40px 0;
+      }
+
+      .arrival-reset > h2,
+      .arrival-reset > p {
+        text-align: center;
+      }
+
+      .arrival-reset > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .arrival-reset-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .arrival-reset-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .arrival-reset-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .arrival-reset-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .jet-lag-section {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .jet-lag-section h2 {
+        margin-top: 0;
+      }
+
+      .jet-lag-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .travel-recovery-plan {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .travel-recovery-plan h2,
+      .travel-recovery-plan > p {
+        text-align: center;
+      }
+
+      .travel-recovery-plan h2 {
+        margin-top: 0;
+      }
+
+      .travel-recovery-plan > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .recovery-day-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .recovery-day-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .recovery-day-card span {
+        display: inline-block;
+        margin-bottom: 11px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .recovery-day-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .recovery-day-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .travel-comfort-section {
+        margin: 40px 0;
+      }
+
+      .travel-comfort-section > h2,
+      .travel-comfort-section > p {
+        text-align: center;
+      }
+
+      .travel-comfort-section > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .travel-comfort-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .travel-comfort-card {
+        padding: 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #f8fbff;
+      }
+
+      .travel-comfort-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .travel-comfort-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .blood-clot-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #e9b7b7;
+        border-left: 5px solid #b52a2a;
+        border-radius: 14px;
+        background: #fff8f8;
+      }
+
+      .blood-clot-panel h2 {
+        margin-top: 0;
+        color: #8f2020;
+      }
+
+      .blood-clot-panel h3 {
+        margin-top: 24px;
+        color: #8f2020;
+      }
+
+      .blood-clot-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .travel-reminder {
+        margin: 38px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .travel-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .travel-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 860px) {
+        .arrival-reset-grid,
+        .recovery-day-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .travel-demand-grid,
+        .seat-movement-grid,
+        .travel-comfort-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .travel-timeline-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .travel-habit {
+          grid-template-columns: 40px 1fr;
+        }
+      }
+    </style>
+  </head>
+
+<body data-article-id="recovery-after-travel">
+    <!-- Shared header generated by site-layout.js -->
+<div id="site-header"></div>
+
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/recovery.html"> ← Back to Recovery FlowNotes </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Recovery</div>
+
+          <h1>Recovery After Travel</h1>
+
+          <p class="article-subtitle">
+            How to help your body adjust after prolonged sitting, disrupted
+            sleep, changing routines, and long hours away from home.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Travel can be enjoyable, necessary, exciting, stressful—or all four
+            at once.
+          </p>
+
+          <p>
+            Whether you travel by plane, car, train, or bus, long periods in one
+            position can leave the neck, shoulders, back, hips, and legs feeling
+            stiff. Carrying luggage, sleeping in an unfamiliar bed, changing
+            time zones, and disrupting your normal meals or exercise routine can
+            add to the physical demand.
+          </p>
+
+          <p>
+            Recovery after travel does not require an intense workout or an
+            elaborate wellness routine. A gradual return to comfortable
+            movement, sleep, hydration, and familiar habits is often a better
+            place to begin.
+          </p>
+        </div>
+
+        <section class="travel-overview">
+          <h2>Travel Fatigue Is More Than Tired Muscles</h2>
+
+          <p>
+            Your post-travel experience may reflect several demands at once:
+            prolonged sitting, reduced movement, stress, irregular meals,
+            interrupted sleep, unfamiliar surroundings, carrying bags, and
+            changes to your normal schedule. Recovery may take time even when
+            nothing is injured.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Does Travel Make the Body Feel Stiff?</h2>
+
+          <p>
+            The body is designed to change positions regularly. During travel,
+            however, space and convenience may limit how often you can stand,
+            walk, stretch, or adjust your posture.
+          </p>
+
+          <p>
+            Remaining in one position does not necessarily damage your body, but
+            it may make certain muscles feel tired, shortened, compressed, or
+            uncomfortable.
+          </p>
+
+          <p>
+            Stiffness can also develop because your body has been asked to do
+            something different from its normal routine. A position that feels
+            manageable for thirty minutes may feel much less comfortable after
+            several hours.
+          </p>
+        </section>
+
+        <section class="travel-demand-section">
+          <h2>The Physical Demands of Travel</h2>
+
+          <p>Travel affects more than the muscles involved in sitting.</p>
+
+          <div class="travel-demand-grid">
+            <article class="travel-demand-card">
+              <h3>Prolonged Sitting</h3>
+
+              <p>
+                The hips and knees remain bent while the back, neck, and
+                shoulders work to support a relatively fixed posture.
+              </p>
+            </article>
+
+            <article class="travel-demand-card">
+              <h3>Luggage and Bags</h3>
+
+              <p>
+                Lifting, pulling, carrying, and placing bags overhead may
+                challenge the shoulders, arms, back, and grip.
+              </p>
+            </article>
+
+            <article class="travel-demand-card">
+              <h3>Unfamiliar Sleep</h3>
+
+              <p>
+                Different beds, pillows, room temperatures, sounds, and
+                schedules can affect sleep quality and morning comfort.
+              </p>
+            </article>
+
+            <article class="travel-demand-card">
+              <h3>Travel Stress</h3>
+
+              <p>
+                Delays, crowds, navigation, time pressure, and uncertainty may
+                contribute to muscle tension and mental fatigue.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Your body may not need to be “fixed” after travel. It may simply need
+          time, movement, sleep, and a return to familiar routines.
+        </blockquote>
+
+        <section class="travel-timeline">
+          <h2>A Gentle Travel-Recovery Timeline</h2>
+
+          <p>
+            Recovery does not need to happen all at once. Let your body adjust
+            in stages.
+          </p>
+
+          <div class="travel-timeline-grid">
+            <article class="travel-timeline-card">
+              <span class="travel-timeline-label">During the trip</span>
+
+              <h3>Change positions when possible</h3>
+
+              <p>
+                Stand, walk, or move your feet and ankles periodically when it
+                is safe and practical.
+              </p>
+            </article>
+
+            <article class="travel-timeline-card">
+              <span class="travel-timeline-label">After arrival</span>
+
+              <h3>Reconnect with easy movement</h3>
+
+              <p>
+                A short walk or gentle mobility session may feel better than
+                immediately beginning a demanding workout.
+              </p>
+            </article>
+
+            <article class="travel-timeline-card">
+              <span class="travel-timeline-label">First evening</span>
+
+              <h3>Support rest and routine</h3>
+
+              <p>
+                Eat, hydrate, reduce unnecessary demands, and prepare for sleep
+                according to the local schedule when possible.
+              </p>
+            </article>
+
+            <article class="travel-timeline-card">
+              <span class="travel-timeline-label">Following days</span>
+
+              <h3>Return gradually</h3>
+
+              <p>
+                Resume exercise and normal responsibilities based on your
+                energy, sleep, comfort, and ability to move well.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="during-travel-section">
+          <h2>Support Your Body During the Journey</h2>
+
+          <p>Recovery can begin before the trip ends.</p>
+
+          <div class="travel-habit-list">
+            <article class="travel-habit">
+              <div class="travel-habit-number">1</div>
+
+              <div>
+                <h3>Change positions periodically</h3>
+
+                <p>
+                  Shift your posture, uncross your legs, adjust your seat, or
+                  stand when it is safe and permitted.
+                </p>
+              </div>
+            </article>
+
+            <article class="travel-habit">
+              <div class="travel-habit-number">2</div>
+
+              <div>
+                <h3>Walk during longer trips</h3>
+
+                <p>
+                  During long flights, walk the aisle periodically when
+                  conditions allow. During road trips, plan safe stops to stand
+                  and move.
+                </p>
+              </div>
+            </article>
+
+            <article class="travel-habit">
+              <div class="travel-habit-number">3</div>
+
+              <div>
+                <h3>Move your feet and ankles</h3>
+
+                <p>
+                  Heel raises, toe raises, ankle movements, and gentle calf
+                  contractions can be performed while seated.
+                </p>
+              </div>
+            </article>
+
+            <article class="travel-habit">
+              <div class="travel-habit-number">4</div>
+
+              <div>
+                <h3>Manage luggage thoughtfully</h3>
+
+                <p>
+                  Use wheels when available, keep frequently used items
+                  accessible, and ask for help when a bag is too heavy or
+                  awkward to lift safely.
+                </p>
+              </div>
+            </article>
+
+            <article class="travel-habit">
+              <div class="travel-habit-number">5</div>
+
+              <div>
+                <h3>Maintain reasonable hydration</h3>
+
+                <p>
+                  Drink regularly based on thirst, activity, temperature, health
+                  needs, and travel conditions rather than trying to consume an
+                  excessive amount all at once.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="seat-movement-panel">
+          <h2>Simple Movements From Your Seat</h2>
+
+          <p>
+            Keep all movements small and comfortable. Do not perform them when
+            seat-belt instructions, traffic, turbulence, or other conditions
+            make movement unsafe.
+          </p>
+
+          <div class="seat-movement-grid">
+            <article class="seat-movement-card">
+              <h3>Heel Raises</h3>
+
+              <p>
+                Keep your toes on the floor while gently lifting and lowering
+                your heels.
+              </p>
+            </article>
+
+            <article class="seat-movement-card">
+              <h3>Toe Raises</h3>
+
+              <p>
+                Keep your heels down while gently lifting and lowering your
+                toes.
+              </p>
+            </article>
+
+            <article class="seat-movement-card">
+              <h3>Ankle Movement</h3>
+
+              <p>
+                Point and flex your feet or move the ankles through a
+                comfortable range.
+              </p>
+            </article>
+
+            <article class="seat-movement-card">
+              <h3>Shoulder Reset</h3>
+
+              <p>
+                Let your shoulders relax away from your ears and gently change
+                the position of your arms.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Should You Do After You Arrive?</h2>
+
+          <p>
+            It may be tempting to immediately stretch as deeply as possible,
+            schedule an intense workout, or aggressively address every stiff
+            area.
+          </p>
+
+          <p>
+            A gradual approach is often more comfortable. Begin with easy
+            movement and notice how your body responds before increasing the
+            intensity.
+          </p>
+
+          <p>
+            Post-travel stiffness may begin improving simply because you are no
+            longer confined to a seat and can return to varied positions.
+          </p>
+        </section>
+
+        <section class="arrival-reset">
+          <h2>Your Arrival Reset</h2>
+
+          <p>
+            Choose what fits your energy, health, schedule, and travel demands.
+          </p>
+
+          <div class="arrival-reset-grid">
+            <article class="arrival-reset-card">
+              <h3>Walk Comfortably</h3>
+
+              <p>
+                A short, relaxed walk can help you transition from prolonged
+                sitting without creating another demanding task.
+              </p>
+            </article>
+
+            <article class="arrival-reset-card">
+              <h3>Restore Normal Movement</h3>
+
+              <p>
+                Gently move the neck, shoulders, spine, hips, knees, and ankles
+                through comfortable ranges.
+              </p>
+            </article>
+
+            <article class="arrival-reset-card">
+              <h3>Return to Routine</h3>
+
+              <p>
+                Resume ordinary meals, hydration, sleep, and daily habits rather
+                than searching for a dramatic recovery solution.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Should You Exercise Immediately After Travel?</h2>
+
+          <p>
+            That depends on the trip, the activity you planned, and how you
+            currently feel.
+          </p>
+
+          <p>
+            A short trip may have little effect on your normal routine. After a
+            long journey, disrupted night, major time-zone change, or stressful
+            travel day, reducing workout intensity may be more appropriate.
+          </p>
+
+          <p>
+            Consider your sleep, energy, coordination, balance, hydration,
+            soreness, and ability to maintain good movement quality.
+          </p>
+
+          <p>
+            Light movement may feel refreshing. A heavy or technically demanding
+            workout may be better saved for a time when you are more rested and
+            alert.
+          </p>
+        </section>
+
+        <section class="jet-lag-section">
+          <h2>What About Jet Lag?</h2>
+
+          <p>
+            Jet lag occurs when your normal internal rhythms do not match the
+            local time at your destination. It is most common after travel
+            across multiple time zones.
+          </p>
+
+          <p>
+            You may notice disrupted sleep, daytime fatigue, difficulty
+            concentrating, irritability, changes in appetite, or reduced
+            physical and mental performance.
+          </p>
+
+          <p>
+            When possible, follow the local schedule for daylight, meals,
+            activity, and sleep. Short naps may be useful, but long or late naps
+            can make it harder to sleep at the local bedtime.
+          </p>
+
+          <p>
+            Jet lag usually improves as the body adjusts. Persistent or severe
+            sleep concerns should be discussed with a healthcare provider.
+          </p>
+        </section>
+
+        <section class="travel-recovery-plan">
+          <h2>A Three-Day Return Plan</h2>
+
+          <p>
+            This example is flexible. A short road trip may require very little
+            adjustment, while international travel may require more time.
+          </p>
+
+          <div class="recovery-day-grid">
+            <article class="recovery-day-card">
+              <span>Day One</span>
+
+              <h3>Decompress</h3>
+
+              <p>
+                Choose gentle movement, unpack what you need, eat a familiar
+                meal, hydrate normally, and prepare for sleep.
+              </p>
+            </article>
+
+            <article class="recovery-day-card">
+              <span>Day Two</span>
+
+              <h3>Reassess</h3>
+
+              <p>
+                Notice your energy, stiffness, sleep quality, and concentration
+                before resuming demanding exercise or a full schedule.
+              </p>
+            </article>
+
+            <article class="recovery-day-card">
+              <span>Day Three</span>
+
+              <h3>Rebuild</h3>
+
+              <p>
+                Gradually return to normal activity if your body is responding
+                well. Reduce intensity if fatigue or discomfort remains.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="travel-comfort-section">
+          <h2>What May Help Common Post-Travel Discomfort?</h2>
+
+          <p>
+            Comfort strategies should feel supportive rather than punishing.
+          </p>
+
+          <div class="travel-comfort-grid">
+            <article class="travel-comfort-card">
+              <h3>Neck and Shoulder Tension</h3>
+
+              <p>
+                Change positions, support your arms, take screen breaks, use
+                comfortable warmth, and try gentle neck and shoulder movement.
+              </p>
+            </article>
+
+            <article class="travel-comfort-card">
+              <h3>Low-Back Stiffness</h3>
+
+              <p>
+                Walk, vary sitting positions, avoid remaining in bed all day,
+                and return gradually to ordinary movement.
+              </p>
+            </article>
+
+            <article class="travel-comfort-card">
+              <h3>Hip Tightness</h3>
+
+              <p>
+                Use comfortable walking and gentle hip movement instead of
+                forcing a deep stretch immediately after prolonged sitting.
+              </p>
+            </article>
+
+            <article class="travel-comfort-card">
+              <h3>Tired Legs and Feet</h3>
+
+              <p>
+                Remove restrictive footwear, move the ankles, walk comfortably,
+                and allow time away from standing or carrying luggage.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Help After Travel?</h2>
+
+          <p>
+            Massage may help some travelers feel more relaxed, comfortable, or
+            mobile after a long journey.
+          </p>
+
+          <p>
+            Tell your massage therapist how long you traveled, whether you
+            crossed time zones, how you slept, where you feel discomfort, and
+            whether you have any swelling, warmth, redness, unusual tenderness,
+            or medical concerns.
+          </p>
+
+          <p>
+            Post-travel massage should not be used to evaluate or treat a
+            possible blood clot. New one-sided swelling, unexplained calf pain,
+            warmth, or redness requires medical attention rather than routine
+            bodywork.
+          </p>
+        </section>
+
+        <section class="blood-clot-panel">
+          <h2>Important: Know the Signs of a Possible Blood Clot</h2>
+
+          <p>
+            The overall risk of developing a travel-associated blood clot is
+            small for most people, but risk may increase during long periods of
+            limited movement—especially when other risk factors are present.
+          </p>
+
+          <h3>Possible signs of deep vein thrombosis may include:</h3>
+
+          <ul>
+            <li>New swelling in one leg or arm.</li>
+            <li>Unexplained pain or tenderness.</li>
+            <li>Skin that feels unusually warm.</li>
+            <li>Redness or discoloration.</li>
+          </ul>
+
+          <h3>Possible signs of pulmonary embolism may include:</h3>
+
+          <ul>
+            <li>Sudden shortness of breath.</li>
+            <li>Chest pain that may worsen with a deep breath or cough.</li>
+            <li>Rapid or irregular heartbeat.</li>
+            <li>Coughing up blood.</li>
+            <li>Lightheadedness, fainting, or severe weakness.</li>
+          </ul>
+
+          <p>
+            Symptoms of a possible pulmonary embolism require emergency medical
+            attention. Do not massage a limb when a blood clot is suspected.
+          </p>
+        </section>
+
+        <section>
+          <h2>Who May Have a Higher Travel-Related Blood-Clot Risk?</h2>
+
+          <p>
+            Risk varies, and many people who develop travel-associated blood
+            clots have one or more additional risk factors.
+          </p>
+
+          <p>Examples may include:</p>
+
+          <ul class="article-list-check">
+            <li>A previous blood clot or known clotting disorder.</li>
+            <li>Recent surgery, hospitalization, or significant injury.</li>
+            <li>Limited mobility.</li>
+            <li>Pregnancy or the postpartum period.</li>
+            <li>Use of estrogen-containing medication.</li>
+            <li>Active cancer or certain medical conditions.</li>
+            <li>Older age, obesity, or a family history of blood clots.</li>
+          </ul>
+
+          <p>
+            People with increased risk should discuss long-distance travel with
+            their healthcare provider. Compression garments or medication should
+            be used only when appropriately recommended and fitted.
+          </p>
+        </section>
+
+        <div class="travel-reminder">
+          <strong>Travel recovery is a transition—not a test.</strong>
+
+          <p>
+            You do not need to compensate for sitting by completing an extreme
+            workout or stretching until everything feels loose. Give your body
+            opportunities to move, rest, and return to routine gradually.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Travel changes more than your location. It may temporarily change
+            how you sleep, sit, eat, move, work, and manage stress.
+          </p>
+
+          <p>
+            When your body feels different afterward, consider the full travel
+            experience instead of assuming one muscle or posture is the entire
+            problem.
+          </p>
+
+          <p>
+            Comfortable movement, adequate rest, reasonable hydration, and time
+            may be enough for ordinary travel stiffness. When symptoms are
+            severe, unusual, one-sided, or worsening, medical evaluation is more
+            appropriate than attempting to work through them.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Seek medical evaluation for severe or worsening pain, new one-sided
+            swelling, unusual warmth or redness, loss of function, numbness,
+            weakness, fever, or symptoms following an injury. Seek emergency
+            care for sudden shortness of breath, chest pain, fainting, coughing
+            up blood, or other possible signs of a pulmonary embolism.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Travel-associated blood clots are not limited to air travel.
+            Prolonged immobility during travel by car, train, or bus may also
+            increase risk in susceptible individuals.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="active-recovery-vs-rest-days.html"
+              class="related-article-card"
+            >
+              <h3>Active Recovery vs. Rest Days</h3>
+
+              <p>
+                Learn when gentle movement may be helpful and when your body may
+                need a genuine break from structured activity.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="sleep-and-muscle-recovery.html"
+              class="related-article-card"
+            >
+              <h3>Sleep and Muscle Recovery</h3>
+
+              <p>
+                Explore how consistent sleep supports physical readiness,
+                energy, performance, and recovery.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="hydration-and-muscle-health.html"
+              class="related-article-card"
+            >
+              <h3>Hydration and Muscle Health</h3>
+
+              <p>
+                Understand how fluid balance supports movement, temperature
+                regulation, everyday activity, and recovery.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, treatment, or individualized
+            travel guidance. Consult a qualified healthcare provider before
+            long-distance travel when you have a history of blood clots, recent
+            surgery, limited mobility, pregnancy, cancer, a clotting disorder,
+            or another condition that may increase travel-related risk.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://wwwnc.cdc.gov/travel/page/dvt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CDC Travelers’ Health: Blood Clots During Travel
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/blood-clots/risk-factors/travel.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CDC: Understanding Your Risk for Blood Clots With Travel
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wwwnc.cdc.gov/travel/page/jet-lag"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CDC Travelers’ Health: Jet Lag
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CDC Yellow Book: Jet Lag Disorder
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/patientinstructions/000719.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Jet Lag Prevention
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Continue Your Wellness Journey</h2>
+
+          <p>
+            Feeling stiff or tired after travel? Schedule a FlowTherapy session
+            and experience therapeutic massage tailored to your comfort, travel
+            demands, wellness goals, and individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+<!-- Shared footer generated by site-layout.js -->
+<div id="site-footer"></div>
+
+<script src="/assets/js/site-layout.js"></script>
+<script src="/assets/js/content-registry.js"></script>
+<script src="/assets/js/related-articles.js"></script>
+<script src="/assets/js/article-utils.js"></script>
+
+</body>
+</html>

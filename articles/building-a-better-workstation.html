@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | Building a Better Workstation</title>
+    <meta
+      name="description"
+      content="Learn how to improve monitor, keyboard, mouse, chair, lighting, reach, and movement habits—and how massage may support workplace comfort and recovery."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .workstation-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+      .workstation-opening > * {
+        padding: 30px;
+        border-radius: 18px;
+      }
+      .workstation-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+      .workstation-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+      .workstation-opening h2,
+      .workstation-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .workstation-audit,
+      .workstation-priorities,
+      .workstation-massage {
+        margin: 42px 0;
+      }
+      .workstation-audit > h2,
+      .workstation-audit > p,
+      .workstation-priorities > h2,
+      .workstation-priorities > p,
+      .workstation-massage > h2,
+      .workstation-massage > p {
+        text-align: center;
+      }
+      .workstation-audit > p,
+      .workstation-priorities > p,
+      .workstation-massage > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .audit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .audit-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .audit-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .audit-card p {
+        margin-bottom: 0;
+      }
+      .priority-list {
+        display: grid;
+        gap: 16px;
+        max-width: 860px;
+        margin: 28px auto 0;
+      }
+      .priority-row {
+        display: grid;
+        grid-template-columns: 180px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #fff;
+      }
+      .priority-label {
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+      }
+      .priority-copy {
+        padding: 22px 24px;
+      }
+      .priority-copy h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+      .priority-copy p {
+        margin: 0;
+      }
+      .workstation-plan {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .workstation-plan h2,
+      .workstation-plan > p {
+        text-align: center;
+      }
+      .workstation-plan h2 {
+        color: #1677c8;
+      }
+      .workstation-plan > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .plan-list {
+        display: grid;
+        gap: 14px;
+        max-width: 820px;
+        margin: 28px auto 0;
+      }
+      .plan-item {
+        padding: 20px 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #fff;
+      }
+      .plan-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+      .plan-item p {
+        margin: 0;
+      }
+      .workstation-massage-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .massage-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #f7fbff;
+      }
+      .massage-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .massage-card p {
+        margin-bottom: 0;
+      }
+      .important-note {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .important-note h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .related-card p {
+        flex: 1;
+      }
+      .related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+      .article-sources h2 {
+        color: #1677c8;
+      }
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+      .article-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .article-cta h2 {
+        color: #1677c8;
+      }
+      .article-cta p {
+        max-width: 680px;
+        margin: 0 auto 24px;
+      }
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      @media (max-width: 840px) {
+        .workstation-opening,
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 700px) {
+        .audit-grid,
+        .workstation-massage-grid,
+        .priority-row {
+          grid-template-columns: 1fr;
+        }
+        .priority-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+      }
+    </style>
+  </head>
+  <body data-article-id="building-a-better-workstation">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/workplace-wellness.html"
+          >← Back to Workplace Wellness FlowNotes</a
+        >
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Workplace Wellness</div>
+          <h1>Building a Better Workstation</h1>
+          <p class="article-subtitle">
+            A practical guide to monitor placement, keyboard and mouse position,
+            chair support, lighting, reach, movement, and recovery.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span aria-hidden="true">•</span> August
+            2026 <span aria-hidden="true">•</span> 9-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            A better workstation is not necessarily the most expensive
+            workstation.
+          </p>
+          <p>
+            Small changes in screen position, reach distance, chair support,
+            lighting, and task variety can reduce unnecessary effort during the
+            day.
+          </p>
+          <p>
+            The goal is not to freeze the body into one perfect posture. The
+            goal is to make work more comfortable and make position changes
+            easier.
+          </p>
+        </div>
+
+        <section class="workstation-opening">
+          <div class="workstation-opening-main">
+            <h2>Fit the Workstation to the Person</h2>
+            <p>
+              OSHA notes that there is no single correct posture or equipment
+              arrangement that fits everyone.
+            </p>
+            <p>
+              Your height, vision, task demands, mobility, equipment, and
+              available space all influence what feels supportive.
+            </p>
+          </div>
+
+          <aside class="workstation-opening-side">
+            <h3>Start With the Biggest Irritation</h3>
+            <p>
+              You do not need to redesign everything at once. Fix the problem
+              that causes the most repeated reaching, leaning, squinting,
+              pressure, or discomfort.
+            </p>
+          </aside>
+        </section>
+
+        <section class="workstation-audit">
+          <h2>Your Workstation Audit</h2>
+          <p>
+            Use these areas to identify where the setup may be asking your body
+            to work harder than necessary.
+          </p>
+
+          <div class="audit-grid">
+            <article class="audit-card">
+              <h3>Monitor</h3>
+              <p>
+                Place the main screen directly in front of you and at a distance
+                that allows easy reading without leaning forward.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Keyboard</h3>
+              <p>
+                Keep it directly in front of you, with the shoulders relaxed,
+                elbows near the body, and wrists in line with the forearms.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Mouse or Pointer</h3>
+              <p>
+                Keep the pointing device close to the keyboard so you do not
+                repeatedly reach or hold the arm away from the body.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Chair</h3>
+              <p>
+                Use a stable chair that supports the back and allows the feet to
+                rest comfortably on the floor or a foot support.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Work Surface</h3>
+              <p>
+                Keep frequently used items within easy reach and allow enough
+                space for both the keyboard and mouse.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Lighting and Vision</h3>
+              <p>
+                Reduce glare, adjust text size, and use lighting that lets you
+                see without squinting or craning toward the screen.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Phone and Documents</h3>
+              <p>
+                Use a headset for frequent calls and place documents where they
+                can be read without repeated twisting or looking sharply
+                downward.
+              </p>
+            </article>
+
+            <article class="audit-card">
+              <h3>Movement Space</h3>
+              <p>
+                Leave enough room to stand, shift position, stretch, and walk
+                away from the workstation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workstation-priorities">
+          <h2>Fix These Problems First</h2>
+          <p>
+            These changes often provide more value than buying multiple
+            accessories without a plan.
+          </p>
+
+          <div class="priority-list">
+            <article class="priority-row">
+              <div class="priority-label">Repeated Reaching</div>
+              <div class="priority-copy">
+                <h3>Move the Mouse, Phone, and Supplies Closer</h3>
+                <p>
+                  Repeated reaching can increase effort through the shoulder,
+                  upper back, arm, and forearm.
+                </p>
+              </div>
+            </article>
+
+            <article class="priority-row">
+              <div class="priority-label">Leaning Forward</div>
+              <div class="priority-copy">
+                <h3>Improve Screen Visibility</h3>
+                <p>
+                  Increase text size, reduce glare, adjust monitor distance, and
+                  address vision needs before repeatedly pulling the head toward
+                  the screen.
+                </p>
+              </div>
+            </article>
+
+            <article class="priority-row">
+              <div class="priority-label">Unsupported Feet</div>
+              <div class="priority-copy">
+                <h3>Lower the Chair or Add a Foot Support</h3>
+                <p>
+                  Stable foot support can reduce pressure and make it easier to
+                  use the chair back.
+                </p>
+              </div>
+            </article>
+
+            <article class="priority-row">
+              <div class="priority-label">Elevated Shoulders</div>
+              <div class="priority-copy">
+                <h3>Lower the Input Devices</h3>
+                <p>
+                  A keyboard or mouse that is too high may encourage the
+                  shoulders to stay lifted during work.
+                </p>
+              </div>
+            </article>
+
+            <article class="priority-row">
+              <div class="priority-label">Laptop-Only Setup</div>
+              <div class="priority-copy">
+                <h3>Separate the Screen From the Keyboard</h3>
+                <p>
+                  For longer sessions, use a laptop stand or external monitor
+                  with a separate keyboard and mouse when possible.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="workstation-plan">
+          <h2>A Better Workstation in Five Practical Changes</h2>
+          <p>
+            Make one change, use it for several days, and adjust based on
+            comfort and task demands.
+          </p>
+
+          <div class="plan-list">
+            <article class="plan-item">
+              <strong>1. Center the Main Screen</strong>
+              <p>
+                Place the primary monitor where the head, neck, and torso can
+                face forward.
+              </p>
+            </article>
+            <article class="plan-item">
+              <strong>2. Bring Work Within Reach</strong>
+              <p>
+                Keep the keyboard, mouse, phone, and frequently used materials
+                close.
+              </p>
+            </article>
+            <article class="plan-item">
+              <strong>3. Support the Feet and Back</strong>
+              <p>
+                Adjust the chair or use a foot support so the body feels stable
+                rather than suspended.
+              </p>
+            </article>
+            <article class="plan-item">
+              <strong>4. Improve Visibility</strong>
+              <p>
+                Adjust lighting, glare, screen distance, and text size before
+                changing posture to compensate.
+              </p>
+            </article>
+            <article class="plan-item">
+              <strong>5. Build Movement Into the Work Process</strong>
+              <p>
+                Use short recovery pauses to look away, stand, stretch, walk, or
+                complete a different task.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workstation-massage">
+          <h2>How Massage Supports a Better Workstation Plan</h2>
+          <p>
+            Even a thoughtfully arranged workstation cannot eliminate every
+            source of fatigue, stress, repetitive use, or muscular tension.
+          </p>
+
+          <div class="workstation-massage-grid">
+            <article class="massage-card">
+              <h3>Neck and Shoulder Recovery</h3>
+              <p>
+                Massage may help reduce tension associated with screen work,
+                concentration, and sustained arm positions.
+              </p>
+            </article>
+
+            <article class="massage-card">
+              <h3>Forearm and Hand Support</h3>
+              <p>
+                Focused work may help when typing, mouse use, gripping, or
+                repetitive tasks leave the forearms and hands feeling
+                overworked.
+              </p>
+            </article>
+
+            <article class="massage-card">
+              <h3>Back and Hip Comfort</h3>
+              <p>
+                Therapeutic massage can include the back, glutes, and hips after
+                long periods of sitting or standing.
+              </p>
+            </article>
+
+            <article class="massage-card">
+              <h3>Body Awareness</h3>
+              <p>
+                A session may help you notice where you brace, hold your breath,
+                elevate the shoulders, or shift unevenly.
+              </p>
+            </article>
+
+            <article class="massage-card">
+              <h3>Movement Readiness</h3>
+              <p>
+                When muscular guarding decreases, walking, stretching, changing
+                positions, and exercise may feel easier.
+              </p>
+            </article>
+
+            <article class="massage-card">
+              <h3>Consistent Maintenance</h3>
+              <p>
+                Regular massage can support a proactive workplace wellness
+                routine instead of waiting until discomfort becomes severe.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Equipment Cannot Solve</h2>
+          <p>
+            No chair, keyboard, desk, or monitor can replace regular movement,
+            sleep, exercise, recovery, and appropriate medical care.
+          </p>
+          <p>
+            Equipment should support the task. It should not become another
+            reason to remain in one position for hours.
+          </p>
+        </section>
+
+        <section class="important-note">
+          <h2>When to Seek Medical Care</h2>
+          <p>
+            Persistent or worsening pain, weakness, numbness, loss of
+            coordination, severe headaches, symptoms after an injury, or
+            discomfort that interferes with sleep, work, or daily activity
+            should be evaluated by a qualified healthcare professional.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>
+            A better workstation reduces unnecessary effort and gives your body
+            more options.
+          </p>
+          <p>
+            Ergonomic changes, regular movement, and therapeutic massage can
+            work together to support comfort and recovery.
+          </p>
+          <p>
+            The goal is not a perfect-looking posture. The goal is a workspace
+            your body can use more comfortably.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section>
+          <h2 style="text-align: center; color: #1677c8">Continue Reading</h2>
+          <div class="related-grid">
+            <a href="standing-desks-helpful-or-hype.html" class="related-card"
+              ><h3>Standing Desks: Helpful or Hype?</h3>
+              <p>
+                Learn why position variety matters more than standing all day.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a href="preventing-tech-neck.html" class="related-card"
+              ><h3>Preventing Tech Neck</h3>
+              <p>
+                Build practical habits that support neck and shoulder comfort
+                during screen use.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a href="mouse-shoulder-explained.html" class="related-card"
+              ><h3>Mouse Shoulder Explained</h3>
+              <p>
+                Learn how repeated reaching and pointer use can affect the
+                shoulder, arm, and upper back.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She helps
+            people move better, feel better, and live better through
+            evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Computer Workstations eTool</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/components/monitors"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Monitor Placement</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/components/keyboards"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Keyboard Guidance</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/components/pointer-mouse"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Pointer and Mouse Guidance</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCIH: Massage Therapy</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Support Your Body Beyond the Workstation</h2>
+          <p>
+            Schedule a FlowTherapy session centered around your neck, shoulders,
+            back, hips, forearms, hands, work demands, and recovery goals.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Workplace Wellness
+            articles.
+          </p>
+          <ul>
+            <li>The 2-Minute Reset Between Meetings</li>
+            <li>How Often Should You Get Up From Your Desk?</li>
+            <li>Massage for Office Workers</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

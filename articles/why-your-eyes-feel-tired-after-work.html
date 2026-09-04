@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Why Your Eyes Feel Tired After Work | FlowNotes</title>
+
+    <meta
+      name="description"
+      content="Learn why screens can leave your eyes, face, head, neck, and shoulders feeling tired—and discover practical ways to reduce digital eye strain during the workday."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      :root {
+        --eye-blue: #1677c8;
+        --eye-blue-dark: #0b3f78;
+        --eye-blue-soft: #eaf4fe;
+        --eye-ink: #17324d;
+        --eye-muted: #536a7f;
+        --eye-border: #cfe2f5;
+        --eye-page: #f3f8fc;
+        --eye-surface: #ffffff;
+        --eye-shadow: 0 12px 30px rgba(27, 67, 103, 0.08);
+      }
+
+      body {
+        background: var(--eye-page);
+        color: var(--eye-ink);
+      }
+
+      .article-shell {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 38px 0 72px;
+      }
+
+      .article-breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-bottom: 20px;
+        color: var(--eye-muted);
+        font-size: 0.9rem;
+      }
+
+      .article-breadcrumbs a {
+        color: var(--eye-blue);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .article-breadcrumbs a:hover {
+        text-decoration: underline;
+      }
+
+      .article-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 46px;
+        border: 1px solid var(--eye-border);
+        border-radius: 28px;
+        background:
+          radial-gradient(
+            circle at 90% 12%,
+            rgba(22, 119, 200, 0.14),
+            transparent 30%
+          ),
+          linear-gradient(135deg, #ffffff 0%, #f4faff 100%);
+        box-shadow: var(--eye-shadow);
+      }
+
+      .article-hero::after {
+        content: "";
+        position: absolute;
+        right: -80px;
+        bottom: -110px;
+        width: 280px;
+        height: 280px;
+        border: 34px solid rgba(22, 119, 200, 0.05);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .article-category {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 18px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: var(--eye-blue-soft);
+        color: var(--eye-blue);
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.075em;
+        text-transform: uppercase;
+      }
+
+      .article-hero h1 {
+        position: relative;
+        z-index: 1;
+        max-width: 790px;
+        margin: 0 0 18px;
+        color: var(--eye-blue-dark);
+        font-size: clamp(2.25rem, 5.5vw, 4.4rem);
+        line-height: 1.04;
+      }
+
+      .article-deck {
+        position: relative;
+        z-index: 1;
+        max-width: 760px;
+        margin: 0;
+        color: #36536d;
+        font-size: clamp(1.08rem, 2vw, 1.3rem);
+        line-height: 1.7;
+      }
+
+      .article-meta {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 24px;
+        color: var(--eye-muted);
+        font-size: 0.9rem;
+      }
+
+      .article-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 260px;
+        gap: 32px;
+        align-items: start;
+        margin-top: 34px;
+      }
+
+      .article-content {
+        padding: 40px;
+        border: 1px solid var(--eye-border);
+        border-radius: 24px;
+        background: var(--eye-surface);
+        box-shadow: var(--eye-shadow);
+      }
+
+      .article-content h2 {
+        margin: 42px 0 14px;
+        color: var(--eye-blue-dark);
+        font-size: clamp(1.45rem, 3vw, 2rem);
+        line-height: 1.25;
+      }
+
+      .article-content h2:first-child {
+        margin-top: 0;
+      }
+
+      .article-content h3 {
+        margin: 28px 0 10px;
+        color: var(--eye-blue-dark);
+        font-size: 1.2rem;
+      }
+
+      .article-content p {
+        margin: 0 0 20px;
+        color: #2f465c;
+        font-size: 1.02rem;
+        line-height: 1.82;
+      }
+
+      .article-content ul {
+        margin: 8px 0 24px;
+        padding-left: 1.35rem;
+      }
+
+      .article-content li {
+        margin: 8px 0;
+        color: #2f465c;
+        line-height: 1.65;
+      }
+
+      .article-content strong {
+        color: var(--eye-blue-dark);
+      }
+
+      .lead-paragraph {
+        color: var(--eye-ink);
+        font-size: 1.12rem !important;
+      }
+
+      .quick-summary {
+        margin: 28px 0;
+        padding: 24px;
+        border: 1px solid #bcdaf1;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #eff8ff, #ffffff);
+      }
+
+      .quick-summary h2 {
+        margin: 0 0 14px;
+        font-size: 1.35rem;
+      }
+
+      .quick-summary ul {
+        margin-bottom: 0;
+      }
+
+      .rule-panel {
+        margin: 30px 0;
+        padding: 28px;
+        border-radius: 20px;
+        background: var(--eye-blue-dark);
+        color: #ffffff;
+      }
+
+      .rule-panel h2 {
+        margin: 0 0 12px;
+        color: #ffffff;
+      }
+
+      .rule-panel p {
+        color: #ffffff;
+      }
+
+      .rule-steps {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .rule-step {
+        padding: 18px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.09);
+        text-align: center;
+      }
+
+      .rule-number {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      .rule-label {
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+
+      .massage-section {
+        margin: 34px 0;
+        padding: 28px;
+        border: 1px solid #c7dff3;
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          rgba(22, 119, 200, 0.08),
+          rgba(255, 255, 255, 0.92)
+        );
+      }
+
+      .massage-section h2 {
+        margin-top: 0;
+      }
+
+      .massage-note {
+        margin-top: 20px;
+        padding: 17px 18px;
+        border-left: 4px solid var(--eye-blue);
+        border-radius: 0 12px 12px 0;
+        background: #ffffff;
+        color: #334e66;
+        line-height: 1.65;
+      }
+
+      .safety-panel {
+        margin: 32px 0;
+        padding: 26px;
+        border: 1px solid #efc6c6;
+        border-radius: 18px;
+        background: #fff8f8;
+      }
+
+      .safety-panel h2 {
+        margin-top: 0;
+        color: #9b2929;
+      }
+
+      .safety-panel p,
+      .safety-panel li {
+        color: #573737;
+      }
+
+      .resource-feature {
+        margin-top: 36px;
+        overflow: hidden;
+        border: 1px solid var(--eye-border);
+        border-radius: 20px;
+        background: #f8fbfe;
+      }
+
+      .resource-feature img {
+        display: block;
+        width: 100%;
+        max-height: 390px;
+        object-fit: cover;
+        object-position: center;
+        border-bottom: 1px solid var(--eye-border);
+      }
+
+      .resource-feature-copy {
+        padding: 24px;
+      }
+
+      .resource-feature-copy h2 {
+        margin-top: 0;
+      }
+
+      .resource-feature-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+        margin-top: 18px;
+      }
+
+      .resource-feature-actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .resource-primary-link {
+        background: var(--eye-blue);
+        color: #ffffff;
+      }
+
+      .resource-primary-link:hover {
+        background: #0e5fa5;
+      }
+
+      .resource-secondary-link {
+        border: 1px solid #b8d5eb;
+        background: #ffffff;
+        color: var(--eye-blue);
+      }
+
+      .resource-secondary-link:hover {
+        border-color: var(--eye-blue);
+      }
+
+      .article-sidebar {
+        position: sticky;
+        top: 22px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .sidebar-card {
+        padding: 22px;
+        border: 1px solid var(--eye-border);
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(27, 67, 103, 0.05);
+      }
+
+      .sidebar-card h2 {
+        margin: 0 0 12px;
+        color: var(--eye-blue-dark);
+        font-size: 1.12rem;
+      }
+
+      .sidebar-card p {
+        margin: 0;
+        color: var(--eye-muted);
+        font-size: 0.92rem;
+        line-height: 1.65;
+      }
+
+      .sidebar-card ul {
+        margin: 12px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .sidebar-card li + li {
+        margin-top: 10px;
+      }
+
+      .sidebar-card a {
+        color: var(--eye-blue);
+        font-size: 0.91rem;
+        font-weight: 700;
+        line-height: 1.45;
+        text-decoration: none;
+      }
+
+      .sidebar-card a:hover {
+        text-decoration: underline;
+      }
+
+      .source-list {
+        margin-top: 44px;
+        padding-top: 32px;
+        border-top: 1px solid var(--eye-border);
+      }
+
+      .source-list h2 {
+        margin-top: 0;
+      }
+
+      .source-list ol {
+        margin: 0;
+        padding-left: 1.4rem;
+      }
+
+      .source-list li {
+        margin: 12px 0;
+        padding-left: 4px;
+        color: var(--eye-muted);
+        line-height: 1.6;
+      }
+
+      .source-list a {
+        color: var(--eye-blue);
+        font-weight: 700;
+      }
+
+      .article-disclaimer {
+        margin-top: 28px;
+        padding: 18px 20px;
+        border-radius: 14px;
+        background: #f2f5f8;
+        color: #5c6f80;
+        font-size: 0.88rem;
+        line-height: 1.6;
+      }
+
+      .related-reading {
+        margin-top: 36px;
+        padding: 30px;
+        border: 1px solid var(--eye-border);
+        border-radius: 22px;
+        background: #ffffff;
+        box-shadow: var(--eye-shadow);
+      }
+
+      .related-reading h2 {
+        margin: 0 0 18px;
+        color: var(--eye-blue-dark);
+        text-align: center;
+      }
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .related-card {
+        display: block;
+        padding: 18px;
+        border: 1px solid var(--eye-border);
+        border-radius: 15px;
+        background: #f9fcff;
+        color: var(--eye-blue-dark);
+        font-weight: 800;
+        line-height: 1.4;
+        text-decoration: none;
+      }
+
+      .related-card:hover {
+        border-color: var(--eye-blue);
+        background: var(--eye-blue-soft);
+      }
+
+      @media (max-width: 860px) {
+        .article-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .article-sidebar {
+          position: static;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 680px) {
+        .article-shell {
+          width: min(100% - 20px, 960px);
+          padding-top: 26px;
+        }
+
+        .article-hero,
+        .article-content {
+          padding: 26px;
+        }
+
+        .rule-steps,
+        .related-grid,
+        .article-sidebar {
+          grid-template-columns: 1fr;
+        }
+
+        .resource-feature img {
+          max-height: none;
+          aspect-ratio: 16 / 9;
+        }
+      }
+    </style>
+  </head>
+
+<body data-article-id="why-your-eyes-feel-tired-after-work">
+    <!-- Shared header generated by site-layout.js -->
+<div id="site-header"></div>
+
+
+    <main class="article-shell">
+      <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">FlowHub</a>
+        <span>›</span>
+        <a href="../pages/flownotes.html">FlowNotes</a>
+        <span>›</span>
+        <span>Why Your Eyes Feel Tired After Work</span>
+      </nav>
+
+      <article>
+        <header class="article-hero">
+          <span class="article-category">Workplace Wellness</span>
+
+          <h1>Why Your Eyes Feel Tired After Work</h1>
+
+          <p class="article-deck">
+            Digital eye discomfort is not always only about your eyes. Screen
+            habits, blinking, visual focus, lighting, posture, and tension
+            throughout the face, jaw, neck, and shoulders can all contribute to
+            how you feel at the end of the workday.
+          </p>
+
+          <div class="article-meta">
+            <span>FlowNotes</span>
+            <span>6-minute read</span>
+            <span>Workplace Wellness</span>
+          </div>
+        </header>
+
+        <div class="article-layout">
+          <div class="article-content">
+            <p class="lead-paragraph">
+              You close your laptop after a long day, but your eyes still feel
+              dry, heavy, blurry, or difficult to focus. Maybe your temples
+              ache, your jaw feels tight, or your neck and shoulders seem to
+              have carried the stress of the entire day.
+            </p>
+
+            <p>
+              If that sounds familiar, you're not alone. Eye fatigue has become
+              one of the most common complaints among people who spend hours
+              working on computers and digital devices.
+            </p>
+
+            <p>
+              Often called <strong>digital eye strain</strong> or
+              <strong>computer vision syndrome</strong>, this collection of
+              symptoms isn't always caused by your eyes alone. Screen habits,
+              blinking, posture, breathing, lighting, and muscle tension
+              throughout the head and neck can all play a role in how you feel
+              by the end of the workday.
+            </p>
+
+            <section class="quick-summary">
+              <h2>Common signs of digital eye strain</h2>
+
+              <ul>
+                <li>Dry, burning, scratchy, or watery eyes</li>
+                <li>Blurred vision or difficulty changing focus</li>
+                <li>Tired, heavy, or sore-feeling eyes</li>
+                <li>Headaches or pressure around the brow and temples</li>
+                <li>Neck, shoulder, upper-back, or jaw tension</li>
+                <li>Feeling increasingly uncomfortable late in the workday</li>
+              </ul>
+            </section>
+
+            <h2>Why screens can feel so demanding</h2>
+
+            <p>
+              Screen-based work often requires sustained near focus. Your eyes
+              may spend long periods viewing text, spreadsheets, video calls,
+              small icons, moving cursors, and multiple windows at a relatively
+              close distance.
+            </p>
+
+            <p>
+              Your focusing and eye-alignment systems must continue working
+              while you read, scroll, type, compare information, and switch
+              between screens. Glare, reflections, small text, poor contrast, an
+              incorrect prescription, and an uncomfortable viewing distance can
+              make that work feel even more demanding.
+            </p>
+
+            <div class="info-box">
+              <h3>Did You Know?</h3>
+
+              <p>
+                Research has shown that people often blink less frequently while
+                using digital devices. Fewer complete blinks may contribute to
+                dry, irritated, or tired-feeling eyes during long periods of
+                screen use.
+              </p>
+            </div>
+
+            <h2>You may blink less while using a screen</h2>
+
+            <p>
+              Blinking helps spread the tear film across the surface of the
+              eyes. That tear film keeps the eyes lubricated and supports a
+              clear, comfortable visual surface.
+            </p>
+
+            <p>
+              During concentrated screen use, people may blink less frequently
+              or blink incompletely. When the eyelids do not close fully, the
+              tear film may not be distributed as effectively. This can
+              contribute to dryness, irritation, burning, fluctuating vision,
+              and the feeling that you need to rub your eyes.
+            </p>
+
+            <p>
+              Intentional blinking can be a surprisingly useful workday habit.
+              Every so often, allow your eyelids to close completely and gently
+              rather than squeezing them shut.
+            </p>
+
+            <section class="rule-panel">
+              <h2>Try the 20-20-20 rule</h2>
+
+              <p>
+                The 20-20-20 rule gives your eyes regular opportunities to shift
+                away from sustained near focus.
+              </p>
+
+              <div class="rule-steps">
+                <div class="rule-step">
+                  <span class="rule-number">20</span>
+                  <span class="rule-label">Every 20 minutes</span>
+                </div>
+
+                <div class="rule-step">
+                  <span class="rule-number">20</span>
+                  <span class="rule-label">Look about 20 feet away</span>
+                </div>
+
+                <div class="rule-step">
+                  <span class="rule-number">20</span>
+                  <span class="rule-label">For at least 20 seconds</span>
+                </div>
+              </div>
+            </section>
+
+            <p>
+              Twenty feet does not need to be measured precisely. Looking across
+              the room, through a window, or toward a distant object can give
+              your eyes a break from continuous close-up work.
+            </p>
+
+            <h2>It may not be only your eyes</h2>
+
+            <p>
+              Visual concentration can influence the way you hold the rest of
+              your body. You may lean toward the screen, raise your shoulders,
+              brace your jaw, furrow your brow, hold your breath, or keep your
+              head very still while concentrating.
+            </p>
+
+            <p>
+              Over time, those patterns may contribute to tension in areas such
+              as the:
+            </p>
+
+            <ul>
+              <li>Forehead and brow</li>
+              <li>Temples</li>
+              <li>Muscles surrounding the eyes</li>
+              <li>Jaw and cheeks</li>
+              <li>Base of the skull</li>
+              <li>Neck, shoulders, and upper back</li>
+            </ul>
+
+            <p>
+              Eye fatigue isn't always just about your eyes. More often, it's
+              the combined effect of sustained visual focus, reduced blinking,
+              posture, breathing, and muscle tension throughout the head, jaw,
+              neck, and shoulders.
+            </p>
+
+            <p>
+              Small habits practiced consistently—like taking regular visual
+              breaks, blinking completely, improving your workstation, moving
+              throughout the day, and addressing muscle tension—can make a
+              meaningful difference over time.
+            </p>
+
+            <p>
+              Learn more in our
+              <a href="breathing-and-muscle-tension.html">
+                Breathing and Muscle Tension
+              </a>
+              article.
+            </p>
+
+            <h2>Small workstation changes can help</h2>
+
+            <p>
+              A perfect workstation cannot eliminate every symptom, but a more
+              comfortable setup can reduce unnecessary strain.
+            </p>
+
+            <ul>
+              <li>
+                Position the monitor roughly an arm’s length away, then adjust
+                the distance for comfortable reading.
+              </li>
+              <li>
+                Keep the top of the primary screen at or slightly below eye
+                level.
+              </li>
+              <li>
+                Increase text size instead of repeatedly leaning toward the
+                screen.
+              </li>
+              <li>
+                Reduce glare from windows, overhead lighting, and reflective
+                surfaces.
+              </li>
+              <li>
+                Whenever possible, work in comfortable ambient lighting instead
+                of sitting in a dark room with an extremely bright screen.
+              </li>
+              <li>
+                Adjust screen brightness so it feels comfortable in the room
+                rather than dramatically brighter or darker.
+              </li>
+              <li>
+                Keep frequently used screens and materials directly in front of
+                you when possible.
+              </li>
+              <li>
+                Change position and take short movement breaks throughout the
+                day.
+              </li>
+            </ul>
+
+            <h2>Try a one-minute eye and posture reset</h2>
+
+            <ol>
+              <li>Look away from your screen and focus into the distance.</li>
+              <li>Allow yourself to blink slowly several times.</li>
+              <li>Unclench your jaw and let your tongue relax.</li>
+              <li>Drop your shoulders away from your ears.</li>
+              <li>Take one slow breath in and a longer breath out.</li>
+              <li>Gently turn your head from side to side.</li>
+              <li>Return to your work without leaning toward the screen.</li>
+            </ol>
+
+            <section class="massage-section">
+              <h2>Can facial massage help?</h2>
+
+              <p>
+                Massage does not correct vision, treat an eye condition, or
+                replace an examination by an optometrist or ophthalmologist.
+                However, gentle massage may help ease tension in the muscles and
+                soft tissues surrounding the face, scalp, jaw, head, neck, and
+                shoulders.
+              </p>
+
+              <p>
+                At FlowTherapy, facial massage may include gentle work around
+                the brow, forehead, temples, cheeks, scalp, and jaw. One muscle
+                that often receives little attention is the
+                <strong>orbicularis oculi</strong>, the circular muscle
+                surrounding each eye.
+              </p>
+
+              <p>
+                Every blink, squint, and gentle eye closure involves this
+                muscle. During long hours of concentration, people often develop
+                subtle holding patterns around the eyes, forehead, and brow
+                without realizing it.
+              </p>
+
+              <p>
+                Gentle techniques around the bony orbit may help encourage
+                relaxation of the surrounding tissues while avoiding direct
+                pressure on the eye itself.
+              </p>
+
+              <div class="massage-note">
+                <strong>Important:</strong> Facial massage around the eyes
+                should remain gentle. Direct pressure is never applied to the
+                eyeball. Clients should share any eye conditions, recent eye
+                procedures, infections, injuries, unexplained swelling, or
+                vision changes before receiving facial work.
+              </div>
+            </section>
+
+            <h2>FlowTherapy facial massage</h2>
+
+            <p>
+              FlowTherapy’s facial massage approach is designed to support
+              relaxation and address the connected tension patterns that may
+              build around the eyes, temples, forehead, jaw, scalp, neck, and
+              shoulders.
+            </p>
+
+            <p>
+              The goal is not to “massage away” an eye condition. The goal is to
+              help the surrounding muscles soften, encourage more comfortable
+              breathing, and give the nervous system an opportunity to settle.
+            </p>
+
+            <p>
+              Facial massage may be especially appealing for people who notice
+              that a demanding screen day leaves them squinting, clenching,
+              furrowing their brow, or carrying tension around the temples and
+              jaw.
+            </p>
+
+            <section class="safety-panel">
+              <h2>When to contact an eye-care professional</h2>
+
+              <p>
+                Do not assume that every vision or eye symptom is caused by
+                screen fatigue. Contact an optometrist, ophthalmologist, or
+                other qualified healthcare professional when symptoms are new,
+                persistent, worsening, or concerning.
+              </p>
+
+              <p>Seek prompt medical evaluation for symptoms such as:</p>
+
+              <ul>
+                <li>Sudden vision loss or a sudden major vision change</li>
+                <li>New double vision</li>
+                <li>Severe or persistent eye pain</li>
+                <li>Flashes of light or a sudden increase in floaters</li>
+                <li>Eye injury or chemical exposure</li>
+                <li>Significant swelling, discharge, or persistent redness</li>
+                <li>
+                  Severe headache accompanied by visual or neurological symptoms
+                </li>
+              </ul>
+            </section>
+
+            <h2>The bottom line</h2>
+
+            <p>
+              Your eyes work hard during the day, but they do not work alone.
+              Blinking, tear-film stability, viewing distance, lighting,
+              posture, breathing, facial tension, jaw tension, and screen habits
+              can all influence how comfortable you feel after work.
+            </p>
+
+            <p>
+              Regular visual breaks, intentional blinking, comfortable screen
+              positioning, short movement resets, and appropriate professional
+              care can help you create a workday that is easier on both your
+              eyes and the rest of your body.
+            </p>
+
+            <section class="resource-feature">
+              <a
+                href="../assets/images/flowresources/twenty-eye-guide.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open the 20-20-20 Eye Guide"
+              >
+                <img
+                  src="../assets/images/flowresources/twenty-eye-guide.png"
+                  alt="Preview of the FlowTherapy 20-20-20 Eye Guide"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="resource-feature-copy">
+                <h2>The 20-20-20 Eye Guide</h2>
+
+                <p>
+                  Keep this quick visual reference nearby as a reminder to
+                  pause, shift your focus, blink, and give your eyes regular
+                  breaks during the workday.
+                </p>
+
+                <div class="resource-feature-actions">
+                  <a
+                    class="resource-primary-link"
+                    href="../assets/images/flowresources/twenty-eye-guide.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View the Guide
+                  </a>
+
+                  <a
+                    class="resource-secondary-link"
+                    href="../pages/flowresources-redesign.html"
+                  >
+                    Browse FlowResources
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section class="source-list">
+              <h2>Sources and further reading</h2>
+
+              <ol>
+                <li>
+                  <a
+                    href="https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/dry-eye"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Eye Institute — Dry Eye
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.nei.nih.gov/eye-health-information/eye-conditions-and-diseases/dry-eye/causes-dry-eye"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Eye Institute — Causes of Dry Eye
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9434525/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Library of Medicine — Digital Eye Strain: A
+                    Comprehensive Review
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11416787/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Library of Medicine — Digital Eye Strain: Updated
+                    Perspectives
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.cdc.gov/niosh/bulletin/2020/working-from-home.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CDC/NIOSH — How to Optimize Your Work Environment and Stay
+                    Healthy
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.aao.org/eye-health/diseases/what-is-eye-strain"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    American Academy of Ophthalmology — Eye Strain and Sleepy
+                    Eyes
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.aao.org/eye-health/tips-prevention/digital-devices-your-eyes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    American Academy of Ophthalmology — Digital Devices and Your
+                    Eyes
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://medlineplus.gov/eyediseases.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MedlinePlus — Eye Diseases
+                  </a>
+                </li>
+              </ol>
+            </section>
+
+            <div class="article-disclaimer">
+              This article is provided for general wellness education and is not
+              intended to diagnose, treat, cure, or prevent an eye condition.
+              Massage therapy and facial massage do not replace medical or
+              eye-care evaluation.
+            </div>
+          </div>
+
+          <aside class="article-sidebar" aria-label="Article resources">
+            <section class="sidebar-card">
+              <h2>At a glance</h2>
+
+              <p>
+                Screen discomfort may involve dry eyes, sustained near focus,
+                reduced blinking, glare, posture, and tension throughout the
+                face, jaw, neck, and shoulders.
+              </p>
+            </section>
+
+            <section class="sidebar-card">
+              <h2>Try today</h2>
+
+              <ul>
+                <li>Take regular distance breaks</li>
+                <li>Increase text size</li>
+                <li>Blink slowly and completely</li>
+                <li>Relax your jaw and shoulders</li>
+                <li>Check your screen height and glare</li>
+              </ul>
+            </section>
+
+            <section class="sidebar-card">
+              <h2>Related FlowResource</h2>
+
+              <ul>
+                <li>
+                  <a
+                    href="../assets/images/flowresources/twenty-eye-guide.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    The 20-20-20 Eye Guide →
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </article>
+
+      <section class="related-reading">
+        <h2>Related Reading</h2>
+
+        <div class="related-grid">
+          <a class="related-card" href="building-a-better-workstation.html">
+            Building a Better Workstation
+          </a>
+
+          <a class="related-card" href="preventing-tech-neck.html">
+            Preventing Tech Neck
+          </a>
+
+          <a
+            class="related-card"
+            href="five-minute-movement-breaks-for-busy-workdays.html"
+          >
+            Five-Minute Movement Breaks
+          </a>
+
+          <a class="related-card" href="why-you-hold-stress-in-your-jaw.html">
+            Why You Hold Stress in Your Jaw
+          </a>
+
+          <a class="related-card" href="the-science-of-relaxation.html">
+            The Science of Relaxation
+          </a>
+
+          <a class="related-card" href="can-massage-help-posture.html">
+            Can Massage Help Posture?
+          </a>
+          <a class="related-card" href="breathing-and-muscle-tension.html">
+            Breathing and Muscle Tension
+          </a>
+
+          <a
+            class="related-card"
+            href="how-often-should-you-get-up-from-your-desk.html"
+          >
+            How Often Should You Get Up From Your Desk?
+          </a>
+        </div>
+      </section>
+    </main>
+
+<!-- Shared footer generated by site-layout.js -->
+<div id="site-footer"></div>
+
+<script src="/assets/js/site-layout.js"></script>
+<script src="/assets/js/content-registry.js"></script>
+<script src="/assets/js/related-articles.js"></script>
+<script src="/assets/js/article-utils.js"></script>
+
+</body>
+</html>
+

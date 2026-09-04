@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Understanding Delayed Onset Muscle Soreness</title>
+
+    <meta
+      name="description"
+      content="Learn what delayed onset muscle soreness, or DOMS, is, why it appears after unfamiliar exercise, how long it may last, and how to recover safely."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .doms-timeline {
+        margin: 38px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .doms-timeline h2,
+      .doms-timeline > p {
+        text-align: center;
+      }
+
+      .doms-timeline h2 {
+        margin-top: 0;
+      }
+
+      .doms-timeline > p {
+        max-width: 700px;
+        margin: 0 auto 28px;
+      }
+
+      .timeline-track {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .timeline-stage {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+        text-align: left;
+      }
+
+      .timeline-time {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .timeline-stage h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+        line-height: 1.35;
+      }
+
+      .timeline-stage p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .doms-quick-guide {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(232, 246, 255, 0.96),
+          rgba(249, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .doms-quick-guide h2 {
+        margin-top: 0;
+      }
+
+      .doms-quick-guide p {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .doms-causes {
+        margin: 38px 0;
+      }
+
+      .doms-causes > h2,
+      .doms-causes > p {
+        text-align: center;
+      }
+
+      .doms-causes > p {
+        max-width: 700px;
+        margin: 0 auto 26px;
+      }
+
+      .doms-cause-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .doms-cause-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .doms-cause-card h3 {
+        margin: 0 0 9px;
+        color: #1677c8;
+        font-size: 1.15rem;
+      }
+
+      .doms-cause-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .doms-vs-injury {
+        margin: 38px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .doms-vs-injury h2,
+      .doms-vs-injury > p {
+        text-align: center;
+      }
+
+      .doms-vs-injury h2 {
+        margin-top: 0;
+      }
+
+      .doms-vs-injury > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .comparison-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .comparison-column {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .comparison-column h3 {
+        margin: 0 0 14px;
+        color: #1677c8;
+      }
+
+      .comparison-column ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .comparison-column li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .comparison-column li:last-child {
+        margin-bottom: 0;
+      }
+
+      .recovery-plan {
+        margin: 38px 0;
+      }
+
+      .recovery-plan > h2,
+      .recovery-plan > p {
+        text-align: center;
+      }
+
+      .recovery-plan > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .recovery-step-list {
+        display: grid;
+        gap: 14px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .recovery-step {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 16px;
+        align-items: start;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #f8fbff;
+      }
+
+      .recovery-step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .recovery-step h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .recovery-step p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .training-guidance {
+        margin: 38px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .training-guidance h2 {
+        margin-top: 0;
+      }
+
+      .training-guidance p:last-child {
+        margin-bottom: 0;
+      }
+
+      .myth-fact-section {
+        margin: 38px 0;
+      }
+
+      .myth-fact-section > h2 {
+        text-align: center;
+      }
+
+      .myth-fact-grid {
+        display: grid;
+        gap: 14px;
+        margin-top: 24px;
+      }
+
+      .myth-fact-row {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 20px;
+        align-items: start;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .myth-label {
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .myth-fact-row p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .doms-reminder {
+        margin: 36px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .doms-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.2rem;
+      }
+
+      .doms-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 620px) {
+        .timeline-track {
+          grid-template-columns: 1fr;
+        }
+
+        .timeline-stage {
+          padding: 20px;
+        }
+      }
+
+      .recovery-step {
+        grid-template-columns: 40px 1fr;
+      }
+    </style>
+  </head>
+
+<body data-article-id="understanding-delayed-onset-muscle-soreness">
+    <!-- Shared header generated by site-layout.js -->
+<div id="site-header"></div>
+
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/recovery.html"> ← Back to Recovery FlowNotes </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Recovery</div>
+
+          <h1>Understanding Delayed Onset Muscle Soreness</h1>
+
+          <p class="article-subtitle">
+            Why soreness can appear after unfamiliar exercise, what it may feel
+            like, and how to support your recovery without fearing normal
+            movement.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            7-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            You finish a new workout feeling accomplished. The next morning, you
+            notice some stiffness. A day later, sitting down, climbing stairs,
+            or lifting your arms feels much more difficult than you expected.
+          </p>
+
+          <p>
+            That delayed soreness may be delayed onset muscle soreness, commonly
+            called DOMS. It often appears after exercise that is unfamiliar,
+            more intense, or performed differently from what your body is used
+            to.
+          </p>
+
+          <p>
+            DOMS can be uncomfortable, but it is usually temporary. Learning
+            what it is—and how it differs from an injury—can help you respond
+            with patience rather than panic.
+          </p>
+        </div>
+
+        <section class="doms-quick-guide">
+          <h2>The Quick Guide</h2>
+
+          <p>
+            DOMS usually develops gradually after exercise rather than during
+            the activity itself. It may become most noticeable one to three days
+            later and generally improves as the affected muscles recover. It is
+            common after new or unusually demanding exercise, but it is not
+            required for a productive workout.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is DOMS?</h2>
+
+          <p>
+            Delayed onset muscle soreness is a temporary combination of muscle
+            soreness, tenderness, stiffness, and reduced comfort that may
+            develop following strenuous or unfamiliar physical activity.
+          </p>
+
+          <p>
+            It often affects the specific muscles that were challenged during
+            the activity. For example, a new lower-body workout may leave the
+            thighs or glutes sore, while unfamiliar upper-body exercises may
+            affect the arms, shoulders, or chest.
+          </p>
+
+          <p>
+            DOMS is different from the burning or fatigue you may feel during a
+            difficult set of exercises. Its defining feature is that the
+            soreness develops later.
+          </p>
+        </section>
+
+        <section class="doms-timeline">
+          <h2>A Typical DOMS Timeline</h2>
+
+          <p>
+            Individual experiences vary, but delayed soreness often follows a
+            recognizable pattern.
+          </p>
+
+          <div class="timeline-track">
+            <article class="timeline-stage">
+              <span class="timeline-time">During activity</span>
+
+              <h3>Muscles are challenged</h3>
+
+              <p>
+                You may feel effort or fatigue, but DOMS has not fully
+                developed.
+              </p>
+            </article>
+
+            <article class="timeline-stage">
+              <span class="timeline-time">Several hours later</span>
+
+              <h3>Soreness begins</h3>
+
+              <p>
+                The exercised muscles may gradually start to feel tender or
+                stiff.
+              </p>
+            </article>
+
+            <article class="timeline-stage">
+              <span class="timeline-time">1–3 days later</span>
+
+              <h3>Symptoms may peak</h3>
+
+              <p>
+                Soreness, stiffness, and reduced ease of movement may be most
+                noticeable.
+              </p>
+            </article>
+
+            <article class="timeline-stage">
+              <span class="timeline-time">Following days</span>
+
+              <h3>Symptoms improve</h3>
+
+              <p>
+                Normal movement usually becomes easier as the muscles recover.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="doms-causes">
+          <h2>What Types of Activity Commonly Cause DOMS?</h2>
+
+          <p>
+            DOMS can follow many activities, but it is especially common when
+            your body is asked to manage a new or increased demand.
+          </p>
+
+          <div class="doms-cause-grid">
+            <article class="doms-cause-card">
+              <h3>New Exercise</h3>
+
+              <p>
+                Starting resistance training, running, hiking, cycling, or
+                another unfamiliar activity may challenge muscles in new ways.
+              </p>
+            </article>
+
+            <article class="doms-cause-card">
+              <h3>Increased Intensity</h3>
+
+              <p>
+                Using more weight, moving faster, exercising longer, or adding
+                more repetitions can increase the training demand.
+              </p>
+            </article>
+
+            <article class="doms-cause-card">
+              <h3>Eccentric Muscle Actions</h3>
+
+              <p>
+                Activities that require muscles to control lengthening—such as
+                lowering a weight or walking downhill—are frequently associated
+                with DOMS.
+              </p>
+            </article>
+
+            <article class="doms-cause-card">
+              <h3>Returning After a Break</h3>
+
+              <p>
+                An activity that once felt familiar may cause soreness when you
+                return after illness, injury, travel, or time away.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Soreness tells you that your body experienced an unfamiliar demand. It
+          does not automatically tell you that the workout was better—or that
+          something is wrong.
+        </blockquote>
+
+        <section>
+          <h2>Why Does DOMS Happen?</h2>
+
+          <p>
+            DOMS is associated with the body’s response to unfamiliar or
+            demanding exercise, especially activity involving repeated eccentric
+            muscle actions.
+          </p>
+
+          <p>
+            It was once commonly blamed on lactic acid remaining in the muscles.
+            That explanation is outdated. Lactate produced during exercise does
+            not remain in the muscles for days and is not the cause of delayed
+            soreness.
+          </p>
+
+          <p>
+            The exact experience is complex and may involve exercise-related
+            changes within muscle tissue, inflammation, connective tissue,
+            altered sensitivity, and the nervous system’s interpretation of
+            those changes.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Does DOMS Feel Like?</h2>
+
+          <p>
+            DOMS may feel different from person to person, but common features
+            include:
+          </p>
+
+          <ul class="article-list-check">
+            <li>A dull ache in muscles used during the activity.</li>
+            <li>Tenderness when the muscle is pressed or contracted.</li>
+            <li>Stiffness after rest or upon waking.</li>
+            <li>Temporary reduction in comfortable range of motion.</li>
+            <li>Feeling weaker or less coordinated than usual.</li>
+            <li>Discomfort that develops gradually after exercise.</li>
+          </ul>
+
+          <p>
+            Symptoms should generally begin improving rather than becoming
+            progressively more severe.
+          </p>
+        </section>
+
+        <section class="doms-vs-injury">
+          <h2>DOMS or an Injury?</h2>
+
+          <p>
+            DOMS and an injury can sometimes feel similar. The timing, location,
+            severity, and way the symptoms began provide useful clues.
+          </p>
+
+          <div class="comparison-columns">
+            <article class="comparison-column">
+              <h3>DOMS More Often</h3>
+
+              <ul>
+                <li>Develops gradually after unfamiliar exercise.</li>
+                <li>Affects muscles that were intentionally trained.</li>
+                <li>Feels dull, tender, stiff, or achy.</li>
+                <li>May affect similar areas on both sides.</li>
+                <li>Improves over several days.</li>
+                <li>Allows cautious movement despite discomfort.</li>
+              </ul>
+            </article>
+
+            <article class="comparison-column">
+              <h3>An Injury May</h3>
+
+              <ul>
+                <li>Begin suddenly during a specific movement or event.</li>
+                <li>Cause sharp, tearing, or highly localized pain.</li>
+                <li>Produce significant swelling or bruising.</li>
+                <li>Cause instability, weakness, or loss of function.</li>
+                <li>Worsen rather than gradually improve.</li>
+                <li>Make normal use of the area difficult or impossible.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="recovery-plan">
+          <h2>How to Support Recovery From DOMS</h2>
+
+          <p>
+            There is no instant cure, but several gentle strategies may help you
+            remain comfortable while the soreness resolves.
+          </p>
+
+          <div class="recovery-step-list">
+            <article class="recovery-step">
+              <div class="recovery-step-number">1</div>
+
+              <div>
+                <h3>Keep moving gently</h3>
+
+                <p>
+                  Walking, easy mobility work, or light activity may temporarily
+                  reduce stiffness without placing another heavy demand on the
+                  sore muscles.
+                </p>
+              </div>
+            </article>
+
+            <article class="recovery-step">
+              <div class="recovery-step-number">2</div>
+
+              <div>
+                <h3>Reduce intensity</h3>
+
+                <p>
+                  You do not necessarily need complete inactivity, but the sore
+                  muscles may benefit from avoiding another demanding session
+                  until movement feels more comfortable.
+                </p>
+              </div>
+            </article>
+
+            <article class="recovery-step">
+              <div class="recovery-step-number">3</div>
+
+              <div>
+                <h3>Prioritize sleep</h3>
+
+                <p>
+                  Consistent sleep supports physical readiness, energy, and the
+                  broader recovery process.
+                </p>
+              </div>
+            </article>
+
+            <article class="recovery-step">
+              <div class="recovery-step-number">4</div>
+
+              <div>
+                <h3>Eat and hydrate normally</h3>
+
+                <p>
+                  Balanced nutrition and appropriate hydration support overall
+                  health and recovery. There is no need to force excessive water
+                  or rely on a single “recovery” food.
+                </p>
+              </div>
+            </article>
+
+            <article class="recovery-step">
+              <div class="recovery-step-number">5</div>
+
+              <div>
+                <h3>Use comfort measures thoughtfully</h3>
+
+                <p>
+                  Gentle warmth, cold, foam rolling, stretching, or massage may
+                  feel helpful, but none should be painfully aggressive.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="training-guidance">
+          <h2>Should You Work Out While Sore?</h2>
+
+          <p>
+            Mild soreness does not always require complete rest. You may be able
+            to perform light movement, train a different muscle group, or reduce
+            the intensity and complexity of your planned session.
+          </p>
+
+          <p>
+            Use extra caution when soreness changes your form, balance,
+            coordination, or range of motion. Training heavily while movement is
+            altered may place unnecessary stress on other tissues.
+          </p>
+
+          <p>
+            Rest or professional evaluation may be more appropriate when pain is
+            severe, highly localized, accompanied by weakness or swelling, or
+            prevents normal daily activity.
+          </p>
+        </section>
+
+        <section>
+          <h2>Can Stretching Prevent DOMS?</h2>
+
+          <p>
+            Stretching may help you feel less stiff or more comfortable, but it
+            does not reliably prevent DOMS.
+          </p>
+
+          <p>
+            Avoid forcing a sore muscle into an intense stretch. Gentle,
+            comfortable movement is usually more appropriate than trying to
+            “stretch the soreness out.”
+          </p>
+
+          <p>
+            A gradual training progression is more useful than depending on a
+            single pre-workout or post-workout technique.
+          </p>
+        </section>
+
+        <section>
+          <h2>Can Massage Help With DOMS?</h2>
+
+          <p>
+            Massage may temporarily reduce soreness or help some people feel
+            more comfortable during recovery. It should not be presented as a
+            way to instantly repair exercise-related tissue changes or restore
+            full muscle performance.
+          </p>
+
+          <p>
+            A recovery-focused session should be adjusted to your current
+            sensitivity. Extremely deep or painful pressure may feel
+            overwhelming when the muscles are already sore.
+          </p>
+
+          <p>
+            Tell your massage therapist what activity you performed, when the
+            soreness began, and whether you have swelling, bruising, weakness,
+            or another concern.
+          </p>
+        </section>
+
+        <section class="myth-fact-section">
+          <h2>Common DOMS Myths</h2>
+
+          <div class="myth-fact-grid">
+            <article class="myth-fact-row">
+              <div class="myth-label">Myth: No soreness means no progress.</div>
+
+              <p>
+                Productive training does not require DOMS. Your body can gain
+                strength, endurance, skill, and confidence without becoming
+                intensely sore after every workout.
+              </p>
+            </article>
+
+            <article class="myth-fact-row">
+              <div class="myth-label">Myth: Lactic acid causes DOMS.</div>
+
+              <p>
+                Lactate does not remain trapped in the muscles for several days.
+                DOMS involves other exercise-related processes.
+              </p>
+            </article>
+
+            <article class="myth-fact-row">
+              <div class="myth-label">
+                Myth: You must stay completely still.
+              </div>
+
+              <p>
+                Gentle movement may help reduce stiffness. The appropriate
+                amount depends on the severity of your symptoms and your ability
+                to move safely.
+              </p>
+            </article>
+
+            <article class="myth-fact-row">
+              <div class="myth-label">
+                Myth: More pain means a better workout.
+              </div>
+
+              <p>
+                Severe soreness may interfere with training and daily activity.
+                A well-designed program balances challenge with recovery.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <div class="doms-reminder">
+          <strong>Soreness is feedback—not a score.</strong>
+
+          <p>
+            Evaluate your training by your progress, movement quality,
+            consistency, energy, and ability to recover—not by how difficult it
+            is to sit down the next day.
+          </p>
+        </div>
+
+        <section>
+          <h2>Can DOMS Be Prevented?</h2>
+
+          <p>
+            DOMS cannot always be prevented, especially when learning a new
+            activity. However, gradual progression may reduce its severity.
+          </p>
+
+          <ul class="article-list-check">
+            <li>Begin new activities with manageable volume and intensity.</li>
+            <li>Increase distance, resistance, or repetitions gradually.</li>
+            <li>Allow recovery between demanding sessions.</li>
+            <li>Practice unfamiliar movements before heavily loading them.</li>
+            <li>Avoid treating severe soreness as the goal of exercise.</li>
+          </ul>
+
+          <p>
+            As your body becomes accustomed to a particular activity, the same
+            workout may produce less soreness over time.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            DOMS is common, but it does not need to be celebrated or feared.
+          </p>
+
+          <p>
+            Your body may feel sore when it is adapting to a new demand. That
+            does not mean you must push harder, stop moving completely, or
+            punish the tissue with aggressive pressure.
+          </p>
+
+          <p>
+            The most useful response is usually measured: notice how the
+            soreness behaves, move within a comfortable range, support your
+            recovery, and seek help when the symptoms do not follow the pattern
+            you would expect from ordinary post-exercise soreness.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Seek medical evaluation for severe or worsening pain, significant
+            swelling or bruising, visible deformity, sudden weakness, numbness,
+            loss of function, inability to bear weight, fever, chest pain,
+            difficulty breathing, or dark brown or cola-colored urine after
+            strenuous exercise. These symptoms should not be assumed to be
+            ordinary DOMS.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Repeating an activity after your body has adapted often produces
+            less soreness than the first exposure. This is commonly called the
+            repeated-bout effect.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="sleep-and-muscle-recovery.html"
+              class="related-article-card"
+            >
+              <h3>Sleep and Muscle Recovery</h3>
+
+              <p>
+                Learn how consistent sleep supports physical readiness, energy,
+                and your body’s recovery processes.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="hydration-and-muscle-health.html"
+              class="related-article-card"
+            >
+              <h3>Hydration and Muscle Health</h3>
+
+              <p>
+                Explore how fluid balance supports movement, temperature
+                regulation, exercise, and recovery.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="foam-rolling-101.html" class="related-article-card">
+              <h3>Foam Rolling 101</h3>
+
+              <p>
+                Learn how to use a foam roller safely and what it may—or may
+                not—do for muscle soreness and mobility.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, or treatment. Post-exercise pain
+            can have causes other than DOMS. Consult a qualified healthcare
+            provider when symptoms are severe, unusual, persistent, worsening,
+            or associated with an injury or loss of function.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://my.clevelandclinic.org/health/diseases/delayed-onset-muscle-soreness"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cleveland Clinic: Delayed Onset Muscle Soreness
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://acsm.org/eccentric-contractions-muscle-damage/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                American College of Sports Medicine: Eccentric Contractions and
+                Muscle Damage
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8431437/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: Delayed Onset Muscle Soreness and
+                the Fascial Connective Tissue
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/12617692/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PubMed: Delayed Onset Muscle Soreness—Treatment Strategies and
+                Performance Factors
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1250256/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: Effects of Massage on Delayed
+                Onset Muscle Soreness
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Continue Your Wellness Journey</h2>
+
+          <p>
+            Looking for recovery-focused care? Schedule a FlowTherapy session
+            and experience therapeutic massage tailored to your comfort, goals,
+            activity level, and individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+<!-- Shared footer generated by site-layout.js -->
+<div id="site-footer"></div>
+
+<script src="/assets/js/site-layout.js"></script>
+<script src="/assets/js/content-registry.js"></script>
+<script src="/assets/js/related-articles.js"></script>
+<script src="/assets/js/article-utils.js"></script>
+
+</body>
+</html>
+

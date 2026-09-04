@@ -1,0 +1,1908 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Joint Health and Healthy Movement</title>
+
+    <meta
+      name="description"
+      content="Learn how regular movement, strength, balance, recovery, and gradual activity can support comfortable joints and healthy movement throughout life."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .joint-intro-panel {
+        margin: 36px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(229, 244, 255, 0.98),
+          rgba(250, 253, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .joint-intro-panel h2 {
+        margin-top: 0;
+      }
+
+      .joint-intro-panel p {
+        max-width: 740px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .joint-formula {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .joint-formula h2,
+      .joint-formula > p {
+        text-align: center;
+      }
+
+      .joint-formula h2 {
+        margin-top: 0;
+      }
+
+      .joint-formula > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .joint-formula-grid {
+        display: grid;
+        grid-template-columns:
+          minmax(0, 1fr)
+          auto
+          minmax(0, 1fr)
+          auto
+          minmax(0, 1fr)
+          auto
+          minmax(0, 1fr);
+        gap: 12px;
+        align-items: stretch;
+      }
+
+      .joint-formula-card {
+        padding: 23px 18px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+        text-align: center;
+        box-shadow: 0 7px 20px rgba(20, 55, 85, 0.05);
+      }
+
+      .joint-formula-card span {
+        display: inline-block;
+        margin-bottom: 11px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .joint-formula-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .joint-formula-card p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+
+      .formula-symbol {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1677c8;
+        font-size: 1.7rem;
+        font-weight: 800;
+      }
+
+      .joint-basics {
+        margin: 40px 0;
+      }
+
+      .joint-basics > h2,
+      .joint-basics > p {
+        text-align: center;
+      }
+
+      .joint-basics > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .joint-basics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .joint-basics-card {
+        padding: 25px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .joint-basics-card span {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .joint-basics-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.16rem;
+      }
+
+      .joint-basics-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .stiffness-section {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .stiffness-section h2,
+      .stiffness-section > p {
+        text-align: center;
+      }
+
+      .stiffness-section h2 {
+        margin-top: 0;
+      }
+
+      .stiffness-section > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .stiffness-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .stiffness-card {
+        padding: 21px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .stiffness-card h3 {
+        margin: 0 0 7px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .stiffness-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .movement-rest-section {
+        margin: 40px 0;
+      }
+
+      .movement-rest-section > h2,
+      .movement-rest-section > p {
+        text-align: center;
+      }
+
+      .movement-rest-section > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .movement-rest-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .movement-rest-card {
+        padding: 27px;
+        border: 1px solid #d6e7f7;
+        border-radius: 17px;
+        background: #ffffff;
+      }
+
+      .movement-rest-card span {
+        display: inline-block;
+        margin-bottom: 13px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .movement-rest-card h3 {
+        margin: 0 0 9px;
+        color: #1677c8;
+        font-size: 1.18rem;
+      }
+
+      .movement-rest-card p {
+        margin: 0 0 10px;
+        line-height: 1.65;
+      }
+
+      .movement-rest-card p:last-child {
+        margin-bottom: 0;
+      }
+
+      .joint-habits {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .joint-habits h2,
+      .joint-habits > p {
+        text-align: center;
+      }
+
+      .joint-habits h2 {
+        margin-top: 0;
+      }
+
+      .joint-habits > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .joint-habit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 17px;
+      }
+
+      .joint-habit-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .joint-habit-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 13px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .joint-habit-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.12rem;
+      }
+
+      .joint-habit-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .movement-menu {
+        margin: 40px 0;
+      }
+
+      .movement-menu > h2,
+      .movement-menu > p {
+        text-align: center;
+      }
+
+      .movement-menu > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .movement-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .movement-menu-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .movement-menu-card span {
+        display: inline-block;
+        margin-bottom: 11px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .movement-menu-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .movement-menu-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .load-guide {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .load-guide h2,
+      .load-guide > p {
+        text-align: center;
+      }
+
+      .load-guide h2 {
+        margin-top: 0;
+      }
+
+      .load-guide > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .load-guide-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .load-guide-card {
+        padding: 24px;
+        border-left: 4px solid #1677c8;
+        border-radius: 13px;
+        background: #ffffff;
+      }
+
+      .load-guide-card span {
+        display: inline-block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .load-guide-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .load-guide-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .strength-section {
+        margin: 40px 0;
+      }
+
+      .strength-section > h2,
+      .strength-section > p {
+        text-align: center;
+      }
+
+      .strength-section > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .strength-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .strength-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .strength-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .strength-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .joint-checklist {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .joint-checklist h2,
+      .joint-checklist > p {
+        text-align: center;
+      }
+
+      .joint-checklist h2 {
+        margin-top: 0;
+      }
+
+      .joint-checklist > p {
+        max-width: 720px;
+        margin: 0 auto 26px;
+      }
+
+      .joint-checklist-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .joint-check-item {
+        position: relative;
+        padding: 19px 20px 19px 52px;
+        border: 1px solid #d6e7f7;
+        border-radius: 13px;
+        background: #ffffff;
+      }
+
+      .joint-check-item::before {
+        position: absolute;
+        top: 18px;
+        left: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #e4f1ff;
+        color: #1677c8;
+        content: "✓";
+        font-weight: 800;
+      }
+
+      .joint-check-item strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #1677c8;
+      }
+
+      .joint-check-item p {
+        margin: 0;
+        line-height: 1.58;
+      }
+
+      .arthritis-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .arthritis-panel h2 {
+        margin-top: 0;
+      }
+
+      .arthritis-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .joint-myths {
+        margin: 40px 0;
+      }
+
+      .joint-myths > h2 {
+        text-align: center;
+      }
+
+      .joint-myth-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 25px;
+      }
+
+      .joint-myth-row {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 20px;
+        padding: 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .joint-myth-label {
+        color: #1677c8;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .joint-myth-row p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .stop-section {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .stop-section h2,
+      .stop-section > p {
+        text-align: center;
+      }
+
+      .stop-section h2 {
+        margin-top: 0;
+      }
+
+      .stop-section > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .stop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .stop-card {
+        padding: 21px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .stop-card strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .stop-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .joint-reminder {
+        margin: 38px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .joint-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .joint-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 1000px) {
+        .joint-formula-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .formula-symbol {
+          display: none;
+        }
+      }
+
+      @media (max-width: 850px) {
+        .movement-menu-grid,
+        .load-guide-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .joint-basics-grid,
+        .stiffness-grid,
+        .movement-rest-grid,
+        .joint-habit-grid,
+        .strength-grid,
+        .joint-checklist-grid,
+        .stop-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .joint-myth-row {
+          grid-template-columns: 1fr;
+          gap: 7px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .joint-formula-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+<body data-article-id="joint-health-and-healthy-movement">
+    <!-- Shared header generated by site-layout.js -->
+<div id="site-header"></div>
+
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/movement-mobility.html">
+          ← Back to Movement &amp; Mobility FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Movement &amp; Mobility</div>
+
+          <h1>Joint Health and Healthy Movement</h1>
+
+          <p class="article-subtitle">
+            How regular movement, strength, balance, recovery, and gradual
+            activity can support comfortable joints throughout life.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Joints are often described as though they are machine parts that
+            simply wear out each time you move.
+          </p>
+
+          <p>Human movement is more complex than that.</p>
+
+          <p>
+            Joints work together with muscles, tendons, ligaments, cartilage,
+            the nervous system, and the surrounding tissues. They respond to
+            activity, rest, health conditions, injury, age, strength, and the
+            demands placed on them over time.
+          </p>
+
+          <p>
+            Avoiding all movement is rarely the complete answer to joint
+            stiffness. Healthy movement usually involves finding an appropriate
+            balance between activity, strength, recovery, and medical care when
+            needed.
+          </p>
+        </div>
+
+        <section class="joint-intro-panel">
+          <h2>Joints Are Designed to Move</h2>
+
+          <p>
+            Regular, comfortable movement helps joints experience changing
+            positions and forces. The goal is not maximum range or constant
+            exercise. It is enough movement, strength, and recovery to support
+            the activities that matter in your daily life.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is a Joint?</h2>
+
+          <p>
+            A joint is an area where two or more bones meet. Different joints
+            are built for different amounts and types of movement.
+          </p>
+
+          <p>
+            The shoulder allows movement in many directions. The knee primarily
+            bends and straightens while also managing rotation and load. The
+            spine contains multiple joints that work together during bending,
+            turning, reaching, and walking.
+          </p>
+
+          <p>
+            Joint health is not determined by one structure alone. Comfortable
+            movement depends on how the entire area works together.
+          </p>
+        </section>
+
+        <section class="joint-formula">
+          <h2>The Healthy Joint Formula</h2>
+
+          <p>
+            No single habit does everything. Joint health is better supported by
+            several practices working together.
+          </p>
+
+          <div class="joint-formula-grid">
+            <article class="joint-formula-card">
+              <span>Move</span>
+
+              <h3>Regular Motion</h3>
+
+              <p>
+                Give your joints opportunities to bend, straighten, rotate, and
+                bear weight within comfortable ranges.
+              </p>
+            </article>
+
+            <div class="formula-symbol" aria-hidden="true">+</div>
+
+            <article class="joint-formula-card">
+              <span>Strengthen</span>
+
+              <h3>Muscular Support</h3>
+
+              <p>
+                Strong muscles help control movement and manage the forces
+                placed on joints.
+              </p>
+            </article>
+
+            <div class="formula-symbol" aria-hidden="true">+</div>
+
+            <article class="joint-formula-card">
+              <span>Recover</span>
+
+              <h3>Appropriate Rest</h3>
+
+              <p>
+                Sleep, nutrition, hydration, pacing, and recovery help the body
+                respond to physical demands.
+              </p>
+            </article>
+
+            <div class="formula-symbol" aria-hidden="true">+</div>
+
+            <article class="joint-formula-card">
+              <span>Repeat</span>
+
+              <h3>Consistency</h3>
+
+              <p>
+                Gradual, repeatable habits are usually more useful than
+                occasional extreme efforts.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Healthy movement is not about protecting every joint from all stress.
+          It is about giving the body appropriate amounts of movement, strength,
+          and recovery.
+        </blockquote>
+
+        <section class="joint-basics">
+          <h2>Structures That Support Joint Movement</h2>
+
+          <p>
+            Joint comfort and function depend on a team of tissues working
+            together.
+          </p>
+
+          <div class="joint-basics-grid">
+            <article class="joint-basics-card">
+              <span>Cartilage</span>
+
+              <h3>Smooth Joint Surfaces</h3>
+
+              <p>
+                Articular cartilage covers the ends of bones in many movable
+                joints and helps surfaces glide while distributing force.
+              </p>
+            </article>
+
+            <article class="joint-basics-card">
+              <span>Synovial Fluid</span>
+
+              <h3>Joint Lubrication</h3>
+
+              <p>
+                Synovial joints contain fluid that helps reduce friction and
+                supports movement within the joint.
+              </p>
+            </article>
+
+            <article class="joint-basics-card">
+              <span>Muscles and Tendons</span>
+
+              <h3>Movement and Control</h3>
+
+              <p>
+                Muscles create motion and help control the joint, while tendons
+                connect muscles to bones.
+              </p>
+            </article>
+
+            <article class="joint-basics-card">
+              <span>Ligaments</span>
+
+              <h3>Structural Support</h3>
+
+              <p>
+                Ligaments connect bones and help guide or limit movement within
+                the joint’s normal design.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why Do Joints Feel Stiff?</h2>
+
+          <p>Stiffness is a sensation that may have several possible causes.</p>
+
+          <p>
+            A joint may feel stiff after waking, prolonged sitting, travel,
+            unfamiliar exercise, heavy activity, or time spent in one position.
+            In these situations, comfortable movement may gradually make the
+            area feel easier.
+          </p>
+
+          <p>
+            Stiffness can also accompany arthritis, swelling, injury, infection,
+            inflammatory conditions, or other health concerns. Persistent or
+            unexplained stiffness deserves appropriate evaluation.
+          </p>
+        </section>
+
+        <section class="stiffness-section">
+          <h2>Common Influences on Joint Stiffness</h2>
+
+          <p>
+            The sensation of stiffness does not always identify the underlying
+            cause.
+          </p>
+
+          <div class="stiffness-grid">
+            <article class="stiffness-card">
+              <h3>Prolonged Stillness</h3>
+
+              <p>
+                Remaining in one position may make the first few movements feel
+                less comfortable.
+              </p>
+            </article>
+
+            <article class="stiffness-card">
+              <h3>Recent Exercise</h3>
+
+              <p>
+                Fatigue and delayed muscle soreness can temporarily change the
+                way the joints and surrounding tissues feel.
+              </p>
+            </article>
+
+            <article class="stiffness-card">
+              <h3>Reduced Strength</h3>
+
+              <p>
+                A movement may feel uncertain or restricted when the surrounding
+                muscles are not prepared to control it.
+              </p>
+            </article>
+
+            <article class="stiffness-card">
+              <h3>Joint Swelling</h3>
+
+              <p>
+                Fluid, inflammation, or injury can physically limit range and
+                may require medical assessment.
+              </p>
+            </article>
+
+            <article class="stiffness-card">
+              <h3>Previous Injury</h3>
+
+              <p>
+                Injury, surgery, and protective movement habits may affect
+                confidence, strength, and available motion.
+              </p>
+            </article>
+
+            <article class="stiffness-card">
+              <h3>Arthritis or Other Conditions</h3>
+
+              <p>
+                Different forms of arthritis and other medical conditions can
+                create pain, swelling, stiffness, or changes in function.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="movement-rest-section">
+          <h2>Movement or Rest: Which One Do You Need?</h2>
+
+          <p>
+            Movement and rest are not opposites. Both can be useful depending on
+            the situation.
+          </p>
+
+          <div class="movement-rest-grid">
+            <article class="movement-rest-card">
+              <span>Movement May Help When</span>
+
+              <h3>The Area Feels Stiff After Stillness</h3>
+
+              <p>
+                Gentle walking, joint motion, or changing positions may help
+                when stiffness appeared after sitting, sleeping, driving, or
+                working in one position.
+              </p>
+
+              <p>
+                Start with a smaller range and observe whether the area becomes
+                more comfortable.
+              </p>
+            </article>
+
+            <article class="movement-rest-card">
+              <span>Rest May Help When</span>
+
+              <h3>The Area Has Been Overloaded</h3>
+
+              <p>
+                Temporary reduction in activity may be useful after unusually
+                demanding exercise, repetitive work, or a minor flare in
+                symptoms.
+              </p>
+
+              <p>
+                Rest does not always mean complete inactivity. It may mean
+                reducing the load, changing the activity, or choosing gentler
+                movement.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why Complete Inactivity Can Increase Stiffness</h2>
+
+          <p>
+            When movement decreases for an extended period, the body receives
+            fewer opportunities to maintain strength, coordination, endurance,
+            and confidence.
+          </p>
+
+          <p>
+            Complete rest may be medically necessary after certain injuries or
+            procedures, but long-term inactivity can make returning to ordinary
+            activity more difficult.
+          </p>
+
+          <p>
+            Follow specific medical restrictions when they are provided.
+            Otherwise, gradual and appropriate movement is often part of
+            restoring function.
+          </p>
+        </section>
+
+        <section class="joint-habits">
+          <h2>Six Habits That Support Healthy Movement</h2>
+
+          <p>
+            These habits can be adapted to your health, ability, goals, and
+            environment.
+          </p>
+
+          <div class="joint-habit-grid">
+            <article class="joint-habit-card">
+              <div class="joint-habit-number">1</div>
+
+              <h3>Change Positions Regularly</h3>
+
+              <p>
+                Alternate sitting, standing, walking, reaching, and other
+                comfortable positions throughout the day.
+              </p>
+            </article>
+
+            <article class="joint-habit-card">
+              <div class="joint-habit-number">2</div>
+
+              <h3>Walk When Appropriate</h3>
+
+              <p>
+                Walking provides repeated motion through the hips, knees,
+                ankles, feet, spine, and arms.
+              </p>
+            </article>
+
+            <article class="joint-habit-card">
+              <div class="joint-habit-number">3</div>
+
+              <h3>Build Strength Gradually</h3>
+
+              <p>
+                Progressive strength training helps the muscles surrounding
+                joints manage everyday loads.
+              </p>
+            </article>
+
+            <article class="joint-habit-card">
+              <div class="joint-habit-number">4</div>
+
+              <h3>Practice Balance</h3>
+
+              <p>
+                Balance and coordination help you control weight shifts,
+                direction changes, stairs, and uneven surfaces.
+              </p>
+            </article>
+
+            <article class="joint-habit-card">
+              <div class="joint-habit-number">5</div>
+
+              <h3>Allow Recovery</h3>
+
+              <p>
+                Alternate more demanding and less demanding activities when your
+                body needs time to adapt.
+              </p>
+            </article>
+
+            <article class="joint-habit-card">
+              <div class="joint-habit-number">6</div>
+
+              <h3>Respond to Symptoms</h3>
+
+              <p>
+                Adjust the range, speed, repetitions, resistance, or activity
+                when pain or swelling increases.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="movement-menu">
+          <h2>Joint-Friendly Movement Options</h2>
+
+          <p>
+            The best activity is one you can perform safely, tolerate
+            consistently, and adapt when needed.
+          </p>
+
+          <div class="movement-menu-grid">
+            <article class="movement-menu-card">
+              <span>Walking</span>
+
+              <h3>Accessible Full-Body Movement</h3>
+
+              <p>
+                Walking can be adjusted by changing the pace, distance, surface,
+                terrain, and amount of support.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Cycling</span>
+
+              <h3>Supported Repetitive Motion</h3>
+
+              <p>
+                Stationary or outdoor cycling may provide lower-impact movement
+                for the hips, knees, and ankles.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Water Exercise</span>
+
+              <h3>Reduced Weight-Bearing</h3>
+
+              <p>
+                Water can reduce the amount of body weight supported while
+                providing resistance for movement.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Tai Chi</span>
+
+              <h3>Balance and Control</h3>
+
+              <p>
+                Slow, controlled weight shifts may support balance,
+                coordination, and body awareness.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Strength Training</span>
+
+              <h3>Support Around the Joints</h3>
+
+              <p>
+                Resistance can be gradually adjusted using body weight, bands,
+                machines, or free weights.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Everyday Activity</span>
+
+              <h3>Movement Beyond Exercise</h3>
+
+              <p>
+                Gardening, household tasks, errands, recreation, and active
+                hobbies can all contribute to regular movement.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="load-guide">
+          <h2>How Much Discomfort Is Acceptable?</h2>
+
+          <p>
+            Pain response varies by person and condition. Use your symptoms
+            during and after activity to guide adjustments.
+          </p>
+
+          <div class="load-guide-grid">
+            <article class="load-guide-card">
+              <span>Continue</span>
+
+              <h3>Comfortable Effort</h3>
+
+              <p>
+                Mild muscular effort or familiar stiffness improves as you move
+                and does not create worsening symptoms afterward.
+              </p>
+            </article>
+
+            <article class="load-guide-card">
+              <span>Modify</span>
+
+              <h3>Increasing Irritation</h3>
+
+              <p>
+                Reduce the range, resistance, repetitions, speed, or duration
+                when discomfort progressively increases.
+              </p>
+            </article>
+
+            <article class="load-guide-card">
+              <span>Stop</span>
+
+              <h3>Concerning Symptoms</h3>
+
+              <p>
+                Stop for sharp pain, instability, sudden weakness, major
+                swelling, numbness, or an inability to use the joint normally.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Strength Protects Function</h2>
+
+          <p>
+            Strength does not create an invisible shield around a joint, but it
+            improves the body’s ability to control movement and manage physical
+            demands.
+          </p>
+
+          <p>
+            Strong legs support sitting, standing, stairs, walking, and lifting.
+            Strong shoulders and arms support reaching, carrying, pushing, and
+            pulling. Trunk strength helps coordinate movement between the upper
+            and lower body.
+          </p>
+
+          <p>
+            Strength training should begin at a manageable level and progress
+            gradually.
+          </p>
+        </section>
+
+        <section class="strength-section">
+          <h2>Everyday Strength That Supports Joints</h2>
+
+          <p>
+            Choose movements that match your ability and use support when
+            needed.
+          </p>
+
+          <div class="strength-grid">
+            <article class="strength-card">
+              <h3>Sit to Stand</h3>
+
+              <p>
+                Builds strength for getting out of chairs, vehicles, beds, and
+                other seated positions.
+              </p>
+            </article>
+
+            <article class="strength-card">
+              <h3>Heel Raises</h3>
+
+              <p>
+                Strengthens the calves and supports control through the ankles
+                and feet.
+              </p>
+            </article>
+
+            <article class="strength-card">
+              <h3>Supported Step-Ups</h3>
+
+              <p>
+                May help prepare the hips and knees for stairs and curbs when
+                performed at an appropriate height.
+              </p>
+            </article>
+
+            <article class="strength-card">
+              <h3>Rows or Pulling Movements</h3>
+
+              <p>
+                Strengthens muscles that support the shoulders, arms, and upper
+                back.
+              </p>
+            </article>
+
+            <article class="strength-card">
+              <h3>Wall Push-Ups</h3>
+
+              <p>
+                Provides adjustable upper-body resistance with less demand than
+                a floor push-up.
+              </p>
+            </article>
+
+            <article class="strength-card">
+              <h3>Carrying Appropriate Loads</h3>
+
+              <p>
+                Carrying manageable objects can train grip, trunk, hip, and leg
+                strength for daily tasks.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="joint-checklist">
+          <h2>A Joint-Friendly Daily Checklist</h2>
+
+          <p>
+            You do not need to complete every item perfectly. Use the list as a
+            practical reminder.
+          </p>
+
+          <div class="joint-checklist-grid">
+            <article class="joint-check-item">
+              <strong>Change positions</strong>
+              <p>
+                Avoid remaining in one position longer than feels comfortable.
+              </p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Walk or move regularly</strong>
+              <p>Use brief movement opportunities throughout the day.</p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Practice strength</strong>
+              <p>Include resistance appropriate for your ability and health.</p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Use a comfortable range</strong>
+              <p>Do not force movement simply to match another person.</p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Allow recovery</strong>
+              <p>Alternate more demanding and less demanding activities.</p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Notice swelling</strong>
+              <p>New or unexplained swelling deserves additional attention.</p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Use supportive equipment</strong>
+              <p>
+                Choose footwear, braces, or assistive devices appropriately.
+              </p>
+            </article>
+
+            <article class="joint-check-item">
+              <strong>Seek guidance when needed</strong>
+              <p>Ask a qualified professional when symptoms remain unclear.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="arthritis-panel">
+          <h2>What if You Have Arthritis?</h2>
+
+          <p>
+            Arthritis is not one single condition. Different forms can affect
+            joints and surrounding tissues in different ways.
+          </p>
+
+          <p>
+            Many people with arthritis can benefit from appropriately selected
+            physical activity. Walking, cycling, water exercise, tai chi, and
+            strengthening are examples of activities that may be adapted to
+            reduce joint stress.
+          </p>
+
+          <p>
+            During a flare, the appropriate activity level may change. A
+            healthcare or rehabilitation professional can help you determine how
+            to modify movement based on your diagnosis, symptoms, and treatment
+            plan.
+          </p>
+        </section>
+
+        <section>
+          <h2>Does Movement Wear Out Your Joints?</h2>
+
+          <p>
+            Ordinary, appropriately progressed physical activity should not be
+            treated as though every step removes a fixed amount of joint life.
+          </p>
+
+          <p>
+            Joints respond to movement and loading. The amount, speed,
+            direction, recovery time, health of the joint, and the person’s
+            current capacity all influence that response.
+          </p>
+
+          <p>
+            Sudden increases in activity can irritate an area that is not
+            prepared for the demand. Gradual progression gives the body time to
+            adapt.
+          </p>
+        </section>
+
+        <section class="joint-myths">
+          <h2>Common Joint-Health Myths</h2>
+
+          <div class="joint-myth-list">
+            <article class="joint-myth-row">
+              <div class="joint-myth-label">
+                Myth: Joint pain always means damage.
+              </div>
+
+              <p>
+                Pain is influenced by many factors. Persistent, severe, or
+                unexplained pain should be assessed, but pain intensity does not
+                always reveal the amount of tissue damage.
+              </p>
+            </article>
+
+            <article class="joint-myth-row">
+              <div class="joint-myth-label">Myth: Rest is always best.</div>
+
+              <p>
+                Rest may be useful temporarily, but long periods of inactivity
+                can reduce strength, confidence, and tolerance for movement.
+              </p>
+            </article>
+
+            <article class="joint-myth-row">
+              <div class="joint-myth-label">
+                Myth: Cracking means the joint is damaged.
+              </div>
+
+              <p>
+                Joints may make sounds for several reasons. Sound without pain,
+                swelling, locking, or loss of function is not automatically a
+                sign of injury.
+              </p>
+            </article>
+
+            <article class="joint-myth-row">
+              <div class="joint-myth-label">
+                Myth: Everyone needs maximum flexibility.
+              </div>
+
+              <p>
+                The useful amount of range depends on anatomy, goals, health,
+                control, strength, and daily activities.
+              </p>
+            </article>
+
+            <article class="joint-myth-row">
+              <div class="joint-myth-label">
+                Myth: Aging automatically causes severe joint pain.
+              </div>
+
+              <p>
+                Joint conditions become more common with age, but severe pain
+                should not be dismissed as an unavoidable part of getting older.
+              </p>
+            </article>
+
+            <article class="joint-myth-row">
+              <div class="joint-myth-label">
+                Myth: Massage can realign worn joints.
+              </div>
+
+              <p>
+                Massage may support comfort in surrounding muscles, but it does
+                not rebuild cartilage, reverse arthritis, or replace medical or
+                rehabilitative care.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Support Joint Comfort?</h2>
+
+          <p>
+            Massage primarily affects the skin, muscles, connective tissues, and
+            the person’s overall sensory experience. It may help reduce the
+            sensation of muscle tension surrounding a joint or make gentle
+            movement feel more comfortable.
+          </p>
+
+          <p>
+            Massage does not directly repair damaged cartilage, cure arthritis,
+            stabilize an injured ligament, or replace exercise and
+            rehabilitation.
+          </p>
+
+          <p>
+            Tell your massage therapist about joint replacements, recent
+            surgery, swelling, inflammation, medication, fractures, arthritis,
+            reduced sensation, or restrictions from your healthcare provider.
+          </p>
+        </section>
+
+        <section class="stop-section">
+          <h2>Stop Activity and Seek Guidance When</h2>
+
+          <p>
+            Ordinary effort and mild stiffness may be manageable. Significant
+            changes deserve more attention.
+          </p>
+
+          <div class="stop-grid">
+            <article class="stop-card">
+              <strong>The joint becomes significantly swollen</strong>
+
+              <p>
+                New, unexplained, or injury-related swelling should be
+                appropriately assessed.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>You cannot bear weight</strong>
+
+              <p>
+                Difficulty standing or walking after an injury may require
+                urgent evaluation.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>The joint appears deformed</strong>
+
+              <p>
+                A visible change in alignment following trauma can indicate a
+                serious injury.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>The joint locks or repeatedly gives way</strong>
+
+              <p>
+                Loss of dependable function may require medical or
+                rehabilitative assessment.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>You have fever with joint pain or swelling</strong>
+
+              <p>
+                Fever with a hot, swollen, or painful joint requires prompt
+                medical attention.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>Pain continues to worsen</strong>
+
+              <p>
+                Persistent or progressively worsening symptoms should not be
+                managed only by repeatedly exercising or massaging the area.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <div class="joint-reminder">
+          <strong>Movement should be scaled—not feared.</strong>
+
+          <p>
+            The appropriate amount of movement may change from day to day.
+            Adjust the range, resistance, pace, duration, or activity while
+            continuing to respect medical restrictions and concerning symptoms.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Healthy movement is not measured by whether your joints are silent,
+            perfectly symmetrical, or able to reach every possible position.
+          </p>
+
+          <p>
+            It is measured by whether you can participate in your life with
+            enough comfort, strength, control, and confidence.
+          </p>
+
+          <p>
+            Massage can support comfort and recovery, but joint health also
+            depends on regular movement, strength, balance, sleep, appropriate
+            pacing, and healthcare when symptoms require it.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Seek prompt medical care for a hot, red, or significantly swollen
+            joint; fever with joint pain or swelling; inability to bear weight;
+            severe unexplained pain; visible deformity; sudden weakness or
+            numbness; loss of function; or symptoms following a significant
+            injury. Persistent joint pain or stiffness that interferes with
+            daily life should also be evaluated by an appropriate healthcare
+            provider.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Joint-friendly activity does not have to mean easy activity forever.
+            Walking, cycling, swimming, tai chi, strength training, and other
+            activities can be gradually progressed as your capacity and
+            confidence improve.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="everyday-mobility-exercises.html"
+              class="related-article-card"
+            >
+              <h3>Everyday Mobility Exercises</h3>
+
+              <p>
+                Explore a short routine for adding comfortable movement variety
+                throughout your day.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-balance-matters-as-we-age.html"
+              class="related-article-card"
+            >
+              <h3>Why Balance Matters as We Age</h3>
+
+              <p>
+                Learn how balance supports confidence, walking, turning, and
+                independence.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="flexibility-vs-mobility.html" class="related-article-card">
+              <h3>Flexibility vs. Mobility</h3>
+
+              <p>
+                Understand the difference between available range and the
+                ability to control that range.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, physical therapy, rehabilitation,
+            or individualized exercise instruction. Movement may need to be
+            modified based on arthritis, injury, surgery, joint replacement,
+            pregnancy, medications, balance, bone health, cardiovascular
+            conditions, nerve symptoms, and other medical considerations.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/arthritis/prevention/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                and Arthritis
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/arthritis/caring/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Self-Care for
+                Arthritis
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://orthoinfo.aaos.org/en/treatment/managing-arthritis-pain-with-exercise/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                American Academy of Orthopaedic Surgeons: Managing Arthritis
+                Pain With Exercise
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nia.nih.gov/health/exercise-and-physical-activity/exercising-chronic-conditions"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institute on Aging: Exercising With Chronic Conditions
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nia.nih.gov/health/exercise-and-physical-activity/health-benefits-exercise-and-physical-activity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institute on Aging: Health Benefits of Physical
+                Activity
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/arthritis.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Arthritis
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/article/003261.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Joint Pain
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/article/003262.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Joint Swelling
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Support More Comfortable Movement</h2>
+
+          <p>
+            Experiencing recurring muscle tension around stiff or uncomfortable
+            joints? Schedule a personalized FlowTherapy session centered around
+            your comfort, activity level, movement goals, and individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+<!-- Shared footer generated by site-layout.js -->
+<div id="site-footer"></div>
+
+<script src="/assets/js/site-layout.js"></script>
+<script src="/assets/js/content-registry.js"></script>
+<script src="/assets/js/related-articles.js"></script>
+<script src="/assets/js/article-utils.js"></script>
+
+</body>
+</html>
+

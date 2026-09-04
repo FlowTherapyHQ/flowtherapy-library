@@ -1,0 +1,1844 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Why Stress Causes Muscle Tension</title>
+
+    <meta
+      name="description"
+      content="Learn why stress can contribute to muscle tension, guarding, headaches, jaw clenching, and changes in breathing—and explore practical ways to interrupt the stress-tension cycle."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .stress-intro-panel {
+        margin: 36px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(229, 244, 255, 0.98),
+          rgba(250, 253, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .stress-intro-panel h2 {
+        margin-top: 0;
+      }
+
+      .stress-intro-panel p {
+        max-width: 740px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .stress-response-section {
+        margin: 40px 0;
+      }
+
+      .stress-response-section > h2,
+      .stress-response-section > p {
+        text-align: center;
+      }
+
+      .stress-response-section > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .stress-response-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .stress-response-card {
+        padding: 25px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .stress-response-card span {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .stress-response-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.16rem;
+      }
+
+      .stress-response-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .stress-cycle-section {
+        margin: 40px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .stress-cycle-section h2,
+      .stress-cycle-section > p {
+        text-align: center;
+      }
+
+      .stress-cycle-section h2 {
+        margin-top: 0;
+      }
+
+      .stress-cycle-section > p {
+        max-width: 720px;
+        margin: 0 auto 30px;
+      }
+
+      .stress-cycle-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .stress-cycle {
+        display: grid;
+        gap: 9px;
+        padding: 26px;
+        border: 1px solid #d6e7f7;
+        border-radius: 17px;
+        background: #ffffff;
+      }
+
+      .stress-cycle-step {
+        padding: 17px 20px;
+        border-left: 4px solid #1677c8;
+        border-radius: 11px;
+        background: #f4f9fe;
+        text-align: center;
+      }
+
+      .stress-cycle-step strong {
+        display: block;
+        color: #1677c8;
+        font-size: 1.06rem;
+      }
+
+      .cycle-arrow {
+        color: #1677c8;
+        font-size: 1.3rem;
+        font-weight: 800;
+        line-height: 1;
+        text-align: center;
+      }
+
+      .break-cycle-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 28px;
+        border: 1px solid #d6e7f7;
+        border-radius: 17px;
+        background: #ffffff;
+      }
+
+      .break-cycle-panel h3 {
+        margin: 0 0 10px;
+        color: #1677c8;
+        font-size: 1.3rem;
+      }
+
+      .break-cycle-panel > p {
+        margin-top: 0;
+        line-height: 1.65;
+      }
+
+      .break-cycle-list {
+        display: grid;
+        gap: 11px;
+        margin: 17px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .break-cycle-list li {
+        position: relative;
+        padding: 12px 14px 12px 43px;
+        border-radius: 10px;
+        background: #f4f9fe;
+        line-height: 1.5;
+      }
+
+      .break-cycle-list li::before {
+        position: absolute;
+        top: 11px;
+        left: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #e4f1ff;
+        color: #1677c8;
+        content: "✓";
+        font-weight: 800;
+      }
+
+      .tension-areas {
+        margin: 40px 0;
+      }
+
+      .tension-areas > h2,
+      .tension-areas > p {
+        text-align: center;
+      }
+
+      .tension-areas > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .tension-area-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .tension-area-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .tension-area-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .tension-area-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .guarding-section {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .guarding-section h2 {
+        margin-top: 0;
+      }
+
+      .guarding-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .stress-signals {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .stress-signals h2,
+      .stress-signals > p {
+        text-align: center;
+      }
+
+      .stress-signals h2 {
+        margin-top: 0;
+      }
+
+      .stress-signals > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .stress-signal-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .stress-signal-card {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .stress-signal-card span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .stress-signal-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.06rem;
+      }
+
+      .stress-signal-card p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .breathing-section {
+        margin: 40px 0;
+      }
+
+      .breathing-section > h2,
+      .breathing-section > p {
+        text-align: center;
+      }
+
+      .breathing-section > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .breathing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .breathing-card {
+        padding: 26px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+
+      .breathing-card h3 {
+        margin: 0 0 9px;
+        color: #1677c8;
+        font-size: 1.16rem;
+      }
+
+      .breathing-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .daily-reset {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .daily-reset h2,
+      .daily-reset > p {
+        text-align: center;
+      }
+
+      .daily-reset h2 {
+        margin-top: 0;
+      }
+
+      .daily-reset > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .daily-reset-list {
+        display: grid;
+        gap: 15px;
+        max-width: 830px;
+        margin: 0 auto;
+      }
+
+      .daily-reset-step {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 17px;
+        align-items: start;
+        padding: 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .daily-reset-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .daily-reset-step h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+        font-size: 1.09rem;
+      }
+
+      .daily-reset-step p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .tension-check-in {
+        margin: 40px 0;
+      }
+
+      .tension-check-in > h2,
+      .tension-check-in > p {
+        text-align: center;
+      }
+
+      .tension-check-in > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .check-in-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .check-in-card {
+        padding: 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #f8fbff;
+      }
+
+      .check-in-card h3 {
+        margin: 0 0 7px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .check-in-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .stress-support-menu {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .stress-support-menu h2,
+      .stress-support-menu > p {
+        text-align: center;
+      }
+
+      .stress-support-menu h2 {
+        margin-top: 0;
+      }
+
+      .stress-support-menu > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .support-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .support-menu-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .support-menu-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .support-menu-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .stress-myths {
+        margin: 40px 0;
+      }
+
+      .stress-myths > h2 {
+        text-align: center;
+      }
+
+      .stress-myth-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 25px;
+      }
+
+      .stress-myth-row {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 20px;
+        padding: 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .stress-myth-label {
+        color: #1677c8;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .stress-myth-row p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .massage-stress-panel {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(228, 243, 255, 0.98),
+          rgba(249, 252, 255, 0.98)
+        );
+      }
+
+      .massage-stress-panel h2 {
+        margin-top: 0;
+      }
+
+      .massage-stress-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .professional-support {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .professional-support h2 {
+        margin-top: 0;
+      }
+
+      .professional-support p:last-child {
+        margin-bottom: 0;
+      }
+
+      .stress-reminder {
+        margin: 38px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .stress-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .stress-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 900px) {
+        .stress-cycle-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .stress-signal-grid,
+        .support-menu-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .stress-response-grid,
+        .tension-area-grid,
+        .breathing-grid,
+        .check-in-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .stress-myth-row {
+          grid-template-columns: 1fr;
+          gap: 7px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .daily-reset-step {
+          grid-template-columns: 42px 1fr;
+        }
+
+        .stress-cycle-section,
+        .daily-reset,
+        .stress-signals,
+        .stress-support-menu {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="COPY-THE-EXACT-SECOND-FILENAME-WITHOUT-HTML">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/stress-wellness.html">
+          ← Back to Stress &amp; Wellness FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Stress &amp; Wellness</div>
+
+          <h1>Why Stress Causes Muscle Tension</h1>
+
+          <p class="article-subtitle">
+            How the stress response can affect your muscles, breathing,
+            movement, sleep, and perception of discomfort—and what may help
+            interrupt the cycle.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Stress is often described as something that happens only in the
+            mind.
+          </p>
+
+          <p>But stress is also a physical response.</p>
+
+          <p>
+            When your brain detects a challenge or possible threat, the body
+            prepares to respond. Your attention may sharpen, your heart rate may
+            increase, your breathing may change, and muscles may become more
+            active or guarded.
+          </p>
+
+          <p>
+            This response can be useful in the short term. Problems may develop
+            when stress remains high, recovery is limited, or the body continues
+            behaving as though it must stay prepared long after the immediate
+            situation has passed.
+          </p>
+        </div>
+
+        <section class="stress-intro-panel">
+          <h2>Muscle Tension Is Not “All in Your Head”</h2>
+
+          <p>
+            Stress-related tension is a real physical experience. It may reflect
+            increased muscle activity, reduced movement variety, altered
+            breathing, disrupted sleep, emotional strain, fatigue, and greater
+            attention to uncomfortable sensations. The body and mind are not
+            separate systems—they continually influence each other.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is the Stress Response?</h2>
+
+          <p>
+            Stress is the body’s response to a demand, challenge, or perceived
+            threat.
+          </p>
+
+          <p>
+            The nervous system helps prepare you to act. In an immediate
+            situation, that response may support faster reactions, increased
+            alertness, and temporary changes in heart rate, breathing, and
+            muscle activity.
+          </p>
+
+          <p>
+            The trigger does not have to be physically dangerous. Work pressure,
+            caregiving, conflict, financial strain, uncertainty, grief,
+            overstimulation, lack of sleep, pain, and major life changes may all
+            contribute to stress.
+          </p>
+        </section>
+
+        <section class="stress-response-section">
+          <h2>Short-Term Stress and Ongoing Stress</h2>
+
+          <p>
+            Stress responses can be useful temporarily. The concern is not that
+            your body reacts—it is whether enough recovery follows.
+          </p>
+
+          <div class="stress-response-grid">
+            <article class="stress-response-card">
+              <span>Short-Term Response</span>
+
+              <h3>Preparation for Action</h3>
+
+              <p>
+                The body temporarily redirects attention and energy toward
+                managing an immediate challenge. Muscle tension may increase as
+                part of becoming ready to move, protect yourself, or respond
+                quickly.
+              </p>
+            </article>
+
+            <article class="stress-response-card">
+              <span>Ongoing Response</span>
+
+              <h3>Limited Opportunity to Reset</h3>
+
+              <p>
+                When stressors continue or repeatedly return, the body may spend
+                less time in a settled state. Tension, fatigue, sleep
+                disruption, headaches, and discomfort may become more
+                noticeable.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Stress does not mean your body is failing. It means your system is
+          responding to demand—sometimes for longer than is comfortable or
+          sustainable.
+        </blockquote>
+
+        <section class="stress-cycle-section">
+          <h2>The Stress–Tension Cycle</h2>
+
+          <p>
+            Stress and physical discomfort can reinforce one another. The cycle
+            may begin at different points for different people.
+          </p>
+
+          <div class="stress-cycle-layout">
+            <div class="stress-cycle">
+              <div class="stress-cycle-step">
+                <strong>Stress or perceived threat</strong>
+              </div>
+
+              <div class="cycle-arrow" aria-hidden="true">↓</div>
+
+              <div class="stress-cycle-step">
+                <strong>Muscles become more guarded</strong>
+              </div>
+
+              <div class="cycle-arrow" aria-hidden="true">↓</div>
+
+              <div class="stress-cycle-step">
+                <strong>Breathing and movement may change</strong>
+              </div>
+
+              <div class="cycle-arrow" aria-hidden="true">↓</div>
+
+              <div class="stress-cycle-step">
+                <strong>Discomfort becomes more noticeable</strong>
+              </div>
+
+              <div class="cycle-arrow" aria-hidden="true">↓</div>
+
+              <div class="stress-cycle-step">
+                <strong>Concern and stress may increase</strong>
+              </div>
+
+              <div class="cycle-arrow" aria-hidden="true">↺</div>
+            </div>
+
+            <aside class="break-cycle-panel">
+              <h3>Ways to Interrupt the Cycle</h3>
+
+              <p>
+                You do not have to eliminate every source of stress before
+                helping your body experience moments of lower demand.
+              </p>
+
+              <ul class="break-cycle-list">
+                <li>Change positions and move gently.</li>
+                <li>Reduce unnecessary physical effort.</li>
+                <li>Use comfortable breathing practices.</li>
+                <li>Support consistent sleep when possible.</li>
+                <li>Take short recovery breaks.</li>
+                <li>Seek social or professional support.</li>
+                <li>Use massage as one supportive option.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why Do Muscles Tighten During Stress?</h2>
+
+          <p>
+            Muscles help prepare the body to act. Increased muscle activity may
+            make sense when you need to lift, run, protect yourself, brace, or
+            respond quickly.
+          </p>
+
+          <p>
+            During psychological stress, however, the body may prepare for
+            action even when the situation does not require physical movement.
+            You may sit at a desk while your shoulders remain elevated, clench
+            your jaw during a difficult conversation, or grip the steering wheel
+            while running late.
+          </p>
+
+          <p>
+            The tension may be subtle. Many people do not notice it until the
+            muscles become tired, sore, or difficult to relax.
+          </p>
+        </section>
+
+        <section class="tension-areas">
+          <h2>Where Is Stress-Related Tension Commonly Felt?</h2>
+
+          <p>
+            Stress can affect the entire body, but some areas are especially
+            noticeable because they assist with posture, breathing, facial
+            expression, and protective movement.
+          </p>
+
+          <div class="tension-area-grid">
+            <article class="tension-area-card">
+              <h3>Neck and Shoulders</h3>
+
+              <p>
+                The shoulders may rise while the neck and upper-back muscles
+                work harder to maintain a guarded or focused position.
+              </p>
+            </article>
+
+            <article class="tension-area-card">
+              <h3>Jaw and Face</h3>
+
+              <p>
+                Jaw clenching, tooth contact, facial tension, and nighttime
+                grinding may become more noticeable during stressful periods.
+              </p>
+            </article>
+
+            <article class="tension-area-card">
+              <h3>Head and Scalp</h3>
+
+              <p>
+                Tension around the neck, scalp, and jaw may accompany some
+                headaches, although headaches can have many causes.
+              </p>
+            </article>
+
+            <article class="tension-area-card">
+              <h3>Chest and Breathing Muscles</h3>
+
+              <p>
+                Stress may be associated with faster or shallower breathing and
+                greater use of muscles around the upper chest and neck.
+              </p>
+            </article>
+
+            <article class="tension-area-card">
+              <h3>Back and Hips</h3>
+
+              <p>
+                Guarding, prolonged sitting, reduced movement, and fatigue may
+                contribute to tension around the back, pelvis, and hips.
+              </p>
+            </article>
+
+            <article class="tension-area-card">
+              <h3>Hands and Forearms</h3>
+
+              <p>
+                Gripping a phone, mouse, steering wheel, tools, or other objects
+                more firmly than necessary may increase fatigue in the hands and
+                forearms.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="guarding-section">
+          <h2>What Is Muscle Guarding?</h2>
+
+          <p>
+            Guarding is increased muscular protection around an area that feels
+            threatened, painful, uncertain, or vulnerable.
+          </p>
+
+          <p>
+            Guarding can be helpful after an injury because it temporarily
+            limits movement. It may become less useful when it continues after
+            the immediate threat has changed or when it appears in response to
+            ongoing stress rather than physical injury.
+          </p>
+
+          <p>
+            Telling a guarded muscle to “just relax” may not work. The nervous
+            system may need repeated experiences of safety, support, comfortable
+            movement, and reduced demand before the area begins to feel less
+            protective.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Can Tension Continue After the Stressful Event?</h2>
+
+          <p>
+            The body does not always shift immediately from high alert to deep
+            relaxation.
+          </p>
+
+          <p>
+            You may continue thinking about the situation, anticipating the next
+            demand, completing unfinished tasks, or managing physical effects
+            such as fatigue and disrupted sleep.
+          </p>
+
+          <p>
+            Your usual habits may also continue. Shoulders that stayed elevated
+            for hours may remain tired. A clenched jaw may not release
+            automatically. Reduced activity during a stressful week may leave
+            the body feeling stiff.
+          </p>
+
+          <p>
+            Recovery often happens gradually rather than through one dramatic
+            release.
+          </p>
+        </section>
+
+        <section class="stress-signals">
+          <h2>Physical Signs You May Be Carrying Stress</h2>
+
+          <p>
+            Stress looks different for everyone. These signs can have other
+            causes and should not be used as a diagnosis.
+          </p>
+
+          <div class="stress-signal-grid">
+            <article class="stress-signal-card">
+              <span>Muscles</span>
+
+              <h3>Persistent Tension</h3>
+
+              <p>
+                Shoulders, jaw, hands, back, or other muscles remain contracted
+                even when you are no longer actively using them.
+              </p>
+            </article>
+
+            <article class="stress-signal-card">
+              <span>Breathing</span>
+
+              <h3>Short or Interrupted Breaths</h3>
+
+              <p>
+                You notice breath-holding, frequent sighing, or breathing that
+                feels concentrated in the upper chest.
+              </p>
+            </article>
+
+            <article class="stress-signal-card">
+              <span>Sleep</span>
+
+              <h3>Difficulty Settling</h3>
+
+              <p>
+                Falling asleep, staying asleep, or feeling restored after sleep
+                becomes more difficult.
+              </p>
+            </article>
+
+            <article class="stress-signal-card">
+              <span>Movement</span>
+
+              <h3>Reduced Activity</h3>
+
+              <p>
+                You sit longer, move less, avoid enjoyable activities, or feel
+                too depleted to change positions regularly.
+              </p>
+            </article>
+
+            <article class="stress-signal-card">
+              <span>Attention</span>
+
+              <h3>Increased Body Monitoring</h3>
+
+              <p>
+                You repeatedly check, press, stretch, or worry about the same
+                uncomfortable area.
+              </p>
+            </article>
+
+            <article class="stress-signal-card">
+              <span>Energy</span>
+
+              <h3>Physical Fatigue</h3>
+
+              <p>
+                Ordinary tasks feel more demanding because sleep, muscle
+                activity, emotional strain, and recovery are all competing for
+                energy.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>How Does Breathing Relate to Muscle Tension?</h2>
+
+          <p>
+            Breathing changes naturally with emotion, activity, speech, posture,
+            illness, and stress.
+          </p>
+
+          <p>
+            During stress, breathing may become faster, shallower, or less
+            regular. Some people repeatedly hold their breath while
+            concentrating or bracing.
+          </p>
+
+          <p>
+            Muscles around the neck, shoulders, ribs, chest, abdomen, and back
+            all participate in breathing. When breathing remains effortful,
+            those areas may feel tired or tense.
+          </p>
+        </section>
+
+        <section class="breathing-section">
+          <h2>Breathing Should Not Become Another Performance Test</h2>
+
+          <p>
+            A breathing practice should feel manageable. Forcing very deep
+            breaths can cause discomfort or lightheadedness for some people.
+          </p>
+
+          <div class="breathing-grid">
+            <article class="breathing-card">
+              <h3>Begin With Observation</h3>
+
+              <p>
+                Notice your breathing without immediately trying to change it.
+                Observe whether you are holding your breath, rushing, sighing,
+                or using more effort than necessary.
+              </p>
+            </article>
+
+            <article class="breathing-card">
+              <h3>Choose Comfort Over Depth</h3>
+
+              <p>
+                Let the breath become quieter or slower only when that feels
+                natural. You do not need to fill your lungs completely or follow
+                a rigid count.
+              </p>
+            </article>
+
+            <article class="breathing-card">
+              <h3>Use a Supported Position</h3>
+
+              <p>
+                Sit with your back supported, rest your arms, loosen restrictive
+                clothing, or lie comfortably when those options feel safe.
+              </p>
+            </article>
+
+            <article class="breathing-card">
+              <h3>Stop When Symptoms Increase</h3>
+
+              <p>
+                Return to normal breathing if you become dizzy, panicked, short
+                of breath, numb, or increasingly uncomfortable.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Does Stress Cause Tension Headaches?</h2>
+
+          <p>
+            Stress may contribute to some tension-type headaches, and tension
+            around the neck and scalp may accompany them.
+          </p>
+
+          <p>
+            Not every headache is caused by stress or muscle tension. Headaches
+            may also relate to illness, migraine, medications, dehydration,
+            vision changes, injury, blood-pressure concerns, or other medical
+            conditions.
+          </p>
+
+          <p>
+            New, severe, unusual, or rapidly worsening headaches require
+            appropriate medical attention.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Does Stress Affect Pain?</h2>
+
+          <p>
+            Pain is influenced by signals from the body as well as attention,
+            sleep, emotion, past experiences, expectations, environment, and
+            perceived safety.
+          </p>
+
+          <p>
+            During stressful periods, you may have less sleep, fewer recovery
+            opportunities, more muscle guarding, reduced activity, and greater
+            attention to discomfort.
+          </p>
+
+          <p>
+            This does not mean the pain is imaginary. It means pain is a whole
+            person experience influenced by both physical and psychological
+            factors.
+          </p>
+        </section>
+
+        <section class="daily-reset">
+          <h2>A Five-Minute Physical Reset</h2>
+
+          <p>
+            This routine is not intended to erase stress. It creates a brief
+            opportunity to reduce unnecessary effort and notice what your body
+            needs.
+          </p>
+
+          <div class="daily-reset-list">
+            <article class="daily-reset-step">
+              <div class="daily-reset-number">1</div>
+
+              <div>
+                <h3>Change Your Position</h3>
+
+                <p>
+                  Stand, sit, lie down, or move to a more supported position
+                  when your current posture has become tiring.
+                </p>
+              </div>
+            </article>
+
+            <article class="daily-reset-step">
+              <div class="daily-reset-number">2</div>
+
+              <div>
+                <h3>Release Unnecessary Grip</h3>
+
+                <p>
+                  Notice your hands, jaw, tongue, shoulders, abdomen, and feet.
+                  Reduce effort where you safely can.
+                </p>
+              </div>
+            </article>
+
+            <article class="daily-reset-step">
+              <div class="daily-reset-number">3</div>
+
+              <div>
+                <h3>Move Gently</h3>
+
+                <p>
+                  Walk briefly, turn your head comfortably, circle your
+                  shoulders, or shift your weight without forcing a stretch.
+                </p>
+              </div>
+            </article>
+
+            <article class="daily-reset-step">
+              <div class="daily-reset-number">4</div>
+
+              <div>
+                <h3>Notice Your Breath</h3>
+
+                <p>
+                  Allow several comfortable breaths without trying to make them
+                  unusually deep or perfect.
+                </p>
+              </div>
+            </article>
+
+            <article class="daily-reset-step">
+              <div class="daily-reset-number">5</div>
+
+              <div>
+                <h3>Choose the Next Helpful Action</h3>
+
+                <p>
+                  Consider whether you need movement, water, food, rest, a
+                  boundary, social support, or professional help.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="tension-check-in">
+          <h2>A Body-Tension Check-In</h2>
+
+          <p>
+            The goal is awareness—not criticizing yourself for feeling tense.
+          </p>
+
+          <div class="check-in-grid">
+            <article class="check-in-card">
+              <h3>What am I doing with my jaw?</h3>
+
+              <p>
+                Notice whether your teeth are pressed together, your tongue is
+                tense, or your face is working harder than necessary.
+              </p>
+            </article>
+
+            <article class="check-in-card">
+              <h3>Where are my shoulders?</h3>
+
+              <p>
+                Let them move naturally rather than forcing them down or holding
+                them in a “perfect” posture.
+              </p>
+            </article>
+
+            <article class="check-in-card">
+              <h3>Am I gripping anything?</h3>
+
+              <p>
+                Check your phone, mouse, steering wheel, tools, clothing, or
+                hands for unnecessary pressure.
+              </p>
+            </article>
+
+            <article class="check-in-card">
+              <h3>Have I changed positions recently?</h3>
+
+              <p>
+                Tension may reflect time spent in one position rather than a
+                problem that must be stretched away.
+              </p>
+            </article>
+
+            <article class="check-in-card">
+              <h3>Am I holding my breath?</h3>
+
+              <p>
+                Allow your breathing to resume without forcing a large inhale.
+              </p>
+            </article>
+
+            <article class="check-in-card">
+              <h3>What support is available?</h3>
+
+              <p>
+                Consider a backrest, pillow, arm support, quieter space, help
+                with a task, or a short break.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="stress-support-menu">
+          <h2>Create a Stress-Support Menu</h2>
+
+          <p>
+            Different situations call for different forms of support. One tool
+            does not need to work every time.
+          </p>
+
+          <div class="support-menu-grid">
+            <article class="support-menu-card">
+              <h3>Gentle Movement</h3>
+
+              <p>
+                Walking, changing positions, or moving through comfortable
+                ranges may help reduce stiffness and physical restlessness.
+              </p>
+            </article>
+
+            <article class="support-menu-card">
+              <h3>Reduced Stimulation</h3>
+
+              <p>
+                Lower lighting, quieter sound, fewer screens, or a calmer
+                environment may help when sensory demand feels high.
+              </p>
+            </article>
+
+            <article class="support-menu-card">
+              <h3>Sleep Support</h3>
+
+              <p>
+                A consistent wind-down routine and appropriate healthcare for
+                ongoing sleep difficulty may support recovery.
+              </p>
+            </article>
+
+            <article class="support-menu-card">
+              <h3>Social Connection</h3>
+
+              <p>
+                Speaking with a trusted person may reduce isolation and make a
+                difficult situation feel more manageable.
+              </p>
+            </article>
+
+            <article class="support-menu-card">
+              <h3>Professional Support</h3>
+
+              <p>
+                Mental-health, medical, occupational, or financial support may
+                be appropriate when the stressor requires more than self-care.
+              </p>
+            </article>
+
+            <article class="support-menu-card">
+              <h3>Restorative Bodywork</h3>
+
+              <p>
+                Massage may provide structured time for comfort, rest, and
+                awareness of areas holding unnecessary effort.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Why “Just Relax” Is Usually Not Helpful</h2>
+
+          <p>
+            Relaxation is not a switch that everyone can turn on immediately.
+          </p>
+
+          <p>
+            A person may still be managing danger, pain, trauma, caregiving,
+            financial pressure, discrimination, workload, or another ongoing
+            stressor. Telling them to relax does not remove the demand.
+          </p>
+
+          <p>
+            It may be more useful to identify what can be changed, what support
+            is needed, and what small moments of reduced effort are currently
+            possible.
+          </p>
+        </section>
+
+        <section class="stress-myths">
+          <h2>Common Stress-and-Tension Myths</h2>
+
+          <div class="stress-myth-list">
+            <article class="stress-myth-row">
+              <div class="stress-myth-label">
+                Myth: Stress is only emotional.
+              </div>
+
+              <p>
+                Stress can affect muscles, breathing, heart rate, digestion,
+                sleep, energy, attention, and behavior.
+              </p>
+            </article>
+
+            <article class="stress-myth-row">
+              <div class="stress-myth-label">
+                Myth: Tension means a muscle is permanently shortened.
+              </div>
+
+              <p>
+                A tense sensation may reflect guarding, fatigue, workload,
+                stress, positioning, sensitivity, or other factors—not simply
+                muscle length.
+              </p>
+            </article>
+
+            <article class="stress-myth-row">
+              <div class="stress-myth-label">
+                Myth: More pressure releases more stress.
+              </div>
+
+              <p>
+                Intense pressure may cause some people to brace or feel less
+                safe. Gentler, responsive work may be more appropriate.
+              </p>
+            </article>
+
+            <article class="stress-myth-row">
+              <div class="stress-myth-label">
+                Myth: Relaxation should happen immediately.
+              </div>
+
+              <p>
+                It may take time for breathing, attention, and muscle activity
+                to settle, especially after prolonged or repeated stress.
+              </p>
+            </article>
+
+            <article class="stress-myth-row">
+              <div class="stress-myth-label">
+                Myth: Stress-related pain is imaginary.
+              </div>
+
+              <p>
+                Stress can influence real physical sensations and pain. The role
+                of stress does not make the experience less valid.
+              </p>
+            </article>
+
+            <article class="stress-myth-row">
+              <div class="stress-myth-label">
+                Myth: Self-care should solve chronic stress.
+              </div>
+
+              <p>
+                Some stressors require healthcare, workplace changes, community
+                resources, financial support, boundaries, or other structural
+                solutions.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="massage-stress-panel">
+          <h2>Can Massage Help With Stress-Related Tension?</h2>
+
+          <p>
+            Massage may help some people feel more relaxed, comfortable, or
+            aware of where they are holding unnecessary muscular effort.
+          </p>
+
+          <p>
+            A massage session also provides structured time away from ordinary
+            demands. The setting, pace, communication, pressure, temperature,
+            and sense of choice may all influence the experience.
+          </p>
+
+          <p>
+            Massage does not remove the source of chronic stress, treat an
+            anxiety disorder, resolve trauma, or replace medical or
+            mental-health care.
+          </p>
+
+          <p>
+            The session should be adjusted to your current needs. You may ask
+            for gentler pressure, more or fewer check-ins, quiet, conversation,
+            different positioning, additional draping, or an end to the session
+            at any time.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why Trauma-Informed Care Matters</h2>
+
+          <p>
+            Touch, vulnerability, quiet rooms, positioning, closed eyes, and
+            physical closeness may feel relaxing to one person and uncomfortable
+            to another.
+          </p>
+
+          <p>
+            Trauma-informed massage emphasizes choice, communication,
+            predictability, consent, and respect for boundaries.
+          </p>
+
+          <p>
+            You do not need to disclose a trauma history to request
+            modifications. “Please avoid that area,” “I would like to remain
+            clothed,” or “I need you to explain before changing positions” is
+            enough.
+          </p>
+        </section>
+
+        <section class="professional-support">
+          <h2>When Self-Care Is Not Enough</h2>
+
+          <p>
+            Stress-management practices can be supportive, but they should not
+            be used to place the entire responsibility on someone who is
+            overwhelmed.
+          </p>
+
+          <p>
+            Consider professional support when stress is persistent, interferes
+            with work or relationships, disrupts sleep, contributes to panic,
+            increases substance use, or makes ordinary responsibilities feel
+            unmanageable.
+          </p>
+
+          <p>
+            A primary-care provider, licensed mental-health professional,
+            employee-assistance program, support group, or community resource
+            may help depending on the situation.
+          </p>
+        </section>
+
+        <div class="stress-reminder">
+          <strong>Your body is responding—not betraying you.</strong>
+
+          <p>
+            Muscle tension can be understood as part of a protective system
+            working under demand. The goal is not to punish the tension away,
+            but to give your body repeated opportunities for support, movement,
+            recovery, and safety.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Stress-related tension does not mean you are failing to relax
+            correctly.
+          </p>
+
+          <p>
+            Your body may be balancing work, caregiving, pain, sleep disruption,
+            past experiences, uncertainty, and responsibilities that cannot be
+            solved during one massage.
+          </p>
+
+          <p>
+            Massage can create a supportive pause. It may help you notice your
+            breath, reduce unnecessary effort, and experience touch that remains
+            responsive to your comfort and consent.
+          </p>
+
+          <p>
+            Lasting wellness often involves several forms of care: movement,
+            sleep, boundaries, healthcare, mental-health support, community,
+            rest, and compassionate attention to what your body is
+            communicating.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Do not assume that every physical symptom is caused by stress. Seek
+            prompt medical care for chest pain, difficulty breathing, fainting,
+            sudden weakness or numbness, confusion, severe or unusual headache,
+            loss of function, significant swelling, fever, unexplained weight
+            loss, symptoms following an injury, or pain that is severe,
+            persistent, or progressively worsening.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Progressive muscle relaxation is a practice that alternates gentle
+            muscle tension with release to help people recognize the difference
+            between muscular effort and relaxation. It may not be appropriate
+            for every painful or injured area and can be modified by focusing
+            only on releasing tension.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="sleep-and-muscle-recovery.html"
+              class="related-article-card"
+            >
+              <h3>Sleep and Muscle Recovery</h3>
+
+              <p>
+                Explore how sleep supports energy, physical readiness, and the
+                body’s broader recovery process.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="everyday-mobility-exercises.html"
+              class="related-article-card"
+            >
+              <h3>Everyday Mobility Exercises</h3>
+
+              <p>
+                Use gentle movement to interrupt long periods of sitting and add
+                more movement variety to your day.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="how-to-communicate-with-your-massage-therapist.html"
+              class="related-article-card"
+            >
+              <h3>How to Communicate With Your Massage Therapist</h3>
+
+              <p>
+                Learn how to discuss pressure, comfort, boundaries, draping,
+                conversation, and changing needs.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, treatment, psychotherapy, crisis
+            care, or an individualized stress-management plan. Stress-related
+            symptoms can overlap with medical and mental-health conditions.
+            Consult an appropriate licensed professional when symptoms are
+            persistent, severe, unfamiliar, or interfering with daily life.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/article/003211.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Stress and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/stress"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health: Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NCCIH: Relaxation Techniques—What You Need to Know
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.who.int/news-room/questions-and-answers/item/stress"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                World Health Organization: Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/article/000797.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Tension Headache
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.va.gov/WHOLEHEALTHLIBRARY/tools/progressive-muscle-relaxation.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                U.S. Department of Veterans Affairs: Progressive Muscle
+                Relaxation
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.ncbi.nlm.nih.gov/books/NBK541120/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: Physiology of the Stress Reaction
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11609167/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Library of Medicine: The Mutually Reinforcing Dynamics
+                Between Pain and Stress
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Create Space for Your Body to Exhale</h2>
+
+          <p>
+            Experiencing stress-related muscle tension? Schedule a personalized
+            FlowTherapy session centered around your comfort, boundaries,
+            current stress level, and individual wellness goals.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

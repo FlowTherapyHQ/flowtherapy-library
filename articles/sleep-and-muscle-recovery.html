@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Sleep and Muscle Recovery</title>
+
+    <meta
+      name="description"
+      content="Learn how sleep supports muscle recovery, energy, movement, and exercise performance—and discover practical habits that may help you rest more consistently."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .recovery-highlight {
+        margin: 32px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(235, 246, 255, 0.96),
+          rgba(248, 251, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .recovery-highlight h2 {
+        margin-top: 0;
+      }
+
+      .recovery-highlight p {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .recovery-cycle {
+        margin: 38px 0;
+      }
+
+      .recovery-cycle > h2,
+      .recovery-cycle > p {
+        text-align: center;
+      }
+
+      .recovery-cycle > p {
+        max-width: 700px;
+        margin: 0 auto 26px;
+      }
+
+      .recovery-cycle-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .recovery-cycle-card {
+        position: relative;
+        padding: 28px 22px 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+
+      .recovery-cycle-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 16px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .recovery-cycle-card h3 {
+        margin: 0 0 10px;
+        color: #1677c8;
+        font-size: 1.2rem;
+      }
+
+      .recovery-cycle-card p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .sleep-needs {
+        margin: 38px 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #f5f9fd;
+        border: 1px solid #d6e7f7;
+      }
+
+      .sleep-needs h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .sleep-needs-intro {
+        max-width: 700px;
+        margin: 0 auto 24px;
+        text-align: center;
+      }
+
+      .sleep-range {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 22px;
+        align-items: center;
+        max-width: 690px;
+        margin: 0 auto;
+        padding: 24px;
+        border-radius: 14px;
+        background: #ffffff;
+        border: 1px solid #cfe2f5;
+      }
+
+      .sleep-range-number {
+        color: #1677c8;
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 1;
+        text-align: center;
+      }
+
+      .sleep-range-label {
+        display: block;
+        margin-top: 8px;
+        color: #526779;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .sleep-range p {
+        margin: 0;
+        line-height: 1.7;
+      }
+
+      .low-sleep-panel {
+        margin: 38px 0;
+      }
+
+      .low-sleep-panel > h2,
+      .low-sleep-panel > p {
+        text-align: center;
+      }
+
+      .low-sleep-panel > p {
+        max-width: 700px;
+        margin: 0 auto 24px;
+      }
+
+      .low-sleep-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .low-sleep-item {
+        padding: 18px;
+        border-left: 4px solid #1677c8;
+        border-radius: 10px;
+        background: #f8fbff;
+      }
+
+      .low-sleep-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .low-sleep-item p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .night-routine {
+        margin: 38px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .night-routine h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      .night-routine-intro {
+        max-width: 700px;
+        margin: 0 auto 26px;
+        text-align: center;
+      }
+
+      .night-routine-list {
+        display: grid;
+        gap: 14px;
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .night-routine-step {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 15px;
+        align-items: start;
+        padding: 18px;
+        border: 1px solid #d6e7f7;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .night-routine-step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #e5f1ff;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .night-routine-step h3 {
+        margin: 0 0 5px;
+        color: #1677c8;
+        font-size: 1.05rem;
+      }
+
+      .night-routine-step p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .recovery-reminder {
+        margin: 36px 0;
+        padding: 26px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .recovery-reminder strong {
+        display: block;
+        margin-bottom: 8px;
+        color: #1677c8;
+        font-size: 1.2rem;
+      }
+
+      .recovery-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 780px) {
+        .recovery-cycle-grid,
+        .low-sleep-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .sleep-range {
+          grid-template-columns: 1fr;
+        }
+
+        .night-routine-step {
+          grid-template-columns: 40px 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="sleep-and-muscle-recovery">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/recovery.html"> ← Back to Recovery FlowNotes </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Recovery</div>
+
+          <h1>Sleep and Muscle Recovery</h1>
+
+          <p class="article-subtitle">
+            Why recovery continues after the workout ends—and how consistent
+            sleep helps your body prepare for what comes next.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            July 2026
+            <span aria-hidden="true">•</span>
+            7-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Exercise provides the challenge, but recovery gives your body time
+            to respond to that challenge.
+          </p>
+
+          <p>
+            Nutrition, hydration, movement, and rest all play a role in
+            recovery. Sleep is especially important because it provides a
+            regular period when your body and brain can recover from the demands
+            of the day.
+          </p>
+
+          <p>
+            A single restless night does not erase your progress. However,
+            repeatedly cutting sleep short may leave you feeling more fatigued,
+            less prepared for activity, and slower to feel recovered.
+          </p>
+        </div>
+
+        <div class="recovery-highlight">
+          <h2>Recovery Is More Than Taking a Day Off</h2>
+
+          <p>
+            Rest days can reduce physical demands, but meaningful recovery also
+            depends on what happens between your workouts. Consistent sleep
+            supports energy regulation, mental focus, physical readiness, and
+            the processes involved in adapting to activity.
+          </p>
+        </div>
+
+        <section>
+          <h2>What Happens After Exercise?</h2>
+
+          <p>
+            Physical activity places temporary stress on muscles and other body
+            systems. Depending on the type and intensity of the activity, you
+            may experience fatigue, reduced strength, stiffness, or delayed
+            soreness.
+          </p>
+
+          <p>
+            Your body then begins adjusting to the demands you placed on it.
+            Recovery involves restoring energy, responding to exercise-related
+            tissue stress, and preparing the body for future activity.
+          </p>
+
+          <p>
+            Sleep does not work alone, but it is an important part of the
+            overall recovery process.
+          </p>
+        </section>
+
+        <section class="recovery-cycle">
+          <h2>The Training and Recovery Cycle</h2>
+
+          <p>
+            Progress is created through a repeating pattern—not through
+            continuous physical stress without adequate recovery.
+          </p>
+
+          <div class="recovery-cycle-grid">
+            <div class="recovery-cycle-card">
+              <div class="recovery-cycle-number">1</div>
+
+              <h3>Challenge</h3>
+
+              <p>
+                Exercise asks your muscles, joints, cardiovascular system, and
+                nervous system to meet a physical demand.
+              </p>
+            </div>
+
+            <div class="recovery-cycle-card">
+              <div class="recovery-cycle-number">2</div>
+
+              <h3>Recover</h3>
+
+              <p>
+                Sleep, nutrition, hydration, and appropriate activity give your
+                body opportunities to restore energy and respond to training.
+              </p>
+            </div>
+
+            <div class="recovery-cycle-card">
+              <div class="recovery-cycle-number">3</div>
+
+              <h3>Adapt</h3>
+
+              <p>
+                With consistent training and recovery, your body may become
+                better prepared to handle similar demands in the future.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Exercise creates the reason to adapt. Recovery creates the
+          opportunity.
+        </blockquote>
+
+        <section>
+          <h2>How Sleep Supports Recovery</h2>
+
+          <p>
+            Sleep is an active biological process—not simply a period when
+            nothing is happening.
+          </p>
+
+          <p>
+            During a normal night, the body moves through multiple sleep stages.
+            Getting sufficient, good-quality sleep supports several functions
+            that can influence how recovered you feel the next day.
+          </p>
+
+          <ul class="article-list-check">
+            <li>Restoring mental and physical energy.</li>
+            <li>Supporting attention, coordination, and reaction time.</li>
+            <li>Helping regulate mood and stress responses.</li>
+            <li>Supporting immune and metabolic health.</li>
+            <li>Contributing to the body's response to exercise.</li>
+          </ul>
+
+          <p>
+            Sleep is not a shortcut that replaces balanced training, food, or
+            hydration. It works alongside those habits as part of a complete
+            recovery routine.
+          </p>
+        </section>
+
+        <section class="sleep-needs">
+          <h2>How Much Sleep Do Adults Need?</h2>
+
+          <p class="sleep-needs-intro">
+            Sleep needs vary, but most adults benefit from making sufficient
+            nightly sleep a consistent priority.
+          </p>
+
+          <div class="sleep-range">
+            <div>
+              <div class="sleep-range-number">7+</div>
+              <span class="sleep-range-label">Hours per night</span>
+            </div>
+
+            <p>
+              The CDC recommends that adults ages 18–60 generally receive at
+              least seven hours of sleep per night. Individual needs can vary,
+              and sleep quality matters in addition to the number of hours spent
+              in bed.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>What If You Only Sleep Poorly for One Night?</h2>
+
+          <p>
+            One short or restless night is unlikely to ruin your progress.
+            Bodies are adaptable, and occasional disruptions are part of life.
+          </p>
+
+          <p>
+            You may still notice temporary effects such as fatigue, reduced
+            motivation, slower thinking, irritability, or feeling less prepared
+            for a demanding workout.
+          </p>
+
+          <p>
+            On those days, consider adjusting your expectations. A lighter
+            session, gentle walk, mobility work, or additional recovery may be
+            more appropriate than forcing your most difficult workout while
+            exhausted.
+          </p>
+        </section>
+
+        <section class="low-sleep-panel">
+          <h2>When Inadequate Sleep Becomes a Pattern</h2>
+
+          <p>
+            Regularly missing sleep may affect more than how tired you feel in
+            the morning.
+          </p>
+
+          <div class="low-sleep-grid">
+            <div class="low-sleep-item">
+              <strong>Persistent fatigue</strong>
+
+              <p>
+                Everyday activity and planned exercise may begin to feel more
+                demanding than usual.
+              </p>
+            </div>
+
+            <div class="low-sleep-item">
+              <strong>Reduced readiness</strong>
+
+              <p>
+                You may feel less focused, coordinated, motivated, or prepared
+                for challenging movement.
+              </p>
+            </div>
+
+            <div class="low-sleep-item">
+              <strong>Longer-lasting soreness</strong>
+
+              <p>
+                Your body may feel less recovered between demanding workouts,
+                especially when other recovery habits are also inconsistent.
+              </p>
+            </div>
+
+            <div class="low-sleep-item">
+              <strong>Changes in mood</strong>
+
+              <p>
+                Irritability, stress, and reduced patience can make both
+                exercise and everyday responsibilities feel harder.
+              </p>
+            </div>
+
+            <div class="low-sleep-item">
+              <strong>Lower training quality</strong>
+
+              <p>
+                Fatigue may make it harder to maintain good form, pacing,
+                concentration, and sound decision-making.
+              </p>
+            </div>
+
+            <div class="low-sleep-item">
+              <strong>A cycle of overreaching</strong>
+
+              <p>
+                Continuing to add intense activity without addressing recovery
+                may leave you feeling increasingly run down.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Should You Exercise When You Are Tired?</h2>
+
+          <p>
+            Feeling slightly tired does not always mean you need to skip
+            movement entirely. The better question is whether you can exercise
+            safely and whether the planned intensity matches your current
+            condition.
+          </p>
+
+          <p>
+            A gentle walk or short mobility session may help you feel better
+            after an imperfect night. A high-intensity workout, heavy lifting
+            session, or technically demanding activity may require more
+            concentration and physical readiness.
+          </p>
+
+          <p>
+            Consider reducing the duration, load, complexity, or intensity when
+            fatigue affects your focus or coordination. Rest may be the better
+            choice when you feel unwell, unusually weak, dizzy, or unable to
+            perform movements safely.
+          </p>
+        </section>
+
+        <section>
+          <h2>Sleep Quality Matters Too</h2>
+
+          <p>
+            Spending enough time in bed does not always mean you are receiving
+            restorative sleep.
+          </p>
+
+          <p>
+            Sleep may feel less refreshing when it is repeatedly interrupted,
+            when your schedule changes substantially from day to day, or when
+            discomfort, stress, noise, light, temperature, medications, or a
+            sleep disorder interfere with rest.
+          </p>
+
+          <p>
+            Pay attention to how you feel during the day. Regularly waking
+            unrefreshed, struggling to stay awake, or experiencing ongoing
+            difficulty falling or staying asleep deserves attention even if your
+            time in bed appears adequate.
+          </p>
+        </section>
+
+        <section class="night-routine">
+          <h2>Build a Recovery-Friendly Evening Routine</h2>
+
+          <p class="night-routine-intro">
+            A perfect routine is not required. A few repeatable habits can make
+            your sleep schedule more predictable and easier to maintain.
+          </p>
+
+          <div class="night-routine-list">
+            <div class="night-routine-step">
+              <div class="night-routine-step-number">1</div>
+
+              <div>
+                <h3>Keep a consistent schedule</h3>
+
+                <p>
+                  Try to go to bed and wake up at similar times, including on
+                  days when your schedule is more flexible.
+                </p>
+              </div>
+            </div>
+
+            <div class="night-routine-step">
+              <div class="night-routine-step-number">2</div>
+
+              <div>
+                <h3>Create a wind-down period</h3>
+
+                <p>
+                  Give yourself time to shift away from work, intense exercise,
+                  planning, and other stimulating activities before bed.
+                </p>
+              </div>
+            </div>
+
+            <div class="night-routine-step">
+              <div class="night-routine-step-number">3</div>
+
+              <div>
+                <h3>Make your room sleep-friendly</h3>
+
+                <p>
+                  A cool, dark, and quiet environment can help reduce avoidable
+                  sleep disruptions.
+                </p>
+              </div>
+            </div>
+
+            <div class="night-routine-step">
+              <div class="night-routine-step-number">4</div>
+
+              <div>
+                <h3>Be mindful of caffeine</h3>
+
+                <p>
+                  Caffeine later in the day may interfere with sleep for some
+                  people, even when they can still fall asleep.
+                </p>
+              </div>
+            </div>
+
+            <div class="night-routine-step">
+              <div class="night-routine-step-number">5</div>
+
+              <div>
+                <h3>Reduce bedtime distractions</h3>
+
+                <p>
+                  Consider limiting television, computers, phones, and other
+                  activities that keep your mind engaged longer than intended.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Help You Sleep Better?</h2>
+
+          <p>
+            Some people feel calmer or more relaxed after massage, and that
+            sense of relaxation may support a comfortable evening routine.
+          </p>
+
+          <p>
+            Massage should not be presented as a cure for insomnia or another
+            sleep disorder. Sleep problems can have many causes, including
+            stress, pain, medications, breathing disorders, medical conditions,
+            work schedules, and environmental factors.
+          </p>
+
+          <p>
+            Therapeutic massage may be one supportive part of a broader wellness
+            routine, but persistent sleep concerns should be discussed with an
+            appropriate healthcare provider.
+          </p>
+        </section>
+
+        <div class="recovery-reminder">
+          <strong>Recovery does not need to be complicated.</strong>
+
+          <p>
+            Consistent sleep, adequate nutrition, hydration, manageable
+            training, and appropriate rest usually matter more than chasing
+            every new recovery product or trend.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Recovery is not a reward you earn after working hard. It is part of
+            the work.
+          </p>
+
+          <p>
+            Your body does not separate exercise, job demands, emotional stress,
+            caregiving, travel, and lost sleep into unrelated categories. All of
+            those demands contribute to the total amount of stress your body is
+            managing.
+          </p>
+
+          <p>
+            When you feel unusually tense, sore, or fatigued, consider the full
+            picture. Sometimes the most useful recovery strategy is not another
+            technique—it is a more consistent opportunity to rest.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Talk With a Healthcare Provider</strong>
+
+          <p>
+            Speak with a qualified healthcare provider if sleep problems are
+            persistent, interfere with daily activities, or are accompanied by
+            loud snoring, gasping, breathing pauses, severe daytime sleepiness,
+            unusual nighttime behavior, persistent pain, or ongoing difficulty
+            falling or staying asleep.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Exercise and sleep can support one another. Regular physical
+            activity may improve sleep quality, while sufficient sleep can help
+            you feel more prepared for movement and exercise.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a
+              href="massage-soreness-what-is-normal.html"
+              class="related-article-card"
+            >
+              <h3>Massage Soreness: What Is Normal?</h3>
+
+              <p>
+                Learn what mild post-massage soreness may feel like and when
+                discomfort deserves additional attention.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="heat-or-ice-which-should-you-use.html"
+              class="related-article-card"
+            >
+              <h3>Heat or Ice? Which Should You Use?</h3>
+
+              <p>
+                Compare two common comfort tools for soreness, stiffness,
+                swelling, and minor injuries.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="stretching-before-or-after-exercise.html"
+              class="related-article-card"
+            >
+              <h3>Should You Stretch Before or After Exercise?</h3>
+
+              <p>
+                Understand how different types of stretching may support
+                preparation, mobility, and recovery.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for educational purposes only and should
+            not replace medical advice, diagnosis, or treatment. Sleep needs and
+            recovery needs vary. Consult a qualified healthcare provider when
+            you have persistent sleep problems, significant fatigue, symptoms of
+            a sleep disorder, an injury, or another health concern.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/sleep/about/index.html"
+                target="_blank"
+                rel="noopener"
+              >
+                Centers for Disease Control and Prevention: About Sleep
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/healthysleep.html"
+                target="_blank"
+                rel="noopener"
+              >
+                MedlinePlus: Healthy Sleep
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/patientinstructions/000871.htm"
+                target="_blank"
+                rel="noopener"
+              >
+                MedlinePlus: Sleep and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8072992/"
+                target="_blank"
+                rel="noopener"
+              >
+                National Library of Medicine: The Sleep and Recovery Practices
+                of Athletes
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7785053/"
+                target="_blank"
+                rel="noopener"
+              >
+                National Library of Medicine: The Effect of Acute Sleep
+                Deprivation on Skeletal Muscle Protein Synthesis
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Continue Your Wellness Journey</h2>
+
+          <p>
+            Looking for personalized care? Schedule a FlowTherapy session and
+            experience therapeutic massage tailored to your comfort, goals, and
+            individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

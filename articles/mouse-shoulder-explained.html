@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | Mouse Shoulder Explained</title>
+    <meta
+      name="description"
+      content="Learn how repeated reaching, mouse placement, sustained arm use, and workload can contribute to shoulder tension—and how massage may support recovery."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .mouse-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.12fr) minmax(250px, 0.88fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+      .mouse-opening > * {
+        padding: 30px;
+        border-radius: 18px;
+      }
+      .mouse-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+      .mouse-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+      .mouse-opening h2,
+      .mouse-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .mouse-patterns,
+      .mouse-adjustments,
+      .mouse-massage {
+        margin: 42px 0;
+      }
+      .mouse-patterns > h2,
+      .mouse-patterns > p,
+      .mouse-adjustments > h2,
+      .mouse-adjustments > p,
+      .mouse-massage > h2,
+      .mouse-massage > p {
+        text-align: center;
+      }
+      .mouse-patterns > p,
+      .mouse-adjustments > p,
+      .mouse-massage > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mouse-pattern-grid,
+      .mouse-adjustment-grid,
+      .mouse-massage-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .mouse-card,
+      .adjustment-card,
+      .mouse-massage-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .mouse-card h3,
+      .adjustment-card h3,
+      .mouse-massage-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .mouse-card p,
+      .adjustment-card p,
+      .mouse-massage-card p {
+        margin-bottom: 0;
+      }
+      .mouse-reset {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .mouse-reset h2,
+      .mouse-reset > p {
+        text-align: center;
+      }
+      .mouse-reset h2 {
+        color: #1677c8;
+      }
+      .mouse-reset > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mouse-reset-list {
+        display: grid;
+        gap: 14px;
+        max-width: 820px;
+        margin: 28px auto 0;
+      }
+      .mouse-reset-item {
+        padding: 20px 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #fff;
+      }
+      .mouse-reset-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+      .mouse-reset-item p {
+        margin: 0;
+      }
+      .mouse-workflow {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+      .mouse-workflow h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .mouse-workflow li {
+        margin-bottom: 10px;
+      }
+      .important-note {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .important-note h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .related-card p {
+        flex: 1;
+      }
+      .related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+      .article-sources h2 {
+        color: #1677c8;
+      }
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+      .article-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .article-cta h2 {
+        color: #1677c8;
+      }
+      .article-cta p {
+        max-width: 680px;
+        margin: 0 auto 24px;
+      }
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      @media (max-width: 840px) {
+        .mouse-opening,
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 700px) {
+        .mouse-pattern-grid,
+        .mouse-adjustment-grid,
+        .mouse-massage-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body data-article-id="mouse-shoulder-explained">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/workplace-wellness.html"
+          >← Back to Workplace Wellness FlowNotes</a
+        >
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Workplace Wellness</div>
+          <h1>Mouse Shoulder Explained</h1>
+          <p class="article-subtitle">
+            How repeated reaching, pointer placement, sustained arm use, grip,
+            and workload can contribute to shoulder, upper-back, and forearm
+            tension.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span aria-hidden="true">•</span> August
+            2026 <span aria-hidden="true">•</span> 8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            “Mouse shoulder” is not a formal diagnosis. It is a common
+            description for discomfort that develops on the side used for a
+            computer mouse or other pointing device.
+          </p>
+          <p>
+            The shoulder may feel tight, tired, elevated, achy, or difficult to
+            relax. Symptoms may also extend into the upper back, neck, arm,
+            forearm, wrist, or hand.
+          </p>
+          <p>
+            The mouse itself is not always the only cause. Placement,
+            repetition, workload, stress, vision, chair position, and recovery
+            all matter.
+          </p>
+        </div>
+
+        <section class="mouse-opening">
+          <div class="mouse-opening-main">
+            <h2>Small Reaches Add Up</h2>
+            <p>
+              If the mouse sits far from the keyboard, the arm may remain
+              slightly lifted or extended for long periods.
+            </p>
+            <p>
+              That position can increase ongoing effort through the shoulder,
+              upper back, chest, arm, and forearm—even when the reach does not
+              look dramatic.
+            </p>
+          </div>
+
+          <aside class="mouse-opening-side">
+            <h3>The Working Arm May Never Fully Rest</h3>
+            <p>
+              Clicking, dragging, scrolling, gripping, and moving the pointer
+              can create repeated low-level demand throughout the day.
+            </p>
+          </aside>
+        </section>
+
+        <section class="mouse-patterns">
+          <h2>Common Patterns Behind Mouse-Side Tension</h2>
+          <p>
+            Several factors often overlap rather than one single issue causing
+            all symptoms.
+          </p>
+
+          <div class="mouse-pattern-grid">
+            <article class="mouse-card">
+              <h3>The Mouse Is Too Far Away</h3>
+              <p>
+                Repeated reaching may keep the upper arm away from the body and
+                increase shoulder effort.
+              </p>
+            </article>
+
+            <article class="mouse-card">
+              <h3>The Surface Is Too High</h3>
+              <p>
+                A high desk or input surface may encourage shoulder elevation
+                and wrist extension.
+              </p>
+            </article>
+
+            <article class="mouse-card">
+              <h3>The Grip Is Too Strong</h3>
+              <p>
+                Gripping the device harder than necessary may increase tension
+                through the hand, forearm, and shoulder.
+              </p>
+            </article>
+
+            <article class="mouse-card">
+              <h3>The Forearm Is Unsupported</h3>
+              <p>
+                Without comfortable support, the shoulder may work continuously
+                to position the arm.
+              </p>
+            </article>
+
+            <article class="mouse-card">
+              <h3>The Work Is Highly Repetitive</h3>
+              <p>
+                Frequent clicking, dragging, editing, or design work may create
+                sustained demand without enough variation.
+              </p>
+            </article>
+
+            <article class="mouse-card">
+              <h3>Stress Increases Bracing</h3>
+              <p>
+                Deadlines, concentration, and frustration may lead to elevated
+                shoulders, jaw clenching, or breath-holding.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mouse-adjustments">
+          <h2>Adjust the Setup Before Blaming Your Shoulder</h2>
+          <p>
+            OSHA recommends placing the pointer close enough to maintain a
+            straight wrist and limit reaching.
+          </p>
+
+          <div class="mouse-adjustment-grid">
+            <article class="adjustment-card">
+              <h3>Bring the Mouse Next to the Keyboard</h3>
+              <p>
+                Keep both input devices on the same stable surface whenever
+                possible.
+              </p>
+            </article>
+
+            <article class="adjustment-card">
+              <h3>Move the Keyboard Closer</h3>
+              <p>
+                Reducing the reach to both devices may help the elbows remain
+                nearer the torso.
+              </p>
+            </article>
+
+            <article class="adjustment-card">
+              <h3>Adjust Chair Height</h3>
+              <p>
+                Use a height that allows the shoulders to relax while the
+                forearms reach the work surface comfortably.
+              </p>
+            </article>
+
+            <article class="adjustment-card">
+              <h3>Support the Forearm</h3>
+              <p>
+                A chair armrest or work surface may provide light support
+                without forcing the shoulder upward.
+              </p>
+            </article>
+
+            <article class="adjustment-card">
+              <h3>Reduce Grip and Click Force</h3>
+              <p>
+                Let the hand rest lightly and adjust pointer speed or device
+                settings when excessive movement is required.
+              </p>
+            </article>
+
+            <article class="adjustment-card">
+              <h3>Consider Another Input Device</h3>
+              <p>
+                A trackball, vertical mouse, pen, touchpad, keyboard shortcuts,
+                or alternating hands may help some workers vary demand.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mouse-reset">
+          <h2>A Two-Minute Mouse-Side Reset</h2>
+          <p>Use this as a brief interruption—not as a test of flexibility.</p>
+
+          <div class="mouse-reset-list">
+            <article class="mouse-reset-item">
+              <strong>Release the Device</strong>
+              <p>
+                Let go of the mouse, open and close the hand, and allow the arm
+                to rest at the side.
+              </p>
+            </article>
+            <article class="mouse-reset-item">
+              <strong>Move the Shoulder</strong>
+              <p>
+                Complete several slow shoulder rolls and comfortable arm
+                reaches.
+              </p>
+            </article>
+            <article class="mouse-reset-item">
+              <strong>Move the Neck and Upper Back</strong>
+              <p>
+                Turn the head gently and complete a few easy upper-back
+                movements.
+              </p>
+            </article>
+            <article class="mouse-reset-item">
+              <strong>Walk Briefly</strong>
+              <p>
+                Stand and walk long enough to change the demand on the working
+                arm.
+              </p>
+            </article>
+            <article class="mouse-reset-item">
+              <strong>Reset the Input Devices</strong>
+              <p>
+                Return the mouse and keyboard to a close, comfortable position
+                before resuming work.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mouse-workflow">
+          <h2>Change the Work Process Too</h2>
+          <ul>
+            <li>
+              Use keyboard shortcuts for repeated commands when practical.
+            </li>
+            <li>
+              Alternate pointer-heavy work with calls, reading, walking, or
+              other tasks.
+            </li>
+            <li>
+              Take short recovery pauses before the shoulder becomes severely
+              fatigued.
+            </li>
+            <li>
+              Increase text size and improve visibility so the trunk does not
+              lean toward the screen.
+            </li>
+            <li>
+              Use both hands for tasks that do not require a dominant side.
+            </li>
+            <li>
+              Review workload and task design when symptoms return despite
+              equipment changes.
+            </li>
+          </ul>
+        </section>
+
+        <section class="mouse-massage">
+          <h2>How Massage Can Help With Mouse-Side Tension</h2>
+          <p>
+            Therapeutic massage can support the shoulder, upper back, neck,
+            chest, arm, forearm, wrist, and hand as part of a broader workplace
+            recovery plan.
+          </p>
+
+          <div class="mouse-massage-grid">
+            <article class="mouse-massage-card">
+              <h3>Ease Shoulder and Upper-Back Tension</h3>
+              <p>
+                Massage may help muscles that have been working continuously
+                feel less guarded and fatigued.
+              </p>
+            </article>
+
+            <article class="mouse-massage-card">
+              <h3>Include the Chest and Neck</h3>
+              <p>
+                The working pattern may involve more than the painful spot,
+                especially when the shoulder is held forward or elevated.
+              </p>
+            </article>
+
+            <article class="mouse-massage-card">
+              <h3>Address the Forearm and Hand</h3>
+              <p>
+                Focused massage may support comfort after repeated clicking,
+                gripping, typing, or pointer movement.
+              </p>
+            </article>
+
+            <article class="mouse-massage-card">
+              <h3>Improve Movement Comfort</h3>
+              <p>
+                When muscular tension decreases, reaching, shoulder movement,
+                and normal work tasks may feel easier.
+              </p>
+            </article>
+
+            <article class="mouse-massage-card">
+              <h3>Increase Body Awareness</h3>
+              <p>
+                A session may help you notice shoulder elevation, gripping,
+                leaning, or breath-holding sooner.
+              </p>
+            </article>
+
+            <article class="mouse-massage-card">
+              <h3>Support Consistent Recovery</h3>
+              <p>
+                Regular massage can complement workstation changes, movement
+                breaks, exercise, and medical or rehabilitative care.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Massage Cannot Replace</h2>
+          <p>
+            Massage cannot diagnose nerve compression, repair a tendon injury,
+            correct an unsuitable work process, or replace appropriate medical
+            care and rehabilitation.
+          </p>
+          <p>
+            It can still be a meaningful part of care by supporting comfort,
+            movement, relaxation, and recovery.
+          </p>
+        </section>
+
+        <section class="important-note">
+          <h2>When to Seek Medical Care</h2>
+          <p>
+            Seek professional evaluation for persistent or worsening pain, new
+            weakness or numbness, loss of grip strength, dropping objects,
+            severe swelling, pain after an injury, chest pain, or symptoms that
+            interfere with sleep, work, or normal daily activity.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>
+            Mouse-side discomfort is not always a sign that your shoulder is
+            damaged.
+          </p>
+          <p>
+            Often, the working arm needs a better setup, more task variety, and
+            enough recovery.
+          </p>
+          <p>
+            Massage can help reduce the tension that has accumulated while you
+            improve the workstation and daily work habits.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section>
+          <h2 style="text-align: center; color: #1677c8">Continue Reading</h2>
+          <div class="related-grid">
+            <a href="building-a-better-workstation.html" class="related-card"
+              ><h3>Building a Better Workstation</h3>
+              <p>
+                Improve monitor, keyboard, mouse, chair, lighting, reach, and
+                movement habits.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a href="preventing-tech-neck.html" class="related-card"
+              ><h3>Preventing Tech Neck</h3>
+              <p>
+                Build habits that support neck and shoulder comfort during
+                screen use.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a
+              href="why-desk-work-can-cause-neck-and-shoulder-tension.html"
+              class="related-card"
+              ><h3>Why Desk Work Can Cause Neck and Shoulder Tension</h3>
+              <p>
+                Learn how sustained positions and repetitive tasks affect the
+                upper body.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She helps
+            people move better, feel better, and live better through
+            evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/components/pointer-mouse"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Pointer and Mouse Guidance</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/components/keyboards"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Keyboard Guidance</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/checklists/evaluation"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Workstation Evaluation Checklist</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/work-process"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Work Process and Microbreaks</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCIH: Massage Therapy</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Help the Working Arm Recover</h2>
+          <p>
+            Schedule a FlowTherapy session centered around your neck, shoulders,
+            upper back, chest, forearms, wrists, hands, work demands, and
+            comfort goals.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Workplace Wellness
+            articles.
+          </p>
+          <ul>
+            <li>The 2-Minute Reset Between Meetings</li>
+            <li>How Often Should You Get Up From Your Desk?</li>
+            <li>Massage for Office Workers</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

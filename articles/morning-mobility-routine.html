@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Morning Mobility Routine</title>
+
+    <meta
+      name="description"
+      content="A gentle morning mobility routine for the neck, shoulders, spine, hips, and ankles, with simple options for different energy levels and guidance on how massage may support easier movement."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .morning-overview {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+
+      .morning-overview-main,
+      .morning-overview-side {
+        padding: 30px;
+        border-radius: 18px;
+      }
+
+      .morning-overview-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+
+      .morning-overview-side {
+        border-left: 5px solid #1677c8;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .morning-overview h2,
+      .morning-overview h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .morning-overview p:last-child {
+        margin-bottom: 0;
+      }
+
+      .routine-levels {
+        margin: 42px 0;
+      }
+
+      .routine-levels > h2,
+      .routine-levels > p {
+        text-align: center;
+      }
+
+      .routine-levels > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .routine-levels-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .routine-level {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .routine-level span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .routine-level h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .routine-level p {
+        margin-bottom: 0;
+      }
+
+      .morning-routine {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .morning-routine > h2,
+      .morning-routine > p {
+        text-align: center;
+      }
+
+      .morning-routine > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .morning-routine > p {
+        max-width: 760px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .routine-stack {
+        display: grid;
+        gap: 18px;
+        max-width: 860px;
+        margin: 30px auto 0;
+      }
+
+      .routine-move {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+
+      .routine-move-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+      }
+
+      .routine-move-label strong {
+        font-size: 1.3rem;
+      }
+
+      .routine-move-label span {
+        margin-top: 5px;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .routine-move-copy {
+        padding: 24px 26px;
+      }
+
+      .routine-move-copy h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .routine-move-copy p {
+        margin: 0 0 10px;
+      }
+
+      .routine-move-copy p:last-child {
+        margin-bottom: 0;
+      }
+
+      .routine-cue {
+        color: #4f6275;
+        font-size: 0.94rem;
+      }
+
+      .morning-options {
+        margin: 42px 0;
+      }
+
+      .morning-options > h2,
+      .morning-options > p {
+        text-align: center;
+      }
+
+      .morning-options > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .morning-options-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .morning-option {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .morning-option h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .morning-option p {
+        margin-bottom: 0;
+      }
+
+      .massage-mobility-support {
+        margin: 42px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 10px 26px rgba(20, 55, 85, 0.06);
+      }
+
+      .massage-mobility-support h2,
+      .massage-mobility-support > p {
+        text-align: center;
+      }
+
+      .massage-mobility-support h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .massage-mobility-support > p {
+        max-width: 740px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .massage-mobility-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .massage-mobility-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #f7fbff;
+      }
+
+      .massage-mobility-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .massage-mobility-card p {
+        margin-bottom: 0;
+      }
+
+      .habit-builder {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .habit-builder h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .habit-builder ul {
+        margin-bottom: 0;
+      }
+
+      .habit-builder li {
+        margin-bottom: 10px;
+      }
+
+      .mobility-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .mobility-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .mobility-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .morning-related {
+        margin: 38px 0;
+      }
+
+      .morning-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .morning-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .morning-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .morning-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .morning-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .morning-related-card p {
+        flex: 1;
+      }
+
+      .morning-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      .morning-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .morning-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .morning-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        color: #1677c8;
+        text-align: center;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 840px) {
+        .morning-overview,
+        .morning-related-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .routine-levels-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .morning-options-grid,
+        .massage-mobility-grid,
+        .routine-move {
+          grid-template-columns: 1fr;
+        }
+
+        .routine-move-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+
+        .morning-overview-main,
+        .morning-overview-side,
+        .morning-routine,
+        .massage-mobility-support,
+        .morning-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="morning-mobility-routine">
+    <<!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/movement-mobility.html">
+          ← Back to Movement &amp; Mobility FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Movement &amp; Mobility</div>
+
+          <h1>Morning Mobility Routine</h1>
+
+          <p class="article-subtitle">
+            A gentle routine for the neck, shoulders, spine, hips, and ankles,
+            with simple options for different energy levels and mobility needs.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Morning stiffness does not always mean something is wrong. Sleep
+            position, reduced movement overnight, yesterday’s activity, stress,
+            pain, age, and health conditions can all affect how the body feels
+            when the day begins.
+          </p>
+
+          <p>
+            A short mobility routine can help you check in, gradually increase
+            movement, and prepare for everyday tasks without forcing a deep
+            stretch.
+          </p>
+
+          <p>
+            The goal is not to become fully flexible before breakfast. The goal
+            is to help movement feel more available.
+          </p>
+        </div>
+
+        <section class="morning-overview">
+          <div class="morning-overview-main">
+            <h2>Start With Movement, Not Intensity</h2>
+
+            <p>
+              Mobility work can include gentle joint movement, controlled range
+              of motion, balance, breathing, and light muscle activity.
+            </p>
+
+            <p>
+              Comfortable repetition is often more useful in the morning than
+              forcing long stretches into cold or guarded tissues.
+            </p>
+          </div>
+
+          <aside class="morning-overview-side">
+            <h3>Your Routine Can Be Short</h3>
+
+            <p>
+              Three to ten minutes is enough for a useful morning check-in. A
+              smaller routine that you repeat is more valuable than an elaborate
+              routine you avoid.
+            </p>
+          </aside>
+        </section>
+
+        <section class="routine-levels">
+          <h2>Choose the Version That Fits Today</h2>
+
+          <p>
+            Energy, pain, sleep, illness, and schedule change from day to day.
+            Your routine can change too.
+          </p>
+
+          <div class="routine-levels-grid">
+            <article class="routine-level">
+              <span>Low-Energy Day</span>
+              <h3>Three Minutes</h3>
+              <p>
+                Choose seated neck turns, shoulder rolls, ankle movement, and a
+                short walk through the room.
+              </p>
+            </article>
+
+            <article class="routine-level">
+              <span>Regular Morning</span>
+              <h3>Five to Eight Minutes</h3>
+              <p>
+                Complete the full routine below at an easy pace, using a chair
+                or wall for support when helpful.
+              </p>
+            </article>
+
+            <article class="routine-level">
+              <span>Active Day Ahead</span>
+              <h3>Eight to Ten Minutes</h3>
+              <p>
+                Add more repetitions, a brief walk, or activity-specific
+                movement after the basic routine.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="morning-routine">
+          <h2>A Gentle Head-to-Toe Routine</h2>
+
+          <p>
+            Move within a comfortable range. Use fewer repetitions, a smaller
+            motion, or a supported position whenever needed.
+          </p>
+
+          <div class="routine-stack">
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>01</strong>
+                <span>Neck</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Comfortable Head Turns</h3>
+                <p>
+                  Sit or stand tall enough to feel supported. Slowly turn your
+                  head to look left, return to center, and then look right.
+                  Repeat three to five times per side.
+                </p>
+                <p class="routine-cue">
+                  Keep the movement easy. Do not pull on the head or force the
+                  chin toward the shoulder.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>02</strong>
+                <span>Shoulders</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Shoulder Rolls and Arm Reach</h3>
+                <p>
+                  Roll the shoulders slowly backward several times, then
+                  forward. Follow with an easy overhead or forward reach if it
+                  feels comfortable.
+                </p>
+                <p class="routine-cue">
+                  Let the shoulder blades move rather than holding them tightly
+                  together.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>03</strong>
+                <span>Spine</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Seated or Standing Spine Waves</h3>
+                <p>
+                  Gently round the upper and middle back, then return toward a
+                  comfortable upright position. Repeat slowly five to eight
+                  times.
+                </p>
+                <p class="routine-cue">
+                  Think of changing shape rather than trying to create the
+                  biggest possible movement.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>04</strong>
+                <span>Trunk</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Easy Side Reach</h3>
+                <p>
+                  Reach one arm upward or rest the hand at the side of the head,
+                  then lean slightly to the opposite side. Return to center and
+                  alternate.
+                </p>
+                <p class="routine-cue">
+                  Keep both feet supported and avoid collapsing or holding the
+                  breath.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>05</strong>
+                <span>Hips</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Supported Hip Marches</h3>
+                <p>
+                  Hold a chair or wall if needed. Lift one foot a small
+                  distance, lower it, and alternate sides for six to ten
+                  repetitions.
+                </p>
+                <p class="routine-cue">
+                  Use a range that does not create pinching, sharp pain, or loss
+                  of balance.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>06</strong>
+                <span>Hips and Legs</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Chair-Assisted Sit-to-Stand</h3>
+                <p>
+                  From a stable chair, lean forward as needed and stand. Sit
+                  back down with control. Complete three to eight repetitions.
+                </p>
+                <p class="routine-cue">
+                  Use the armrests or hands when needed. Skip this movement if
+                  it is not safe or comfortable.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>07</strong>
+                <span>Ankles</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Ankle Pumps and Heel Raises</h3>
+                <p>
+                  While seated, point and flex the feet. If standing feels safe,
+                  hold support and gently rise onto the toes before lowering.
+                </p>
+                <p class="routine-cue">
+                  Move slowly and keep pressure comfortable through the feet.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-move">
+              <div class="routine-move-label">
+                <strong>08</strong>
+                <span>Whole Body</span>
+              </div>
+
+              <div class="routine-move-copy">
+                <h3>Finish With a Short Walk</h3>
+                <p>
+                  Walk through the room, hallway, or outside for one to three
+                  minutes. Let the arms swing naturally.
+                </p>
+                <p class="routine-cue">
+                  Notice whether movement feels easier than it did at the start.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="morning-options">
+          <h2>Adjust the Routine for Your Body</h2>
+
+          <p>Mobility does not have to look the same for everyone.</p>
+
+          <div class="morning-options-grid">
+            <article class="morning-option">
+              <h3>Use a Chair</h3>
+              <p>
+                Most of the routine can be completed seated. A chair may improve
+                balance, reduce fatigue, and make movement more accessible.
+              </p>
+            </article>
+
+            <article class="morning-option">
+              <h3>Make the Range Smaller</h3>
+              <p>
+                A small, controlled movement still counts. Range may gradually
+                increase as the body warms up.
+              </p>
+            </article>
+
+            <article class="morning-option">
+              <h3>Reduce Repetitions</h3>
+              <p>
+                One or two comfortable repetitions may be appropriate when pain,
+                fatigue, dizziness, or illness is present.
+              </p>
+            </article>
+
+            <article class="morning-option">
+              <h3>Choose Movement Over Stretching</h3>
+              <p>
+                Repeated gentle motion may feel better than holding a long
+                stretch first thing in the morning.
+              </p>
+            </article>
+
+            <article class="morning-option">
+              <h3>Warm Up Before Strength Work</h3>
+              <p>
+                Use the routine as a transition into walking, lifting, exercise,
+                yard work, or a physically demanding shift.
+              </p>
+            </article>
+
+            <article class="morning-option">
+              <h3>Skip What Does Not Feel Right</h3>
+              <p>
+                You do not need to complete every movement for the routine to be
+                useful.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="massage-mobility-support">
+          <h2>How Massage Can Support Morning Mobility</h2>
+
+          <p>
+            Massage can be a helpful part of a broader movement routine,
+            especially when stiffness, muscle tension, stress, or physical
+            workload makes it harder to get moving comfortably.
+          </p>
+
+          <div class="massage-mobility-grid">
+            <article class="massage-mobility-card">
+              <h3>Reduce the Sense of Tightness</h3>
+              <p>
+                Massage may help the neck, shoulders, back, hips, and legs feel
+                less guarded and easier to move.
+              </p>
+            </article>
+
+            <article class="massage-mobility-card">
+              <h3>Support Movement Confidence</h3>
+              <p>
+                When movement feels more comfortable, it may be easier to return
+                to walking, stretching, exercise, or daily tasks.
+              </p>
+            </article>
+
+            <article class="massage-mobility-card">
+              <h3>Improve Body Awareness</h3>
+              <p>
+                A massage session may help you notice where you brace, hold your
+                breath, grip, or avoid movement.
+              </p>
+            </article>
+
+            <article class="massage-mobility-card">
+              <h3>Complement Exercise and Recovery</h3>
+              <p>
+                Massage can fit alongside strength work, physical therapy,
+                mobility practice, sleep, and regular activity.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="habit-builder">
+          <h2>Make the Routine Easier to Repeat</h2>
+
+          <ul>
+            <li>Place a stable chair where you plan to move.</li>
+            <li>
+              Attach the routine to an existing habit, such as making coffee.
+            </li>
+            <li>Keep the first version under five minutes.</li>
+            <li>Use the same basic sequence for several weeks.</li>
+            <li>
+              Track how you feel before and after rather than chasing
+              perfection.
+            </li>
+            <li>
+              Schedule massage or other supportive care before stiffness becomes
+              severe.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What a Morning Routine Cannot Replace</h2>
+
+          <p>
+            A mobility routine cannot diagnose persistent stiffness, treat a
+            serious injury, reverse arthritis, restore lost strength by itself,
+            or replace medical care and rehabilitation.
+          </p>
+
+          <p>
+            Its value is practical: it can help you start moving, observe
+            patterns, and create a consistent bridge into the rest of your day.
+          </p>
+        </section>
+
+        <section class="mobility-warning">
+          <h2>When to Stop and Seek Guidance</h2>
+
+          <p>
+            Stop the routine and seek appropriate care for chest pain, fainting,
+            severe dizziness, sudden weakness or numbness, loss of coordination,
+            severe or rapidly worsening pain, significant swelling, symptoms
+            after a major injury, or inability to bear weight. Persistent
+            morning stiffness, especially when accompanied by joint swelling,
+            fever, unexplained fatigue, or symptoms that interfere with daily
+            life, should be discussed with a healthcare professional.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Morning mobility should help you begin the day—not make you prove
+            how flexible you are.
+          </p>
+
+          <p>
+            Start small, use support, and choose movement that feels useful.
+            Massage can help reduce tension and improve comfort so regular
+            movement feels more available.
+          </p>
+
+          <p>
+            The goal is a body that feels prepared for your life, not a routine
+            performed perfectly.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="morning-related">
+          <h2>Continue Reading</h2>
+
+          <div class="morning-related-grid">
+            <a
+              href="everyday-mobility-exercises.html"
+              class="morning-related-card"
+            >
+              <h3>Everyday Mobility Exercises</h3>
+              <p>
+                Explore practical movement options for the neck, shoulders,
+                spine, hips, and ankles throughout the day.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-your-hips-affect-your-back.html"
+              class="morning-related-card"
+            >
+              <h3>Why Your Hips Affect Your Back</h3>
+              <p>
+                Learn how the hips, pelvis, trunk, strength, and movement habits
+                can influence low-back comfort.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="stretching-before-or-after-exercise.html"
+              class="morning-related-card"
+            >
+              <h3>Should You Stretch Before or After Exercise?</h3>
+              <p>
+                Understand the difference between dynamic warm-ups and longer
+                static stretching.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/about/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                Basics and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/health-benefits/adults.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Health Benefits of
+                Physical Activity for Adults
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nia.nih.gov/health/exercise-and-physical-activity/three-types-exercise-can-improve-your-health-and-physical"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institute on Aging: Exercise Types That Support Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/exerciseandphysicalfitness.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Exercise and Physical Fitness
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health:
+                Massage Therapy
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="morning-cta">
+          <h2>Make Movement Easier to Begin</h2>
+
+          <p>
+            Looking for therapeutic care that supports comfort, mobility, and
+            recovery? Schedule a FlowTherapy session centered around your
+            movement goals, boundaries, and current wellness needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Movement &amp; Mobility
+            articles.
+          </p>
+
+          <ul>
+            <li>Why Sitting All Day Feels So Bad</li>
+            <li>Why Walking Is Underrated</li>
+            <li>Mobility After 40</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

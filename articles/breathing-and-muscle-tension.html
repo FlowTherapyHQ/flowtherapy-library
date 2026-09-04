@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Breathing and Muscle Tension | FlowNotes</title>
+
+    <meta
+      name="description"
+      content="Learn how stress can change your breathing, why shallow or guarded breathing may contribute to muscle tension, and how gentle breathing practices may support relaxation."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="/assets/js/site-layout.js" defer></script>
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      :root {
+        --breath-blue: #1677c8;
+        --breath-blue-dark: #0b3f78;
+        --breath-blue-soft: #eaf4fe;
+        --breath-blue-pale: #f3f9fe;
+        --breath-ink: #17324d;
+        --breath-muted: #536a7f;
+        --breath-border: #cfe2f5;
+        --breath-surface: #ffffff;
+        --breath-page: #f3f8fc;
+        --breath-shadow: 0 12px 30px rgba(27, 67, 103, 0.08);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--breath-page);
+        color: var(--breath-ink);
+      }
+
+      .article-shell {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 38px 0 72px;
+      }
+
+      .article-breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-bottom: 20px;
+        color: var(--breath-muted);
+        font-size: 0.9rem;
+      }
+
+      .article-breadcrumbs a {
+        color: var(--breath-blue);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .article-breadcrumbs a:hover {
+        text-decoration: underline;
+      }
+
+      .article-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 46px;
+        border: 1px solid var(--breath-border);
+        border-radius: 28px;
+        background:
+          radial-gradient(
+            circle at 89% 12%,
+            rgba(22, 119, 200, 0.14),
+            transparent 30%
+          ),
+          linear-gradient(135deg, #ffffff 0%, #f4faff 100%);
+        box-shadow: var(--breath-shadow);
+      }
+
+      .article-hero::after {
+        content: "";
+        position: absolute;
+        right: -72px;
+        bottom: -110px;
+        width: 285px;
+        height: 285px;
+        border: 34px solid rgba(22, 119, 200, 0.05);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .article-category {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 18px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: var(--breath-blue-soft);
+        color: var(--breath-blue);
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.075em;
+        text-transform: uppercase;
+      }
+
+      .article-hero h1 {
+        position: relative;
+        z-index: 1;
+        max-width: 790px;
+        margin: 0 0 18px;
+        color: var(--breath-blue-dark);
+        font-size: clamp(2.25rem, 5.5vw, 4.4rem);
+        line-height: 1.04;
+      }
+
+      .article-deck {
+        position: relative;
+        z-index: 1;
+        max-width: 770px;
+        margin: 0;
+        color: #36536d;
+        font-size: clamp(1.08rem, 2vw, 1.3rem);
+        line-height: 1.7;
+      }
+
+      .article-meta {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 24px;
+        color: var(--breath-muted);
+        font-size: 0.9rem;
+      }
+
+      .article-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 260px;
+        gap: 32px;
+        align-items: start;
+        margin-top: 34px;
+      }
+
+      .article-content {
+        padding: 40px;
+        border: 1px solid var(--breath-border);
+        border-radius: 24px;
+        background: var(--breath-surface);
+        box-shadow: var(--breath-shadow);
+      }
+
+      .article-content h2 {
+        margin: 42px 0 14px;
+        color: var(--breath-blue-dark);
+        font-size: clamp(1.45rem, 3vw, 2rem);
+        line-height: 1.25;
+      }
+
+      .article-content h2:first-child {
+        margin-top: 0;
+      }
+
+      .article-content h3 {
+        margin: 26px 0 10px;
+        color: var(--breath-blue-dark);
+        font-size: 1.18rem;
+        line-height: 1.35;
+      }
+
+      .article-content p {
+        margin: 0 0 20px;
+        color: #2f465c;
+        font-size: 1.02rem;
+        line-height: 1.82;
+      }
+
+      .article-content ul,
+      .article-content ol {
+        margin: 8px 0 24px;
+        padding-left: 1.35rem;
+      }
+
+      .article-content li {
+        margin: 8px 0;
+        color: #2f465c;
+        line-height: 1.68;
+      }
+
+      .article-content strong {
+        color: var(--breath-blue-dark);
+      }
+
+      .article-content a {
+        color: var(--breath-blue);
+        font-weight: 700;
+      }
+
+      .lead-paragraph {
+        color: var(--breath-ink);
+        font-size: 1.12rem !important;
+      }
+
+      .quick-summary {
+        margin: 28px 0;
+        padding: 24px;
+        border: 1px solid #bcdaf1;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #eff8ff, #ffffff);
+      }
+
+      .quick-summary h2 {
+        margin: 0 0 14px;
+        font-size: 1.35rem;
+      }
+
+      .quick-summary ul {
+        margin-bottom: 0;
+      }
+
+      .did-you-know {
+        margin: 30px 0;
+        padding: 22px 24px;
+        border-left: 5px solid var(--breath-blue);
+        border-radius: 0 16px 16px 0;
+        background: var(--breath-blue-pale);
+      }
+
+      .did-you-know h3 {
+        margin: 0 0 8px;
+      }
+
+      .did-you-know p:last-child {
+        margin-bottom: 0;
+      }
+
+      .connection-panel {
+        margin: 30px 0;
+        padding: 28px;
+        border-radius: 20px;
+        background: var(--breath-blue-dark);
+        color: #ffffff;
+      }
+
+      .connection-panel h2 {
+        margin: 0 0 14px;
+        color: #ffffff;
+      }
+
+      .connection-panel p {
+        color: #ffffff;
+      }
+
+      .connection-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .connection-step {
+        padding: 18px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.09);
+        text-align: center;
+      }
+
+      .connection-step strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #ffffff;
+        font-size: 1rem;
+      }
+
+      .connection-step span {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .breathing-practice {
+        margin: 34px 0;
+        padding: 28px;
+        border: 1px solid #bcdaf1;
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          rgba(22, 119, 200, 0.09),
+          rgba(255, 255, 255, 0.96)
+        );
+      }
+
+      .breathing-practice h2 {
+        margin-top: 0;
+      }
+
+      .practice-steps {
+        display: grid;
+        gap: 12px;
+        margin-top: 22px;
+        counter-reset: breath-step;
+      }
+
+      .practice-step {
+        position: relative;
+        padding: 17px 18px 17px 58px;
+        border: 1px solid var(--breath-border);
+        border-radius: 14px;
+        background: #ffffff;
+        color: #2f465c;
+        line-height: 1.65;
+      }
+
+      .practice-step::before {
+        counter-increment: breath-step;
+        content: counter(breath-step);
+        position: absolute;
+        top: 15px;
+        left: 16px;
+        display: inline-flex;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--breath-blue);
+        color: #ffffff;
+        font-size: 0.85rem;
+        font-weight: 900;
+      }
+
+      .practice-note {
+        margin-top: 20px;
+        padding: 17px 18px;
+        border-left: 4px solid var(--breath-blue);
+        border-radius: 0 12px 12px 0;
+        background: #ffffff;
+        color: #334e66;
+        line-height: 1.65;
+      }
+
+      .body-check {
+        margin: 30px 0;
+        padding: 26px;
+        border: 1px solid var(--breath-border);
+        border-radius: 18px;
+        background: #f8fbfe;
+      }
+
+      .body-check h2 {
+        margin-top: 0;
+      }
+
+      .body-check-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .body-check-item {
+        padding: 15px 16px;
+        border: 1px solid var(--breath-border);
+        border-radius: 13px;
+        background: #ffffff;
+        color: #2f465c;
+        line-height: 1.55;
+      }
+
+      .massage-section {
+        margin: 34px 0;
+        padding: 28px;
+        border: 1px solid #c7dff3;
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          rgba(22, 119, 200, 0.08),
+          rgba(255, 255, 255, 0.94)
+        );
+      }
+
+      .massage-section h2 {
+        margin-top: 0;
+      }
+
+      .safety-panel {
+        margin: 32px 0;
+        padding: 26px;
+        border: 1px solid #efc6c6;
+        border-radius: 18px;
+        background: #fff8f8;
+      }
+
+      .safety-panel h2 {
+        margin-top: 0;
+        color: #8f2929;
+      }
+
+      .safety-panel p,
+      .safety-panel li {
+        color: #573737;
+      }
+
+      .article-sidebar {
+        position: sticky;
+        top: 22px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .sidebar-card {
+        padding: 22px;
+        border: 1px solid var(--breath-border);
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(27, 67, 103, 0.05);
+      }
+
+      .sidebar-card h2 {
+        margin: 0 0 12px;
+        color: var(--breath-blue-dark);
+        font-size: 1.12rem;
+      }
+
+      .sidebar-card p {
+        margin: 0;
+        color: var(--breath-muted);
+        font-size: 0.92rem;
+        line-height: 1.65;
+      }
+
+      .sidebar-card ul {
+        margin: 12px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .sidebar-card li {
+        color: #334e66;
+        font-size: 0.92rem;
+        line-height: 1.55;
+      }
+
+      .sidebar-card li + li {
+        margin-top: 10px;
+      }
+
+      .sidebar-card a {
+        color: var(--breath-blue);
+        font-size: 0.91rem;
+        font-weight: 700;
+        line-height: 1.45;
+        text-decoration: none;
+      }
+
+      .sidebar-card a:hover {
+        text-decoration: underline;
+      }
+
+      .source-list {
+        margin-top: 44px;
+        padding-top: 32px;
+        border-top: 1px solid var(--breath-border);
+      }
+
+      .source-list h2 {
+        margin-top: 0;
+      }
+
+      .source-list ol {
+        margin: 0;
+        padding-left: 1.4rem;
+      }
+
+      .source-list li {
+        margin: 12px 0;
+        padding-left: 4px;
+        color: var(--breath-muted);
+        line-height: 1.6;
+      }
+
+      .source-list a {
+        color: var(--breath-blue);
+        font-weight: 700;
+      }
+
+      .article-disclaimer {
+        margin-top: 28px;
+        padding: 18px 20px;
+        border-radius: 14px;
+        background: #f2f5f8;
+        color: #5c6f80;
+        font-size: 0.88rem;
+        line-height: 1.6;
+      }
+
+      .related-reading {
+        margin-top: 36px;
+        padding: 30px;
+        border: 1px solid var(--breath-border);
+        border-radius: 22px;
+        background: #ffffff;
+        box-shadow: var(--breath-shadow);
+      }
+
+      .related-reading h2 {
+        margin: 0 0 18px;
+        color: var(--breath-blue-dark);
+        text-align: center;
+      }
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .related-card {
+        display: block;
+        padding: 18px;
+        border: 1px solid var(--breath-border);
+        border-radius: 15px;
+        background: #f9fcff;
+        color: var(--breath-blue-dark);
+        font-weight: 800;
+        line-height: 1.4;
+        text-decoration: none;
+      }
+
+      .related-card:hover {
+        border-color: var(--breath-blue);
+        background: var(--breath-blue-soft);
+      }
+
+      @media (max-width: 860px) {
+        .article-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .article-sidebar {
+          position: static;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 680px) {
+        .article-shell {
+          width: min(100% - 20px, 960px);
+          padding-top: 26px;
+        }
+
+        .article-hero,
+        .article-content {
+          padding: 26px;
+        }
+
+        .connection-grid,
+        .body-check-grid,
+        .related-grid,
+        .article-sidebar {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="breathing-and-muscle-tension">
+    <div id="site-header"></div>
+
+    <main class="article-shell">
+      <nav class="article-breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">FlowHub</a>
+        <span>›</span>
+        <a href="../pages/flownotes.html">FlowNotes</a>
+        <span>›</span>
+        <span>Breathing and Muscle Tension</span>
+      </nav>
+
+      <article>
+        <header class="article-hero">
+          <span class="article-category">Stress &amp; Wellness</span>
+
+          <h1>Breathing and Muscle Tension</h1>
+
+          <p class="article-deck">
+            The way you breathe can change when you feel rushed, focused,
+            overwhelmed, uncomfortable, or unsafe—and those breathing patterns
+            may influence how much tension you carry throughout your body.
+          </p>
+
+          <div class="article-meta">
+            <span>FlowNotes</span>
+            <span>7-minute read</span>
+            <span>Stress &amp; Wellness</span>
+          </div>
+        </header>
+
+        <div class="article-layout">
+          <div class="article-content">
+            <p class="lead-paragraph">
+              Take a moment to notice your breathing. Is it quiet and relaxed,
+              or are you taking small breaths high in your chest? Are your
+              shoulders lifting? Is your jaw clenched? Have you been holding
+              your breath without realizing it?
+            </p>
+
+            <p>
+              Breathing happens automatically, but it is also influenced by
+              stress, concentration, posture, pain, movement, emotion, and the
+              environment around you. When your breathing changes, the muscles
+              helping you breathe may change how they work as well.
+            </p>
+
+            <p>
+              That does not mean every tight muscle is caused by poor breathing.
+              Muscle tension is complex and may involve workload, injury, sleep,
+              health conditions, stress, movement habits, and many other
+              factors. Breathing is simply one part of the larger picture.
+            </p>
+
+            <section class="quick-summary">
+              <h2>Breathing may affect tension when you:</h2>
+
+              <ul>
+                <li>Hold your breath while concentrating or bracing</li>
+                <li>Take rapid, shallow breaths during stress</li>
+                <li>Lift your shoulders with every inhale</li>
+                <li>Overuse muscles in the neck and upper chest</li>
+                <li>Clench your jaw or tighten your abdomen</li>
+                <li>Remain in one guarded posture for long periods</li>
+              </ul>
+            </section>
+
+            <h2>What changes when you are under stress?</h2>
+
+            <p>
+              Stress can affect the body in many ways. You may notice a faster
+              heartbeat, increased alertness, tighter muscles, a clenched jaw,
+              elevated shoulders, or a change in the rhythm and depth of your
+              breathing.
+            </p>
+
+            <p>
+              Some people begin breathing more quickly. Others take smaller
+              breaths, pause frequently, sigh, brace their abdomen, or hold
+              their breath while completing a difficult task.
+            </p>
+
+            <p>
+              These reactions are not personal failures. They are protective
+              responses that can occur automatically when the nervous system
+              senses demand, uncertainty, discomfort, or threat.
+            </p>
+
+            <section class="did-you-know">
+              <h3>Did You Know?</h3>
+
+              <p>
+                Breathing and nervous-system activity influence one another.
+                Reviews of slow-breathing practices have reported changes in
+                measures related to autonomic regulation, including heart-rate
+                variability and respiratory sinus arrhythmia.
+              </p>
+
+              <p>
+                This does not mean one slow breath instantly eliminates stress.
+                It suggests that breathing may be one practical way to support a
+                gradual shift toward a calmer physiological state.
+              </p>
+            </section>
+
+            <h2>The muscles that help you breathe</h2>
+
+            <p>
+              Your diaphragm is a major muscle of breathing. It sits beneath the
+              lungs and changes shape as you inhale and exhale.
+            </p>
+
+            <p>
+              Breathing also involves muscles between the ribs and may recruit
+              additional muscles in the neck, upper chest, back, and shoulders,
+              especially when breathing demand increases.
+            </p>
+
+            <p>Accessory breathing muscles may include areas such as the:</p>
+
+            <ul>
+              <li>Sternocleidomastoid muscles along the sides of the neck</li>
+              <li>Scalene muscles in the neck</li>
+              <li>Upper trapezius region</li>
+              <li>Muscles between and around the ribs</li>
+              <li>Chest and upper-back muscles</li>
+              <li>Abdominal muscles used during forceful exhalation</li>
+            </ul>
+
+            <p>
+              These muscles are not “bad” for helping you breathe. They have
+              useful roles. But when the neck and shoulders remain heavily
+              involved in every breath, those areas may begin to feel tired,
+              tight, or overworked.
+            </p>
+
+            <section class="connection-panel">
+              <h2>The breathing–tension connection</h2>
+
+              <p>
+                Breathing patterns, posture, and muscle activity often affect
+                one another rather than operating as separate systems.
+              </p>
+
+              <div class="connection-grid">
+                <div class="connection-step">
+                  <strong>Stress or concentration</strong>
+                  <span>Breathing may become smaller, faster, or guarded.</span>
+                </div>
+
+                <div class="connection-step">
+                  <strong>More upper-body effort</strong>
+                  <span>
+                    The neck, jaw, shoulders, or upper chest may work harder.
+                  </span>
+                </div>
+
+                <div class="connection-step">
+                  <strong>Tension builds</strong>
+                  <span>
+                    Discomfort may make relaxed breathing feel more difficult.
+                  </span>
+                </div>
+              </div>
+            </section>
+
+            <h2>Why you might hold your breath while working</h2>
+
+            <p>
+              Breath-holding is common during tasks that require concentration,
+              precision, effort, or emotional restraint. You might hold your
+              breath while writing an important email, navigating traffic,
+              lifting something, reading difficult information, or waiting for
+              someone to respond.
+            </p>
+
+            <p>
+              People may also brace their abdomen and stop breathing freely when
+              they are trying to maintain “perfect posture.” A rigid posture is
+              not necessarily a comfortable or sustainable posture.
+            </p>
+
+            <p>
+              The goal is not to monitor every breath throughout the day.
+              Instead, use occasional check-ins to notice whether you have been
+              bracing longer than necessary.
+            </p>
+
+            <h2>Where breathing-related tension may show up</h2>
+
+            <div class="body-check">
+              <h2>Quick body check</h2>
+
+              <div class="body-check-grid">
+                <div class="body-check-item">
+                  <strong>Jaw:</strong> Are your teeth touching or your tongue
+                  pressing upward?
+                </div>
+
+                <div class="body-check-item">
+                  <strong>Shoulders:</strong> Are they lifted toward your ears?
+                </div>
+
+                <div class="body-check-item">
+                  <strong>Neck:</strong> Do you feel effort with each inhale?
+                </div>
+
+                <div class="body-check-item">
+                  <strong>Chest:</strong> Is most movement happening high in the
+                  upper chest?
+                </div>
+
+                <div class="body-check-item">
+                  <strong>Abdomen:</strong> Are you holding it rigid throughout
+                  the day?
+                </div>
+
+                <div class="body-check-item">
+                  <strong>Breath:</strong> Are you sighing or pausing
+                  frequently?
+                </div>
+              </div>
+            </div>
+
+            <p>
+              A tense area does not prove that breathing caused the problem.
+              These questions simply help you notice patterns that may be worth
+              changing.
+            </p>
+
+            <h2>
+              Does “deep breathing” mean taking the biggest breath possible?
+            </h2>
+
+            <p>
+              Not necessarily. Trying to inhale as much air as possible can
+              create more effort, raise the shoulders, or make some people feel
+              uncomfortable.
+            </p>
+
+            <p>
+              A useful breath does not have to be enormous. It may simply feel
+              slower, quieter, easier, and less forced than the breath you were
+              taking before.
+            </p>
+
+            <p>
+              The goal is not to perform a perfect breathing technique. The goal
+              is to reduce unnecessary effort and allow breathing to feel more
+              comfortable.
+            </p>
+
+            <section id="gentle-breathing-reset" class="breathing-practice">
+              <h2>Try a gentle breathing reset</h2>
+
+              <p>
+                This practice should feel comfortable. Do not force the breath,
+                strain, or continue if you feel worse.
+              </p>
+
+              <div class="practice-steps">
+                <div class="practice-step">
+                  Sit, stand, or lie in a position that feels supported.
+                </div>
+
+                <div class="practice-step">
+                  Let your jaw soften and allow your teeth to separate.
+                </div>
+
+                <div class="practice-step">
+                  Lower your shoulders without forcing them backward.
+                </div>
+
+                <div class="practice-step">
+                  Inhale gently through your nose at an easy pace.
+                </div>
+
+                <div class="practice-step">
+                  Exhale slowly and comfortably, without pushing all the air
+                  out.
+                </div>
+
+                <div class="practice-step">
+                  Repeat for three to five breaths, then return to normal
+                  breathing.
+                </div>
+              </div>
+
+              <div class="practice-note">
+                <strong>Keep it easy:</strong> A longer exhale may feel calming
+                for some people, but it should never feel like a test. Stop and
+                return to your normal breath if you feel dizzy, air-hungry,
+                anxious, numb, or uncomfortable.
+              </div>
+            </section>
+
+            <h2>Why a slower exhale may feel relaxing</h2>
+
+            <p>
+              Breathing rhythm can influence cardiovascular and autonomic
+              activity. Research on slow breathing suggests that it may support
+              physiological patterns associated with parasympathetic activity
+              and relaxation.
+            </p>
+
+            <p>
+              The parasympathetic nervous system is often described as
+              supporting “rest and digest” functions. That phrase is useful, but
+              the nervous system is more complex than an on-and-off switch.
+            </p>
+
+            <p>
+              Breathing does not guarantee that you will immediately feel safe,
+              calm, or pain-free. It may simply provide the body with one
+              additional cue that the current moment allows a little less
+              bracing.
+            </p>
+
+            <h2>Breathing through the nose or mouth</h2>
+
+            <p>
+              Gentle nasal breathing may feel comfortable during quiet rest for
+              many people. However, mouth breathing may be necessary during
+              exercise, nasal congestion, respiratory illness, or certain health
+              conditions.
+            </p>
+
+            <p>
+              Avoid turning nasal breathing into a rigid rule. The most
+              appropriate breathing pattern depends on the person, the activity,
+              and their health.
+            </p>
+
+            <h2>Breathing is not a posture correction</h2>
+
+            <p>
+              Breathing practices are sometimes promoted as a way to “fix”
+              posture. That oversimplifies both breathing and posture.
+            </p>
+
+            <p>
+              Comfortable breathing may make it easier to reduce unnecessary
+              bracing, but your body still benefits from movement, position
+              changes, physical capacity, recovery, sleep, and an environment
+              that supports you.
+            </p>
+
+            <p>
+              Instead of chasing one perfect position, try changing positions
+              throughout the day and allowing your breath to remain relatively
+              easy.
+            </p>
+
+            <h2>Use breathing during everyday moments</h2>
+
+            <p>
+              Breathing practices do not need to become another complicated
+              task. Consider pairing a brief reset with something you already
+              do:
+            </p>
+
+            <ul>
+              <li>Before opening your email</li>
+              <li>After ending a meeting</li>
+              <li>While waiting at a red light</li>
+              <li>Before lifting or exercising</li>
+              <li>After noticing your jaw clench</li>
+              <li>When you stand up from your desk</li>
+              <li>Before beginning your bedtime routine</li>
+            </ul>
+
+            <p>
+              A few comfortable breaths may be more useful than an elaborate
+              routine you rarely practice.
+            </p>
+
+            <section class="massage-section">
+              <h2>How massage may support easier breathing</h2>
+
+              <p>
+                Massage does not treat respiratory disease or guarantee a
+                particular nervous-system response. However, therapeutic massage
+                may help reduce perceived muscle tension and support relaxation
+                in areas that often become overworked when people brace or
+                breathe with excessive upper-body effort.
+              </p>
+
+              <p>
+                Depending on the client’s needs and comfort, a FlowTherapy
+                session may include work around the neck, shoulders, upper back,
+                chest, rib-adjacent tissues, scalp, jaw, and muscles connected
+                to posture and breathing.
+              </p>
+
+              <p>
+                The session may also create time to notice breathing without
+                needing to control it. Some clients naturally begin breathing
+                more slowly or fully as they become more comfortable.
+              </p>
+
+              <p>
+                Clients are never required to take exaggerated deep breaths.
+                Trauma-informed care means allowing choice, respecting comfort,
+                and avoiding instructions that make someone feel trapped,
+                pressured, or overly focused on internal sensations.
+              </p>
+            </section>
+
+            <h2>When breathing exercises may not feel calming</h2>
+
+            <p>
+              Focusing on the breath is not relaxing for everyone. For some
+              people—especially those experiencing panic, trauma-related
+              symptoms, respiratory conditions, pain, or air hunger—breath
+              awareness may initially increase discomfort.
+            </p>
+
+            <p>Alternatives may include:</p>
+
+            <ul>
+              <li>Looking around the room and naming what you see</li>
+              <li>Feeling your feet against the floor</li>
+              <li>Listening to a familiar sound</li>
+              <li>Taking a gentle walk</li>
+              <li>Stretching or changing position</li>
+              <li>Holding a comforting object</li>
+              <li>Returning attention to an external task</li>
+            </ul>
+
+            <p>
+              You do not have to use breathwork to care for yourself. Choose a
+              strategy that feels supportive rather than forcing one that does
+              not.
+            </p>
+
+            <section class="safety-panel">
+              <h2>When to seek medical care</h2>
+
+              <p>
+                New or unexplained breathing difficulty should not automatically
+                be attributed to stress or muscle tension.
+              </p>
+
+              <p>Seek urgent medical care for symptoms such as:</p>
+
+              <ul>
+                <li>Severe or sudden shortness of breath</li>
+                <li>Chest pain, pressure, or tightness</li>
+                <li>Blue or gray lips, skin, or fingernails</li>
+                <li>Fainting, confusion, or severe weakness</li>
+                <li>Difficulty speaking because of breathlessness</li>
+                <li>Breathing problems following an allergic reaction</li>
+                <li>Symptoms that are rapidly worsening</li>
+              </ul>
+
+              <p>
+                Contact a qualified healthcare professional for persistent,
+                recurring, or unexplained breathing changes, dizziness,
+                wheezing, pain, or symptoms that interfere with daily life.
+              </p>
+            </section>
+
+            <h2>The bottom line</h2>
+
+            <p>
+              Breathing and muscle tension are connected, but the relationship
+              is not as simple as “breathe correctly and tension disappears.”
+              Stress, posture, concentration, pain, health, movement, and the
+              environment all influence how you breathe and how your body feels.
+            </p>
+
+            <p>
+              Gentle breathing awareness may help you notice when you are
+              bracing, clenching, lifting your shoulders, or working harder than
+              necessary. A few comfortable breaths, paired with movement,
+              position changes, rest, and appropriate care, may help your body
+              feel more supported.
+            </p>
+
+            <section class="source-list">
+              <h2>Sources and further reading</h2>
+
+              <ol>
+                <li>
+                  <a
+                    href="https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Center for Complementary and Integrative Health —
+                    Relaxation Techniques: What You Need To Know
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.nccih.nih.gov/health/stress"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Center for Complementary and Integrative Health —
+                    Stress
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://medlineplus.gov/ency/patientinstructions/000874.htm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MedlinePlus — Relaxation Techniques for Stress
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10741869/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Library of Medicine — Breathing Practices for
+                    Stress and Anxiety Reduction
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6137615/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Library of Medicine — How Breath-Control Can Change
+                    Your Life: A Systematic Review
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5709795/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Library of Medicine — The Physiological Effects of
+                    Slow Breathing in the Healthy Human
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8272667/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    National Library of Medicine — Progressive Muscle
+                    Relaxation, Deep Breathing, and Guided Imagery
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.ncbi.nlm.nih.gov/books/NBK541120/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    NCBI Bookshelf — Physiology, Stress Reaction
+                  </a>
+                </li>
+              </ol>
+            </section>
+
+            <div class="article-disclaimer">
+              This article is provided for general wellness education and is not
+              intended to diagnose or treat a respiratory, neurological,
+              cardiovascular, mental-health, or musculoskeletal condition.
+              Breathing exercises and massage therapy do not replace medical
+              evaluation or treatment.
+            </div>
+          </div>
+
+          <aside class="article-sidebar" aria-label="Article resources">
+            <section class="sidebar-card">
+              <h2>At a glance</h2>
+
+              <p>
+                Stress and concentration may change your breathing and increase
+                effort in the jaw, neck, shoulders, chest, back, and abdomen.
+                Gentle breathing awareness may help reduce unnecessary bracing.
+              </p>
+            </section>
+
+            <section class="sidebar-card">
+              <h2>Try today</h2>
+
+              <ul>
+                <li>Let your teeth separate</li>
+                <li>Lower your shoulders gently</li>
+                <li>Take one easy inhale</li>
+                <li>Allow a comfortable, unforced exhale</li>
+                <li>Return to normal breathing</li>
+              </ul>
+            </section>
+
+            <section class="sidebar-card">
+              <h2>Remember</h2>
+
+              <p>
+                Bigger breaths are not automatically better. Comfortable,
+                unforced breathing is the goal.
+              </p>
+            </section>
+
+            <section class="sidebar-card">
+              <h2>Jump to the practice</h2>
+
+              <ul>
+                <li>
+                  <a href="#gentle-breathing-reset">
+                    Gentle Breathing Reset →
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </article>
+
+      <div id="flowhub-related-articles"></div>
+
+      <div id="flowhub-article-navigation"></div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Building a Better Workstation | FlowResources</title>
+
+    <meta
+      name="description"
+      content="Learn how to create a more comfortable workstation with practical guidance for your chair, desk, monitor, keyboard, mouse, and daily movement habits."
+    />
+
+    <style>
+      :root {
+        --primary: #1677c8;
+        --primary-dark: #0f5f9f;
+        --primary-light: #eaf5ff;
+        --navy: #17324d;
+        --text: #33485c;
+        --muted: #667b8f;
+        --border: #dbe7f0;
+        --background: #f6f9fc;
+        --white: #ffffff;
+        --soft-blue: #f0f7fd;
+        --shadow: 0 10px 30px rgba(31, 73, 110, 0.1);
+        --radius-large: 24px;
+        --radius-medium: 16px;
+        --radius-small: 10px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        color: var(--text);
+        background: var(--background);
+        line-height: 1.7;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      a:hover {
+        color: var(--primary-dark);
+      }
+
+      .site-header {
+        background: linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #f2f8fd 55%,
+          #e6f3fc 100%
+        );
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header-inner {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 24px 0 18px;
+        text-align: center;
+      }
+
+      .logo {
+        width: min(230px, 70vw);
+        margin: 0 auto 14px;
+      }
+
+      .brand-title {
+        margin: 0;
+        color: var(--navy);
+        font-size: clamp(1.65rem, 4vw, 2.25rem);
+        line-height: 1.2;
+      }
+
+      .brand-subtitle {
+        margin: 8px auto 0;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .site-nav {
+        margin-top: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .site-nav a {
+        display: inline-block;
+        padding: 9px 14px;
+        border-radius: 999px;
+        color: var(--primary);
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .site-nav a:hover,
+      .site-nav a:focus-visible {
+        color: var(--primary-dark);
+        background: var(--primary-light);
+        transform: translateY(-1px);
+      }
+
+      .site-nav a[aria-current="page"] {
+        color: var(--white);
+        background: var(--primary);
+      }
+
+      main {
+        flex: 1;
+      }
+
+      .article-hero {
+        background: linear-gradient(
+          145deg,
+          #0f5f9f 0%,
+          #1677c8 55%,
+          #62afe2 100%
+        );
+        color: var(--white);
+      }
+
+      .hero-inner {
+        width: min(930px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: clamp(56px, 9vw, 96px) 0;
+        text-align: center;
+      }
+
+      .category-label {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 7px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.13);
+        color: var(--white);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .article-hero h1 {
+        max-width: 820px;
+        margin: 0 auto;
+        font-size: clamp(2.2rem, 7vw, 4.4rem);
+        line-height: 1.08;
+        letter-spacing: -0.035em;
+      }
+
+      .hero-description {
+        max-width: 720px;
+        margin: 22px auto 0;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+        line-height: 1.7;
+      }
+
+      .article-meta {
+        margin-top: 26px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.92rem;
+      }
+
+      .article-container {
+        width: min(860px, calc(100% - 32px));
+        margin: -34px auto 64px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .article-card {
+        padding: clamp(28px, 6vw, 58px);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-large);
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .article-card h2 {
+        margin: 52px 0 16px;
+        color: var(--navy);
+        font-size: clamp(1.65rem, 4vw, 2.2rem);
+        line-height: 1.25;
+      }
+
+      .article-card h2:first-of-type {
+        margin-top: 38px;
+      }
+
+      .article-card h3 {
+        margin: 30px 0 10px;
+        color: var(--navy);
+        font-size: 1.25rem;
+        line-height: 1.35;
+      }
+
+      .article-card p {
+        margin: 0 0 20px;
+      }
+
+      .article-card ul,
+      .article-card ol {
+        margin: 12px 0 24px;
+        padding-left: 1.35rem;
+      }
+
+      .article-card li {
+        margin-bottom: 10px;
+        padding-left: 4px;
+      }
+
+      .lead {
+        margin-top: 0;
+        color: var(--navy);
+        font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+        line-height: 1.75;
+      }
+
+      .intro-box {
+        margin: 30px 0;
+        padding: 24px;
+        border-left: 5px solid var(--primary);
+        border-radius: var(--radius-medium);
+        background: var(--soft-blue);
+      }
+
+      .intro-box p:last-child {
+        margin-bottom: 0;
+      }
+
+      .quick-links {
+        margin: 34px 0;
+        padding: 25px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-medium);
+        background: #fbfdff;
+      }
+
+      .quick-links h2 {
+        margin: 0 0 15px;
+        font-size: 1.25rem;
+      }
+
+      .quick-links ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 22px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .quick-links li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .quick-links a {
+        display: inline-block;
+        padding: 5px 0;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .quick-links a::before {
+        content: "→";
+        margin-right: 7px;
+      }
+
+      .setup-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 26px 0 34px;
+      }
+
+      .setup-card {
+        padding: 23px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-medium);
+        background: #fbfdff;
+      }
+
+      .setup-number {
+        width: 38px;
+        height: 38px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+        border-radius: 50%;
+        color: var(--white);
+        background: var(--primary);
+        font-weight: 800;
+      }
+
+      .setup-card h3 {
+        margin: 0 0 8px;
+        font-size: 1.15rem;
+      }
+
+      .setup-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.97rem;
+      }
+
+      .tip-box {
+        margin: 32px 0;
+        padding: 26px;
+        border: 1px solid #b9d9ef;
+        border-radius: var(--radius-medium);
+        background: linear-gradient(135deg, #edf8ff, #f8fcff);
+      }
+
+      .tip-box h3 {
+        margin-top: 0;
+        color: var(--primary-dark);
+      }
+
+      .tip-box p:last-child,
+      .tip-box ul:last-child {
+        margin-bottom: 0;
+      }
+
+      .warning-box {
+        margin: 32px 0;
+        padding: 24px;
+        border-left: 5px solid #e1a736;
+        border-radius: var(--radius-medium);
+        background: #fff9eb;
+      }
+
+      .warning-box h3 {
+        margin-top: 0;
+        color: #72500e;
+      }
+
+      .warning-box p:last-child {
+        margin-bottom: 0;
+      }
+
+      .comparison-table {
+        width: 100%;
+        margin: 24px 0 34px;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: var(--radius-medium);
+        box-shadow: 0 0 0 1px var(--border);
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 16px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .comparison-table th {
+        color: var(--navy);
+        background: var(--primary-light);
+        font-size: 0.95rem;
+      }
+
+      .comparison-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .checklist {
+        margin: 26px 0 34px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .checklist li {
+        position: relative;
+        margin-bottom: 12px;
+        padding: 14px 16px 14px 48px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-small);
+        background: #fbfdff;
+      }
+
+      .checklist li::before {
+        content: "✓";
+        position: absolute;
+        top: 13px;
+        left: 16px;
+        width: 23px;
+        height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--white);
+        background: var(--primary);
+        font-size: 0.8rem;
+        font-weight: 900;
+      }
+
+      .movement-plan {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin: 25px 0 34px;
+      }
+
+      .movement-step {
+        padding: 20px;
+        border-radius: var(--radius-medium);
+        background: var(--primary-light);
+        text-align: center;
+      }
+
+      .movement-step strong {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--primary-dark);
+        font-size: 1.1rem;
+      }
+
+      .movement-step span {
+        color: var(--muted);
+        font-size: 0.94rem;
+        line-height: 1.5;
+      }
+
+      .takeaway {
+        margin: 40px 0 10px;
+        padding: clamp(24px, 5vw, 34px);
+        border-radius: var(--radius-large);
+        color: var(--white);
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary)
+        );
+      }
+
+      .takeaway h2 {
+        margin: 0 0 12px;
+        color: var(--white);
+      }
+
+      .takeaway p:last-child {
+        margin-bottom: 0;
+      }
+
+      .article-disclaimer {
+        margin-top: 34px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .related-section {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto 72px;
+      }
+
+      .related-section h2 {
+        margin-bottom: 22px;
+        color: var(--navy);
+        text-align: center;
+        font-size: clamp(1.7rem, 4vw, 2.2rem);
+      }
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-medium);
+        color: inherit;
+        background: var(--white);
+        box-shadow: 0 8px 22px rgba(31, 73, 110, 0.07);
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .related-card:hover,
+      .related-card:focus-visible {
+        color: inherit;
+        border-color: #a8cfe9;
+        transform: translateY(-4px);
+        box-shadow: 0 14px 30px rgba(31, 73, 110, 0.12);
+      }
+
+      .related-category {
+        color: var(--primary);
+        font-size: 0.77rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .related-card h3 {
+        margin: 10px 0 8px;
+        color: var(--navy);
+        font-size: 1.15rem;
+        line-height: 1.35;
+      }
+
+      .related-card p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 0.94rem;
+        line-height: 1.6;
+      }
+
+      .read-more {
+        margin-top: auto;
+        color: var(--primary);
+        font-weight: 800;
+      }
+
+      .library-button-wrap {
+        margin-top: 28px;
+        text-align: center;
+      }
+
+      .library-button {
+        display: inline-block;
+        padding: 12px 22px;
+        border-radius: 999px;
+        color: var(--white);
+        background: var(--primary);
+        font-weight: 800;
+        text-decoration: none;
+        transition:
+          background 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .library-button:hover,
+      .library-button:focus-visible {
+        color: var(--white);
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+      }
+
+      .site-footer {
+        margin-top: auto;
+        padding: 32px 16px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        background: var(--white);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .site-footer p {
+        margin: 5px 0;
+      }
+
+      .footer-tagline {
+        color: var(--primary-dark);
+        font-weight: 700;
+      }
+
+      @media (max-width: 760px) {
+        .quick-links ul,
+        .setup-grid,
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .movement-plan {
+          grid-template-columns: 1fr;
+        }
+
+        .article-container {
+          margin-top: -22px;
+        }
+
+        .comparison-table {
+          display: block;
+          overflow-x: auto;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .header-inner {
+          width: min(100% - 22px, 1120px);
+        }
+
+        .site-nav {
+          gap: 4px;
+        }
+
+        .site-nav a {
+          padding: 8px 10px;
+          font-size: 0.9rem;
+        }
+
+        .hero-inner,
+        .article-container,
+        .related-section {
+          width: min(100% - 22px, 1040px);
+        }
+
+        .article-card {
+          border-radius: 18px;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+          min-width: 180px;
+          padding: 13px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="building-a-better-workstation2">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main>
+      <section class="article-hero">
+        <div class="hero-inner">
+          <span class="category-label"> Workplace Wellness </span>
+
+          <h1>Building a Better Workstation</h1>
+
+          <p class="hero-description">
+            A supportive workstation does not have to be perfect or expensive.
+            Small adjustments can make daily tasks feel more comfortable and
+            help reduce unnecessary strain.
+          </p>
+
+          <p class="article-meta">FlowResources • Workplace Setup Guide</p>
+        </div>
+      </section>
+
+      <div class="article-container">
+        <article class="article-card">
+          <p class="lead">
+            Your workstation should support the way you work—not force your body
+            to hold one rigid position all day. The best setup is one that keeps
+            frequently used items within comfortable reach, encourages neutral
+            positioning, and allows you to change positions regularly.
+          </p>
+
+          <div class="intro-box">
+            <p>
+              <strong>The goal is not “perfect posture.”</strong>
+              It is a setup that reduces avoidable effort while giving your body
+              enough variety and movement throughout the day.
+            </p>
+          </div>
+
+          <nav class="quick-links" aria-label="Article contents">
+            <h2>In This Guide</h2>
+
+            <ul>
+              <li>
+                <a href="#start-with-how-you-work"> Start With How You Work </a>
+              </li>
+
+              <li>
+                <a href="#chair"> Adjust Your Chair </a>
+              </li>
+
+              <li>
+                <a href="#desk"> Set Your Desk Height </a>
+              </li>
+
+              <li>
+                <a href="#monitor"> Position Your Monitor </a>
+              </li>
+
+              <li>
+                <a href="#keyboard-mouse"> Place Your Keyboard and Mouse </a>
+              </li>
+
+              <li>
+                <a href="#movement"> Build Movement Into the Day </a>
+              </li>
+            </ul>
+          </nav>
+
+          <section id="start-with-how-you-work">
+            <h2>Start With How You Actually Work</h2>
+
+            <p>
+              Before buying new equipment, pay attention to your current habits.
+              Notice which tasks take up most of your day and where discomfort
+              begins to appear.
+            </p>
+
+            <p>
+              A workstation used mainly for video calls may need a different
+              arrangement than one used for writing, design work, data entry, or
+              switching between a laptop and paper documents.
+            </p>
+
+            <h3>Ask yourself:</h3>
+
+            <ul>
+              <li>Which items do I use most frequently?</li>
+
+              <li>Do I regularly lean forward to see the screen?</li>
+
+              <li>Am I reaching for the mouse or keyboard?</li>
+
+              <li>Do my feet rest securely on the floor?</li>
+
+              <li>Does my neck stay turned toward a second screen?</li>
+
+              <li>Am I staying in one position for long periods?</li>
+            </ul>
+
+            <p>
+              These observations can help you identify which adjustments will
+              make the greatest difference.
+            </p>
+          </section>
+
+          <section id="chair">
+            <h2>1. Adjust Your Chair First</h2>
+
+            <p>
+              Your chair establishes your working height. Adjust it before
+              changing the position of your monitor, keyboard, or other
+              equipment.
+            </p>
+
+            <div class="setup-grid">
+              <div class="setup-card">
+                <span class="setup-number">1</span>
+
+                <h3>Place Your Feet</h3>
+
+                <p>
+                  Keep both feet supported by the floor or a stable footrest.
+                  Avoid leaving them suspended beneath the chair.
+                </p>
+              </div>
+
+              <div class="setup-card">
+                <span class="setup-number">2</span>
+
+                <h3>Support Your Legs</h3>
+
+                <p>
+                  Sit far enough back for the chair to support you while leaving
+                  a small amount of space behind your knees.
+                </p>
+              </div>
+
+              <div class="setup-card">
+                <span class="setup-number">3</span>
+
+                <h3>Use the Backrest</h3>
+
+                <p>
+                  Allow the backrest to share the work of supporting your torso
+                  instead of sitting forward without support all day.
+                </p>
+              </div>
+
+              <div class="setup-card">
+                <span class="setup-number">4</span>
+
+                <h3>Relax Your Shoulders</h3>
+
+                <p>
+                  Adjust your chair and work surface so your shoulders do not
+                  need to lift while typing or using the mouse.
+                </p>
+              </div>
+            </div>
+
+            <div class="tip-box">
+              <h3>No Adjustable Chair?</h3>
+
+              <p>
+                You can still improve support with simple modifications. A firm
+                cushion may raise the sitting height, a small rolled towel may
+                add lower-back support, and a sturdy box or footrest can support
+                the feet.
+              </p>
+
+              <p>
+                Make sure any modification is stable and does not cause you to
+                slide forward.
+              </p>
+            </div>
+          </section>
+
+          <section id="desk">
+            <h2>2. Set a Comfortable Desk Height</h2>
+
+            <p>
+              When using the keyboard and mouse, your upper arms should be able
+              to remain close to your sides. Your forearms can rest
+              approximately parallel to the floor or angle slightly downward.
+            </p>
+
+            <p>
+              If the desk is too high, you may lift your shoulders or bend your
+              wrists upward. If it is too low, you may round forward or lower
+              your head toward the work surface.
+            </p>
+
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th scope="col">What You Notice</th>
+                  <th scope="col">Possible Adjustment</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Shoulders lifting while typing</td>
+
+                  <td>
+                    Raise the chair, lower the keyboard, or use a keyboard tray.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Feet no longer reach the floor</td>
+
+                  <td>Add a stable footrest after raising the chair.</td>
+                </tr>
+
+                <tr>
+                  <td>Leaning forward over the desk</td>
+
+                  <td>
+                    Move the keyboard, mouse, and frequently used items closer.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Wrists bending upward</td>
+
+                  <td>Lower the work surface or adjust keyboard placement.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              The desk does not need to match a universal measurement. It needs
+              to work with your body, chair, equipment, and primary tasks.
+            </p>
+          </section>
+
+          <section id="monitor">
+            <h2>3. Position Your Monitor</h2>
+
+            <p>
+              Place your primary monitor directly in front of you whenever
+              possible. This helps reduce the amount of time spent with your
+              head or torso rotated to one side.
+            </p>
+
+            <h3>Monitor positioning basics</h3>
+
+            <ul>
+              <li>
+                Keep the screen close enough that you can read comfortably
+                without leaning forward.
+              </li>
+
+              <li>
+                Position the top portion of the screen near or slightly below
+                eye level.
+              </li>
+
+              <li>Tilt the screen as needed to reduce glare.</li>
+
+              <li>
+                Increase text size instead of moving your face closer to the
+                screen.
+              </li>
+
+              <li>
+                Keep your most frequently used monitor centered in front of you.
+              </li>
+            </ul>
+
+            <div class="tip-box">
+              <h3>Using Two Monitors</h3>
+
+              <p>
+                When one monitor is used much more often than the other, center
+                the primary monitor and place the secondary screen beside it.
+              </p>
+
+              <p>
+                When both are used equally, place them close together with the
+                meeting point centered in front of you. Turn your chair and
+                torso when changing screens rather than repeatedly twisting only
+                your neck.
+              </p>
+            </div>
+
+            <h3>Working From a Laptop</h3>
+
+            <p>
+              A laptop places the screen and keyboard very close together, which
+              can make it difficult to position both comfortably at the same
+              time.
+            </p>
+
+            <p>
+              For longer work sessions, consider raising the laptop screen and
+              using a separate keyboard and mouse. A laptop stand is useful, but
+              a stable stack of books may also work as a temporary solution.
+            </p>
+          </section>
+
+          <section id="keyboard-mouse">
+            <h2>4. Place Your Keyboard and Mouse Within Reach</h2>
+
+            <p>
+              Keep your keyboard and mouse close enough that your elbows can
+              remain near your sides. Reaching forward or outward for long
+              periods can increase the workload on the shoulders, upper back,
+              and neck.
+            </p>
+
+            <h3>Keyboard</h3>
+
+            <ul>
+              <li>Center the keyboard around the keys you use most.</li>
+
+              <li>
+                Keep it close enough that you do not need to lean forward.
+              </li>
+
+              <li>
+                Let your wrists remain comfortable rather than forcing them into
+                a sharply bent position.
+              </li>
+
+              <li>Use light pressure when typing whenever possible.</li>
+            </ul>
+
+            <h3>Mouse</h3>
+
+            <ul>
+              <li>
+                Place the mouse beside the keyboard rather than far out to the
+                side.
+              </li>
+
+              <li>
+                Use the whole arm to guide larger movements instead of relying
+                only on the wrist.
+              </li>
+
+              <li>
+                Adjust pointer speed if you are repeatedly lifting and
+                repositioning the mouse.
+              </li>
+
+              <li>
+                Consider keyboard shortcuts to reduce repetitive mouse use.
+              </li>
+            </ul>
+
+            <div class="warning-box">
+              <h3>About Wrist Rests</h3>
+
+              <p>
+                A wrist rest can provide support during pauses, but avoid
+                pressing the wrist firmly into it while actively typing or using
+                the mouse. Keep the contact light and allow your fingers and
+                hands to move freely.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2>5. Arrange Frequently Used Items</h2>
+
+            <p>
+              Items you use throughout the day should be easy to reach without
+              repeated twisting, stretching, or leaning.
+            </p>
+
+            <ul>
+              <li>
+                Keep your phone, notebook, and other daily tools within
+                comfortable reach.
+              </li>
+
+              <li>
+                Place documents on a holder near the monitor when frequently
+                referencing them.
+              </li>
+
+              <li>
+                Use a headset or speaker function during longer calls instead of
+                holding the phone between your shoulder and ear.
+              </li>
+
+              <li>
+                Store less frequently used supplies farther away so they do not
+                crowd the main work area.
+              </li>
+            </ul>
+
+            <p>
+              Not every item needs to be reachable from your chair. Occasionally
+              standing to retrieve something can create a natural movement
+              break.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. Pay Attention to Lighting</h2>
+
+            <p>
+              Poor lighting can contribute to squinting, leaning toward the
+              screen, or holding the head in an awkward position to avoid glare.
+            </p>
+
+            <ul>
+              <li>
+                Position the screen away from direct reflections when possible.
+              </li>
+
+              <li>
+                Use blinds, curtains, or screen adjustments to manage window
+                glare.
+              </li>
+
+              <li>
+                Add a task light for paperwork instead of relying only on the
+                monitor.
+              </li>
+
+              <li>
+                Adjust screen brightness so it feels comfortable within the
+                room.
+              </li>
+            </ul>
+
+            <p>
+              If you continually move closer to the screen despite making
+              adjustments, an eye examination may help identify whether vision
+              changes are contributing to the problem.
+            </p>
+          </section>
+
+          <section id="movement">
+            <h2>7. Build Movement Into Your Workday</h2>
+
+            <p>
+              Even a carefully arranged workstation cannot replace movement.
+              Remaining in any one position for too long may become
+              uncomfortable, including positions commonly described as “good
+              posture.”
+            </p>
+
+            <div class="movement-plan">
+              <div class="movement-step">
+                <strong>Reset</strong>
+
+                <span>
+                  Let your shoulders soften and change your sitting position.
+                </span>
+              </div>
+
+              <div class="movement-step">
+                <strong>Move</strong>
+
+                <span>
+                  Stand, walk, stretch, or complete a task away from the desk.
+                </span>
+              </div>
+
+              <div class="movement-step">
+                <strong>Refocus</strong>
+
+                <span>
+                  Look away from the screen and give your eyes a different
+                  viewing distance.
+                </span>
+              </div>
+            </div>
+
+            <p>
+              Movement breaks do not always need to be long or formal. Standing
+              during a call, walking to refill your water, changing tasks, or
+              taking several relaxed breaths can all create useful variation.
+            </p>
+
+            <div class="tip-box">
+              <h3>Use Reminders Strategically</h3>
+
+              <p>
+                A timer, calendar notification, water bottle, or regularly
+                scheduled task can serve as a cue to move. Choose reminders that
+                fit naturally into your day instead of creating another source
+                of stress.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Standing Desks Still Require Variety</h2>
+
+            <p>
+              A standing desk can make it easier to alternate positions, but
+              standing all day is not automatically better than sitting all day.
+            </p>
+
+            <p>
+              When standing, keep the keyboard and mouse within easy reach,
+              avoid locking your knees, and shift your weight periodically. A
+              supportive mat or footrest may also provide more options for
+              changing position.
+            </p>
+
+            <p>
+              The greatest benefit often comes from the ability to move between
+              sitting, standing, and walking rather than treating one position
+              as the only correct choice.
+            </p>
+          </section>
+
+          <section>
+            <h2>Your Workstation Check</h2>
+
+            <p>Use this checklist after setting up your space:</p>
+
+            <ul class="checklist">
+              <li>My feet are supported by the floor or a stable footrest.</li>
+
+              <li>
+                My chair supports me without pressing into the backs of my
+                knees.
+              </li>
+
+              <li>My shoulders can remain relaxed while I work.</li>
+
+              <li>My keyboard and mouse are within comfortable reach.</li>
+
+              <li>My primary screen is positioned in front of me.</li>
+
+              <li>I can read the screen without leaning forward.</li>
+
+              <li>Frequently used items are easy to reach.</li>
+
+              <li>Screen glare and room lighting feel manageable.</li>
+
+              <li>
+                My setup allows me to change positions throughout the day.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Start With One Adjustment</h2>
+
+            <p>
+              You do not need to rebuild your entire workspace at once. Begin
+              with the issue that affects you most.
+            </p>
+
+            <p>
+              That might mean raising your screen, bringing the mouse closer,
+              adding foot support, increasing the text size, or setting a
+              reminder to stand between tasks.
+            </p>
+
+            <p>
+              Use the updated setup for several workdays, notice how it feels,
+              and continue adjusting as needed. Comfort can change depending on
+              the task, the length of the workday, and what your body needs at
+              that moment.
+            </p>
+          </section>
+
+          <div class="takeaway">
+            <h2>The FlowTherapy Takeaway</h2>
+
+            <p>
+              A better workstation supports comfortable work without expecting
+              your body to remain perfectly still. Arrange your space to reduce
+              unnecessary reaching and strain, then give yourself permission to
+              move, reposition, and reset throughout the day.
+            </p>
+          </div>
+
+          <p class="article-disclaimer">
+            This resource provides general wellness and workstation education
+            and is not a substitute for individualized medical, rehabilitation,
+            ergonomic, or occupational health advice. Persistent pain, numbness,
+            weakness, or other concerning symptoms should be evaluated by an
+            appropriate healthcare professional.
+          </p>
+        </article>
+      </div>
+
+      <section class="related-section" aria-labelledby="related-title">
+        <h2 id="related-title">Related Reading</h2>
+
+        <div class="related-grid">
+          <!--
+          Update these filenames only if your existing article files
+          use different names.
+        -->
+
+          <a class="related-card" href="preventing-tech-neck.html">
+            <span class="related-category"> Workplace Wellness </span>
+
+            <h3>Preventing Tech Neck</h3>
+
+            <p>
+              Learn how screen habits, positioning, and movement may affect neck
+              and upper-body comfort.
+            </p>
+
+            <span class="read-more"> Read article → </span>
+          </a>
+
+          <a class="related-card" href="standing-desks-helpful-or-hype.html">
+            <span class="related-category"> Workplace Wellness </span>
+
+            <h3>Standing Desks: Helpful or Hype?</h3>
+
+            <p>
+              Explore what standing desks can—and cannot—do for your workday.
+            </p>
+
+            <span class="read-more"> Read article → </span>
+          </a>
+
+          <a class="related-card" href="desk-stretches-for-a-busy-workday.html">
+            <span class="related-category"> Movement </span>
+
+            <h3>Desk Stretches for a Busy Workday</h3>
+
+            <p>
+              Try simple movement breaks that can fit between meetings and daily
+              tasks.
+            </p>
+
+            <span class="read-more"> Read article → </span>
+          </a>
+        </div>
+
+        <div class="library-button-wrap">
+          <a class="library-button" href="../pages/flowresources-redesign.html">
+            Return to FlowResources
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

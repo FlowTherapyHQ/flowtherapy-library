@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | How Often Should You Get Up From Your Desk?</title>
+    <meta
+      name="description"
+      content="Learn how often to change positions during desk work, how to use practical body and task cues, and how massage may support workplace recovery."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .desk-break-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(250px, 0.9fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+      .desk-break-opening > * {
+        padding: 30px;
+        border-radius: 18px;
+      }
+      .desk-break-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+      .desk-break-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+      .desk-break-opening h2,
+      .desk-break-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .break-cues,
+      .break-menu,
+      .break-massage {
+        margin: 42px 0;
+      }
+      .break-cues > h2,
+      .break-cues > p,
+      .break-menu > h2,
+      .break-menu > p,
+      .break-massage > h2,
+      .break-massage > p {
+        text-align: center;
+      }
+      .break-cues > p,
+      .break-menu > p,
+      .break-massage > p {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cue-grid,
+      .break-massage-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .cue-card,
+      .break-massage-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .cue-card h3,
+      .break-massage-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .cue-card p,
+      .break-massage-card p {
+        margin-bottom: 0;
+      }
+      .break-menu {
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .break-menu-list {
+        display: grid;
+        gap: 16px;
+        max-width: 860px;
+        margin: 28px auto 0;
+      }
+      .break-menu-row {
+        display: grid;
+        grid-template-columns: 180px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #fff;
+      }
+      .break-menu-label {
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+      }
+      .break-menu-copy {
+        padding: 22px 24px;
+      }
+      .break-menu-copy h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+      .break-menu-copy p {
+        margin: 0;
+      }
+      .break-rhythm {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+      .break-rhythm h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .break-rhythm li {
+        margin-bottom: 10px;
+      }
+      .important-note {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .important-note h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .related-card p {
+        flex: 1;
+      }
+      .related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+      .article-sources h2 {
+        color: #1677c8;
+      }
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+      .article-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .article-cta h2 {
+        color: #1677c8;
+      }
+      .article-cta p {
+        max-width: 680px;
+        margin: 0 auto 24px;
+      }
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      @media (max-width: 840px) {
+        .desk-break-opening,
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 700px) {
+        .cue-grid,
+        .break-massage-grid,
+        .break-menu-row {
+          grid-template-columns: 1fr;
+        }
+        .break-menu-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+      }
+    </style>
+  </head>
+  <body data-article-id="how-often-should-you-get-up-from-your-desk">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/workplace-wellness.html"
+          >← Back to Workplace Wellness FlowNotes</a
+        >
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Workplace Wellness</div>
+          <h1>How Often Should You Get Up From Your Desk?</h1>
+          <p class="article-subtitle">
+            Why there is no single perfect timer—and how to use practical cues,
+            short recovery pauses, and task changes throughout the workday.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span aria-hidden="true">•</span> August
+            2026 <span aria-hidden="true">•</span> 8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            You may have heard that you should stand every 30 minutes, walk
+            every hour, or follow a specific sit-to-stand ratio.
+          </p>
+          <p>
+            Those reminders can be helpful, but no single schedule fits every
+            person, task, health condition, or workplace.
+          </p>
+          <p>
+            A practical goal is to avoid remaining in one position for the
+            entire work block and to use frequent short pauses before discomfort
+            becomes severe.
+          </p>
+        </div>
+
+        <section class="desk-break-opening">
+          <div class="desk-break-opening-main">
+            <h2>Frequent Short Breaks Are Useful</h2>
+            <p>
+              OSHA encourages short microbreaks during computer work and
+              specifically recommends taking a five-minute break from computer
+              tasks each hour when practical.
+            </p>
+            <p>
+              That break may include looking away, stretching, standing,
+              walking, or completing another type of task.
+            </p>
+          </div>
+
+          <aside class="desk-break-opening-side">
+            <h3>
+              A Break From the Screen Does Not Always Mean a Break From Work
+            </h3>
+            <p>
+              Phone calls, filing, walking to another area, organizing supplies,
+              or speaking with a coworker may change physical demand while work
+              continues.
+            </p>
+          </aside>
+        </section>
+
+        <section class="break-cues">
+          <h2>Use More Than the Clock</h2>
+          <p>
+            Time-based reminders are helpful, but your body and work process
+            also provide useful cues.
+          </p>
+
+          <div class="cue-grid">
+            <article class="cue-card">
+              <h3>Your Position Has Not Changed</h3>
+              <p>
+                If you have been sitting, standing, leaning, or looking in one
+                direction for a long time, choose a different position.
+              </p>
+            </article>
+
+            <article class="cue-card">
+              <h3>Stiffness Is Beginning</h3>
+              <p>
+                Respond when the neck, shoulders, back, hips, hands, or legs
+                first begin to feel tired or restricted.
+              </p>
+            </article>
+
+            <article class="cue-card">
+              <h3>Your Attention Is Fading</h3>
+              <p>
+                Restlessness, repeated rereading, or difficulty focusing may be
+                a sign that a brief change of task would help.
+              </p>
+            </article>
+
+            <article class="cue-card">
+              <h3>Your Eyes Feel Tired</h3>
+              <p>
+                Look away from the screen, blink naturally, and change viewing
+                distance.
+              </p>
+            </article>
+
+            <article class="cue-card">
+              <h3>You Are Bracing</h3>
+              <p>
+                Jaw clenching, gripping, raised shoulders, shallow breathing, or
+                leaning forward can signal accumulated effort.
+              </p>
+            </article>
+
+            <article class="cue-card">
+              <h3>A Task Just Ended</h3>
+              <p>
+                Use natural transitions—after an email block, meeting, call, or
+                report—as built-in opportunities to move.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="break-menu">
+          <h2>Choose the Break That Fits the Time Available</h2>
+          <p>Not every break needs to be long or intense.</p>
+
+          <div class="break-menu-list">
+            <article class="break-menu-row">
+              <div class="break-menu-label">20–30 Seconds</div>
+              <div class="break-menu-copy">
+                <h3>Change Position</h3>
+                <p>
+                  Sit back, reposition the feet, relax the hands, lower the
+                  shoulders, or look away from the screen.
+                </p>
+              </div>
+            </article>
+
+            <article class="break-menu-row">
+              <div class="break-menu-label">One Minute</div>
+              <div class="break-menu-copy">
+                <h3>Stand or Walk Briefly</h3>
+                <p>
+                  Take several steps, refill water, or complete a small task
+                  away from the workstation.
+                </p>
+              </div>
+            </article>
+
+            <article class="break-menu-row">
+              <div class="break-menu-label">Two Minutes</div>
+              <div class="break-menu-copy">
+                <h3>Complete a Full Reset</h3>
+                <p>
+                  Look away, stand or shift, move the shoulders and spine, and
+                  reorganize the workstation.
+                </p>
+              </div>
+            </article>
+
+            <article class="break-menu-row">
+              <div class="break-menu-label">Five Minutes</div>
+              <div class="break-menu-copy">
+                <h3>Leave the Computer Task</h3>
+                <p>
+                  Walk, stretch comfortably, speak with a coworker, or complete
+                  a different physical task.
+                </p>
+              </div>
+            </article>
+
+            <article class="break-menu-row">
+              <div class="break-menu-label">Longer Break</div>
+              <div class="break-menu-copy">
+                <h3>Eat, Move, and Recover</h3>
+                <p>
+                  Use meal and scheduled breaks for nourishment, outdoor time,
+                  walking, rest, and a real change of environment.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="break-rhythm">
+          <h2>A Realistic Workday Rhythm</h2>
+          <ul>
+            <li>
+              Change position whenever the current one begins to feel tiring.
+            </li>
+            <li>
+              Use a brief pause between meetings, calls, or focused work blocks.
+            </li>
+            <li>
+              Aim for a five-minute break from computer tasks each hour when
+              practical.
+            </li>
+            <li>
+              Include longer meal and recovery breaks rather than relying only
+              on microbreaks.
+            </li>
+            <li>
+              Alternate seated, standing, and walking tasks when the work
+              allows.
+            </li>
+            <li>
+              Pair workplace breaks with regular physical activity outside of
+              work.
+            </li>
+          </ul>
+        </section>
+
+        <section class="break-massage">
+          <h2>How Massage Fits Into a Desk-Break Routine</h2>
+          <p>
+            Movement breaks can reduce the buildup of stiffness, while
+            therapeutic massage can provide more focused support for areas that
+            remain overworked.
+          </p>
+
+          <div class="break-massage-grid">
+            <article class="break-massage-card">
+              <h3>Neck and Shoulder Recovery</h3>
+              <p>
+                Massage may help reduce tension related to concentration, screen
+                use, and sustained arm positioning.
+              </p>
+            </article>
+
+            <article class="break-massage-card">
+              <h3>Back and Hip Comfort</h3>
+              <p>
+                Therapeutic work can address areas that feel stiff or fatigued
+                after long periods of sitting or standing.
+              </p>
+            </article>
+
+            <article class="break-massage-card">
+              <h3>Forearm and Hand Support</h3>
+              <p>
+                Massage can include muscles affected by typing, mouse use,
+                gripping, and repetitive device handling.
+              </p>
+            </article>
+
+            <article class="break-massage-card">
+              <h3>Movement Readiness</h3>
+              <p>
+                When muscular guarding decreases, walking, stretching, and
+                regular activity may feel easier to continue.
+              </p>
+            </article>
+
+            <article class="break-massage-card">
+              <h3>Body Awareness</h3>
+              <p>
+                A session may help you recognize bracing, breath-holding,
+                leaning, or shoulder elevation earlier.
+              </p>
+            </article>
+
+            <article class="break-massage-card">
+              <h3>Planned Maintenance</h3>
+              <p>
+                Regular massage can support an ongoing workplace wellness
+                routine instead of waiting until pain disrupts work.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Standing Is Not the Only Break</h2>
+          <p>
+            Standing still at the same workstation may change some muscular
+            demands, but it does not provide the same variety as walking,
+            changing tasks, or moving through different positions.
+          </p>
+          <p>
+            The goal is not to replace prolonged sitting with prolonged
+            standing. The goal is regular variation.
+          </p>
+        </section>
+
+        <section>
+          <h2>Breaks Cannot Fix an Unsustainable Workload</h2>
+          <p>
+            Microbreaks are helpful, but they cannot compensate for chronic
+            understaffing, skipped meals, excessive hours, inadequate sleep,
+            unsafe working conditions, or a workstation that cannot be adjusted.
+          </p>
+          <p>
+            Workplace wellness should include both personal habits and
+            reasonable working conditions.
+          </p>
+        </section>
+
+        <section class="important-note">
+          <h2>When to Seek Medical Care</h2>
+          <p>
+            Persistent or worsening pain, weakness, numbness, severe swelling,
+            loss of coordination, chest pain, shortness of breath, symptoms
+            after an injury, or discomfort that interferes with work, sleep, or
+            daily activity should be evaluated by a qualified healthcare
+            professional.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>
+            You do not need to follow one perfect timer to care for your body at
+            work.
+          </p>
+          <p>
+            Frequent position changes, brief recovery pauses, longer breaks,
+            regular movement, and massage can work together.
+          </p>
+          <p>
+            The best schedule is one you can repeat consistently before tension
+            becomes overwhelming.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section>
+          <h2 style="text-align: center; color: #1677c8">Continue Reading</h2>
+
+          <div class="related-grid">
+            <a
+              href="the-2-minute-reset-between-meetings.html"
+              class="related-card"
+            >
+              <h3>The 2-Minute Reset Between Meetings</h3>
+              <p>
+                Use a short transition to restore movement, attention, and
+                comfort before the next demand.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="five-minute-movement-breaks-for-busy-workdays.html"
+              class="related-card"
+            >
+              <h3>Five-Minute Movement Breaks for Busy Workdays</h3>
+              <p>
+                Explore practical movements that fit into a real work schedule.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="standing-desks-helpful-or-hype.html" class="related-card">
+              <h3>Standing Desks: Helpful or Hype?</h3>
+              <p>
+                Learn why movement variety matters more than standing all day.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She helps
+            people move better, feel better, and live better through
+            evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/work-process"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Computer Workstation Work Process and Microbreaks</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations/checklists/evaluation"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OSHA: Workstation Evaluation Checklist</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cdc.gov/pcd/issues/2014/13_0318.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CDC: Prompts to Disrupt Sitting Time at Work</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CDC: Adult Physical Activity Guidelines</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCIH: Massage Therapy</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Support Your Body Between Workdays</h2>
+          <p>
+            Schedule a FlowTherapy session centered around your neck, shoulders,
+            back, hips, forearms, hands, work demands, and recovery goals.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Workplace Wellness
+            articles.
+          </p>
+          <ul>
+            <li>Massage for Office Workers</li>
+            <li>Why You Clench Your Jaw at Work</li>
+            <li>Office Recovery After a Long Day</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Why Walking Is Underrated</title>
+
+    <meta
+      name="description"
+      content="Learn why walking is a practical form of exercise, how it supports mobility, endurance, mood, sleep, balance, and recovery, and how massage may help make regular walking feel more comfortable."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .walking-opening {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(250px, 0.9fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+
+      .walking-opening-main,
+      .walking-opening-side {
+        padding: 30px;
+        border-radius: 18px;
+      }
+
+      .walking-opening-main {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+
+      .walking-opening-side {
+        border-left: 5px solid #1677c8;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .walking-opening h2,
+      .walking-opening h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .walking-opening p:last-child {
+        margin-bottom: 0;
+      }
+
+      .walking-layers {
+        margin: 42px 0;
+      }
+
+      .walking-layers > h2,
+      .walking-layers > p {
+        text-align: center;
+      }
+
+      .walking-layers > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .walking-layer-stack {
+        display: grid;
+        gap: 16px;
+        max-width: 860px;
+        margin: 28px auto 0;
+      }
+
+      .walking-layer {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .walking-layer-label {
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        border-right: 1px solid #d6e7f7;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .walking-layer-copy {
+        padding: 22px 24px;
+      }
+
+      .walking-layer-copy h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .walking-layer-copy p {
+        margin: 0;
+      }
+
+      .walking-pace {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .walking-pace > h2,
+      .walking-pace > p {
+        text-align: center;
+      }
+
+      .walking-pace > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .walking-pace > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .walking-pace-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .walking-pace-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .walking-pace-card span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .walking-pace-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .walking-pace-card p {
+        margin-bottom: 0;
+      }
+
+      .walking-day {
+        margin: 42px 0;
+      }
+
+      .walking-day > h2,
+      .walking-day > p {
+        text-align: center;
+      }
+
+      .walking-day > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .walking-day-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      .walking-day-item {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .walking-day-time {
+        padding: 12px;
+        border-radius: 12px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .walking-day-copy h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .walking-day-copy p {
+        margin: 0;
+      }
+
+      .walking-barriers {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .walking-barriers h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .walking-barriers ul {
+        margin-bottom: 0;
+      }
+
+      .walking-barriers li {
+        margin-bottom: 10px;
+      }
+
+      .massage-walking {
+        margin: 42px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 10px 26px rgba(20, 55, 85, 0.06);
+      }
+
+      .massage-walking h2,
+      .massage-walking > p {
+        text-align: center;
+      }
+
+      .massage-walking h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .massage-walking > p {
+        max-width: 740px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .massage-walking-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .massage-walking-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #f7fbff;
+      }
+
+      .massage-walking-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .massage-walking-card p {
+        margin-bottom: 0;
+      }
+
+      .walking-plan {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .walking-plan > h2,
+      .walking-plan > p {
+        text-align: center;
+      }
+
+      .walking-plan > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .walking-plan > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .walking-plan-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .walking-plan-card {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .walking-plan-card span {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .walking-plan-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+
+      .walking-plan-card p {
+        margin: 0;
+      }
+
+      .walking-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .walking-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .walking-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .walking-related {
+        margin: 38px 0;
+      }
+
+      .walking-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .walking-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .walking-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .walking-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .walking-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .walking-related-card p {
+        flex: 1;
+      }
+
+      .walking-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      .walking-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .walking-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .walking-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        color: #1677c8;
+        text-align: center;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 860px) {
+        .walking-opening,
+        .walking-related-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .walking-pace-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .walking-layer,
+        .walking-day-item,
+        .massage-walking-grid,
+        .walking-plan-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .walking-layer-label {
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+        }
+
+        .walking-day-time {
+          width: fit-content;
+        }
+
+        .walking-opening-main,
+        .walking-opening-side,
+        .walking-pace,
+        .massage-walking,
+        .walking-plan,
+        .walking-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="why-walking-is-underrated">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/movement-mobility.html">
+          ← Back to Movement &amp; Mobility FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Movement &amp; Mobility</div>
+
+          <h1>Why Walking Is Underrated</h1>
+
+          <p class="article-subtitle">
+            Why one of the simplest forms of movement can support endurance,
+            mobility, mood, sleep, balance, and everyday recovery.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>Walking is so familiar that it is easy to overlook as exercise.</p>
+
+          <p>
+            It does not require a complicated program, expensive equipment, or a
+            high-intensity workout. It can be adapted to different speeds,
+            distances, surfaces, schedules, and ability levels.
+          </p>
+
+          <p>
+            For many people, walking is one of the most practical ways to build
+            regular movement into daily life.
+          </p>
+        </div>
+
+        <section class="walking-opening">
+          <div class="walking-opening-main">
+            <h2>Walking Counts</h2>
+
+            <p>
+              Brisk walking is a moderate-intensity aerobic activity and can
+              contribute toward the weekly physical activity recommended for
+              adults.
+            </p>
+
+            <p>
+              Slower walking can also be valuable for mobility, recovery,
+              confidence, circulation, and reducing long periods of inactivity.
+            </p>
+          </div>
+
+          <aside class="walking-opening-side">
+            <h3>You Do Not Need 10,000 Steps to Begin</h3>
+
+            <p>
+              A round number can be motivating, but it is not a universal
+              requirement. Start from your current level and gradually build a
+              realistic amount of walking.
+            </p>
+          </aside>
+        </section>
+
+        <section class="walking-layers">
+          <h2>What Walking Can Support</h2>
+
+          <p>
+            Walking affects more than the legs. It challenges several systems at
+            once in a way that can be easy to scale.
+          </p>
+
+          <div class="walking-layer-stack">
+            <article class="walking-layer">
+              <div class="walking-layer-label">Heart and Lungs</div>
+              <div class="walking-layer-copy">
+                <h3>Aerobic Endurance</h3>
+                <p>
+                  A brisk pace can raise heart rate and breathing enough to
+                  build cardiovascular fitness over time.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-layer">
+              <div class="walking-layer-label">Muscles and Joints</div>
+              <div class="walking-layer-copy">
+                <h3>Repeated, Functional Movement</h3>
+                <p>
+                  Walking uses the hips, knees, ankles, feet, trunk, and arms in
+                  a familiar pattern that supports everyday movement capacity.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-layer">
+              <div class="walking-layer-label">Balance and Coordination</div>
+              <div class="walking-layer-copy">
+                <h3>Confidence With Movement</h3>
+                <p>
+                  Each step requires weight transfer, timing, balance, and
+                  coordination between the trunk and limbs.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-layer">
+              <div class="walking-layer-label">Mood and Stress</div>
+              <div class="walking-layer-copy">
+                <h3>A Change of Environment</h3>
+                <p>
+                  Walking may support mood, reduce stress, provide mental space,
+                  and create a break from screens or repetitive tasks.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-layer">
+              <div class="walking-layer-label">Sleep and Energy</div>
+              <div class="walking-layer-copy">
+                <h3>Regular Daily Activity</h3>
+                <p>
+                  Physical activity can support sleep quality, daily function,
+                  and overall energy.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="walking-pace">
+          <h2>Not Every Walk Has the Same Goal</h2>
+
+          <p>Pace and purpose can change from day to day.</p>
+
+          <div class="walking-pace-grid">
+            <article class="walking-pace-card">
+              <span>Recovery Walk</span>
+              <h3>Easy and Comfortable</h3>
+              <p>
+                Use a relaxed pace after a long workday, travel, exercise, or
+                massage when comfortable movement feels helpful.
+              </p>
+            </article>
+
+            <article class="walking-pace-card">
+              <span>Everyday Walk</span>
+              <h3>Steady and Sustainable</h3>
+              <p>
+                Walk at a pace that feels purposeful but still allows
+                conversation.
+              </p>
+            </article>
+
+            <article class="walking-pace-card">
+              <span>Fitness Walk</span>
+              <h3>Brisk and More Demanding</h3>
+              <p>
+                Increase pace, hills, distance, or duration gradually when the
+                goal is to challenge aerobic fitness.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="walking-day">
+          <h2>Walking Can Be Spread Across the Day</h2>
+
+          <p>One long walk is not the only way to accumulate movement.</p>
+
+          <div class="walking-day-list">
+            <article class="walking-day-item">
+              <div class="walking-day-time">Morning</div>
+              <div class="walking-day-copy">
+                <h3>Start With Five to Ten Minutes</h3>
+                <p>
+                  Use a short walk to loosen up, get outside, or transition into
+                  the day.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-day-item">
+              <div class="walking-day-time">Midday</div>
+              <div class="walking-day-copy">
+                <h3>Break Up Sitting</h3>
+                <p>
+                  Walk after lunch, between appointments, or during a phone
+                  call.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-day-item">
+              <div class="walking-day-time">Afternoon</div>
+              <div class="walking-day-copy">
+                <h3>Reset Energy and Attention</h3>
+                <p>
+                  A short walk may help reduce stiffness and provide a mental
+                  break.
+                </p>
+              </div>
+            </article>
+
+            <article class="walking-day-item">
+              <div class="walking-day-time">Evening</div>
+              <div class="walking-day-copy">
+                <h3>Use a Comfortable Wind-Down Pace</h3>
+                <p>
+                  Choose a safe route and a pace that supports relaxation rather
+                  than leaving you overstimulated before bed.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="walking-barriers">
+          <h2>When Walking Feels Hard to Start</h2>
+
+          <ul>
+            <li>
+              Begin with two to five minutes rather than waiting for a full
+              workout window.
+            </li>
+            <li>
+              Use a hallway, indoor public space, treadmill, or seated stepping
+              when weather or safety is a concern.
+            </li>
+            <li>
+              Choose flatter surfaces and supportive footwear when hills or
+              uneven ground increase symptoms.
+            </li>
+            <li>
+              Walk with another person when company improves safety, confidence,
+              or consistency.
+            </li>
+            <li>
+              Use a mobility aid when it has been recommended and helps you move
+              more safely.
+            </li>
+            <li>
+              Schedule supportive massage or rehabilitation when pain and
+              muscular tension keep interrupting the routine.
+            </li>
+          </ul>
+        </section>
+
+        <section class="massage-walking">
+          <h2>How Massage Can Support a Walking Routine</h2>
+
+          <p>
+            Massage can help make regular walking feel more comfortable by
+            supporting the muscles and soft tissues that repeatedly work during
+            each step.
+          </p>
+
+          <div class="massage-walking-grid">
+            <article class="massage-walking-card">
+              <h3>Ease Leg and Hip Tension</h3>
+              <p>
+                Therapeutic massage may help the calves, thighs, glutes, hips,
+                and lower back feel less tight or overworked.
+              </p>
+            </article>
+
+            <article class="massage-walking-card">
+              <h3>Support Recovery Between Walks</h3>
+              <p>
+                Massage can complement sleep, hydration, nutrition, gradual
+                training, and comfortable movement after increased activity.
+              </p>
+            </article>
+
+            <article class="massage-walking-card">
+              <h3>Improve Movement Readiness</h3>
+              <p>
+                When muscular guarding decreases, walking may feel easier to
+                begin and more comfortable to continue.
+              </p>
+            </article>
+
+            <article class="massage-walking-card">
+              <h3>Address Foot and Lower-Leg Fatigue</h3>
+              <p>
+                Focused work through the feet, ankles, and calves may be useful
+                when those areas feel tired after long periods of standing or
+                walking.
+              </p>
+            </article>
+
+            <article class="massage-walking-card">
+              <h3>Support Body Awareness</h3>
+              <p>
+                A session may help you notice gripping, breath-holding, uneven
+                weight shifting, or areas that consistently work harder.
+              </p>
+            </article>
+
+            <article class="massage-walking-card">
+              <h3>Encourage Consistent Care</h3>
+              <p>
+                Regular massage can support a sustainable movement routine
+                rather than waiting until discomfort stops activity completely.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="walking-plan">
+          <h2>Build a Walking Plan That Lasts</h2>
+
+          <p>Progress does not require a dramatic starting point.</p>
+
+          <div class="walking-plan-grid">
+            <article class="walking-plan-card">
+              <span>Start</span>
+              <h3>Use Your Current Baseline</h3>
+              <p>
+                Choose a distance or duration you can complete without causing a
+                major symptom flare.
+              </p>
+            </article>
+
+            <article class="walking-plan-card">
+              <span>Repeat</span>
+              <h3>Walk Often Enough to Build Familiarity</h3>
+              <p>
+                A smaller amount repeated consistently can be more useful than
+                an occasional long walk.
+              </p>
+            </article>
+
+            <article class="walking-plan-card">
+              <span>Progress</span>
+              <h3>Change One Variable at a Time</h3>
+              <p>
+                Increase time, pace, hills, or distance gradually rather than
+                changing everything at once.
+              </p>
+            </article>
+
+            <article class="walking-plan-card">
+              <span>Recover</span>
+              <h3>Plan for Rest and Support</h3>
+              <p>
+                Use sleep, food, hydration, massage, and easier days to support
+                adaptation.
+              </p>
+            </article>
+
+            <article class="walking-plan-card">
+              <span>Adjust</span>
+              <h3>Respond to the Day You Are Having</h3>
+              <p>
+                Pain, fatigue, illness, heat, stress, and schedule may require a
+                shorter or slower walk.
+              </p>
+            </article>
+
+            <article class="walking-plan-card">
+              <span>Expand</span>
+              <h3>Add Strength and Balance Work</h3>
+              <p>
+                Walking is valuable, but adults also benefit from
+                muscle-strengthening activity, and older adults benefit from
+                balance work.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Walking Cannot Do Alone</h2>
+
+          <p>
+            Walking is a strong foundation, but it does not replace all forms of
+            exercise. Strength, balance, mobility, and activity-specific
+            training may also be important.
+          </p>
+
+          <p>
+            Walking also cannot diagnose the cause of pain or replace medical
+            evaluation when symptoms are persistent, severe, or worsening.
+          </p>
+        </section>
+
+        <section class="walking-warning">
+          <h2>When to Stop and Seek Medical Care</h2>
+
+          <p>
+            Stop walking and seek prompt evaluation for chest pain, fainting,
+            severe shortness of breath, sudden weakness or numbness, severe
+            dizziness, inability to bear weight, rapidly increasing swelling,
+            calf pain with one-sided swelling, or symptoms after a major fall or
+            injury. Persistent pain, balance problems, or breathlessness that
+            limits normal walking should be discussed with a healthcare
+            professional.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>Walking does not need to look impressive to be valuable.</p>
+
+          <p>
+            It can support mobility, endurance, mood, recovery, and confidence
+            while fitting into ordinary life.
+          </p>
+
+          <p>
+            Massage can help reduce tension and support recovery so walking
+            feels more available, comfortable, and sustainable.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="walking-related">
+          <h2>Continue Reading</h2>
+
+          <div class="walking-related-grid">
+            <a
+              href="morning-mobility-routine.html"
+              class="walking-related-card"
+            >
+              <h3>Morning Mobility Routine</h3>
+              <p>
+                Use a gentle head-to-toe routine to prepare the neck, shoulders,
+                spine, hips, and ankles for the day.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-sitting-all-day-feels-so-bad.html"
+              class="walking-related-card"
+            >
+              <h3>Why Sitting All Day Feels So Bad</h3>
+              <p>
+                Learn how prolonged sitting can contribute to stiffness,
+                fatigue, and reduced movement variety.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-your-hips-affect-your-back.html"
+              class="walking-related-card"
+            >
+              <h3>Why Your Hips Affect Your Back</h3>
+              <p>
+                Explore how the hips, pelvis, trunk, strength, and movement
+                habits can influence low-back comfort.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Adult Physical
+                Activity Guidelines
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/about/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                Basics and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/benefitsofexercise.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Benefits of Exercise
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nia.nih.gov/health/exercise-and-physical-activity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institute on Aging: Exercise and Physical Activity
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health:
+                Massage Therapy
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="walking-cta">
+          <h2>Make Walking More Comfortable and Sustainable</h2>
+
+          <p>
+            Looking for therapeutic care for the feet, calves, legs, hips, or
+            lower back? Schedule a FlowTherapy session centered around your
+            movement goals, comfort, boundaries, and recovery needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Movement &amp; Mobility
+            articles.
+          </p>
+
+          <ul>
+            <li>Mobility After 40</li>
+            <li>How Often Should You Stretch?</li>
+            <li>Why Strength Supports Mobility</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

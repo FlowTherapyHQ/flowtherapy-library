@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | Can Massage Help Posture?</title>
+    <meta
+      name="description"
+      content="Learn what posture is, why there is no single perfect position, how comfort and movement variety matter, and where massage may fit into a broader posture-support plan."
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .posture-hero-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+        gap: 24px;
+        margin: 36px 0 42px;
+      }
+      .posture-hero-copy,
+      .posture-hero-note {
+        padding: 30px;
+        border-radius: 18px;
+      }
+      .posture-hero-copy {
+        border: 1px solid #cfe2f5;
+        background: #f4f9fe;
+      }
+      .posture-hero-note {
+        border: 1px solid #d6e7f7;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+      .posture-hero-panel h2,
+      .posture-hero-panel h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-hero-panel p:last-child {
+        margin-bottom: 0;
+      }
+
+      .posture-principles {
+        margin: 42px 0;
+      }
+      .posture-principles > h2,
+      .posture-principles > p {
+        text-align: center;
+      }
+      .posture-principles > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .posture-principles-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .posture-principle {
+        display: grid;
+        grid-template-columns: 64px minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+      }
+      .posture-principle-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 14px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 1.1rem;
+        font-weight: 800;
+      }
+      .posture-principle h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+      }
+      .posture-principle p {
+        margin: 0;
+      }
+
+      .posture-context {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .posture-context > h2,
+      .posture-context > p {
+        text-align: center;
+      }
+      .posture-context > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-context > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .posture-context-table {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        overflow: hidden;
+        margin-top: 28px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #fff;
+      }
+      .posture-context-column {
+        padding: 26px;
+      }
+      .posture-context-column:nth-child(2) {
+        border-right: 1px solid #d6e7f7;
+        border-left: 1px solid #d6e7f7;
+        background: #f4f9fe;
+      }
+      .posture-context-column h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-context-column p:last-child {
+        margin-bottom: 0;
+      }
+
+      .posture-body-map {
+        margin: 42px 0;
+      }
+      .posture-body-map > h2,
+      .posture-body-map > p {
+        text-align: center;
+      }
+      .posture-body-map > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .posture-regions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 28px;
+      }
+      .posture-region {
+        padding: 24px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .posture-region h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-region p {
+        margin-bottom: 0;
+      }
+
+      .massage-role {
+        margin: 42px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 16px;
+        background: #f5f9fd;
+      }
+      .massage-role h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .massage-role p:last-child {
+        margin-bottom: 0;
+      }
+
+      .posture-plan {
+        margin: 42px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .posture-plan > h2,
+      .posture-plan > p {
+        text-align: center;
+      }
+      .posture-plan > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-plan > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .posture-plan-track {
+        position: relative;
+        display: grid;
+        gap: 18px;
+        max-width: 820px;
+        margin: 30px auto 0;
+      }
+      .posture-plan-track::before {
+        position: absolute;
+        top: 22px;
+        bottom: 22px;
+        left: 29px;
+        width: 2px;
+        background: #cfe2f5;
+        content: "";
+      }
+      .posture-plan-step {
+        position: relative;
+        display: grid;
+        grid-template-columns: 60px minmax(0, 1fr);
+        gap: 18px;
+      }
+      .posture-plan-marker {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border: 6px solid #f7fbff;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #fff;
+        font-weight: 800;
+        box-shadow: 0 0 0 1px #cfe2f5;
+      }
+      .posture-plan-copy {
+        padding: 20px 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #fff;
+      }
+      .posture-plan-copy h3 {
+        margin: 0 0 7px;
+        color: #1677c8;
+      }
+      .posture-plan-copy p {
+        margin: 0;
+      }
+
+      .posture-workstation {
+        margin: 42px 0;
+      }
+      .posture-workstation > h2,
+      .posture-workstation > p {
+        text-align: center;
+      }
+      .posture-workstation > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .workstation-checklist {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .workstation-item {
+        padding: 22px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #fff;
+      }
+      .workstation-item strong {
+        display: block;
+        margin-bottom: 7px;
+        color: #1677c8;
+      }
+      .workstation-item p {
+        margin: 0;
+      }
+
+      .posture-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .posture-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .posture-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .posture-related {
+        margin: 38px 0;
+      }
+      .posture-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .posture-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .posture-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .posture-related-card:hover {
+        transform: translateY(-3px);
+      }
+      .posture-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-related-card p {
+        flex: 1;
+      }
+      .posture-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .posture-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .posture-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .posture-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 860px) {
+        .posture-hero-panel,
+        .posture-related-grid {
+          grid-template-columns: 1fr;
+        }
+        .posture-context-table {
+          grid-template-columns: 1fr;
+        }
+        .posture-context-column:nth-child(2) {
+          border: 0;
+          border-top: 1px solid #d6e7f7;
+          border-bottom: 1px solid #d6e7f7;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .posture-regions,
+        .workstation-checklist {
+          grid-template-columns: 1fr;
+        }
+        .posture-hero-copy,
+        .posture-hero-note,
+        .posture-context,
+        .posture-plan,
+        .posture-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+        .posture-plan-track::before {
+          left: 25px;
+        }
+        .posture-plan-step {
+          grid-template-columns: 52px minmax(0, 1fr);
+          gap: 14px;
+        }
+        .posture-plan-marker {
+          width: 52px;
+          height: 52px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="can-massage-help-posture">
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/massage-education.html"
+          >← Back to Massage Education FlowNotes</a
+        >
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Massage Education</div>
+          <h1>Can Massage Help Posture?</h1>
+          <p class="article-subtitle">
+            What posture actually is, why there is no single perfect position,
+            and where massage may fit into a broader comfort and movement plan.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span aria-hidden="true">•</span> August
+            2026 <span aria-hidden="true">•</span> 8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Posture is often treated like a test: shoulders back, chest up,
+            stomach tight, and spine perfectly straight.
+          </p>
+          <p>
+            Real posture is more adaptable than that. It changes while you sit,
+            stand, walk, work, lift, rest, and respond to your environment.
+          </p>
+          <p>
+            Massage may help with comfort, muscle tension, and body awareness,
+            but it does not permanently “correct” posture by itself.
+          </p>
+        </div>
+
+        <section class="posture-hero-panel">
+          <div class="posture-hero-copy">
+            <h2>Posture Is a Position, Not a Personality</h2>
+            <p>
+              Posture describes how the body is arranged during stillness and
+              movement. It is influenced by anatomy, comfort, task demands,
+              fatigue, habit, environment, strength, mobility, pain, and mood.
+            </p>
+            <p>
+              A position that works well for one task may not work well for
+              another.
+            </p>
+          </div>
+          <aside class="posture-hero-note">
+            <h3>No Single Position Fits Everyone</h3>
+            <p>
+              Workstation guidance can be useful, but even OSHA notes that there
+              is no single “correct” posture or equipment arrangement that fits
+              every person.
+            </p>
+          </aside>
+        </section>
+
+        <section class="posture-principles">
+          <h2>Four Principles That Matter More Than “Perfect Posture”</h2>
+          <p>
+            Comfort usually depends on more than whether your shoulders look
+            level or your spine appears straight.
+          </p>
+          <div class="posture-principles-list">
+            <article class="posture-principle">
+              <div class="posture-principle-number">01</div>
+              <div>
+                <h3>Support the Task</h3>
+                <p>
+                  The best position helps you perform the activity with less
+                  unnecessary effort. Reading, lifting, typing, driving, and
+                  sleeping all require different support.
+                </p>
+              </div>
+            </article>
+            <article class="posture-principle">
+              <div class="posture-principle-number">02</div>
+              <div>
+                <h3>Change Positions Regularly</h3>
+                <p>
+                  Even a comfortable position can become tiring when held too
+                  long. Movement variety often matters more than maintaining one
+                  ideal pose.
+                </p>
+              </div>
+            </article>
+            <article class="posture-principle">
+              <div class="posture-principle-number">03</div>
+              <div>
+                <h3>Reduce Unnecessary Effort</h3>
+                <p>
+                  Jaw clenching, shoulder elevation, breath-holding, and
+                  gripping may add muscular demand without improving the task.
+                </p>
+              </div>
+            </article>
+            <article class="posture-principle">
+              <div class="posture-principle-number">04</div>
+              <div>
+                <h3>Build Capacity</h3>
+                <p>
+                  Strength, endurance, mobility, sleep, and gradual exposure to
+                  activity can help the body tolerate more positions and tasks.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="posture-context">
+          <h2>Posture Changes With Context</h2>
+          <p>
+            The same body may use several different positions throughout one
+            day—and each can be appropriate for the moment.
+          </p>
+          <div class="posture-context-table">
+            <article class="posture-context-column">
+              <h3>While Working</h3>
+              <p>
+                Screen height, keyboard position, chair support, reach distance,
+                lighting, and breaks can all influence comfort.
+              </p>
+            </article>
+            <article class="posture-context-column">
+              <h3>While Moving</h3>
+              <p>
+                The body naturally bends, rotates, shifts weight, and changes
+                alignment. Movement does not require rigid symmetry.
+              </p>
+            </article>
+            <article class="posture-context-column">
+              <h3>While Resting</h3>
+              <p>
+                Pillows, mattress support, pain, breathing, pregnancy, and habit
+                may affect which positions feel restorative.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="posture-body-map">
+          <h2>Where Posture-Related Discomfort May Be Felt</h2>
+          <p>
+            These areas can become uncomfortable for many reasons. Posture may
+            contribute, but it should not automatically be assumed to be the
+            only cause.
+          </p>
+          <div class="posture-regions">
+            <article class="posture-region">
+              <h3>Neck and Upper Shoulders</h3>
+              <p>
+                Screen position, prolonged concentration, reduced movement,
+                vision demands, and elevated shoulders may all increase effort.
+              </p>
+            </article>
+            <article class="posture-region">
+              <h3>Mid Back and Ribs</h3>
+              <p>
+                Long sitting, reaching, breathing patterns, and limited trunk
+                movement may contribute to stiffness or fatigue.
+              </p>
+            </article>
+            <article class="posture-region">
+              <h3>Low Back and Hips</h3>
+              <p>
+                Sitting duration, chair support, lifting demands, activity
+                level, sleep, and prior injury may influence symptoms.
+              </p>
+            </article>
+            <article class="posture-region">
+              <h3>Forearms, Wrists, and Hands</h3>
+              <p>
+                Repetition, keyboard position, gripping, tool use, and limited
+                recovery time can contribute to discomfort.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="massage-role">
+          <h2>How Massage May Help</h2>
+          <p>
+            Massage may help some people experience less muscle tension,
+            temporary pain relief, improved comfort, and greater awareness of
+            how they are holding the body.
+          </p>
+          <p>
+            A session can also create an opportunity to notice jaw clenching,
+            breath-holding, shoulder elevation, or areas that feel overworked.
+          </p>
+          <p>
+            Massage does not permanently realign the skeleton, erase every
+            asymmetry, or guarantee lasting postural change.
+          </p>
+        </section>
+
+        <section class="posture-plan">
+          <h2>A More Complete Posture-Support Plan</h2>
+          <p>
+            Lasting comfort usually comes from combining several forms of
+            support rather than relying on one treatment.
+          </p>
+          <div class="posture-plan-track">
+            <article class="posture-plan-step">
+              <div class="posture-plan-marker">1</div>
+              <div class="posture-plan-copy">
+                <h3>Adjust the Environment</h3>
+                <p>
+                  Change monitor height, chair support, reach distance,
+                  lighting, tools, or work surface when the setup is creating
+                  unnecessary demand.
+                </p>
+              </div>
+            </article>
+            <article class="posture-plan-step">
+              <div class="posture-plan-marker">2</div>
+              <div class="posture-plan-copy">
+                <h3>Increase Movement Variety</h3>
+                <p>
+                  Alternate sitting, standing, walking, reaching, and other
+                  comfortable positions when possible.
+                </p>
+              </div>
+            </article>
+            <article class="posture-plan-step">
+              <div class="posture-plan-marker">3</div>
+              <div class="posture-plan-copy">
+                <h3>Build Strength and Endurance</h3>
+                <p>
+                  Exercise or rehabilitation may help the body tolerate work,
+                  lifting, and daily activity more comfortably.
+                </p>
+              </div>
+            </article>
+            <article class="posture-plan-step">
+              <div class="posture-plan-marker">4</div>
+              <div class="posture-plan-copy">
+                <h3>Use Massage for Support</h3>
+                <p>
+                  Massage may complement movement, ergonomics, rehabilitation,
+                  and self-care by addressing comfort and muscular tension.
+                </p>
+              </div>
+            </article>
+            <article class="posture-plan-step">
+              <div class="posture-plan-marker">5</div>
+              <div class="posture-plan-copy">
+                <h3>Seek Evaluation When Needed</h3>
+                <p>
+                  Persistent, severe, worsening, or neurologic symptoms should
+                  not be managed only with posture changes or massage.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="posture-workstation">
+          <h2>A Practical Workstation Check</h2>
+          <p>
+            The goal is not to freeze your body in place. The goal is to reduce
+            strain and make it easier to change positions.
+          </p>
+          <div class="workstation-checklist">
+            <article class="workstation-item">
+              <strong>Screen</strong>
+              <p>
+                Position the monitor so you can see it without repeatedly
+                craning the neck or leaning forward.
+              </p>
+            </article>
+            <article class="workstation-item">
+              <strong>Keyboard and Mouse</strong>
+              <p>
+                Keep frequently used tools close enough that the shoulders and
+                arms do not need to reach continuously.
+              </p>
+            </article>
+            <article class="workstation-item">
+              <strong>Chair and Feet</strong>
+              <p>
+                Use support that allows the feet to rest comfortably and the
+                body to change position.
+              </p>
+            </article>
+            <article class="workstation-item">
+              <strong>Breaks</strong>
+              <p>
+                Stand, walk, look away from the screen, or complete another task
+                before discomfort becomes severe.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Massage Cannot Do</h2>
+          <p>
+            Massage cannot diagnose the cause of posture-related pain, correct a
+            structural condition, repair nerve damage, or replace appropriate
+            exercise, rehabilitation, ergonomic changes, or medical care.
+          </p>
+          <p>
+            It also should not be used to force the body into a visual ideal.
+            Bodies are naturally varied and often asymmetrical.
+          </p>
+        </section>
+
+        <section class="posture-warning">
+          <h2>When to Seek Medical Care</h2>
+          <p>
+            Seek professional evaluation for persistent or worsening pain,
+            symptoms after significant injury, new weakness or numbness,
+            difficulty walking, loss of coordination, severe headaches, pain
+            with fever, unexplained weight loss, new bladder or bowel changes,
+            or symptoms that interfere with sleep, work, or daily activity.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>Posture should support movement—not make you afraid to move.</p>
+          <p>
+            Massage may help you feel more comfortable and aware, but lasting
+            change usually comes from a combination of movement, strength,
+            environmental support, recovery, and appropriate healthcare.
+          </p>
+          <p>
+            The goal is not perfect posture. The goal is more options, less
+            unnecessary effort, and greater comfort in the positions your life
+            requires.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="posture-related">
+          <h2>Continue Reading</h2>
+          <div class="posture-related-grid">
+            <a
+              href="why-desk-work-can-cause-neck-and-shoulder-tension.html"
+              class="posture-related-card"
+              ><h3>Why Desk Work Can Cause Neck and Shoulder Tension</h3>
+              <p>
+                Learn how prolonged sitting, repetitive movement, and work
+                habits may contribute to discomfort.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a
+              href="how-to-communicate-with-your-massage-therapist.html"
+              class="posture-related-card"
+              ><h3>How to Communicate With Your Massage Therapist</h3>
+              <p>
+                Learn how to discuss pressure, comfort, boundaries, draping,
+                goals, and changing needs.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a
+              href="everyday-mobility-exercises.html"
+              class="posture-related-card"
+              ><h3>Everyday Mobility Exercises</h3>
+              <p>
+                Explore practical movement options that can help support comfort
+                throughout the day.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+          <ul>
+            <li>
+              <a
+                href="https://medlineplus.gov/guidetogoodposture.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MedlinePlus: Guide to Good Posture</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://medlineplus.gov/ergonomics.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MedlinePlus: Ergonomics</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.osha.gov/etools/computer-workstations"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Occupational Safety and Health Administration: Computer
+                Workstations eTool</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+                >National Center for Complementary and Integrative Health:
+                Massage Therapy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/providers/digest/massage-therapy-for-health-science"
+                target="_blank"
+                rel="noopener noreferrer"
+                >NCCIH: Massage Therapy for Health—What the Science Says</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="posture-cta">
+          <h2>Support Comfort, Movement, and Everyday Function</h2>
+          <p>
+            Looking for personalized therapeutic care? Schedule a FlowTherapy
+            session centered around your comfort, goals, boundaries, work
+            demands, and current wellness needs.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Massage Education articles.
+          </p>
+          <ul>
+            <li>Massage Myths That Just Won’t Die</li>
+            <li>Massage for Headaches</li>
+            <li>Choosing the Right Massage for Your Goals</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    </main>
+
+<!-- Shared footer generated by site-layout.js -->
+<div id="site-footer"></div>
+
+<script src="/assets/js/site-layout.js"></script>
+<script src="/assets/js/content-registry.js"></script>
+<script src="/assets/js/related-articles.js"></script>
+<script src="/assets/js/article-utils.js"></script>
+
+</body>
+</html>
+

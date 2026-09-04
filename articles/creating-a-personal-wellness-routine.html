@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Creating a Personal Wellness Routine</title>
+
+    <meta
+      name="description"
+      content="Learn how to build a realistic personal wellness routine around sleep, movement, stress support, recovery, healthcare, and habits that fit your actual life."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .wellness-highlight {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f4f9fe;
+        text-align: center;
+      }
+
+      .wellness-highlight h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .wellness-highlight p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .wellness-foundations-grid,
+      .wellness-obstacles-grid,
+      .wellness-support-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 24px 0 38px;
+      }
+
+      .wellness-foundation-card,
+      .wellness-obstacle-card,
+      .wellness-support-card {
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .wellness-foundation-card h3,
+      .wellness-obstacle-card h3,
+      .wellness-support-card h3 {
+        margin-top: 0;
+        margin-bottom: 9px;
+        color: #1677c8;
+      }
+
+      .wellness-foundation-card p,
+      .wellness-obstacle-card p,
+      .wellness-support-card p {
+        margin-bottom: 0;
+      }
+
+      .routine-builder {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .routine-builder > h2,
+      .routine-builder > p {
+        text-align: center;
+      }
+
+      .routine-builder > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .routine-builder > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .routine-builder-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 26px;
+      }
+
+      .routine-builder-step {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .routine-builder-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .routine-builder-step h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+      }
+
+      .routine-builder-step p {
+        margin: 0;
+      }
+
+      .minimum-routine {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .minimum-routine > h2,
+      .minimum-routine > p {
+        text-align: center;
+      }
+
+      .minimum-routine > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .minimum-routine > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .minimum-routine-list {
+        display: grid;
+        gap: 14px;
+        max-width: 780px;
+        margin: 26px auto 0;
+      }
+
+      .minimum-routine-item {
+        padding: 20px 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .minimum-routine-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .minimum-routine-item p {
+        margin: 0;
+      }
+
+      .wellness-myths {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .wellness-myths > h2,
+      .wellness-myths > p {
+        text-align: center;
+      }
+
+      .wellness-myths > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .wellness-myths > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .wellness-myth-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .wellness-myth-row {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .wellness-myth-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 16px;
+        border-right: 1px solid #d6e7f7;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .wellness-myth-label.myth-label {
+        background: #f7f3f0;
+        color: #7b6249;
+      }
+
+      .wellness-myth-label.fact-label {
+        background: #eaf4fe;
+        color: #1677c8;
+      }
+
+      .wellness-myth-content {
+        padding: 26px 28px;
+      }
+
+      .wellness-myth-content strong {
+        display: block;
+        margin-bottom: 10px;
+        color: #1677c8;
+        font-size: 1.03rem;
+      }
+
+      .wellness-myth-content p {
+        margin: 0;
+      }
+
+      .wellness-review {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .wellness-review h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .wellness-review p:last-child {
+        margin-bottom: 0;
+      }
+
+      .wellness-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .wellness-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .wellness-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .wellness-related {
+        margin: 38px 0;
+      }
+
+      .wellness-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .wellness-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .wellness-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .wellness-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .wellness-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .wellness-related-card p {
+        flex: 1;
+      }
+
+      .wellness-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .wellness-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .wellness-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .wellness-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 820px) {
+        .wellness-related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .wellness-foundations-grid,
+        .wellness-obstacles-grid,
+        .wellness-support-grid,
+        .wellness-myth-row {
+          grid-template-columns: 1fr;
+        }
+
+        .wellness-myth-label {
+          justify-content: flex-start;
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+          padding: 14px 20px;
+        }
+
+        .wellness-highlight,
+        .routine-builder,
+        .minimum-routine,
+        .wellness-myths,
+        .wellness-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="creating-a-personal-wellness-routine">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/stress-wellness.html">
+          ← Back to Stress &amp; Wellness FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Stress &amp; Wellness</div>
+
+          <h1>Creating a Personal Wellness Routine</h1>
+
+          <p class="article-subtitle">
+            How to build a realistic routine around sleep, movement, stress
+            support, recovery, healthcare, and habits that fit your actual life.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Wellness routines are often presented as long checklists filled with
+            perfect meals, early mornings, intense workouts, supplements,
+            journaling, meditation, and constant productivity.
+          </p>
+
+          <p>
+            That may look impressive online, but a routine only helps when it is
+            realistic enough to repeat.
+          </p>
+
+          <p>
+            A useful wellness routine should support your life—not become
+            another source of pressure.
+          </p>
+        </div>
+
+        <section class="wellness-highlight">
+          <h2>Your Routine Does Not Need to Be Perfect to Be Helpful</h2>
+
+          <p>
+            Sustainable wellness usually comes from small, repeatable habits
+            that support sleep, movement, nourishment, stress management,
+            medical care, recovery, and connection. Consistency matters, but
+            flexibility matters too.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is a Personal Wellness Routine?</h2>
+
+          <p>
+            A personal wellness routine is a group of habits and supports that
+            help you care for your physical, emotional, and practical needs.
+          </p>
+
+          <p>
+            It may include regular sleep and wake times, movement, meals,
+            hydration, medication, healthcare appointments, stress-management
+            tools, time outdoors, massage, social connection, and boundaries.
+          </p>
+
+          <p>
+            The routine should reflect your health, schedule, finances, energy,
+            culture, responsibilities, and access to support.
+          </p>
+        </section>
+
+        <section>
+          <h2>Six Foundations of a Realistic Wellness Routine</h2>
+
+          <div class="wellness-foundations-grid">
+            <article class="wellness-foundation-card">
+              <h3>Sleep and Rest</h3>
+              <p>
+                Consistent sleep opportunities, quieter evenings, and periods of
+                physical rest support recovery and daily function.
+              </p>
+            </article>
+
+            <article class="wellness-foundation-card">
+              <h3>Regular Movement</h3>
+              <p>
+                Walking, strength work, mobility, recreation, and everyday
+                activity can all contribute to physical and emotional
+                well-being.
+              </p>
+            </article>
+
+            <article class="wellness-foundation-card">
+              <h3>Food and Hydration</h3>
+              <p>
+                Regular access to nourishing food and adequate fluids supports
+                energy, concentration, movement, and recovery.
+              </p>
+            </article>
+
+            <article class="wellness-foundation-card">
+              <h3>Stress Support</h3>
+              <p>
+                Relaxation, boundaries, counseling, movement, time outdoors,
+                breathing practices, and social support may all help.
+              </p>
+            </article>
+
+            <article class="wellness-foundation-card">
+              <h3>Healthcare</h3>
+              <p>
+                Preventive care, medication, rehabilitation, dental care,
+                mental-health care, and medical evaluation belong within
+                wellness.
+              </p>
+            </article>
+
+            <article class="wellness-foundation-card">
+              <h3>Recovery and Connection</h3>
+              <p>
+                Massage, hobbies, community, quiet time, supportive
+                relationships, and meaningful activities can help restore energy
+                and perspective.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="routine-builder">
+          <h2>Build Your Routine in Six Steps</h2>
+
+          <p>
+            Start with what is most useful and most possible—not what looks most
+            impressive.
+          </p>
+
+          <div class="routine-builder-list">
+            <article class="routine-builder-step">
+              <div class="routine-builder-number">1</div>
+              <div>
+                <h3>Identify Your Current Need</h3>
+                <p>
+                  Choose one area that is creating the most difficulty, such as
+                  sleep, stress, movement, pain, meals, or healthcare follow-up.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-builder-step">
+              <div class="routine-builder-number">2</div>
+              <div>
+                <h3>Choose One Small Action</h3>
+                <p>
+                  Make the action specific and manageable, such as walking for
+                  ten minutes after lunch or setting a consistent bedtime alarm.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-builder-step">
+              <div class="routine-builder-number">3</div>
+              <div>
+                <h3>Attach It to Something You Already Do</h3>
+                <p>
+                  Pair the new habit with an existing routine, such as taking
+                  medication with breakfast or stretching after brushing your
+                  teeth.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-builder-step">
+              <div class="routine-builder-number">4</div>
+              <div>
+                <h3>Reduce Friction</h3>
+                <p>
+                  Prepare clothing, fill a water bottle, schedule appointments,
+                  place reminders, or choose an easier version of the activity.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-builder-step">
+              <div class="routine-builder-number">5</div>
+              <div>
+                <h3>Plan for Low-Energy Days</h3>
+                <p>
+                  Decide what the smallest acceptable version looks like before
+                  you are tired, busy, or overwhelmed.
+                </p>
+              </div>
+            </article>
+
+            <article class="routine-builder-step">
+              <div class="routine-builder-number">6</div>
+              <div>
+                <h3>Review and Adjust</h3>
+                <p>
+                  Keep what helps, change what does not fit, and allow your
+                  routine to evolve with seasons, health, work, and family
+                  needs.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="minimum-routine">
+          <h2>Create a Minimum Routine</h2>
+
+          <p>
+            Your minimum routine is the version you can use when time, energy,
+            money, or motivation is limited.
+          </p>
+
+          <div class="minimum-routine-list">
+            <article class="minimum-routine-item">
+              <strong>Movement</strong>
+              <p>
+                A five-minute walk or a few comfortable movements may replace a
+                longer workout on a difficult day.
+              </p>
+            </article>
+
+            <article class="minimum-routine-item">
+              <strong>Meals</strong>
+              <p>
+                A simple, available meal is more useful than waiting for the
+                perfect meal you do not have the energy to prepare.
+              </p>
+            </article>
+
+            <article class="minimum-routine-item">
+              <strong>Stress Support</strong>
+              <p>
+                One quiet minute, one boundary, or one text to a supportive
+                person may be enough for that day.
+              </p>
+            </article>
+
+            <article class="minimum-routine-item">
+              <strong>Sleep</strong>
+              <p>
+                Dim the lights, put the phone down ten minutes earlier, or begin
+                preparing for bed before exhaustion takes over.
+              </p>
+            </article>
+
+            <article class="minimum-routine-item">
+              <strong>Healthcare</strong>
+              <p>
+                Make the appointment, refill the prescription, or write down the
+                symptom you need to discuss.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Common Obstacles—and How to Work Around Them</h2>
+
+          <div class="wellness-obstacles-grid">
+            <article class="wellness-obstacle-card">
+              <h3>“I Do Not Have Enough Time”</h3>
+              <p>
+                Reduce the size of the habit. Five minutes of movement is still
+                movement, and a simpler routine is easier to repeat.
+              </p>
+            </article>
+
+            <article class="wellness-obstacle-card">
+              <h3>“I Keep Forgetting”</h3>
+              <p>
+                Use reminders, visible cues, calendar blocks, or pair the habit
+                with an activity that already happens every day.
+              </p>
+            </article>
+
+            <article class="wellness-obstacle-card">
+              <h3>“I Lose Motivation”</h3>
+              <p>
+                Build the routine around structure and convenience rather than
+                waiting to feel inspired.
+              </p>
+            </article>
+
+            <article class="wellness-obstacle-card">
+              <h3>“My Schedule Changes”</h3>
+              <p>
+                Use flexible anchors such as “after my first meal” instead of a
+                fixed clock time when your day varies.
+              </p>
+            </article>
+
+            <article class="wellness-obstacle-card">
+              <h3>“I Missed Several Days”</h3>
+              <p>
+                Restart with the smallest version. Missing days does not erase
+                the benefit of returning.
+              </p>
+            </article>
+
+            <article class="wellness-obstacle-card">
+              <h3>“I Cannot Afford Every Wellness Service”</h3>
+              <p>
+                Prioritize essential healthcare and use free or low-cost
+                supports such as walking, home movement, libraries, community
+                programs, and social connection.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="wellness-myths">
+          <h2>Common Wellness-Routine Myths</h2>
+
+          <p>A routine should support your health—not measure your worth.</p>
+
+          <div class="wellness-myth-list">
+            <article class="wellness-myth-row">
+              <div class="wellness-myth-label myth-label">Myth</div>
+              <div class="wellness-myth-content">
+                <strong>A good routine has to happen every day.</strong>
+                <p>
+                  Some habits may be daily, while others work better weekly,
+                  monthly, seasonally, or only when needed.
+                </p>
+              </div>
+            </article>
+
+            <article class="wellness-myth-row">
+              <div class="wellness-myth-label fact-label">Fact</div>
+              <div class="wellness-myth-content">
+                <strong>A routine should match your actual capacity.</strong>
+                <p>
+                  Health conditions, caregiving, work, finances, disability, and
+                  access all affect what is realistic.
+                </p>
+              </div>
+            </article>
+
+            <article class="wellness-myth-row">
+              <div class="wellness-myth-label myth-label">Myth</div>
+              <div class="wellness-myth-content">
+                <strong>More habits always create better health.</strong>
+                <p>
+                  Too many goals can create pressure, fatigue, and
+                  inconsistency. A smaller routine may be more sustainable.
+                </p>
+              </div>
+            </article>
+
+            <article class="wellness-myth-row">
+              <div class="wellness-myth-label fact-label">Fact</div>
+              <div class="wellness-myth-content">
+                <strong>Healthcare is part of wellness.</strong>
+                <p>
+                  Self-care should not replace medical treatment, therapy,
+                  medication, rehabilitation, or other professional support.
+                </p>
+              </div>
+            </article>
+
+            <article class="wellness-myth-row">
+              <div class="wellness-myth-label myth-label">Myth</div>
+              <div class="wellness-myth-content">
+                <strong>Starting over means you failed.</strong>
+                <p>
+                  Routines change. Returning after illness, travel, stress, or a
+                  busy season is part of long-term wellness.
+                </p>
+              </div>
+            </article>
+
+            <article class="wellness-myth-row">
+              <div class="wellness-myth-label fact-label">Fact</div>
+              <div class="wellness-myth-content">
+                <strong>Wellness includes flexibility and support.</strong>
+                <p>
+                  A useful routine adapts, allows rest, and includes help from
+                  other people when needed.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What Can Be Part of a Weekly Wellness Routine?</h2>
+
+          <div class="wellness-support-grid">
+            <article class="wellness-support-card">
+              <h3>Movement You Enjoy</h3>
+              <p>
+                Walking, strength training, dancing, swimming, yoga, sports,
+                gardening, or other activities can all count.
+              </p>
+            </article>
+
+            <article class="wellness-support-card">
+              <h3>Recovery Time</h3>
+              <p>
+                Rest days, quieter evenings, massage, heat, comfortable
+                movement, and sleep support may help balance physical demand.
+              </p>
+            </article>
+
+            <article class="wellness-support-card">
+              <h3>Planning and Preparation</h3>
+              <p>
+                Scheduling appointments, preparing meals, organizing medication,
+                and planning movement can reduce last-minute stress.
+              </p>
+            </article>
+
+            <article class="wellness-support-card">
+              <h3>Connection</h3>
+              <p>
+                Time with supportive people, community, faith, or shared
+                activities can be an important part of well-being.
+              </p>
+            </article>
+
+            <article class="wellness-support-card">
+              <h3>Something Enjoyable</h3>
+              <p>
+                Recreation, creativity, music, reading, humor, and play are not
+                rewards you must earn after completing every task.
+              </p>
+            </article>
+
+            <article class="wellness-support-card">
+              <h3>Professional Support</h3>
+              <p>
+                Medical, dental, mental-health, rehabilitative, financial, or
+                community support may be necessary parts of the routine.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="wellness-review">
+          <h2>Review Your Routine Without Judging Yourself</h2>
+
+          <p>
+            Ask whether the routine is helping—not whether you are performing it
+            perfectly.
+          </p>
+
+          <p>
+            Is it realistic? Is it affordable? Does it support your most
+            important needs? Can it survive a busy week? Does it leave room for
+            rest, pleasure, and changing circumstances?
+          </p>
+
+          <p>
+            A routine that repeatedly creates guilt, pain, exhaustion, or
+            financial strain needs adjustment.
+          </p>
+        </section>
+
+        <section>
+          <h2>Where Does Massage Fit?</h2>
+
+          <p>
+            Massage may be part of a broader wellness routine for comfort,
+            recovery, stress support, body awareness, or consistent therapeutic
+            care.
+          </p>
+
+          <p>
+            The frequency should reflect your goals, symptoms, schedule, budget,
+            response to care, and other health needs.
+          </p>
+
+          <p>
+            Massage should complement—not replace—sleep, movement, medical care,
+            mental-health support, nourishment, and other essential parts of
+            well-being.
+          </p>
+        </section>
+
+        <section class="wellness-warning">
+          <h2>Important Note</h2>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, treatment, nutrition counseling,
+            psychotherapy, rehabilitation, or individualized exercise guidance.
+            Speak with an appropriate licensed professional before making major
+            changes when you have a health condition, take medication, are
+            pregnant, are recovering from surgery or injury, or have symptoms
+            that are persistent, severe, unfamiliar, or worsening.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>Wellness is not a full-time job.</p>
+
+          <p>
+            A meaningful routine should help you move, feel, and live better
+            without demanding perfection or turning every moment into another
+            health project.
+          </p>
+
+          <p>
+            Begin with one useful step. Make it easier to repeat. Adjust it when
+            life changes. That is how a routine becomes sustainable.
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="wellness-related">
+          <h2>Continue Reading</h2>
+
+          <div class="wellness-related-grid">
+            <a
+              href="the-science-of-relaxation.html"
+              class="wellness-related-card"
+            >
+              <h3>The Science of Relaxation</h3>
+              <p>
+                Learn how the body shifts out of high alert and why relaxation
+                takes practice rather than perfection.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="when-stress-shows-up-as-physical-pain.html"
+              class="wellness-related-card"
+            >
+              <h3>When Stress Shows Up as Physical Pain</h3>
+              <p>
+                Explore how stress can influence muscle tension, sleep,
+                headaches, movement, and the experience of pain.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="can-massage-improve-sleep.html"
+              class="wellness-related-card"
+            >
+              <h3>Can Massage Improve Sleep?</h3>
+              <p>
+                Understand how relaxation, physical comfort, and evening habits
+                may support more restful sleep.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/mental-health/living-with/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Managing Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/about/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                Basics and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/healthysleep.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Healthy Sleep
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/stress.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/relaxation-techniques-what-you-need-to-know"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health:
+                Relaxation Techniques
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="wellness-cta">
+          <h2>Build a Routine That Supports Your Real Life</h2>
+
+          <p>
+            Looking for personalized therapeutic care? Schedule a FlowTherapy
+            session centered around your comfort, goals, boundaries, schedule,
+            and current wellness needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Stress &amp; Wellness
+            articles.
+          </p>
+
+          <ul>
+            <li>How Breathing Affects Muscle Tension</li>
+            <li>Self-Care Without the Guilt</li>
+            <li>Burnout vs. Normal Stress</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

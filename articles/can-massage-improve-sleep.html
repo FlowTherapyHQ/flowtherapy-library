@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowNotes | Can Massage Improve Sleep?</title>
+    <meta
+      name="description"
+      content="Learn how therapeutic massage may support better sleep by easing physical tension, encouraging relaxation, and becoming part of a healthy evening routine."
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+    <style>
+      .sleep-highlight {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f4f9fe;
+        text-align: center;
+      }
+      .sleep-highlight h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .sleep-highlight p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .sleep-support-grid,
+      .sleep-habits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 24px 0 38px;
+      }
+      .sleep-support-card,
+      .sleep-habit-card {
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .sleep-support-card h3,
+      .sleep-habit-card h3 {
+        margin-top: 0;
+        margin-bottom: 9px;
+        color: #1677c8;
+      }
+      .sleep-support-card p,
+      .sleep-habit-card p {
+        margin-bottom: 0;
+      }
+      .sleep-myths {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+      .sleep-myths > h2,
+      .sleep-myths > p {
+        text-align: center;
+      }
+      .sleep-myths > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .sleep-myths > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .sleep-myth-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .sleep-myth-row {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .sleep-myth-label {
+        border-right: 1px solid #d6e7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 18px;
+        background: #eaf4fe;
+        color: #1677c8;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .sleep-myth-content {
+        padding: 28px 30px;
+      }
+
+      .sleep-myth-content strong {
+        display: block;
+        margin-bottom: 12px;
+        color: #1677c8;
+        font-size: 1.05rem;
+        line-height: 1.45;
+      }
+
+      .sleep-myth-content p {
+        margin: 0;
+        line-height: 1.7;
+      }
+      .sleep-routine {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+      .sleep-routine > h2,
+      .sleep-routine > p {
+        text-align: center;
+      }
+      .sleep-routine > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .sleep-routine > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .sleep-routine-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 26px;
+      }
+      .sleep-routine-step {
+        display: grid;
+        grid-template-columns: 46px 1fr;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #fff;
+      }
+      .sleep-routine-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #fff;
+        font-weight: 800;
+      }
+      .sleep-routine-step h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+      }
+      .sleep-routine-step p {
+        margin: 0;
+      }
+      .sleep-check {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+      .sleep-check h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .sleep-check p:last-child {
+        margin-bottom: 0;
+      }
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+      .sleep-related {
+        margin: 38px 0;
+      }
+      .sleep-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+      .sleep-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+      .sleep-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #fff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+      .sleep-related-card:hover {
+        transform: translateY(-3px);
+      }
+      .sleep-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .sleep-related-card p {
+        flex: 1;
+      }
+      .sleep-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+      .sleep-important-note {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+      .sleep-important-note h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+      .sleep-important-note p {
+        margin-bottom: 0;
+      }
+      .sleep-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+      .sleep-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+      .sleep-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #1677c8;
+      }
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+      @media (max-width: 820px) {
+        .sleep-related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 700px) {
+        .sleep-support-grid,
+        .sleep-habits-grid,
+        .sleep-myth-row {
+          grid-template-columns: 1fr;
+        }
+        .sleep-highlight,
+        .sleep-myths,
+        .sleep-routine,
+        .sleep-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body data-article-id="can-massage-improve-sleep">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/stress-wellness.html"
+          >← Back to Stress &amp; Wellness FlowNotes</a
+        >
+      </div>
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Stress &amp; Wellness</div>
+          <h1>Can Massage Improve Sleep?</h1>
+          <p class="article-subtitle">
+            Understanding how relaxation, physical comfort, stress, and healthy
+            evening habits can work together to support more restful sleep.
+          </p>
+          <div class="article-meta">
+            By Brandy Hennigan, LMT <span aria-hidden="true">•</span> August
+            2026 <span aria-hidden="true">•</span> 7-minute read
+          </div>
+        </header>
+        <div class="article-intro">
+          <p>
+            A poor night’s sleep affects far more than next-day energy. Sleep
+            influences mood, concentration, physical recovery, movement, and how
+            strongly discomfort may be felt.
+          </p>
+          <p>
+            Massage is not a treatment for insomnia or another sleep disorder.
+            However, it may help some people unwind, reduce physical tension,
+            and create a calmer transition into the evening.
+          </p>
+          <p>
+            Rather than forcing sleep, massage may help create conditions that
+            make rest feel more accessible.
+          </p>
+        </div>
+        <section>
+          <h2>Why Sleep Can Be Difficult</h2>
+          <p>
+            Sleep is influenced by more than simply feeling tired. Stress, pain,
+            changing schedules, caffeine, screen use, illness, caregiving,
+            travel, medications, and emotional demands can all affect how easily
+            someone settles at night.
+          </p>
+          <p>
+            Sometimes the body feels exhausted while the mind remains alert. At
+            other times, muscle tension or discomfort makes it difficult to find
+            a position that feels restful.
+          </p>
+        </section>
+        <section class="sleep-highlight">
+          <h2>Relaxation Supports Sleep—But It Does Not Guarantee It</h2>
+          <p>
+            A calmer evening routine may help the body transition away from the
+            demands of the day. Massage, gentle movement, quieter lighting,
+            reading, and reduced stimulation may all support that process. None
+            of them can guarantee sleep on a particular night.
+          </p>
+        </section>
+        <section>
+          <h2>How Massage May Support Better Sleep</h2>
+          <div class="sleep-support-grid">
+            <article class="sleep-support-card">
+              <h3>Reduces Physical Tension</h3>
+              <p>
+                Massage may help some people feel less guarded or tight, making
+                it easier to settle into a comfortable position.
+              </p>
+            </article>
+            <article class="sleep-support-card">
+              <h3>Encourages a Calmer Pace</h3>
+              <p>
+                A quiet, unhurried session can create structured time away from
+                work, screens, conversation, and other daily demands.
+              </p>
+            </article>
+            <article class="sleep-support-card">
+              <h3>Supports Physical Comfort</h3>
+              <p>
+                When muscle discomfort becomes less distracting, changing
+                positions or lying still may feel easier.
+              </p>
+            </article>
+            <article class="sleep-support-card">
+              <h3>Creates a Recovery Ritual</h3>
+              <p>
+                Regular massage may become one part of a broader routine that
+                gives sleep, movement, and recovery more consistent attention.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="sleep-myths">
+          <h2>Common Sleep and Massage Myths</h2>
+          <p>
+            Massage can support relaxation, but its effects should not be
+            overstated.
+          </p>
+          <div class="sleep-myth-list">
+            <article class="sleep-myth-row">
+              <div class="sleep-myth-label myth-label">Myth</div>
+              <div class="sleep-myth-content">
+                <strong>Massage "puts you to sleep."</strong>
+                <p>
+                  FACT Massage promotes relaxation that may make falling asleep
+                  easier.
+                </p>
+              </div>
+            </article>
+            <article class="sleep-myth-row">
+              <div class="sleep-myth-label fact-label">Fact</div>
+              <div class="sleep-myth-content">
+                <strong>Sleep depends on many interacting factors.</strong>
+                <p>
+                  Stress, pain, medical conditions, schedule, caffeine,
+                  environment, activity, medication, and daily routines can all
+                  influence sleep.
+                </p>
+              </div>
+            </article>
+            <article class="sleep-myth-row">
+              <div class="sleep-myth-label myth-label">Myth</div>
+              <div class="sleep-myth-content">
+                <strong>One good night means the problem is solved.</strong>
+                <p>
+                  A relaxing session may be followed by better sleep, but one
+                  night does not establish a permanent change or treat an
+                  ongoing sleep disorder.
+                </p>
+              </div>
+            </article>
+            <article class="sleep-myth-row">
+              <div class="sleep-myth-label fact-label">Fact</div>
+              <div class="sleep-myth-content">
+                <strong
+                  >Consistency usually matters more than perfection.</strong
+                >
+                <p>
+                  Sustainable routines often support sleep more effectively than
+                  expecting one technique to work perfectly every time.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h2>Habits That Support Better Sleep</h2>
+          <p>
+            Healthy sleep rarely depends on one single solution. These habits
+            can be adapted to your schedule, health, and living environment.
+          </p>
+          <div class="sleep-habits-grid">
+            <article class="sleep-habit-card">
+              <h3>Maintain a Consistent Schedule</h3>
+              <p>
+                Going to bed and waking at approximately the same times can help
+                reinforce a predictable sleep-wake rhythm.
+              </p>
+            </article>
+            <article class="sleep-habit-card">
+              <h3>Reduce Evening Stimulation</h3>
+              <p>
+                Quieter activities, lower lighting, and fewer screens may make
+                it easier to transition away from the pace of the day.
+              </p>
+            </article>
+            <article class="sleep-habit-card">
+              <h3>Create a Comfortable Environment</h3>
+              <p>
+                A dark, quiet, and comfortably cool room may support sleep when
+                those conditions are available.
+              </p>
+            </article>
+            <article class="sleep-habit-card">
+              <h3>Move During the Day</h3>
+              <p>
+                Regular physical activity supports overall health and may
+                contribute to healthier sleep patterns.
+              </p>
+            </article>
+            <article class="sleep-habit-card">
+              <h3>Watch Late-Day Caffeine</h3>
+              <p>
+                Caffeine may continue affecting some people for several hours
+                after it is consumed.
+              </p>
+            </article>
+            <article class="sleep-habit-card">
+              <h3>Address Ongoing Symptoms</h3>
+              <p>
+                Persistent pain, breathing concerns, anxiety, or other symptoms
+                may require care beyond changes to a bedtime routine.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="sleep-routine">
+          <h2>A Simple Evening Wind-Down</h2>
+          <p>
+            This routine is not a test and does not need to be completed
+            perfectly. Choose only the steps that feel practical and supportive.
+          </p>
+          <div class="sleep-routine-list">
+            <article class="sleep-routine-step">
+              <div class="sleep-routine-number">1</div>
+              <div>
+                <h3>Lower the Pace</h3>
+                <p>
+                  Reduce unnecessary tasks, bright lighting, and stimulating
+                  content as the evening progresses.
+                </p>
+              </div>
+            </article>
+            <article class="sleep-routine-step">
+              <div class="sleep-routine-number">2</div>
+              <div>
+                <h3>Choose Comfortable Movement</h3>
+                <p>
+                  Take a short walk, change positions, or use gentle movement
+                  instead of forcing an intense stretch.
+                </p>
+              </div>
+            </article>
+            <article class="sleep-routine-step">
+              <div class="sleep-routine-number">3</div>
+              <div>
+                <h3>Prepare the Environment</h3>
+                <p>
+                  Adjust pillows, temperature, sound, and lighting before you
+                  are already exhausted.
+                </p>
+              </div>
+            </article>
+            <article class="sleep-routine-step">
+              <div class="sleep-routine-number">4</div>
+              <div>
+                <h3>Let Rest Be Enough</h3>
+                <p>
+                  Lying quietly can still provide rest, even when sleep does not
+                  happen immediately.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section>
+          <h2>When Massage May Be Most Helpful</h2>
+          <p>
+            Massage may be especially appealing during periods of increased
+            stress, muscle tension, travel, demanding work, or disrupted
+            routines.
+          </p>
+          <p>
+            Some people prefer an evening appointment because they can return
+            home afterward without rushing into more obligations. Others feel
+            more comfortable scheduling earlier in the day. The best timing is
+            the timing that fits your body, transportation, responsibilities,
+            and normal routine.
+          </p>
+        </section>
+        <section class="sleep-check">
+          <h2>Massage Should Not Replace Sleep Evaluation</h2>
+          <p>
+            Ongoing insomnia, loud snoring, gasping, pauses in breathing,
+            restless legs, unusual nighttime behaviors, frequent morning
+            headaches, or excessive daytime sleepiness can point to concerns
+            that massage cannot diagnose or treat.
+          </p>
+          <p>
+            These symptoms deserve evaluation from an appropriate healthcare
+            professional.
+          </p>
+        </section>
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+          <p>
+            Massage can create a supportive pause in a demanding week. It may
+            help you feel more physically comfortable, reduce unnecessary
+            muscular effort, and notice what your body needs before bedtime.
+          </p>
+          <p>
+            The goal is not to promise perfect sleep after every session. The
+            goal is to support comfort, recovery, choice, and a more sustainable
+            wellness routine.
+          </p>
+        </section>
+        <hr class="article-divider" />
+        <section class="sleep-related">
+          <h2>Continue Reading</h2>
+          <div class="sleep-related-grid">
+            <a href="sleep-and-muscle-recovery.html" class="sleep-related-card"
+              ><h3>Sleep and Muscle Recovery</h3>
+              <p>
+                Learn how sleep supports energy, physical readiness, and the
+                body’s broader recovery process.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a
+              href="why-stress-causes-muscle-tension.html"
+              class="sleep-related-card"
+              ><h3>Why Stress Causes Muscle Tension</h3>
+              <p>
+                Explore how stress can affect breathing, movement, sleep, and
+                the way the body holds tension.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+            <a
+              href="massage-soreness-what-is-normal.html"
+              class="sleep-related-card"
+              ><h3>Massage Soreness: What Is Normal?</h3>
+              <p>
+                Understand mild post-massage soreness and when symptoms deserve
+                additional attention.
+              </p>
+              <span>Read FlowNote →</span></a
+            >
+          </div>
+        </section>
+        <section class="author-card">
+          <h2>About the Author</h2>
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+        <section class="sleep-important-note">
+          <h2>Important Note</h2>
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, treatment, or sleep evaluation.
+            Persistent insomnia, loud snoring, pauses in breathing, gasping
+            during sleep, or excessive daytime fatigue should be evaluated by a
+            qualified healthcare provider.
+          </p>
+        </section>
+        <section class="sleep-cta">
+          <h2>Continue Your Wellness Journey</h2>
+          <p>
+            Looking for personalized therapeutic care? Schedule a FlowTherapy
+            session centered around your comfort, goals, boundaries, and current
+            wellness needs.
+          </p>
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Schedule Your Session</a
+          >
+        </section>
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+          <p>
+            Here are a few topics planned for future Stress &amp; Wellness
+            articles.
+          </p>
+          <ul>
+            <li>Why You Hold Stress in Your Jaw</li>
+            <li>The Science of Relaxation</li>
+            <li>Creating a Personal Wellness Routine</li>
+          </ul>
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

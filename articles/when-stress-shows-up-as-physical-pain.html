@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | When Stress Shows Up as Physical Pain</title>
+
+    <meta
+      name="description"
+      content="Learn how stress can influence muscle tension, headaches, sleep, movement, and the experience of pain—without assuming that physical symptoms are only caused by stress."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <style>
+      .pain-highlight {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f4f9fe;
+        text-align: center;
+      }
+
+      .pain-highlight h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .pain-highlight p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .pain-influences-grid,
+      .pain-signs-grid,
+      .support-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin: 24px 0 38px;
+      }
+
+      .pain-influence-card,
+      .pain-sign-card,
+      .support-card {
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .pain-influence-card h3,
+      .pain-sign-card h3,
+      .support-card h3 {
+        margin-top: 0;
+        margin-bottom: 9px;
+        color: #1677c8;
+      }
+
+      .pain-influence-card p,
+      .pain-sign-card p,
+      .support-card p {
+        margin-bottom: 0;
+      }
+
+      .stress-pain-cycle {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .stress-pain-cycle > h2,
+      .stress-pain-cycle > p {
+        text-align: center;
+      }
+
+      .stress-pain-cycle > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .stress-pain-cycle > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .cycle-list {
+        display: grid;
+        gap: 12px;
+        max-width: 780px;
+        margin: 28px auto 0;
+      }
+
+      .cycle-step {
+        padding: 20px 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .cycle-step strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .cycle-step p {
+        margin: 0;
+      }
+
+      .cycle-connector {
+        color: #1677c8;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .pain-myths {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .pain-myths > h2,
+      .pain-myths > p {
+        text-align: center;
+      }
+
+      .pain-myths > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .pain-myths > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .pain-myth-list {
+        display: grid;
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .pain-myth-row {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+        overflow: hidden;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .pain-myth-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 16px;
+        border-right: 1px solid #d6e7f7;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .pain-myth-label.myth-label {
+        background: #f7f3f0;
+        color: #7b6249;
+      }
+
+      .pain-myth-label.fact-label {
+        background: #eaf4fe;
+        color: #1677c8;
+      }
+
+      .pain-myth-content {
+        padding: 26px 28px;
+      }
+
+      .pain-myth-content strong {
+        display: block;
+        margin-bottom: 10px;
+        color: #1677c8;
+        font-size: 1.03rem;
+      }
+
+      .pain-myth-content p {
+        margin: 0;
+      }
+
+      .body-check-in {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .body-check-in > h2,
+      .body-check-in > p {
+        text-align: center;
+      }
+
+      .body-check-in > h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .body-check-in > p {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .check-in-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 26px;
+      }
+
+      .check-in-item {
+        padding: 20px 22px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .check-in-item strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .check-in-item p {
+        margin: 0;
+      }
+
+      .pain-note {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .pain-note h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .pain-note p:last-child {
+        margin-bottom: 0;
+      }
+
+      .pain-warning {
+        margin: 34px 0;
+        padding: 25px;
+        border-left: 4px solid #e59a18;
+        border-radius: 12px;
+        background: #fff7ec;
+      }
+
+      .pain-warning h2 {
+        margin-top: 0;
+        color: #8a4700;
+        font-size: 1.05rem;
+      }
+
+      .pain-warning p {
+        margin-bottom: 0;
+      }
+
+      .article-divider {
+        width: 110px;
+        height: 3px;
+        margin: 38px auto;
+        border: 0;
+        border-radius: 999px;
+        background: #1677c8;
+        opacity: 0.22;
+      }
+
+      .pain-related {
+        margin: 38px 0;
+      }
+
+      .pain-related > h2 {
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .pain-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .pain-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 220px;
+        padding: 24px;
+        border: 1px solid #cfe2f5;
+        border-radius: 15px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .pain-related-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .pain-related-card h3 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .pain-related-card p {
+        flex: 1;
+      }
+
+      .pain-related-card span {
+        color: #1677c8;
+        font-weight: 700;
+      }
+
+      .pain-cta {
+        margin: 38px 0;
+        padding: 34px;
+        border-radius: 18px;
+        background: #f1f8fe;
+        text-align: center;
+      }
+
+      .pain-cta h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .pain-cta p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-bottom: 24px;
+        margin-left: auto;
+      }
+
+      .future-flownotes-static {
+        margin: 36px 0 0;
+        padding: 30px;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(20, 55, 85, 0.06);
+      }
+
+      .future-flownotes-static h2 {
+        margin-top: 0;
+        text-align: center;
+        color: #1677c8;
+      }
+
+      .future-flownotes-static > p {
+        text-align: center;
+      }
+
+      .future-flownotes-static ul {
+        width: fit-content;
+        max-width: 100%;
+        margin: 22px auto;
+        padding-left: 1.35rem;
+      }
+
+      .future-flownotes-static li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+        color: #1677c8;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 820px) {
+        .pain-related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .pain-influences-grid,
+        .pain-signs-grid,
+        .support-grid,
+        .pain-myth-row {
+          grid-template-columns: 1fr;
+        }
+
+        .pain-myth-label {
+          justify-content: flex-start;
+          border-right: 0;
+          border-bottom: 1px solid #d6e7f7;
+          padding: 14px 20px;
+        }
+
+        .pain-highlight,
+        .stress-pain-cycle,
+        .pain-myths,
+        .body-check-in,
+        .pain-cta,
+        .future-flownotes-static {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="when-stress-shows-up-as-physical-pain">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/stress-wellness.html">
+          ← Back to Stress &amp; Wellness FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Stress &amp; Wellness</div>
+
+          <h1>When Stress Shows Up as Physical Pain</h1>
+
+          <p class="article-subtitle">
+            How stress can influence muscle tension, headaches, sleep, movement,
+            and the experience of pain—without assuming that physical symptoms
+            are “only stress.”
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Stress is not limited to thoughts and emotions. It can change how
+            the body breathes, moves, sleeps, guards, and responds to
+            discomfort.
+          </p>
+
+          <p>
+            During stressful periods, headaches, jaw tension, back discomfort,
+            stomach symptoms, fatigue, and generalized aches may become more
+            noticeable.
+          </p>
+
+          <p>
+            That does not mean the symptoms are imaginary—and it does not mean
+            every symptom should automatically be blamed on stress.
+          </p>
+        </div>
+
+        <section class="pain-highlight">
+          <h2>Stress Can Influence Pain Without Being the Only Cause</h2>
+
+          <p>
+            Pain is shaped by signals from the body as well as sleep, attention,
+            emotion, past experience, environment, expectations, and perceived
+            safety. Stress may increase pain for some people, while physical
+            injury, illness, or another medical condition may also be present.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is Pain?</h2>
+
+          <p>
+            Pain is a protective experience produced by the nervous system. It
+            can be related to injury or illness, but the intensity of pain is
+            not determined by tissue damage alone.
+          </p>
+
+          <p>
+            The brain considers information from the body along with context:
+            how safe the situation feels, whether you are exhausted, how much
+            attention the symptom receives, and whether the body has experienced
+            similar pain before.
+          </p>
+
+          <p>
+            This whole-person process is one reason pain can feel different from
+            day to day, even when the underlying condition has not dramatically
+            changed.
+          </p>
+        </section>
+
+        <section>
+          <h2>How Stress May Influence Physical Pain</h2>
+
+          <div class="pain-influences-grid">
+            <article class="pain-influence-card">
+              <h3>More Muscle Guarding</h3>
+              <p>
+                The jaw, shoulders, hands, abdomen, back, or hips may remain
+                more active than the task requires.
+              </p>
+            </article>
+
+            <article class="pain-influence-card">
+              <h3>Changes in Breathing</h3>
+              <p>
+                Faster, shallower, or interrupted breathing may increase effort
+                through the chest, neck, ribs, and shoulders.
+              </p>
+            </article>
+
+            <article class="pain-influence-card">
+              <h3>Less Restorative Sleep</h3>
+              <p>
+                Poor sleep may reduce energy, increase sensitivity, and make
+                ordinary activity feel more demanding.
+              </p>
+            </article>
+
+            <article class="pain-influence-card">
+              <h3>Reduced Movement Variety</h3>
+              <p>
+                Stress may lead to longer sitting, less exercise, repetitive
+                posture, or avoidance of activities that normally support
+                comfort.
+              </p>
+            </article>
+
+            <article class="pain-influence-card">
+              <h3>More Attention to Symptoms</h3>
+              <p>
+                When the nervous system is on alert, discomfort may feel more
+                urgent, threatening, or difficult to ignore.
+              </p>
+            </article>
+
+            <article class="pain-influence-card">
+              <h3>Fewer Recovery Opportunities</h3>
+              <p>
+                Workload, caregiving, worry, and disrupted routines may leave
+                less time for sleep, movement, meals, healthcare, and rest.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="stress-pain-cycle">
+          <h2>The Stress–Pain Cycle</h2>
+
+          <p>
+            Stress and pain can reinforce one another. The cycle may begin at
+            any point and may look different for each person.
+          </p>
+
+          <div class="cycle-list">
+            <article class="cycle-step">
+              <strong>Stress or increased demand</strong>
+              <p>
+                Work, caregiving, uncertainty, conflict, illness, or another
+                challenge increases physical and emotional load.
+              </p>
+            </article>
+
+            <div class="cycle-connector" aria-hidden="true">↓</div>
+
+            <article class="cycle-step">
+              <strong
+                >Sleep, breathing, movement, or muscle activity changes</strong
+              >
+              <p>
+                The body may become more guarded while recovery habits become
+                less consistent.
+              </p>
+            </article>
+
+            <div class="cycle-connector" aria-hidden="true">↓</div>
+
+            <article class="cycle-step">
+              <strong>Discomfort becomes more noticeable</strong>
+              <p>
+                Headaches, muscle tension, back pain, jaw pain, or other
+                symptoms may feel stronger or harder to ignore.
+              </p>
+            </article>
+
+            <div class="cycle-connector" aria-hidden="true">↓</div>
+
+            <article class="cycle-step">
+              <strong>The cycle may repeat</strong>
+              <p>
+                Without addressing contributing factors, stress and pain can
+                continue to reinforce one another over time.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Common Ways Stress May Show Up Physically</h2>
+
+          <p>
+            These symptoms can have many causes. Their presence does not prove
+            that stress is responsible.
+          </p>
+
+          <div class="pain-signs-grid">
+            <article class="pain-sign-card">
+              <h3>Headaches</h3>
+              <p>
+                Stress may contribute to some tension-type headaches, often
+                alongside tenderness in the head, scalp, or neck.
+              </p>
+            </article>
+
+            <article class="pain-sign-card">
+              <h3>Jaw and Facial Tension</h3>
+              <p>
+                Daytime clenching, nighttime grinding, and facial guarding may
+                become more noticeable during stressful periods.
+              </p>
+            </article>
+
+            <article class="pain-sign-card">
+              <h3>Neck and Shoulder Discomfort</h3>
+              <p>
+                Elevated shoulders, screen time, reduced movement, and sustained
+                concentration may combine with stress-related guarding.
+              </p>
+            </article>
+
+            <article class="pain-sign-card">
+              <h3>Back and Hip Tension</h3>
+              <p>
+                Long sitting, poor sleep, reduced activity, and muscular
+                guarding may make the back or hips feel stiff or sore.
+              </p>
+            </article>
+
+            <article class="pain-sign-card">
+              <h3>Generalized Aches</h3>
+              <p>
+                Fatigue, illness, poor recovery, and stress may contribute to a
+                broader sense of soreness or physical heaviness.
+              </p>
+            </article>
+
+            <article class="pain-sign-card">
+              <h3>Digestive Discomfort</h3>
+              <p>
+                Stress can affect digestion, but persistent or severe abdominal
+                symptoms require appropriate medical evaluation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="pain-note">
+          <h2>“Stress-Related” Does Not Mean “Not Real”</h2>
+
+          <p>
+            Pain influenced by stress is still pain. The experience is not
+            invented, exaggerated, or a sign of weakness.
+          </p>
+
+          <p>
+            The nervous system, muscles, hormones, sleep, attention, and
+            emotions are all parts of one body. A psychological influence does
+            not make a physical symptom less valid.
+          </p>
+        </section>
+
+        <section class="pain-myths">
+          <h2>Common Stress-and-Pain Myths</h2>
+
+          <p>
+            A whole-person understanding of pain avoids both extremes:
+            dismissing symptoms as “just stress” and assuming every painful
+            sensation proves serious damage.
+          </p>
+
+          <div class="pain-myth-list">
+            <article class="pain-myth-row">
+              <div class="pain-myth-label myth-label">Myth</div>
+              <div class="pain-myth-content">
+                <strong>If stress affects pain, the pain is imaginary.</strong>
+                <p>
+                  Stress can influence real physical sensations, muscle
+                  activity, sleep, and pain processing.
+                </p>
+              </div>
+            </article>
+
+            <article class="pain-myth-row">
+              <div class="pain-myth-label fact-label">Fact</div>
+              <div class="pain-myth-content">
+                <strong
+                  >Pain can have several contributing factors at once.</strong
+                >
+                <p>
+                  Injury, health conditions, stress, sleep, workload, fear, and
+                  movement habits may all influence the same experience.
+                </p>
+              </div>
+            </article>
+
+            <article class="pain-myth-row">
+              <div class="pain-myth-label myth-label">Myth</div>
+              <div class="pain-myth-content">
+                <strong>Every new symptom should be blamed on stress.</strong>
+                <p>
+                  New, severe, unusual, or worsening symptoms deserve
+                  appropriate evaluation rather than assumption.
+                </p>
+              </div>
+            </article>
+
+            <article class="pain-myth-row">
+              <div class="pain-myth-label fact-label">Fact</div>
+              <div class="pain-myth-content">
+                <strong
+                  >Stress management can support care without replacing
+                  it.</strong
+                >
+                <p>
+                  Sleep, movement, relaxation, therapy, massage, and social
+                  support may complement medical or rehabilitative treatment.
+                </p>
+              </div>
+            </article>
+
+            <article class="pain-myth-row">
+              <div class="pain-myth-label myth-label">Myth</div>
+              <div class="pain-myth-content">
+                <strong
+                  >You must eliminate stress before pain can improve.</strong
+                >
+                <p>
+                  Small improvements in sleep, pacing, movement, support, and
+                  symptom management may still be meaningful.
+                </p>
+              </div>
+            </article>
+
+            <article class="pain-myth-row">
+              <div class="pain-myth-label fact-label">Fact</div>
+              <div class="pain-myth-content">
+                <strong>Chronic pain deserves a broad treatment plan.</strong>
+                <p>
+                  Persistent pain may require medical care, rehabilitation,
+                  behavioral health support, medication, movement, and other
+                  individualized strategies.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="body-check-in">
+          <h2>A Whole-Person Pain Check-In</h2>
+
+          <p>
+            These questions can help identify patterns without deciding that
+            stress is the only explanation.
+          </p>
+
+          <div class="check-in-list">
+            <article class="check-in-item">
+              <strong>When did the symptom begin?</strong>
+              <p>
+                Consider injury, illness, activity, sleep, travel, workload, and
+                other changes around the time it started.
+              </p>
+            </article>
+
+            <article class="check-in-item">
+              <strong>What makes it better or worse?</strong>
+              <p>
+                Notice the effects of movement, rest, position, meals, stress,
+                medication, temperature, and time of day.
+              </p>
+            </article>
+
+            <article class="check-in-item">
+              <strong>How has sleep been?</strong>
+              <p>
+                Reduced or fragmented sleep may increase fatigue and pain
+                sensitivity.
+              </p>
+            </article>
+
+            <article class="check-in-item">
+              <strong>Am I moving less because I am worried?</strong>
+              <p>
+                Avoidance may be appropriate after some injuries, but prolonged
+                fear of movement can also reduce strength and confidence.
+              </p>
+            </article>
+
+            <article class="check-in-item">
+              <strong>Have I had enough recovery?</strong>
+              <p>
+                Food, hydration, rest, movement, healthcare, and support all
+                affect the body’s ability to manage demand.
+              </p>
+            </article>
+
+            <article class="check-in-item">
+              <strong>Does this need professional evaluation?</strong>
+              <p>
+                Persistent, severe, unfamiliar, or worsening symptoms should not
+                be managed only with self-care.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>What May Help Interrupt the Cycle?</h2>
+
+          <div class="support-grid">
+            <article class="support-card">
+              <h3>Appropriate Medical Care</h3>
+              <p>
+                Evaluation can help identify injury, illness, medication
+                effects, or other conditions that require treatment.
+              </p>
+            </article>
+
+            <article class="support-card">
+              <h3>Comfortable Movement</h3>
+              <p>
+                Walking, mobility, rehabilitation, or gradual exercise may
+                support function when medically appropriate.
+              </p>
+            </article>
+
+            <article class="support-card">
+              <h3>Better Sleep Support</h3>
+              <p>
+                Addressing insomnia, breathing concerns, pain at night, and
+                inconsistent routines may improve recovery.
+              </p>
+            </article>
+
+            <article class="support-card">
+              <h3>Stress-Management Skills</h3>
+              <p>
+                Relaxation, mindfulness, pacing, counseling, boundaries, and
+                social support may reduce some factors that amplify symptoms.
+              </p>
+            </article>
+
+            <article class="support-card">
+              <h3>Workload and Environment Changes</h3>
+              <p>
+                Ergonomics, breaks, assistance, scheduling, and reduced
+                repetition may lower physical demand.
+              </p>
+            </article>
+
+            <article class="support-card">
+              <h3>Supportive Bodywork</h3>
+              <p>
+                Massage may help with comfort, muscle tension, and relaxation
+                when it is appropriate and does not delay needed care.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Help?</h2>
+
+          <p>
+            Massage may help some people feel less muscular tension, more
+            comfortable, or temporarily calmer. It can also create structured
+            time to notice breathing, movement, and areas of unnecessary effort.
+          </p>
+
+          <p>
+            Massage does not diagnose the cause of pain, repair every injury, or
+            treat serious medical conditions. Pain that is new, severe,
+            unexplained, or worsening should be evaluated appropriately.
+          </p>
+
+          <p>
+            Pressure should remain responsive to the client. Aggressive bodywork
+            is not required to validate or “break through” stress-related pain.
+          </p>
+        </section>
+
+        <section class="pain-warning">
+          <h2>When to Seek Prompt Medical Care</h2>
+
+          <p>
+            Seek urgent evaluation for chest pain, difficulty breathing,
+            fainting, sudden weakness or numbness, confusion, a severe or
+            unusual headache, fever with significant pain, new loss of bladder
+            or bowel control, inability to bear weight, visible deformity,
+            significant swelling, symptoms after major trauma, or pain that is
+            rapidly worsening. Persistent pain that interferes with sleep, work,
+            movement, or daily life also deserves professional assessment.
+          </p>
+        </section>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>Stress can affect pain without becoming a reason to dismiss it.</p>
+
+          <p>
+            The most useful question is not, “Is this physical or emotional?”
+            The body does not divide experience that neatly.
+          </p>
+
+          <p>
+            A better question is, “What factors may be contributing, and what
+            combination of support, healthcare, movement, recovery, and bodywork
+            is appropriate?”
+          </p>
+        </section>
+
+        <hr class="article-divider" />
+
+        <section class="pain-related">
+          <h2>Continue Reading</h2>
+
+          <div class="pain-related-grid">
+            <a
+              href="why-stress-causes-muscle-tension.html"
+              class="pain-related-card"
+            >
+              <h3>Why Stress Causes Muscle Tension</h3>
+              <p>
+                Learn how stress can affect breathing, movement, sleep, and the
+                way the body holds tension.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="the-science-of-relaxation.html" class="pain-related-card">
+              <h3>The Science of Relaxation</h3>
+              <p>
+                Explore how the body shifts out of high alert and why relaxation
+                takes practice rather than perfection.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="why-you-hold-stress-in-your-jaw.html"
+              class="pain-related-card"
+            >
+              <h3>Why You Hold Stress in Your Jaw</h3>
+              <p>
+                Understand how stress, concentration, clenching, and everyday
+                habits may contribute to jaw tension.
+              </p>
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.ninds.nih.gov/health-information/disorders/pain"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Institute of Neurological Disorders and Stroke: Pain
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/stress"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                National Center for Complementary and Integrative Health: Stress
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/article/003211.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Stress and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medlineplus.gov/ency/patientinstructions/000417.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MedlinePlus: Pain and Your Emotions
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nccih.nih.gov/health/chronic-pain-and-complementary-health-approaches-usefulness-and-safety"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NCCIH: Chronic Pain and Complementary Health Approaches
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="pain-cta">
+          <h2>Support Comfort Without Dismissing the Bigger Picture</h2>
+
+          <p>
+            Looking for personalized therapeutic care? Schedule a FlowTherapy
+            session centered around your comfort, boundaries, goals, and current
+            wellness needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+
+        <section class="future-flownotes-static">
+          <h2>Future FlowNotes</h2>
+
+          <p>
+            Here are a few topics planned for future Stress &amp; Wellness
+            articles.
+          </p>
+
+          <ul>
+            <li>Creating a Personal Wellness Routine</li>
+            <li>Breathing and Muscle Tension</li>
+            <li>Self-Care Without the Guilt</li>
+          </ul>
+
+          <p>
+            More FlowNotes are added regularly. Check back for new articles and
+            wellness resources.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>

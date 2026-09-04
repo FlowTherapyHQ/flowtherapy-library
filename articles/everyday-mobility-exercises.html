@@ -1,0 +1,2108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Everyday Mobility Exercises</title>
+
+    <meta
+      name="description"
+      content="Explore a gentle everyday mobility routine for the neck, shoulders, spine, hips, and ankles, with simple movement breaks for morning, workday, and evening."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#1677c8" />
+
+    <!-- Page-specific styling -->
+    <style>
+      .mobility-intro-panel {
+        margin: 36px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(232, 246, 255, 0.98),
+          rgba(249, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .mobility-intro-panel h2 {
+        margin-top: 0;
+      }
+
+      .mobility-intro-panel p {
+        max-width: 730px;
+        margin: 0 auto;
+        font-size: 1.05rem;
+        line-height: 1.75;
+      }
+
+      .daily-rhythm {
+        margin: 40px 0;
+      }
+
+      .daily-rhythm > h2,
+      .daily-rhythm > p {
+        text-align: center;
+      }
+
+      .daily-rhythm > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .daily-rhythm-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .rhythm-card {
+        display: flex;
+        flex-direction: column;
+        padding: 26px;
+        border: 1px solid #d6e7f7;
+        border-radius: 17px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.06);
+      }
+
+      .rhythm-label {
+        align-self: flex-start;
+        margin-bottom: 13px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .rhythm-card h3 {
+        margin: 0 0 10px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .rhythm-card > p {
+        margin-top: 0;
+        line-height: 1.65;
+      }
+
+      .rhythm-card ul {
+        margin: auto 0 0;
+        padding: 17px 0 0;
+        list-style: none;
+      }
+
+      .rhythm-card li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 23px;
+        line-height: 1.5;
+      }
+
+      .rhythm-card li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #1677c8;
+        content: "✓";
+        font-weight: 800;
+      }
+
+      .rhythm-card li:last-child {
+        margin-bottom: 0;
+      }
+
+      .routine-overview {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .routine-overview h2,
+      .routine-overview > p {
+        text-align: center;
+      }
+
+      .routine-overview h2 {
+        margin-top: 0;
+      }
+
+      .routine-overview > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .routine-overview-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .routine-overview-card {
+        padding: 19px 14px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+        text-align: center;
+      }
+
+      .routine-overview-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        margin: 0 auto 11px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-weight: 800;
+      }
+
+      .routine-overview-card strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+        line-height: 1.35;
+      }
+
+      .routine-overview-card p {
+        margin: 0;
+        color: #526779;
+        font-size: 0.9rem;
+        line-height: 1.45;
+      }
+
+      .mobility-routine {
+        margin: 40px 0;
+      }
+
+      .mobility-routine > h2,
+      .mobility-routine > p {
+        text-align: center;
+      }
+
+      .mobility-routine > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .mobility-exercise-list {
+        display: grid;
+        gap: 18px;
+      }
+
+      .mobility-exercise {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 20px;
+        align-items: start;
+        padding: 25px;
+        border: 1px solid #d6e7f7;
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 22px rgba(20, 55, 85, 0.05);
+      }
+
+      .exercise-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #1677c8;
+        color: #ffffff;
+        font-size: 1.05rem;
+        font-weight: 800;
+      }
+
+      .exercise-heading {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        align-items: center;
+        margin-bottom: 9px;
+      }
+
+      .exercise-heading h3 {
+        margin: 0;
+        color: #1677c8;
+        font-size: 1.25rem;
+      }
+
+      .exercise-area {
+        padding: 5px 9px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .mobility-exercise p {
+        margin: 0 0 10px;
+        line-height: 1.68;
+      }
+
+      .mobility-exercise p:last-child {
+        margin-bottom: 0;
+      }
+
+      .exercise-details {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+        margin-top: 15px;
+      }
+
+      .exercise-detail {
+        padding: 15px 17px;
+        border-radius: 11px;
+        background: #f4f9fe;
+      }
+
+      .exercise-detail strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #1677c8;
+      }
+
+      .exercise-detail p {
+        margin: 0;
+        font-size: 0.96rem;
+        line-height: 1.55;
+      }
+
+      .workday-reset {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .workday-reset h2,
+      .workday-reset > p {
+        text-align: center;
+      }
+
+      .workday-reset h2 {
+        margin-top: 0;
+      }
+
+      .workday-reset > p {
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .workday-reset-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .workday-reset-card {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 15px;
+        align-items: start;
+        padding: 20px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .reset-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .workday-reset-card h3 {
+        margin: 0 0 6px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .workday-reset-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .movement-menu {
+        margin: 40px 0;
+      }
+
+      .movement-menu > h2,
+      .movement-menu > p {
+        text-align: center;
+      }
+
+      .movement-menu > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .movement-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .movement-menu-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .movement-menu-card span {
+        display: inline-block;
+        margin-bottom: 11px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .movement-menu-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .movement-menu-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .mobility-mistakes {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f7fbff;
+      }
+
+      .mobility-mistakes h2,
+      .mobility-mistakes > p {
+        text-align: center;
+      }
+
+      .mobility-mistakes h2 {
+        margin-top: 0;
+      }
+
+      .mobility-mistakes > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .mistake-comparison-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .mistake-comparison-card {
+        padding: 23px;
+        border: 1px solid #d6e7f7;
+        border-radius: 15px;
+        background: #ffffff;
+      }
+
+      .mistake-choice {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+        align-items: start;
+      }
+
+      .mistake-choice + .mistake-choice {
+        margin-top: 17px;
+        padding-top: 17px;
+        border-top: 1px solid #d9e8f5;
+      }
+
+      .choice-marker {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #e4f1ff;
+        color: #1677c8;
+        font-weight: 800;
+      }
+
+      .mistake-choice strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #1677c8;
+      }
+
+      .mistake-choice p {
+        margin: 0;
+        line-height: 1.58;
+      }
+
+      .mobility-scale {
+        margin: 40px 0;
+      }
+
+      .mobility-scale > h2,
+      .mobility-scale > p {
+        text-align: center;
+      }
+
+      .mobility-scale > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .mobility-scale-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .mobility-scale-card {
+        padding: 24px;
+        border-left: 4px solid #1677c8;
+        border-radius: 13px;
+        background: #f8fbff;
+      }
+
+      .mobility-scale-card span {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .mobility-scale-card h3 {
+        margin: 0 0 8px;
+        color: #1677c8;
+        font-size: 1.1rem;
+      }
+
+      .mobility-scale-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .habit-builder {
+        margin: 40px 0;
+        padding: 30px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: #f5f9fd;
+      }
+
+      .habit-builder h2,
+      .habit-builder > p {
+        text-align: center;
+      }
+
+      .habit-builder h2 {
+        margin-top: 0;
+      }
+
+      .habit-builder > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .habit-builder-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .habit-builder-card {
+        padding: 21px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #ffffff;
+      }
+
+      .habit-builder-card h3 {
+        margin: 0 0 7px;
+        color: #1677c8;
+        font-size: 1.08rem;
+      }
+
+      .habit-builder-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .mobility-myths {
+        margin: 40px 0;
+      }
+
+      .mobility-myths > h2 {
+        text-align: center;
+      }
+
+      .mobility-myth-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 25px;
+      }
+
+      .mobility-myth-row {
+        display: grid;
+        grid-template-columns: 205px 1fr;
+        gap: 20px;
+        padding: 21px;
+        border: 1px solid #d6e7f7;
+        border-radius: 14px;
+        background: #ffffff;
+      }
+
+      .mobility-myth-label {
+        color: #1677c8;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .mobility-myth-row p {
+        margin: 0;
+        line-height: 1.65;
+      }
+
+      .special-considerations {
+        margin: 40px 0;
+        padding: 30px;
+        border-left: 5px solid #1677c8;
+        border-radius: 14px;
+        background: #f5f9fd;
+      }
+
+      .special-considerations h2 {
+        margin-top: 0;
+      }
+
+      .special-considerations p:last-child {
+        margin-bottom: 0;
+      }
+
+      .stop-section {
+        margin: 40px 0;
+      }
+
+      .stop-section > h2,
+      .stop-section > p {
+        text-align: center;
+      }
+
+      .stop-section > p {
+        max-width: 720px;
+        margin: 0 auto 27px;
+      }
+
+      .stop-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .stop-card {
+        padding: 21px;
+        border-left: 4px solid #1677c8;
+        border-radius: 12px;
+        background: #f8fbff;
+      }
+
+      .stop-card strong {
+        display: block;
+        margin-bottom: 6px;
+        color: #1677c8;
+      }
+
+      .stop-card p {
+        margin: 0;
+        line-height: 1.62;
+      }
+
+      .resource-callout {
+        margin: 40px 0;
+        padding: 32px;
+        border: 1px solid #cfe2f5;
+        border-radius: 18px;
+        background: linear-gradient(
+          135deg,
+          rgba(228, 243, 255, 0.98),
+          rgba(248, 252, 255, 0.98)
+        );
+        text-align: center;
+      }
+
+      .resource-callout-label {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #ffffff;
+        color: #1677c8;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .resource-callout h2 {
+        margin: 0 0 11px;
+        color: #1677c8;
+      }
+
+      .resource-callout p {
+        max-width: 690px;
+        margin: 0 auto 21px;
+        line-height: 1.7;
+      }
+
+      .resource-text-link {
+        color: #1677c8;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .resource-text-link:hover {
+        text-decoration: underline;
+      }
+
+      .mobility-reminder {
+        margin: 38px 0;
+        padding: 28px;
+        border-top: 1px solid #cfe2f5;
+        border-bottom: 1px solid #cfe2f5;
+        text-align: center;
+      }
+
+      .mobility-reminder strong {
+        display: block;
+        margin-bottom: 9px;
+        color: #1677c8;
+        font-size: 1.22rem;
+      }
+
+      .mobility-reminder p {
+        max-width: 720px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .article-sources {
+        margin-top: 38px;
+        padding-top: 26px;
+        border-top: 1px solid #cfe2f5;
+      }
+
+      .article-sources h2 {
+        margin-top: 0;
+      }
+
+      .article-sources ul {
+        padding-left: 21px;
+      }
+
+      .article-sources li {
+        margin-bottom: 10px;
+        line-height: 1.55;
+      }
+
+      .article-sources a {
+        color: #1677c8;
+        font-weight: 600;
+      }
+
+      @media (max-width: 950px) {
+        .routine-overview-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 850px) {
+        .daily-rhythm-grid,
+        .movement-menu-grid,
+        .mobility-scale-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .workday-reset-grid,
+        .mistake-comparison-grid,
+        .habit-builder-grid,
+        .stop-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mobility-myth-row {
+          grid-template-columns: 1fr;
+          gap: 7px;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .routine-overview-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mobility-exercise {
+          grid-template-columns: 1fr;
+        }
+
+        .exercise-number {
+          width: 44px;
+          height: 44px;
+        }
+
+        .exercise-details {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .workday-reset-card {
+          grid-template-columns: 38px 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="everyday-mobility-exercises">
+    <!-- Shared header generated by site-layout.js -->
+    <div id="site-header"></div>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../categories/movement-mobility.html">
+          ← Back to Movement &amp; Mobility FlowNotes
+        </a>
+      </div>
+
+      <article class="flow-article">
+        <header class="article-header">
+          <div class="article-label">Movement &amp; Mobility</div>
+
+          <h1>Everyday Mobility Exercises</h1>
+
+          <p class="article-subtitle">
+            A gentle routine for your neck, shoulders, spine, hips, and ankles
+            that can fit into your morning, workday, or evening.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            August 2026
+            <span aria-hidden="true">•</span>
+            8-minute read
+          </div>
+        </header>
+
+        <div class="article-intro">
+          <p>
+            Mobility practice does not have to be a long workout, an advanced
+            yoga sequence, or a test of how flexible you are.
+          </p>
+
+          <p>
+            It can be as simple as turning your head, moving your shoulders,
+            rotating your hips, bending and straightening your knees, or walking
+            for a few minutes after sitting.
+          </p>
+
+          <p>
+            Small movement breaks help your body experience more variety
+            throughout the day. They also give you an opportunity to notice
+            stiffness before it becomes distracting.
+          </p>
+
+          <p>
+            The goal is not to force every joint through its maximum range. The
+            goal is to move comfortably, maintain control, and gradually build
+            confidence in the ranges you use during everyday life.
+          </p>
+        </div>
+
+        <section class="mobility-intro-panel">
+          <h2>Consistency Matters More Than Intensity</h2>
+
+          <p>
+            A few controlled movements performed regularly may be more useful
+            than waiting until you feel extremely stiff and then completing one
+            aggressive mobility session. Start with a comfortable range, move
+            slowly, and let the routine fit your current body rather than
+            forcing your body to fit the routine.
+          </p>
+        </section>
+
+        <section>
+          <h2>What Is an Everyday Mobility Practice?</h2>
+
+          <p>
+            An everyday mobility practice is a short period of controlled
+            movement intended to help you explore and use comfortable joint
+            ranges.
+          </p>
+
+          <p>
+            It may include rotation, bending, reaching, weight shifting,
+            walking, sitting, standing, and other movements that resemble what
+            your body already does throughout the day.
+          </p>
+
+          <p>
+            Mobility work is different from forcing a stretch. It usually
+            includes active movement, meaning your muscles help guide and
+            control the motion.
+          </p>
+
+          <p>
+            You do not need to complete every exercise every day. Choose the
+            movements that feel appropriate for your needs, space, health, and
+            available time.
+          </p>
+        </section>
+
+        <section class="daily-rhythm">
+          <h2>Build Movement Into Your Daily Rhythm</h2>
+
+          <p>
+            Instead of depending on one long routine, use short movement moments
+            throughout the day.
+          </p>
+
+          <div class="daily-rhythm-grid">
+            <article class="rhythm-card">
+              <span class="rhythm-label">Morning • 2 Minutes</span>
+
+              <h3>Wake Up Your Movement</h3>
+
+              <p>
+                Begin gently and notice how your body feels before increasing
+                your range.
+              </p>
+
+              <ul>
+                <li>Comfortable neck turns</li>
+                <li>Shoulder circles</li>
+                <li>Gentle trunk rotation</li>
+                <li>Supported hip movement</li>
+                <li>Ankle pumps</li>
+              </ul>
+            </article>
+
+            <article class="rhythm-card">
+              <span class="rhythm-label">Midday • 2 Minutes</span>
+
+              <h3>Interrupt Long Periods of Sitting</h3>
+
+              <p>
+                Change positions and reconnect with movements your workday may
+                be limiting.
+              </p>
+
+              <ul>
+                <li>Stand from your chair</li>
+                <li>Walk briefly</li>
+                <li>Reach comfortably overhead</li>
+                <li>Shift weight side to side</li>
+                <li>Take several relaxed breaths</li>
+              </ul>
+            </article>
+
+            <article class="rhythm-card">
+              <span class="rhythm-label">Evening • 3 Minutes</span>
+
+              <h3>Transition Out of the Day</h3>
+
+              <p>
+                Use slower movement to notice tension and prepare for a less
+                active part of your evening.
+              </p>
+
+              <ul>
+                <li>Gentle spinal movement</li>
+                <li>Supported hip circles</li>
+                <li>Calf and ankle movement</li>
+                <li>Comfortable chest opening</li>
+                <li>Slow breathing</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <blockquote class="article-quote">
+          Everyday mobility is not about performing impressive positions. It is
+          about keeping ordinary movement familiar, comfortable, and available.
+        </blockquote>
+
+        <section class="routine-overview">
+          <h2>Your Five-Minute Mobility Routine</h2>
+
+          <p>
+            Complete each movement slowly for approximately 30 to 60 seconds.
+            Use a wall, chair, or countertop for support when needed.
+          </p>
+
+          <div class="routine-overview-grid">
+            <article class="routine-overview-card">
+              <div class="routine-overview-number">1</div>
+              <strong>Neck Turns</strong>
+              <p>Look left and right comfortably.</p>
+            </article>
+
+            <article class="routine-overview-card">
+              <div class="routine-overview-number">2</div>
+              <strong>Shoulder Circles</strong>
+              <p>Move your shoulders slowly.</p>
+            </article>
+
+            <article class="routine-overview-card">
+              <div class="routine-overview-number">3</div>
+              <strong>Spinal Rotation</strong>
+              <p>Turn your torso gently.</p>
+            </article>
+
+            <article class="routine-overview-card">
+              <div class="routine-overview-number">4</div>
+              <strong>Hip Circles</strong>
+              <p>Explore a small supported circle.</p>
+            </article>
+
+            <article class="routine-overview-card">
+              <div class="routine-overview-number">5</div>
+              <strong>Ankle Pumps</strong>
+              <p>Move your feet and ankles.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mobility-routine">
+          <h2>How to Perform Each Exercise</h2>
+
+          <p>
+            Use a smaller range than you think you need at first. The movement
+            can gradually become larger when it remains comfortable and
+            controlled.
+          </p>
+
+          <div class="mobility-exercise-list">
+            <article class="mobility-exercise">
+              <div class="exercise-number">1</div>
+
+              <div>
+                <div class="exercise-heading">
+                  <h3>Comfortable Neck Turns</h3>
+                  <span class="exercise-area">Neck</span>
+                </div>
+
+                <p>
+                  Sit or stand upright with your shoulders relaxed. Slowly turn
+                  your head to look toward one side. Return to center, then turn
+                  toward the other side.
+                </p>
+
+                <p>
+                  Keep your chin approximately level and stop before the
+                  movement becomes painful, dizzying, or difficult to control.
+                </p>
+
+                <div class="exercise-details">
+                  <div class="exercise-detail">
+                    <strong>Try</strong>
+                    <p>Three to five slow turns in each direction.</p>
+                  </div>
+
+                  <div class="exercise-detail">
+                    <strong>Avoid</strong>
+                    <p>
+                      Throwing the head backward or forcing the chin toward the
+                      shoulder.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="mobility-exercise">
+              <div class="exercise-number">2</div>
+
+              <div>
+                <div class="exercise-heading">
+                  <h3>Shoulder Circles</h3>
+                  <span class="exercise-area">Shoulders</span>
+                </div>
+
+                <p>
+                  Let your arms rest comfortably. Move your shoulders forward,
+                  upward, backward, and down in a slow circle.
+                </p>
+
+                <p>
+                  Complete several circles in one direction, then reverse the
+                  motion. Keep your jaw and hands relaxed.
+                </p>
+
+                <div class="exercise-details">
+                  <div class="exercise-detail">
+                    <strong>Try</strong>
+                    <p>Five controlled circles in each direction.</p>
+                  </div>
+
+                  <div class="exercise-detail">
+                    <strong>Avoid</strong>
+                    <p>
+                      Rushing, holding your breath, or repeatedly shrugging into
+                      pain.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="mobility-exercise">
+              <div class="exercise-number">3</div>
+
+              <div>
+                <div class="exercise-heading">
+                  <h3>Seated or Standing Trunk Rotation</h3>
+                  <span class="exercise-area">Spine</span>
+                </div>
+
+                <p>
+                  Sit near the front of a stable chair with your feet on the
+                  floor, or stand with your feet comfortably apart.
+                </p>
+
+                <p>
+                  Keep your hips relatively steady while slowly turning your
+                  chest toward one side. Return to center and repeat in the
+                  opposite direction.
+                </p>
+
+                <div class="exercise-details">
+                  <div class="exercise-detail">
+                    <strong>Try</strong>
+                    <p>Three to five comfortable rotations per side.</p>
+                  </div>
+
+                  <div class="exercise-detail">
+                    <strong>Avoid</strong>
+                    <p>
+                      Pulling yourself farther with your arms or forcing a twist
+                      through back pain.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="mobility-exercise">
+              <div class="exercise-number">4</div>
+
+              <div>
+                <div class="exercise-heading">
+                  <h3>Supported Hip Circles</h3>
+                  <span class="exercise-area">Hips</span>
+                </div>
+
+                <p>
+                  Stand beside a wall, chair, or countertop. Shift your weight
+                  onto one leg and lift the opposite foot slightly.
+                </p>
+
+                <p>
+                  Guide the lifted knee through a small circle from the hip.
+                  Complete the movement slowly, then reverse directions and
+                  change sides.
+                </p>
+
+                <div class="exercise-details">
+                  <div class="exercise-detail">
+                    <strong>Try</strong>
+                    <p>Three small circles in each direction per side.</p>
+                  </div>
+
+                  <div class="exercise-detail">
+                    <strong>Avoid</strong>
+                    <p>
+                      Forcing a large circle, leaning heavily, or continuing
+                      through pinching in the front of the hip.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="mobility-exercise">
+              <div class="exercise-number">5</div>
+
+              <div>
+                <div class="exercise-heading">
+                  <h3>Ankle Pumps and Circles</h3>
+                  <span class="exercise-area">Ankles</span>
+                </div>
+
+                <p>
+                  Sit comfortably with one foot slightly lifted, or remain
+                  seated with your heel on the floor.
+                </p>
+
+                <p>
+                  Point and flex the foot through a comfortable range. Then
+                  create several slow ankle circles before changing direction
+                  and switching sides.
+                </p>
+
+                <div class="exercise-details">
+                  <div class="exercise-detail">
+                    <strong>Try</strong>
+                    <p>Five ankle pumps and three circles per direction.</p>
+                  </div>
+
+                  <div class="exercise-detail">
+                    <strong>Avoid</strong>
+                    <p>
+                      Forcing through sharp ankle pain, new swelling, or recent
+                      injury.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Optional Movement: Sit to Stand</h2>
+
+          <p>
+            Sit-to-stand practice combines mobility, strength, coordination, and
+            an everyday movement many people perform repeatedly.
+          </p>
+
+          <p>
+            Sit near the front of a stable chair with your feet supported. Lean
+            your torso slightly forward, press through your feet, and stand
+            using your hands when needed.
+          </p>
+
+          <p>
+            Pause, then sit down slowly with control. Choose a chair height that
+            feels manageable and avoid holding your breath.
+          </p>
+
+          <p>
+            Skip this movement when standing is unsafe, your balance is
+            unreliable, or your healthcare provider has advised against it.
+          </p>
+        </section>
+
+        <section class="workday-reset">
+          <h2>The Two-Minute Workday Reset</h2>
+
+          <p>
+            You do not need to complete a formal workout every time you take a
+            movement break. Use this short sequence after a long meeting,
+            computer session, drive, or period of concentrated work.
+          </p>
+
+          <div class="workday-reset-grid">
+            <article class="workday-reset-card">
+              <div class="reset-number">1</div>
+
+              <div>
+                <h3>Stand Up</h3>
+
+                <p>
+                  Change your position slowly and allow your body a moment to
+                  adjust before walking.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-reset-card">
+              <div class="reset-number">2</div>
+
+              <div>
+                <h3>Walk Briefly</h3>
+
+                <p>
+                  Walk around your room, hallway, office, or another safe space
+                  for approximately one minute.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-reset-card">
+              <div class="reset-number">3</div>
+
+              <div>
+                <h3>Move Your Shoulders</h3>
+
+                <p>
+                  Complete several relaxed shoulder circles or gently reach your
+                  arms forward and upward.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-reset-card">
+              <div class="reset-number">4</div>
+
+              <div>
+                <h3>Shift Your Weight</h3>
+
+                <p>
+                  While holding support when needed, shift your weight from one
+                  foot to the other without rushing.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-reset-card">
+              <div class="reset-number">5</div>
+
+              <div>
+                <h3>Move Your Ankles</h3>
+
+                <p>
+                  Perform several heel raises, toe raises, or ankle movements
+                  before returning to your chair.
+                </p>
+              </div>
+            </article>
+
+            <article class="workday-reset-card">
+              <div class="reset-number">6</div>
+
+              <div>
+                <h3>Take a Breath</h3>
+
+                <p>
+                  Let your shoulders relax and take several comfortable breaths
+                  without forcing a particular breathing pattern.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Do You Need to Perform Mobility Exercises Every Hour?</h2>
+
+          <p>
+            There is no single movement-break schedule that fits every person,
+            job, health condition, or environment.
+          </p>
+
+          <p>
+            A useful approach is to notice when your position begins feeling
+            uncomfortable, when your attention fades, or when you have been
+            still longer than usual.
+          </p>
+
+          <p>
+            Set a reminder when it helps, but do not treat missing a scheduled
+            break as a failure. The purpose is to create more movement
+            opportunities—not another rigid rule.
+          </p>
+        </section>
+
+        <section class="movement-menu">
+          <h2>Choose a Movement That Fits the Moment</h2>
+
+          <p>
+            Your body may need something different depending on the time of day,
+            your recent activity, and how you currently feel.
+          </p>
+
+          <div class="movement-menu-grid">
+            <article class="movement-menu-card">
+              <span>After Sitting</span>
+
+              <h3>Walk and Change Positions</h3>
+
+              <p>
+                Begin with standing and walking before assuming you need a deep
+                stretch.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Before Exercise</span>
+
+              <h3>Use a Dynamic Warm-Up</h3>
+
+              <p>
+                Gradually rehearse movements related to the activity you are
+                preparing to perform.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>After Exercise</span>
+
+              <h3>Reduce Intensity Gradually</h3>
+
+              <p>
+                Cool down with easy movement and add comfortable static
+                stretching when desired.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>When Feeling Stiff</span>
+
+              <h3>Explore a Small Range</h3>
+
+              <p>
+                Move slowly and notice whether the area becomes more comfortable
+                before increasing the motion.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>When Fatigued</span>
+
+              <h3>Choose Less Demand</h3>
+
+              <p>
+                Gentle walking or rest may be more useful than turning mobility
+                work into another strenuous session.
+              </p>
+            </article>
+
+            <article class="movement-menu-card">
+              <span>Before Bed</span>
+
+              <h3>Keep It Calm</h3>
+
+              <p>
+                Use comfortable, slower movements that do not significantly
+                raise your effort or cause discomfort.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mobility-mistakes">
+          <h2>Common Everyday-Mobility Mistakes</h2>
+
+          <p>
+            Mobility work does not need to be perfect. These adjustments can
+            make it more manageable and useful.
+          </p>
+
+          <div class="mistake-comparison-grid">
+            <article class="mistake-comparison-card">
+              <div class="mistake-choice">
+                <div class="choice-marker">×</div>
+
+                <div>
+                  <strong>Moving Too Fast</strong>
+                  <p>
+                    Speed can hide compensations and make it harder to notice
+                    how a joint feels.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mistake-choice">
+                <div class="choice-marker">✓</div>
+
+                <div>
+                  <strong>Use Slow, Controlled Motion</strong>
+                  <p>
+                    Give yourself enough time to enter, explore, and leave the
+                    range comfortably.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="mistake-comparison-card">
+              <div class="mistake-choice">
+                <div class="choice-marker">×</div>
+
+                <div>
+                  <strong>Forcing Through Pain</strong>
+                  <p>
+                    Sharp, pinching, burning, or nerve-like symptoms are not
+                    signs that the exercise is working.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mistake-choice">
+                <div class="choice-marker">✓</div>
+
+                <div>
+                  <strong>Stay Within a Tolerable Range</strong>
+                  <p>
+                    Reduce the motion, add support, or choose another exercise
+                    when symptoms increase.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="mistake-comparison-card">
+              <div class="mistake-choice">
+                <div class="choice-marker">×</div>
+
+                <div>
+                  <strong>Waiting for One Long Session</strong>
+                  <p>
+                    A routine may be harder to maintain when it requires a large
+                    block of uninterrupted time.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mistake-choice">
+                <div class="choice-marker">✓</div>
+
+                <div>
+                  <strong>Use Small Movement Breaks</strong>
+                  <p>
+                    One or two minutes can still add useful movement variety to
+                    your day.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="mistake-comparison-card">
+              <div class="mistake-choice">
+                <div class="choice-marker">×</div>
+
+                <div>
+                  <strong>Chasing Maximum Flexibility</strong>
+                  <p>
+                    A larger range is not automatically more functional or
+                    appropriate for your goals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mistake-choice">
+                <div class="choice-marker">✓</div>
+
+                <div>
+                  <strong>Build Movement Quality</strong>
+                  <p>
+                    Focus on comfort, control, balance, and the ranges you need
+                    for everyday life.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="mobility-scale">
+          <h2>Choose the Right Level for Today</h2>
+
+          <p>
+            Your available energy and comfort may change. Adjust the routine
+            rather than abandoning movement entirely or forcing the full plan.
+          </p>
+
+          <div class="mobility-scale-grid">
+            <article class="mobility-scale-card">
+              <span>Level One</span>
+
+              <h3>Seated Movement</h3>
+
+              <p>
+                Perform neck turns, shoulder circles, trunk rotation, ankle
+                pumps, and gentle reaches from a stable chair.
+              </p>
+            </article>
+
+            <article class="mobility-scale-card">
+              <span>Level Two</span>
+
+              <h3>Supported Standing</h3>
+
+              <p>
+                Use a wall or countertop for weight shifting, hip movements,
+                heel raises, and controlled reaching.
+              </p>
+            </article>
+
+            <article class="mobility-scale-card">
+              <span>Level Three</span>
+
+              <h3>Full-Body Movement</h3>
+
+              <p>
+                Add walking, sit-to-stand practice, larger controlled ranges,
+                and movements related to your activities.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="habit-builder">
+          <h2>Make Mobility Easier to Remember</h2>
+
+          <p>
+            Connect movement with habits that already happen rather than
+            depending entirely on motivation.
+          </p>
+
+          <div class="habit-builder-grid">
+            <article class="habit-builder-card">
+              <h3>After Brushing Your Teeth</h3>
+
+              <p>
+                Complete several shoulder circles and supported hip movements.
+              </p>
+            </article>
+
+            <article class="habit-builder-card">
+              <h3>After a Meeting</h3>
+
+              <p>
+                Stand, walk briefly, and move your ankles before beginning the
+                next task.
+              </p>
+            </article>
+
+            <article class="habit-builder-card">
+              <h3>While Waiting for Coffee or Tea</h3>
+
+              <p>
+                Shift your weight, perform heel raises, or use a countertop for
+                supported movement.
+              </p>
+            </article>
+
+            <article class="habit-builder-card">
+              <h3>Before Driving</h3>
+
+              <p>
+                Move your neck and shoulders gently before settling into the
+                seat.
+              </p>
+            </article>
+
+            <article class="habit-builder-card">
+              <h3>After Driving</h3>
+
+              <p>
+                Walk for a few minutes and allow the hips and spine to change
+                positions naturally.
+              </p>
+            </article>
+
+            <article class="habit-builder-card">
+              <h3>Before Your Evening Routine</h3>
+
+              <p>
+                Use several slow movements as a transition out of the workday.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Does Mobility Work Replace Exercise?</h2>
+
+          <p>
+            A short mobility routine can add movement variety, but it does not
+            replace all forms of physical activity.
+          </p>
+
+          <p>
+            Walking, strength training, cardiovascular activity, balance work,
+            recreation, and other movement may support different aspects of
+            health and function.
+          </p>
+
+          <p>
+            Think of mobility practice as one part of an active lifestyle rather
+            than a complete exercise program by itself.
+          </p>
+        </section>
+
+        <section class="mobility-myths">
+          <h2>Common Everyday-Mobility Myths</h2>
+
+          <div class="mobility-myth-list">
+            <article class="mobility-myth-row">
+              <div class="mobility-myth-label">
+                Myth: Mobility must take at least 30 minutes.
+              </div>
+
+              <p>
+                Short movement periods can still help you change positions,
+                explore comfortable range, and interrupt long periods of
+                inactivity.
+              </p>
+            </article>
+
+            <article class="mobility-myth-row">
+              <div class="mobility-myth-label">
+                Myth: You need special equipment.
+              </div>
+
+              <p>
+                Many mobility movements require only a stable chair, a wall,
+                enough space to move safely, or no equipment at all.
+              </p>
+            </article>
+
+            <article class="mobility-myth-row">
+              <div class="mobility-myth-label">
+                Myth: Every joint should move through its maximum range.
+              </div>
+
+              <p>
+                Useful movement depends on your anatomy, health, comfort,
+                control, and the demands of your activities.
+              </p>
+            </article>
+
+            <article class="mobility-myth-row">
+              <div class="mobility-myth-label">
+                Myth: Stiffness always means you need to stretch.
+              </div>
+
+              <p>
+                Walking, changing positions, strengthening, resting, or
+                recovering from recent activity may sometimes feel more useful.
+              </p>
+            </article>
+
+            <article class="mobility-myth-row">
+              <div class="mobility-myth-label">
+                Myth: The routine should feel difficult.
+              </div>
+
+              <p>
+                Mobility work can remain gentle. Difficulty is not required for
+                a movement to be valuable.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="special-considerations">
+          <h2>Who Should Modify This Routine?</h2>
+
+          <p>
+            Speak with an appropriate healthcare or rehabilitation professional
+            before beginning or changing an exercise routine when you have a
+            recent injury, surgery, fracture, joint replacement, severe
+            osteoporosis, significant balance difficulty, unexplained pain,
+            nerve symptoms, or another health condition that affects safe
+            movement.
+          </p>
+
+          <p>
+            Pregnancy may change balance, joint comfort, breathing, and
+            positioning. Use support and follow guidance from your prenatal
+            healthcare provider when needed.
+          </p>
+
+          <p>
+            If you use a wheelchair or have limited standing tolerance, many of
+            these movements can be performed seated or adapted with help from a
+            qualified professional.
+          </p>
+        </section>
+
+        <section class="stop-section">
+          <h2>Stop or Modify the Exercise When</h2>
+
+          <p>
+            Mild effort or a gentle stretching sensation may be expected.
+            Concerning symptoms should not be treated as something to push
+            through.
+          </p>
+
+          <div class="stop-grid">
+            <article class="stop-card">
+              <strong>You feel sharp or sudden pain</strong>
+
+              <p>
+                Reduce the range or stop rather than repeating the movement more
+                aggressively.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>You feel numbness or tingling</strong>
+
+              <p>
+                Nerve-like symptoms are not the intended result of routine
+                mobility work.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>You become dizzy or faint</strong>
+
+              <p>
+                Sit or lie down safely and seek appropriate care when symptoms
+                are severe, unusual, or persistent.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>You lose balance or control</strong>
+
+              <p>
+                Add support, choose a seated option, or stop when the movement
+                cannot be completed safely.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>Your symptoms worsen afterward</strong>
+
+              <p>
+                Reduce the repetitions, duration, speed, or range when a
+                movement repeatedly increases discomfort.
+              </p>
+            </article>
+
+            <article class="stop-card">
+              <strong>You notice new swelling or weakness</strong>
+
+              <p>
+                New or significant symptoms may require professional evaluation
+                rather than additional mobility exercises.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Can Massage Support Everyday Mobility?</h2>
+
+          <p>
+            Massage may help some people feel less guarded, tense, or stiff,
+            creating a temporary opportunity for movement to feel more
+            comfortable.
+          </p>
+
+          <p>
+            It does not replace regular movement, strength, balance, or
+            appropriate rehabilitation. Long-term mobility depends partly on
+            giving your body repeated opportunities to use and control its
+            available range.
+          </p>
+
+          <p>
+            After a massage, gentle walking or comfortable mobility exercises
+            may help you notice how your movement feels without turning the
+            aftercare period into another strenuous workout.
+          </p>
+        </section>
+
+        <div class="mobility-reminder">
+          <strong>Movement does not have to be dramatic to matter.</strong>
+
+          <p>
+            Turning your head, standing from a chair, walking across the room,
+            moving your ankles, or changing your position can all contribute to
+            a day with more movement variety.
+          </p>
+        </div>
+
+        <section>
+          <h2>The FlowTherapy Perspective</h2>
+
+          <p>
+            Mobility is not about performing impressive stretches or matching
+            another person’s range.
+          </p>
+
+          <p>
+            It is about making everyday movements feel more familiar,
+            manageable, and comfortable. Small amounts of consistent movement
+            may fit your life better than occasional intense flexibility
+            sessions.
+          </p>
+
+          <p>
+            Massage can support comfort and body awareness, but lasting mobility
+            develops through movement, strength, recovery, and repeated
+            practice.
+          </p>
+        </section>
+
+        <section class="resource-callout">
+          <span class="resource-callout-label">FlowResources</span>
+
+          <h2>Continue With a Guided Resource</h2>
+
+          <p>
+            Visit FlowResources for downloadable movement, recovery, and
+            self-care guides designed to make wellness education easier to use
+            beyond the article.
+          </p>
+
+          <a
+            href="../pages/flowresources-redesign.html"
+            class="resource-text-link"
+          >
+            Explore FlowResources →
+          </a>
+        </section>
+
+        <div class="article-warning">
+          <strong>When to Seek Medical Care</strong>
+
+          <p>
+            Seek evaluation for severe or worsening pain, sudden weakness,
+            numbness, significant swelling or bruising, visible deformity,
+            fever, unexplained redness or warmth, loss of function, inability to
+            bear weight, symptoms after a significant injury, chest pain,
+            difficulty breathing, fainting, or other concerning changes.
+          </p>
+        </div>
+
+        <aside class="did-you-know">
+          <h2>Did You Know?</h2>
+
+          <p>
+            Mobility can change throughout the day. A range that feels limited
+            after waking or prolonged sitting may feel easier after walking,
+            warming up, or changing positions.
+          </p>
+        </aside>
+
+        <section class="related-articles">
+          <h2>Related FlowNotes</h2>
+
+          <div class="related-articles-grid">
+            <a href="flexibility-vs-mobility.html" class="related-article-card">
+              <h3>Flexibility vs. Mobility</h3>
+
+              <p>
+                Learn why available range and the ability to control that range
+                are related—but not identical.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a href="improving-hip-mobility.html" class="related-article-card">
+              <h3>Improving Hip Mobility</h3>
+
+              <p>
+                Explore how comfortable movement, strength, and control can
+                support the way your hips move.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="common-stretching-mistakes.html"
+              class="related-article-card"
+            >
+              <h3>Common Stretching Mistakes</h3>
+
+              <p>
+                Learn how to stretch without bouncing, forcing range, or
+                treating pain as progress.
+              </p>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="author-card">
+          <h2>About the Author</h2>
+
+          <p>
+            <strong>Brandy Hennigan, LMT</strong> is a trauma-informed
+            therapeutic massage therapist and founder of FlowTherapy. She is
+            passionate about helping people move better, feel better, and live
+            better through evidence-informed bodywork and wellness education.
+          </p>
+        </section>
+
+        <div class="article-warning">
+          <strong>Important Note</strong>
+
+          <p>
+            This article is intended for general education and should not
+            replace medical advice, diagnosis, rehabilitation, or individualized
+            exercise instruction. Exercises may need to be modified or avoided
+            based on injury, surgery, pregnancy, joint replacement, balance,
+            medications, bone health, nerve symptoms, cardiovascular conditions,
+            and other medical considerations.
+          </p>
+        </div>
+
+        <section class="article-sources">
+          <h2>Sources and Further Reading</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                Guidelines for Adults
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.cdc.gov/physical-activity-basics/about/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centers for Disease Control and Prevention: Physical Activity
+                Basics and Your Health
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nhs.uk/live-well/exercise/flexibility-exercises/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NHS: Flexibility Exercises
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NHS: How to Improve Strength and Flexibility
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://orthoinfo.aaos.org/en/staying-healthy/warm-up-cool-down-and-be-flexible/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                American Academy of Orthopaedic Surgeons: Warm Up, Cool Down,
+                and Be Flexible
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://health.ucdavis.edu/sports-medicine/resources/flexibility"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                UC Davis Health: Flexibility and Range of Motion
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-cta">
+          <h2>Move With More Comfort and Confidence</h2>
+
+          <p>
+            Experiencing recurring stiffness or tension? Schedule a personalized
+            FlowTherapy session centered around your comfort, daily demands,
+            movement goals, and individual needs.
+          </p>
+
+          <a
+            href="https://flowtherapy.setmore.com/book"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Schedule Your Session
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../pages/flownotes.html">← Return to FlowNotes</a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Shared footer generated by site-layout.js -->
+    <div id="site-footer"></div>
+
+    <script src="/assets/js/site-layout.js"></script>
+    <script src="/assets/js/content-registry.js"></script>
+    <script src="/assets/js/related-articles.js"></script>
+    <script src="/assets/js/article-utils.js"></script>
+  </body>
+</html>
