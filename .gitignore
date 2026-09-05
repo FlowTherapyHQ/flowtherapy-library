@@ -1,0 +1,10 @@
+# FlowTherapy private environment variables
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+
+# Local Buffer processing data
+tools/buffer/processed.json
