@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FlowNotes | Massage Is Not a Luxury. It’s Body Maintenance.</title>
+
+    <meta
+      name="description"
+      content="Massage is more than a luxury. Learn how therapeutic bodywork can support movement, comfort, recovery, and everyday body maintenance before discomfort becomes the norm."
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/library-article.css" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FlowHub" />
+    <meta name="theme-color" content="#2f6fb3" />
+
+    <style>
+      body[data-article-id="massage-is-not-a-luxury"] {
+        --flow-blue: #2f6fb3;
+        --flow-blue-deep: #082844;
+        --flow-blue-bright: #1677c8;
+        --flow-blue-soft: #f2f6ff;
+        --flow-border: #cfe2f5;
+        --flow-text: #243447;
+      }
+
+      .maintenance-hero {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 36px;
+        padding: 48px 42px;
+        border: 1px solid var(--flow-border);
+        border-radius: 24px;
+        background:
+          radial-gradient(
+            circle at 88% 16%,
+            rgba(47, 111, 179, 0.14),
+            transparent 28%
+          ),
+          linear-gradient(145deg, #ffffff 0%, #f7fbff 54%, #edf5fd 100%);
+        box-shadow: 0 16px 42px rgba(8, 40, 68, 0.06);
+        text-align: center;
+      }
+
+      .maintenance-hero::after {
+        content: "";
+        position: absolute;
+        right: -70px;
+        bottom: -105px;
+        width: 280px;
+        height: 280px;
+        border: 1px solid rgba(47, 111, 179, 0.12);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .maintenance-hero .article-label,
+      .maintenance-hero h1,
+      .maintenance-hero .article-subtitle,
+      .maintenance-hero .article-meta {
+        position: relative;
+        z-index: 1;
+      }
+
+      .maintenance-hero .article-label {
+        display: inline-block;
+        margin-bottom: 18px;
+      }
+
+      .maintenance-hero h1 {
+        max-width: 900px;
+        margin: 0 auto 20px;
+        color: var(--flow-blue-deep);
+        font-size: clamp(2.65rem, 5.5vw, 4.6rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+      }
+
+      .maintenance-hero .article-subtitle {
+        max-width: 760px;
+        margin: 0 auto 22px;
+        color: #314c68;
+        font-size: 1.18rem;
+        line-height: 1.7;
+      }
+
+      .maintenance-intro {
+        margin: 0 0 36px;
+        padding: 28px 30px;
+        border-left: 5px solid var(--flow-blue);
+        border-radius: 0 18px 18px 0;
+        background: linear-gradient(135deg, #f7fbff 0%, #edf5fd 100%);
+      }
+
+      .maintenance-intro p {
+        font-size: 1.04rem;
+        line-height: 1.78;
+      }
+
+      .maintenance-intro p:first-child {
+        margin-top: 0;
+      }
+      .maintenance-intro p:last-child {
+        margin-bottom: 0;
+      }
+
+      .flow-article > section:not([class]) {
+        margin: 38px 0;
+      }
+
+      .flow-article > section:not([class]) h2 {
+        margin-bottom: 14px;
+        color: var(--flow-blue-deep);
+      }
+
+      .maintenance-quote {
+        max-width: 820px;
+        margin: 38px auto;
+        padding: 28px 34px;
+        border: 1px solid var(--flow-border);
+        border-radius: 20px;
+        background: linear-gradient(
+          135deg,
+          rgba(47, 111, 179, 0.09),
+          rgba(242, 246, 255, 0.9)
+        );
+        color: var(--flow-blue-deep);
+        font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+        font-weight: 800;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .maintenance-quote::before {
+        content: "FlowThought";
+        display: block;
+        margin-bottom: 10px;
+        color: var(--flow-blue);
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .maintenance-feature {
+        margin: 38px 0;
+        padding: 4px 26px;
+        text-align: center;
+      }
+
+      .maintenance-feature h2 {
+        margin-top: 0;
+        color: var(--flow-blue-deep);
+      }
+
+      .maintenance-feature > p {
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .pressure-panel {
+        margin: 40px 0;
+        padding: 30px 32px;
+        border-left: 5px solid var(--flow-blue);
+        border-radius: 16px;
+        background: #f4f9fe;
+      }
+
+      .pressure-panel h2 {
+        margin-top: 0;
+        color: var(--flow-blue-deep);
+      }
+
+      .pressure-panel .pressure-line {
+        margin-top: 22px;
+        padding-top: 20px;
+        border-top: 1px solid var(--flow-border);
+        color: var(--flow-blue);
+        font-size: 1.08rem;
+        font-weight: 800;
+      }
+
+      .care-choice {
+        margin: 44px 0;
+      }
+
+      .care-choice > h2,
+      .care-choice > p {
+        text-align: center;
+      }
+
+      .care-choice > p {
+        max-width: 760px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .care-choice-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .care-choice-card {
+        padding: 26px;
+        border: 1px solid var(--flow-border);
+        border-radius: 18px;
+        box-shadow: 0 10px 26px rgba(8, 40, 68, 0.045);
+      }
+
+      .care-choice-card.focused {
+        background: linear-gradient(145deg, #ffffff, #f2f7fc);
+      }
+
+      .care-choice-card.signature {
+        background: linear-gradient(145deg, #f9fbff, #eaf3fc);
+      }
+
+      .care-choice-card .choice-label {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: var(--flow-blue);
+        font-size: 0.74rem;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .care-choice-card h3 {
+        margin: 0 0 10px;
+        color: var(--flow-blue-deep);
+        font-size: 1.38rem;
+      }
+
+      .care-choice-card p:last-child {
+        margin-bottom: 0;
+      }
+
+      .feel-good-panel {
+        margin: 40px 0;
+        padding: 4px 0;
+      }
+
+      .feel-good-panel h2 {
+        margin-top: 0;
+        color: var(--flow-blue-deep);
+      }
+
+      .feel-good-trio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin: 20px 0;
+      }
+
+      .feel-good-trio span {
+        padding: 9px 14px;
+        border: 1px solid var(--flow-border);
+        border-radius: 999px;
+        background: var(--flow-blue-soft);
+        color: var(--flow-blue-deep);
+        font-weight: 800;
+      }
+
+      .flow-perspective {
+        margin: 42px 0;
+        padding: 32px;
+        border: 1px solid var(--flow-border);
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 10px 28px rgba(8, 40, 68, 0.045);
+      }
+
+      .flow-perspective .perspective-label {
+        color: var(--flow-blue);
+        font-size: 0.76rem;
+        font-weight: 900;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .flow-perspective h2 {
+        margin: 8px 0 16px;
+        color: var(--flow-blue-deep);
+      }
+
+      .maintenance-related {
+        margin: 42px 0;
+      }
+
+      .maintenance-related > h2 {
+        color: var(--flow-blue);
+        text-align: center;
+      }
+
+      .maintenance-related > p {
+        max-width: 680px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+
+      .maintenance-related-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .maintenance-related-card {
+        display: flex;
+        flex-direction: column;
+        min-height: 200px;
+        padding: 22px;
+        border: 1px solid var(--flow-border);
+        border-radius: 17px;
+        background: #ffffff;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(8, 40, 68, 0.04);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .maintenance-related-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(8, 40, 68, 0.08);
+      }
+
+      .maintenance-related-card h3 {
+        margin-top: 0;
+        color: var(--flow-blue);
+      }
+
+      .maintenance-related-card p {
+        flex: 1;
+      }
+
+      .maintenance-related-card span {
+        color: var(--flow-blue);
+        font-weight: 800;
+      }
+
+      .library-author-card {
+        display: grid;
+        grid-template-columns: 130px minmax(0, 1fr);
+        gap: 26px;
+        align-items: center;
+        margin: 46px 0 30px;
+        padding: 30px;
+        border-radius: 22px;
+        background: linear-gradient(135deg, #06223b 0%, #154f7e 100%);
+        color: #ffffff;
+        box-shadow: 0 14px 34px rgba(8, 40, 68, 0.12);
+      }
+
+      .library-author-photo img {
+        display: block;
+        width: 126px;
+        height: 126px;
+        object-fit: cover;
+        border: 4px solid rgba(255, 255, 255, 0.9);
+        border-radius: 18px;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+      }
+
+      .library-author-label {
+        display: block;
+        margin-bottom: 6px;
+        color: #69c7ff;
+        font-size: 0.75rem;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .library-author-content h2 {
+        margin: 0 0 10px;
+        color: #ffffff;
+      }
+
+      .library-author-content p {
+        margin-bottom: 0;
+        color: #eef7ff;
+      }
+
+      .library-author-actions {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 2px;
+      }
+
+      .library-author-button {
+        display: inline-flex;
+        flex: 0 0 auto;
+        width: auto;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        padding: 9px 18px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .library-author-button.primary {
+        background: #2fa6ef;
+        color: #ffffff;
+      }
+
+      .library-author-button.secondary {
+        border: 1px solid rgba(122, 202, 255, 0.45);
+        background: rgba(255, 255, 255, 0.04);
+        color: #ffffff;
+      }
+
+      .maintenance-cta {
+        margin: 36px 0 26px;
+        padding: 32px;
+        border: 1px solid var(--flow-border);
+        border-radius: 20px;
+        background: linear-gradient(135deg, #eaf4fe, #f7fbff);
+        text-align: center;
+      }
+
+      .maintenance-cta h2 {
+        margin-top: 0;
+        color: var(--flow-blue-deep);
+      }
+
+      .maintenance-cta p {
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .maintenance-cta .button {
+        width: auto;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 900px) {
+        .maintenance-related-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .maintenance-hero {
+          margin-bottom: 28px;
+          padding: 30px 18px;
+          border-radius: 20px;
+        }
+
+        .maintenance-hero h1 {
+          font-size: 2.35rem;
+          line-height: 1.02;
+        }
+
+        .maintenance-intro {
+          margin-bottom: 28px;
+          padding: 20px;
+        }
+
+        .flow-article > section:not([class]) {
+          margin: 30px 0;
+        }
+
+        .maintenance-quote {
+          margin: 30px auto;
+          padding: 24px 20px;
+          font-size: 1.15rem;
+        }
+
+        .maintenance-feature {
+          margin: 30px 0;
+          padding: 0;
+        }
+
+        .pressure-panel {
+          margin: 30px 0;
+          padding: 20px;
+        }
+
+        .care-choice {
+          margin: 34px 0;
+        }
+
+        .care-choice-grid {
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+
+        .care-choice-card {
+          padding: 22px;
+        }
+
+        .feel-good-panel {
+          margin: 30px 0;
+          padding: 0;
+        }
+
+        .feel-good-trio {
+          gap: 8px;
+          margin: 18px 0;
+        }
+
+        .feel-good-trio span {
+          padding: 8px 12px;
+          font-size: 0.92rem;
+        }
+
+        .flow-perspective {
+          margin: 30px 0;
+          padding: 20px;
+        }
+
+        .maintenance-related {
+          margin: 34px 0;
+        }
+
+        .library-author-card {
+          grid-template-columns: 1fr;
+          margin-top: 36px;
+          padding: 24px 20px;
+          text-align: center;
+        }
+
+        .library-author-photo img {
+          margin: 0 auto;
+        }
+
+        .library-author-actions {
+          flex-direction: row;
+          gap: 9px;
+        }
+
+        .library-author-button {
+          width: auto;
+          min-height: 40px;
+          padding: 8px 14px;
+          font-size: 0.88rem;
+        }
+
+        .maintenance-cta {
+          padding: 24px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-article-id="massage-is-not-a-luxury">
+    <!-- FLOWLIBRARY HEADER -->
+    <header class="flowlibrary-header">
+      <nav class="flowlibrary-nav">
+        <a class="flowlibrary-brand" href="../index.html">
+          <span class="flowlibrary-brand-name">
+            FlowTherapy <span>Library</span>
+          </span>
+
+          <span class="flowlibrary-tagline">
+            Prepare • Recover • Learn • Continue
+          </span>
+        </a>
+
+        <div class="flowlibrary-links">
+          <a href="../index.html#library">FlowNotes</a>
+          <a href="../index.html#about">About</a>
+
+          <a class="flowlibrary-return" href="https://linktr.ee/flow.therapy">
+            FlowTherapy →
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="article-container">
+      <div class="article-back">
+        <a href="../index.html#library"> ← Back to FlowTherapy Library </a>
+      </div>
+
+      <article class="flow-article">
+        <!-- HERO -->
+        <header class="maintenance-hero">
+          <div class="article-label">Massage Education</div>
+
+          <h1>
+            Massage Is Not a Luxury.<br />
+            It’s Body Maintenance.
+          </h1>
+
+          <p class="article-subtitle">
+            Your body works every day. Caring for it doesn’t have to wait until
+            something hurts.
+          </p>
+
+          <div class="article-meta">
+            By Brandy Hennigan, LMT
+            <span aria-hidden="true">•</span>
+            September 2026
+            <span aria-hidden="true">•</span>
+            4-minute read
+          </div>
+        </header>
+
+        <!-- INTRO -->
+        <div class="maintenance-intro">
+          <p>
+            Massage is often marketed as an indulgence—a special treat reserved
+            for vacations, birthdays, anniversaries, or the occasional spa day.
+          </p>
+
+          <p>
+            But your body does not only work on special occasions. It carries
+            you through work, exercise, commuting, caregiving, stress,
+            repetitive movement, sitting, standing, lifting, driving, and
+            everything else life puts on the schedule.
+          </p>
+
+          <p>
+            Therapeutic massage can be another way of caring for that body—not
+            because something is necessarily wrong, but because bodies require
+            maintenance.
+          </p>
+        </div>
+
+        <!-- WORKLOAD -->
+        <section>
+          <h2>Your Body Has a Workload</h2>
+
+          <p>
+            Even on a day that does not feel especially physical, your muscles
+            are still working. They support posture, stabilize joints, help you
+            walk and lift, and respond constantly to the demands of everyday
+            life.
+          </p>
+
+          <p>
+            Repetitive movement, long periods of sitting or standing, training,
+            physical work, stress, and limited recovery can all contribute to
+            areas that feel tight, tired, stiff, or uncomfortable.
+          </p>
+
+          <p>
+            You may notice it first in your neck and shoulders, your mid or low
+            back, your hips, your legs, or even your hands and feet.
+          </p>
+        </section>
+
+        <blockquote class="maintenance-quote">
+          Your body does not have to be in crisis before it deserves attention.
+        </blockquote>
+
+        <!-- MAINTENANCE -->
+        <section class="maintenance-feature compact-feature">
+          <h2>Maintenance Does Not Mean Something Is Wrong</h2>
+
+          <p>
+            We maintain plenty of things we depend on before they completely
+            stop working. We change the oil, replace worn shoes, charge the
+            phone, and schedule recovery before everything hits zero.
+          </p>
+
+          <p>
+            Body maintenance follows the same basic idea: pay attention before
+            discomfort becomes the only thing you can think about.
+          </p>
+
+          <p>
+            Massage can be one part of that care alongside movement, hydration,
+            sleep, exercise, medical care when needed, and time for recovery.
+          </p>
+        </section>
+
+        <!-- PRESSURE -->
+        <section class="pressure-panel">
+          <h2>Therapeutic Massage Does Not Have to Hurt</h2>
+
+          <p>
+            Effective bodywork is not measured by how much discomfort you can
+            tolerate.
+          </p>
+
+          <p>
+            Pressure and technique should be adjusted according to the area
+            being treated, your preferences, your goals, and how your body
+            responds during the session.
+          </p>
+
+          <p>
+            Sometimes deeper pressure is appropriate. Sometimes slower work,
+            stretching, movement, or moderate pressure is more useful.
+          </p>
+
+          <div class="pressure-line">
+            The goal is not to overpower the body. It is to work with it.
+          </div>
+        </section>
+
+        <!-- FOCUSED VS COMPREHENSIVE -->
+        <section class="care-choice">
+          <h2>You Don’t Always Need a Full-Body Massage</h2>
+
+          <p>
+            Sometimes your whole body wants attention. Sometimes one region is
+            doing all the complaining.
+          </p>
+
+          <div class="care-choice-grid">
+            <article class="care-choice-card focused">
+              <span class="choice-label">Focused Care</span>
+
+              <h3>When One Region Needs the Attention</h3>
+
+              <p>
+                If your neck, shoulders, arms, upper back, or mid back are
+                carrying most of the tension, spending more of the session there
+                may make more sense.
+              </p>
+
+              <p>
+                The same applies when the low back, hips, glutes, legs, or feet
+                are the main concern.
+              </p>
+
+              <p>
+                A shorter session does not have to mean rushed care when the
+                scope is intentionally focused.
+              </p>
+            </article>
+
+            <article class="care-choice-card signature">
+              <span class="choice-label">Comprehensive Care</span>
+
+              <h3>When the Whole Body Needs Time</h3>
+
+              <p>
+                Longer sessions give the therapist room to address multiple
+                regions without turning the appointment into a race against the
+                clock.
+              </p>
+
+              <p>
+                This can be especially useful when you want therapeutic work,
+                assisted stretching, relaxation, and time for the entire body.
+              </p>
+
+              <p>Different goals call for different kinds of sessions.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- FEELS GOOD -->
+        <section class="feel-good-panel">
+          <h2>Massage Can Still Feel Good</h2>
+
+          <p>
+            Calling massage body maintenance does not mean removing everything
+            enjoyable about it.
+          </p>
+
+          <div class="feel-good-trio">
+            <span>Relaxation matters.</span>
+            <span>Comfort matters.</span>
+            <span>Feeling cared for matters.</span>
+          </div>
+
+          <p>
+            Therapeutic work and relaxation are not opposites. A thoughtful
+            session can address areas of tension while still giving your body an
+            opportunity to slow down.
+          </p>
+        </section>
+
+        <!-- CARE SCHEDULE -->
+        <section>
+          <h2>Build Care Around the Body You Actually Have</h2>
+
+          <p>There is no universal massage schedule.</p>
+
+          <p>
+            Some people benefit from regular sessions because of physically
+            demanding work, training, repetitive movement, or recurring muscle
+            tension. Others schedule bodywork occasionally when their body
+            begins asking for more attention.
+          </p>
+
+          <p>
+            What matters is choosing care that fits your body, your goals, your
+            schedule, and your resources.
+          </p>
+
+          <p>You do not need to earn massage by becoming exhausted first.</p>
+        </section>
+
+        <!-- FLOWTHERAPY PERSPECTIVE -->
+        <section class="flow-perspective">
+          <span class="perspective-label">The FlowTherapy Perspective</span>
+
+          <h2>Body Maintenance Should Be Personal</h2>
+
+          <p>
+            Bodies do not follow identical routines, and massage should not
+            either.
+          </p>
+
+          <p>
+            The amount of pressure, areas of focus, pacing, positioning,
+            stretching, and session length should make sense for the person on
+            the table—not simply follow a standard sequence because that is how
+            massage has always been packaged.
+          </p>
+
+          <p>
+            Sometimes the best session is focused. Sometimes the whole body
+            needs time. Sometimes your feet have filed a formal complaint.
+          </p>
+
+          <p>The point is to listen before the body has to start yelling.</p>
+        </section>
+
+        <!-- RELATED -->
+        <hr class="article-divider" />
+
+        <section class="maintenance-related">
+          <h2>Continue Reading</h2>
+
+          <p class="maintenance-related-intro">
+            A little more body knowledge never hurt anybody.
+          </p>
+
+          <div class="maintenance-related-list">
+            <a
+              href="deep-pressure-vs-deep-tissue.html"
+              class="maintenance-related-link"
+            >
+              <div>
+                <h3>Deep Pressure vs. Deep Tissue Massage</h3>
+
+                <p>
+                  Learn why deeper pressure and deep tissue massage are not the
+                  same thing—and why more pressure is not automatically better.
+                </p>
+              </div>
+
+              <span>Read FlowNote →</span>
+            </a>
+
+            <a
+              href="the-science-of-relaxation.html"
+              class="maintenance-related-link"
+            >
+              <div>
+                <h3>The Science of Relaxation</h3>
+
+                <p>
+                  Explore what relaxation actually is and how the body shifts
+                  out of high-alert states.
+                </p>
+              </div>
+
+              <span>Read FlowNote →</span>
+            </a>
+          </div>
+
+          <div class="maintenance-related-all">
+            <a href="../index.html#library"> Explore all FlowNotes → </a>
+          </div>
+        </section>
+
+        <!-- AUTHOR -->
+        <section class="library-author-card">
+          <div class="library-author-photo">
+            <img
+              src="../assets/brandy-flowtherapist.png"
+              alt="Brandy Hennigan, LMT"
+            />
+          </div>
+
+          <div class="library-author-content">
+            <span class="library-author-label">
+              The Therapist Behind the Library
+            </span>
+
+            <h2>Brandy Hennigan, LMT</h2>
+
+            <p>
+              Brandy is a licensed massage therapist and founder of
+              <strong>FlowTherapy Massage Co.</strong>
+              The FlowTherapy Library was created to make information about
+              massage, movement, recovery, and everyday body mechanics easier to
+              understand and more practical to use.
+            </p>
+          </div>
+
+          <div class="library-author-actions">
+            <a
+              class="library-author-button primary"
+              href="https://linktr.ee/flow.therapy"
+            >
+              Return to FlowTherapy
+            </a>
+
+            <a
+              class="library-author-button secondary"
+              href="../index.html#library"
+            >
+              Explore FlowNotes
+            </a>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="maintenance-cta">
+          <h2>Move Better. Feel Better. Live Better.</h2>
+
+          <p>
+            FlowTherapy offers personalized therapeutic bodywork and assisted
+            stretching designed around how your body moves, feels, and responds.
+          </p>
+
+          <p>
+            Focused care or comprehensive care—the goal is thoughtful bodywork
+            without rushing the body.
+          </p>
+
+          <a
+            href="https://linktr.ee/flow.therapy"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Discover FlowTherapy
+          </a>
+        </section>
+
+        <div class="article-back article-back-bottom">
+          <a href="../index.html#library"> ← Return to FlowTherapy Library </a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="flowlibrary-footer">
+      © 2026 FlowTherapy Massage Co. &nbsp;•&nbsp;
+
+      <a href="https://linktr.ee/flow.therapy"> Return to FlowTherapy </a>
+
+      <div class="flowlibrary-footer-tagline">
+        Move Better. Feel Better. Live Better.
+      </div>
+    </footer>
+
+    <script src="../assets/js/content-registry.js"></script>
+    <script src="../assets/js/related-articles.js"></script>
+    <script src="../assets/js/article-utils.js"></script>
+  </body>
+</html>
