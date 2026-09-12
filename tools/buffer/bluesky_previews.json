@@ -5,7 +5,7 @@
     "text": "Your rest day does not have to involve becoming one with the couch. 😂\n\nSome days need true rest. Others may benefit from gentle movement.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/active-recovery-vs-rest-days.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 241,
+    "characters": 255,
     "validation": "PASS",
     "buffer_post_id": "6a9c50d6f97391de04bac076"
   },
@@ -15,7 +15,7 @@
     "text": "Your shoulders are trying to become earrings again, aren't they? 😭\n\nStress can change your breathing—and your muscles may respond.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/breathing-and-muscle-tension.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 234,
+    "characters": 248,
     "validation": "PASS",
     "buffer_post_id": "6a9c50d618e142b38634c76d"
   },
@@ -25,7 +25,7 @@
     "text": "Your $1,200 ergonomic chair cannot save you from sitting in it like a shrimp. 🦐\n\nYour setup matters. So does changing positions and moving.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/building-a-better-workstation.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 244,
+    "characters": 258,
     "validation": "PASS",
     "buffer_post_id": "6a9c50d7fba008bcd54e6abe"
   },
@@ -35,7 +35,7 @@
     "text": "Before you buy another ergonomic gadget…when was the last time you actually got up? 👀\n\nYour body likes movement, not just better equipment.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/building-a-better-workstation2.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 245,
+    "characters": 259,
     "validation": "PASS",
     "buffer_post_id": "6a9c50d718e142b38634c789"
   },
@@ -45,8 +45,8 @@
     "text": "Your elbow has filed a formal complaint. 📋\n\nMassage may support comfort with tennis or golfer's elbow—but it doesn't repair a tendon by itself.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/can-massage-help-elbow-tendinopathy.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 254,
-    "validation": "PASS",
+    "characters": 268,
+    "validation": "FAIL",
     "buffer_post_id": "6a9c50d7e6524401a659c8ad"
   },
   {
@@ -55,7 +55,7 @@
     "text": "Posture police, please stand down. 🚨\n\nThere is no single \"perfect\" posture. Movement variety and changing positions matter too.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/can-massage-help-posture.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 227,
+    "characters": 241,
     "validation": "PASS",
     "buffer_post_id": "6a9c50d885ccb3a22c06e852"
   },
@@ -65,7 +65,7 @@
     "text": "Ever get a massage and suddenly remember what being sleepy feels like? 😴\n\nMassage can't promise sleep, but relaxation may support your wind-down.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/can-massage-improve-sleep.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 246,
+    "characters": 260,
     "validation": "PASS",
     "buffer_post_id": "6a9c50d8e6524401a659c8c9"
   },
@@ -75,8 +75,8 @@
     "text": "If your face looks like this 😬 while you're stretching, we need to talk.\n\nBouncing, forcing range and using pain as proof of progress can miss the point.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/common-stretching-mistakes.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 255,
-    "validation": "PASS",
+    "characters": 269,
+    "validation": "FAIL",
     "buffer_post_id": "6a9c50d80ca93dff239f529d"
   },
   {
@@ -85,8 +85,8 @@
     "text": "If your wellness routine requires a 4:17 AM alarm and Navy SEAL discipline…we've overcomplicated this. 😭\n\nBuild one that fits your actual life.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/creating-a-personal-wellness-routine.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 255,
-    "validation": "PASS",
+    "characters": 269,
+    "validation": "FAIL",
     "buffer_post_id": "6a9c50d90ca93dff239f52b9"
   },
   {
@@ -95,8 +95,8 @@
     "text": "If you're holding your breath and seeing your ancestors, we may have gone too deep. 😭\n\nMore pressure ≠ better massage. Deep pressure ≠ deep tissue.\n\nRead the FlowNote ↓\nhttps://library.discoverflowtherapy.com/articles/deep-pressure-vs-deep-tissue.html",
     "approved": true,
     "buffer_status": "draft",
-    "characters": 251,
-    "validation": "PASS",
+    "characters": 265,
+    "validation": "FAIL",
     "buffer_post_id": "6a9c50d9fba008bcd54e6adc"
   }
 ]

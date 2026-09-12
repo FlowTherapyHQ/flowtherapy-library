@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import re
 
 
 BUFFER_DIR = Path(__file__).resolve().parent
@@ -7,9 +8,38 @@ PREVIEW_FILE = BUFFER_DIR / "bluesky_previews.json"
 PATREON_FILE = BUFFER_DIR / "patreon_queue.json"
 
 MAX_CHARS = 260
+UTM_QUERY = "utm_source=bs"
 
 
-def validate_posts(file_path, text_field, label):
+def add_utm_tracking(text):
+    url_pattern = (
+        r"https://library\.discoverflowtherapy\.com/"
+        r"[^\s]+"
+    )
+
+    def add_tracking(match):
+        url = match.group(0)
+
+        if "utm_source=" in url:
+            return url
+
+        separator = "&" if "?" in url else "?"
+
+        return f"{url}{separator}{UTM_QUERY}"
+
+    return re.sub(
+        url_pattern,
+        add_tracking,
+        text,
+    )
+
+
+def validate_posts(
+    file_path,
+    text_field,
+    label,
+    add_tracking=False,
+):
     if not file_path.exists():
         raise RuntimeError(f"{file_path.name} not found.")
 
@@ -24,11 +54,24 @@ def validate_posts(file_path, text_field, label):
     print(label)
     print("-" * len(label))
     print(f"Maximum characters: {MAX_CHARS}")
+
+    if add_tracking:
+        print(
+            f"Tracking included: ?{UTM_QUERY}"
+        )
+
     print()
 
     for number, post in enumerate(posts, start=1):
         text = post.get(text_field, "")
-        count = len(text)
+
+        outgoing_text = (
+            add_utm_tracking(text)
+            if add_tracking
+            else text
+        )
+
+        count = len(outgoing_text)
 
         post["characters"] = count
 
@@ -42,10 +85,15 @@ def validate_posts(file_path, text_field, label):
 
         # Safety rail #2: video posts require a video URL
         elif post.get("media_type") == "video":
-            video_url = post.get("video_url", "").strip()
+            video_url = post.get(
+                "video_url",
+                "",
+            ).strip()
 
             if not video_url:
-                failure_reason = "video_url is required"
+                failure_reason = (
+                    "video_url is required"
+                )
 
         if failure_reason:
             post["validation"] = "FAIL"
@@ -71,7 +119,7 @@ def validate_posts(file_path, text_field, label):
         json.dumps(
             posts,
             indent=2,
-            ensure_ascii=False
+            ensure_ascii=False,
         ),
         encoding="utf-8",
     )
@@ -92,12 +140,14 @@ def main():
         PREVIEW_FILE,
         "text",
         "FlowTherapy Bluesky Validator",
+        add_tracking=True,
     )
 
     total_failed += validate_posts(
         PATREON_FILE,
         "caption",
         "FlowTherapy Patreon Validator",
+        add_tracking=False,
     )
 
     if total_failed:

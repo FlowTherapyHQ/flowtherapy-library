@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import urllib.request
 from pathlib import Path
 
@@ -7,7 +8,7 @@ from pathlib import Path
 BUFFER_API_URL = "https://api.buffer.com"
 CHANNEL_ID = "6a9c3848065799be46942349"
 MAX_CHARS = 260
-
+UTM_QUERY = "utm_source=bs"
 # ============================================================
 # FLOWTHERAPY PUBLISHING MODE
 #
@@ -94,7 +95,37 @@ def buffer_graphql(query, variables=None):
             response.read().decode("utf-8")
         )
 
+def add_utm_tracking(text, source_name):
+    """
+    Add FlowTherapy UTM tracking to FlowNote URLs only.
 
+    Flow Table Talk is intentionally left unchanged for now
+    because its current captions may already be near the
+    260-character FlowTherapy limit.
+    """
+    if source_name != "FlowNotes":
+        return text
+
+    url_pattern = (
+        r"https://library\.discoverflowtherapy\.com/"
+        r"[^\s]+"
+    )
+
+    def add_tracking(match):
+        url = match.group(0)
+
+        if "utm_source=" in url:
+            return url
+
+        separator = "&" if "?" in url else "?"
+
+        return f"{url}{separator}{UTM_QUERY}"
+
+    return re.sub(
+        url_pattern,
+        add_tracking,
+        text,
+    )
 def create_buffer_post(text):
     save_to_draft = PUBLISH_MODE == "review"
 
